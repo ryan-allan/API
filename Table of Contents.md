@@ -19,6 +19,8 @@
 
 <li><dt><a href="#ApiFuncT">API FUNCTIONS</a></dt></li>	
 
+	<dd><a href="/Testing">Testing()</a></dd>
+
 	<dd><a href="#sendSMST">sendSMS()</a></dd>
 	<dd><a href="/API-FUNCTIONS/saveMMS().md">saveMMS()</a></dd>
 	<dd><a href="#sendSavedMMST">sendSavedMMS()</dd>
