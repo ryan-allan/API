@@ -8,9 +8,15 @@
 <BR>
 
 <html>
+
+<h1>APPENDIX B</h1>
+<h2></h2>
+
+<BR>
+
 <body>
 
-<div class="text-2"><a id="appendix-b"></a><strong>Appendix B Error, Notification and Protocol code reference</strong></div>
+<div class="text-2"><a id="appendix-b"></a><strong>Error, Notification and Protocol code reference</strong></div>
 <p><strong>i. Error Codes </strong></p>
 <table class="toc" style="font-size:11px;">
 <tbody>
