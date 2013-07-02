@@ -7,11 +7,10 @@
 <a href="/APPENDIX%20E.md">APPENDIX E</a>
 <BR>
 
-
-
-
 <h1>APPENDIX C</h1>
 <h2></h2>
+
+<BR>
 
 <p>When getSendingStatistics() API function is called the Platform responds with a URL link that leads to an XML file to be downloaded. You are limited in the number of requests you can make per day to this API and in the period duration you want to get report for.</p>
 <p>Report is a list of sending SMS/MMS xml report grouped into sections.</p>
