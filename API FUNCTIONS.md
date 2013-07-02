@@ -1,3 +1,13 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+<ul>
+
 <li><dt><a href="/API%20FUNCTIONS.md">API FUNCTIONS</a></dt></li>  
 
 	<dd><a href="/sendSMS().md">sendSMS()</a></dd>
@@ -21,3 +31,5 @@
 	<dd><a href="/RemoveMMSInboxContent().md">RemoveMMSInboxContent()</a>
 
 </dl>
+
+</ul>
