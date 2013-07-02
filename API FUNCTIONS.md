@@ -13,7 +13,7 @@
 	<dt><b>API FUNCTIONS</b></dt>  
 
 	<a href="/sendSMS().md">sendSMS()</a>
-	&nbsp;
+	<BR>
 	<a href="/saveMMS().md">saveMMS()</a>
 	<a href="/sendSavedMMS().md">sendSavedMMS()</a>
 	<a href="/sendMMSBarcode().md">sendMMSBarcode()</a>
