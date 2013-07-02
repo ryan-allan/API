@@ -10,7 +10,7 @@
 
 
 
-	<dt><b>API FUNCTIONS</b></dt>  
+	<dt><b><u>API FUNCTIONS</u></b></dt>  
 
 	<dd><a href="/sendSMS().md">sendSMS()</a></dd>
 	<dd><a href="/saveMMS().md">saveMMS()</a></dd>
