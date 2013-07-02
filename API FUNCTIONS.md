@@ -10,10 +10,10 @@
 
 
 
-	<dt><b><u>API FUNCTIONS</u></b></dt>  
+	<dt><b>API FUNCTIONS</b></dt>  
 
-	<dd><a href="/sendSMS().md">sendSMS()</a></dd>
-	<dd><a href="/saveMMS().md">saveMMS()</a></dd>
+	<a href="/sendSMS().md">sendSMS()</a>
+	<a href="/saveMMS().md">saveMMS()</a>
 	<dd><a href="/sendSavedMMS().md">sendSavedMMS()</dd>
 	<dd><a href="/sendMMSBarcode().md">sendMMSBarcode()</a>
 	<dd><a href="/sendSavedMMSCampaign().md">sendSavedMMSCampaign()</a>
