@@ -8,7 +8,7 @@
 
 <ul>
 
-<li><dt><b>API FUNCTIONS</b></dt></li>  
+	<dt><b>API FUNCTIONS</b></dt>  
 
 	<dd><a href="/sendSMS().md">sendSMS()</a></dd>
 	<dd><a href="/saveMMS().md">saveMMS()</a></dd>
