@@ -8,6 +8,8 @@
 
 <ul>
 
+<dl>
+
 	<dt><b>API FUNCTIONS</b></dt>  
 
 	<dd><a href="/sendSMS().md">sendSMS()</a></dd>
