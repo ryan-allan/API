@@ -8,7 +8,7 @@
 
 <ul>
 
-<dl>
+
 
 	<dt><b>API FUNCTIONS</b></dt>  
 
@@ -32,6 +32,6 @@
 	<dd><a href="/unsubscribeEmail().md">unsubscribeEmail()</a>
 	<dd><a href="/RemoveMMSInboxContent().md">RemoveMMSInboxContent()</a>
 
-</dl>
+
 
 </ul>
