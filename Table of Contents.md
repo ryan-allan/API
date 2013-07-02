@@ -9,15 +9,15 @@
 
 <ul>
 
-<li> <a href="#IntroductionT">Introduction</a> </li>
+<li> <a href="/Introduction">Introduction</a> </li>
 
-<li> <a href="#LnAT">Language and Abbreviations</a> </li>  
+<li> <a href="/Language%20and%20Abbreviations">Language and Abbreviations</a> </li>  
 
-<li> <a href="#ApiXmlOvT">API XML Overview</a> </li>
+<li> <a href="/API%20XML%20Overview">API XML Overview</a> </li>
 
 <dl>
 
-<li><dt><a href="#ApiFuncT">API FUNCTIONS</a></dt></li>	
+<li><dt><a href="/API%20FUNCTIONS">API FUNCTIONS</a></dt></li>	
 
 	<dd><a href="/sendSMST()">sendSMS()</a></dd>
 	<dd><a href="/saveMMS()">saveMMS()</a></dd>
