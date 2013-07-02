@@ -1,6 +1,17 @@
+<a href="/APPENDIX%20B.md">APPENDIX B</a>
+<BR>
+<a href="/APPENDIX%20C.md">APPENDIX C</a>
+<BR>
+<a href="/APPENDIX%20D.md">APPENDIX D</a>
+<BR>
+<a href="/APPENDIX%20E.md/">APPENDIX E</a>
+<BR>
+
+
+
+
 <b>Appendix A Parameters</b>
 
-<BR>
 <BR>
 
 <b>BRANDNAME –</b> The company, brand, or individual that will appear as the sender’s name for campaign.
