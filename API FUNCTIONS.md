@@ -7,7 +7,7 @@
 <body>
 
 
-
+<ul>
 
 
 	<b>API FUNCTIONS</b>
@@ -51,6 +51,6 @@
 	<BR>
 	<a href="/RemoveMMSInboxContent().md">RemoveMMSInboxContent()</a>
 
-
+</ul>
 
 
