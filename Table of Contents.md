@@ -9,11 +9,9 @@
 
 <ul>
 
-<li> <a href="/Introduction">Introduction</a> </li>
+<li> <a href="/API%20XML%20Overview">API XML Overview</a> </li>
 
 <li> <a href="/Language%20and%20Abbreviations">Language and Abbreviations</a> </li>  
-
-<li> <a href="/API%20XML%20Overview">API XML Overview</a> </li>
 
 <dl>
 
