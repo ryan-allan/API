@@ -17,7 +17,7 @@
 
 <li><dt><a href="/API%20FUNCTIONS.md">API FUNCTIONS</a></dt></li>	
 
-	<dd><a href="/sendSMST().md">sendSMS()</a></dd>
+	<dd><a href="/sendSMS().md">sendSMS()</a></dd>
 	<dd><a href="/saveMMS().md">saveMMS()</a></dd>
 	<dd><a href="/sendSavedMMS().md">sendSavedMMS()</dd>
 	<dd><a href="/sendMMSBarcode().md">sendMMSBarcode()</a>
