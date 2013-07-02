@@ -20,7 +20,7 @@
 <li><dt><a href="#ApiFuncT">API FUNCTIONS</a></dt></li>	
 
 	<dd><a href="#sendSMST">sendSMS</a></dd>
-	<dd><a href="https://github.com/SkycoreMobile/api/blob/API-FUNCTIONS/saveMMS()">saveMMS</a></dd>
+	<dd><a href="https://github.com/SkycoreMobile/api/blob/API-FUNCTIONS/saveMMS().md">saveMMS</a></dd>
 	<dd><a href="#sendSavedMMST">sendSavedMMS</dd>
 	<dd><a href="#sendMMSBarcodeT">sendMMSBarcode</a>
 	<dd><a href="#sendSavedMMSCampaignT">sendSavedMMSCampaign</a>
