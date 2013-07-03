@@ -30,12 +30,6 @@
 	<BR>
 	<a href="/createEmailCampaign().md">createEmailCampaign()</a>
 	<BR>
-	<a href="/createUser().md">createUser()</a>
-	<BR>
-	<a href="/createMMSCampaign().md">createMMSCampaign()</a>
-	<BR>
-	<a href="/createEmailCampaign().md">createEmailCampaign()</a>
-	<BR>
 	<a href="/loginUser().md">loginUser()</a>
 	<BR>
 	<a href="/getSendingStatistics().md">getSendingStatistics()</a>
