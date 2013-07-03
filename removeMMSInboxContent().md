@@ -8,7 +8,7 @@
 <BR>
 
 <p><strong>Synopsis:</strong><br />
-Immediately removes all stored inbox content and text files attached to the MMS inbox and return the status of operation. Removing content files does not remove the transaction record. The content to remove is identified using the mmsinboxid tag, which can be obtained from MMS MO Postback notification XML inside TRACKINGID node (for details go to <a href="http://blog.skycore.com/skycore-api-v1-3-sms_mms_mo/">Skycore API v1.3 Documentation MMS MO / SMS MO</a>) or from UI under MMS Inbox &gt;&gt; Moderation Panel</p>
+Immediately removes all stored inbox content and text files attached to the MMS inbox and return the status of operation. Removing content files does not remove the transaction record. The content to remove is identified using the mmsinboxid tag, which can be obtained from MMS MO Postback notification XML inside TRACKINGID node (for details go to <a href="/SMS+MMS MO">SMS+MMS MO</a>) or from UI under MMS Inbox &gt;&gt; Moderation Panel</p>
 <div><strong>Request:</strong></div>
 <pre>&lt;REQUEST&gt;
   &lt;ACTION&gt;removeMMSInboxContent&lt;/ACTION&gt;
