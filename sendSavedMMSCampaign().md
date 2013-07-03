@@ -10,7 +10,7 @@
 
 <div><strong>Postback Notifications for this action are the same as for SendSavedMMS</strong></div>
 <div></div>
-<div><strong><a id="sendsavedcontentcampaign"></a>sendSavedMMSCampaign()</strong></div>
+<BR>
 <p><strong>Synopsis:</strong><br />
 This API sends stored content from a specified account using a MMSID to a list of mobile numbers that are subscribed to a campaign. Recipient addresses are not specified, only the CampaignID is specified. Content will be sent from campaign default shortcode.</p>
 <div><strong>Request:</strong></div>
