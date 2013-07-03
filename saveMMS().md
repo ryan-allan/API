@@ -1,5 +1,6 @@
-<b>saveMMS()</b>
+<h1>saveMMS()</h1>
 <BR>
+
 <b>Synopsis</b>:
 &nbsp;
 This API stores an MMS from XML. The MMS may contain slides embedded with video, audio, images and text. 
