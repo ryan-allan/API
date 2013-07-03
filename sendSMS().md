@@ -1,4 +1,14 @@
-<div><strong>sendSMS()</strong></div>
+<a href="/TABLE%20OF%20CONTENTS.md">BACK TO TABLE OF CONTENTS</a>
+<BR>
+<a href="/API%20FUNCTIONS.md">BACK TO API FUNCTIONS</a>
+<BR>
+<BR>
+
+
+<h1>sendSMS()</h1>
+<BR>
+
+
 <p><strong>Synopsis: </strong><br />
 This API Sends an SMS from the specified account and short code to a recipient’s mobile number</p>
 <div><strong>Request:</strong></div>
