@@ -44,13 +44,14 @@ Once the MMS is saved it can be utilized by other functions through the MMSID re
 	
 </textarea>
 </p>
-<b>Request Parameters:</b>
-<BR>
-<BR>
 
-</pre><b>Mandatory:</b> Action, API_KEY, Name, Subject, Content, Sequence, Slide
+
+<div><strong>Request Parameters:</strong></div>
+
+<pre><strong>Mandatory:</strong> Action, API_KEY, Name, Subject, Content, Sequence, Slide
 	
-<b>Optional:</b> Image, Audio, Video, URL, Text, Duration</pre>
+<strong>Optional:</strong>Image, Audio, Video, URL, Text, Duration</pre>
+
 
 &nbsp;	
 	<b>Response Parameters:</b>
