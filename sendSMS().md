@@ -24,11 +24,11 @@ This API Sends an SMS from the specified account and short code to a recipientâ€
 <div><strong>Request Parameters:</strong></div>
 <strong>Mandatory:</strong> 
 
-	<pre>Action, API_KEY, To, Text, From</pre>
+	Action, API_KEY, To, Text, From
 	
 <strong>Optional:</strong>
 
-	<pre>SPID, CampaignRef</pre>
+	SPID, CampaignRef
 	
 <p><strong>Response Parameters:</strong><br />
 
