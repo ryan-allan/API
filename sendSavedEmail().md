@@ -19,7 +19,7 @@ This API sends stored email template from a specified account using a EMAILID to
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong> Action, API_KEY, EMAILID, Email
-<strong>Optional:N/A </strong></pre>
+<strong>Optional:</strong>N/A</pre>
 <strong>Response Parameters:</strong>
 
     EMAILID, Status, Email, TrackingID, Errorcode, Errorinfo
