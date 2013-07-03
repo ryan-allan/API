@@ -153,12 +153,17 @@ If there was an error encoding MMS audio/video system will generate notification
 
 <b>Special Considerations for saveMMS:</b>
 <BR>
-The API SHALL reformat the content when necessary so that it can be delivered to the end users handset in the best possible way.
-Delivery success takes precedence over audio and video content quality and occasionally the picture quality will be reduced to fit handset message size requirements. Video SHALL be reduced in quality to fit delivery limitations and if it still does not fit it will be delivered as XHTML/SMS.
-Each request MUST contain at least one slide which MAY contain text and/or image and/or video and/or sound. The API SHALL support up to 8 slides for each MMS submission.
-The API SHALL NOT support multiple files of the same MIME type on the same slide. Slides with image SHALL NOT support video but SHALL support audio. Slides with audio SHALL NOT support video. Slides with video SHALL only support text. Slides with text SHALL support up to 500 characters in any slide.
+The API SHALL reformat the content when necessary so that it can be delivered to the end users handset in the best 
+possible way.Delivery success takes precedence over audio and video content quality and occasionally the picture quality
+will be reduced to fit handset message size requirements. Video SHALL be reduced in quality to fit delivery limitations 
+and if it still does not fit it will be delivered as XHTML/SMS. Each request MUST contain at least one slide which MAY 
+contain text and/or image and/or video and/or sound. The API SHALL support up to 8 slides for each MMS submission.
+The API SHALL NOT support multiple files of the same MIME type on the same slide. Slides with image SHALL NOT support 
+video but SHALL support audio. Slides with audio SHALL NOT support video. Slides with video SHALL only support text. 
+Slides with text SHALL support up to 500 characters in any slide.
 URLS within the text MAY be replaced by a link shortening URL depending on the API account settings.
-All slides MAY contain a duration for playback. Default slide duration is 5 seconds. Slide duration will be overwritten if the file duration exceeds the xml duration.
+All slides MAY contain a duration for playback. Default slide duration is 5 seconds. Slide duration will be overwritten 
+if the file duration exceeds the xml duration.
 URLs provided MUST contain the full path to the mime files.
 Slide Duration SHOULD NOT exceed 30 seconds and SHALL NOT exceeds 60 seconds.
 MMS is delivered to the handset using title: NAME from ACCOUNT, if SUBJECT is not passed.
