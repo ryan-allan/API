@@ -2,7 +2,7 @@
 <BR>
 <BR>
 
-<h1>Skycore API v1.3 Documentation MMS MO / SMS&nbsp;MO</h1>
+<h1>MMS MO / SMS&nbsp;MO</h1>
 
 
 <BR>
