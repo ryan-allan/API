@@ -12,7 +12,7 @@
 
 <BR>
 
-</a>Special Considerations</strong></div>
+<strong>Special Considerations</strong>
 
 
 <p><strong>International format numbers: </strong> a number format that includes the country, carrier and phone numbers 
