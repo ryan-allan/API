@@ -36,7 +36,7 @@
 	<BR>
 	<a href="/subscribe()+unsubscribe().md">subscribe()+unsubscribe()</a>
 	<BR>
-	<a href="/subscribeEmail()+unsubscribe().md">subscribeEmail()+unsubscribe()</a>
+	<a href="/subscribeEmail()+unsubscribeEmail().md">subscribeEmail()+unsubscribeEmail()</a>
 	<BR>
 	<a href="/RemoveMMSInboxContent().md">RemoveMMSInboxContent()</a>
 
