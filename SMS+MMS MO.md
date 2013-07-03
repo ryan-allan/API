@@ -1,5 +1,7 @@
 <h1 class="post-title">Skycore API v1.3 Documentation MMS MO / SMS&nbsp;MO</h1>
-  			<div id="page-content"><p><strong>Brief Overview:</strong></p>
+
+
+<div id="page-content"><p><strong>Brief Overview:</strong></p>
 <p>This document will provide a technical description of the MMS/SMS MO API. In brief, this API allows those with an 
 SMS/MMS MO-enabled shortcode to forward received messages (MMS/SMS MO) to your server.</p>
 <p><strong>SMS MO</strong></p>
