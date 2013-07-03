@@ -8,7 +8,6 @@
 <h1>sendSavedMMS()</h1>
 <BR>
 
-<div><strong><a id="sendsavedmms"></a><a id="sendsavedcontent"></a>sendSavedMMS()</strong></div>
 <p><strong>Synopsis:</strong><br />
 This API sends stored content from a specified account using a MMSID to a one or a list of mobile numbers. Recipient addresses are specified by a comma delimited list of valid mobile numbers. List up to 100 numbers is supported. FROM must be one of shortcodes allowed for your account. In case there are numbers from different countries than FROM shortcode is assigned to &#8211; default shortcode for those countries will be used.</p>
 <p><strong>Content Transcoding:</strong><br />
@@ -33,10 +32,14 @@ DDMTIMEOUT &#8211; when we send DDM we wait for the Delivery Report which contai
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong> Action, API_KEY, MMSID, To, From
 <strong>Optional: </strong>CampaignRef</pre>
-<p><strong>Response Parameters:</strong><br />
-MMSID, Status, To, TrackingID, Errorcode, Errorinfo</p>
-<p><strong>Related Errorcodes: </strong><br />
-E110, E111, E241, E620, E621, E623, E626, E628, E629, E713, E714, E715</p>
+<strong>Response Parameters:</strong><br />
+
+	MMSID, Status, To, TrackingID, Errorcode, Errorinfo
+	
+<strong>Related Errorcodes: </strong><br />
+
+	E110, E111, E241, E620, E621, E623, E626, E628, E629, E713, E714, E715
+	
 <div><strong>Request Example:</strong></div>
 <pre>&lt;REQUEST&gt;
 	&lt;ACTION&gt; sendSavedMMS &lt;/ACTION&gt;
