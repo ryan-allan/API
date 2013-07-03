@@ -8,7 +8,7 @@
 <h1>sendSavedMMSCampaign()</h1>
 <BR>
 
-<div><strong>Postback Notifications for this action are the same as for SendSavedMMS</strong></div>
+<div><strong>*Postback Notifications for this action are the same as for SendSavedMMS*</strong></div>
 <div></div>
 <BR>
 <p><strong>Synopsis:</strong><br />
@@ -26,6 +26,7 @@ This API sends stored content from a specified account using a MMSID to a list o
 <strong>Response Parameters:</strong><br />
 
     MMSID, Status, To, ScheduledID, Errorcode, Errorinfo
+    
 <strong>Related Errorcodes: </strong><br />
 
     E241, E620, E624, E626, E629, E714
