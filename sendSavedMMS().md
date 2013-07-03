@@ -46,13 +46,14 @@ this parameter is 5 minutes.</p>
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong> Action, API_KEY, MMSID, To, From
 <strong>Optional: </strong>CampaignRef</pre>
-<p><strong>Response Parameters:</strong><br />
 
-	MMSID, Status, To, TrackingID, Errorcode, Errorinfo</p>
+<strong>Response Parameters:</strong><br />
+
+	MMSID, Status, To, TrackingID, Errorcode, Errorinfo
 	
-<p><strong>Related Errorcodes: </strong><br />
+<strong>Related Errorcodes: </strong><br />
 
-	E110, E111, E241, E620, E621, E623, E626, E628, E629, E713, E714, E715</p>
+	E110, E111, E241, E620, E621, E623, E626, E628, E629, E713, E714, E715
 	
 <div><strong>Request Example:</strong></div>
 <pre>&lt;REQUEST&gt;
