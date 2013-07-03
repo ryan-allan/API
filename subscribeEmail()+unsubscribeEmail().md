@@ -4,7 +4,7 @@
 <BR>
 <BR>
 
-<h1>subscribeEmail()+unsubscribeEmail</h1>
+<h1>subscribeEmail()+unsubscribeEmail()</h1>
 <BR>
 
 <p><strong>Synopsis:</strong><br />
