@@ -101,7 +101,7 @@ this parameter is 5 minutes.</p>
         &lt;SPID&gt;000189&lt;/SPID&gt;
         &lt;TIMESTAMP&gt;2011-08-02 07:20:44-04&lt;/TIMESTAMP&gt;
 	&lt;/BODY&gt;
-&lt;/NOTIFICATION&gt;</pre>
+	&lt;/NOTIFICATION&gt;</pre>
 <p>When an MMS delivery report is received the system will generate a Postback notification. Not all carriers provide 
 MMS delivery receipts.</p>
 <p>&lt;NOTIFICATION ID=&#8221;326&#8243; CREATED=&#8221;2011-08-02 07:20:52.332193-04&#8243;&gt; &lt;ORIGIN&gt;
