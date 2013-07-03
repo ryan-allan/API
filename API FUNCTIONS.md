@@ -34,13 +34,9 @@
 	<BR>
 	<a href="/getSendingStatistics().md">getSendingStatistics()</a>
 	<BR>
-	<a href="/subscribe().md">subscribe()</a>
+	<a href="/subscribe()+unsubscribe().md">subscribe()+unsubscribe()</a>
 	<BR>
-	<a href="/unsubscribe().md">unsubscribe()</a>
-	<BR>
-	<a href="/subscribeEmail().md">subscribeEmail()</a>
-	<BR>
-	<a href="/unsubscribeEmail().md">unsubscribeEmail()</a>
+	<a href="/subscribeEmail()+unsubscribe().md">subscribeEmail()+unsubscribe()</a>
 	<BR>
 	<a href="/RemoveMMSInboxContent().md">RemoveMMSInboxContent()</a>
 
