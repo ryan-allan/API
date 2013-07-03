@@ -69,18 +69,18 @@ this parameter is 5 minutes.</p>
 &lt;/REQUEST&gt;</pre>
 <div><strong>Response Example: Success</strong></div>
 <pre>&lt;RESPONSE&gt;
-    &lt;STATUS&gt;Success&lt;/STATUS&gt;
-    &lt;MMSID&gt;35674&lt;/MMSID&gt;
-    &lt;SENDING&gt;
+   	&lt;STATUS&gt;Success&lt;/STATUS&gt;
+   	&lt;MMSID&gt;35674&lt;/MMSID&gt;
+   	&lt;SENDING&gt;
         &lt;TRACKINGID&gt;MMS_12346&lt;/TRACKINGID&gt;
         &lt;TO&gt;16501234123&lt;/TO&gt;
-    &lt;/SENDING&gt;
-    &lt;SENDING&gt;
+    	&lt;/SENDING&gt;
+    	&lt;SENDING&gt;
         &lt;ERRORCODE&gt;E715&lt;/ERRORCODE&gt;
         &lt;TO&gt;16501234124&lt;/TO&gt;
         &lt;ERRORINFO&gt;Number is not subscribed in this campaign&lt;/ERRORINFO&gt;
-    &lt;/SENDING&gt;
-&lt;/RESPONSE&gt;</pre>
+    	&lt;/SENDING&gt;
+	&lt;/RESPONSE&gt;</pre>
 <div><strong>Response Example: Failure</strong></div>
 <pre>&lt;RESPONSE&gt;
 	 &lt;STATUS&gt;Failure&lt;/STATUS&gt;
