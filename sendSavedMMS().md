@@ -85,7 +85,20 @@ E110, E111, E241, E620, E621, E623, E626, E628, E629, E713, E714, E715</p>
 	&lt;/BODY&gt;
 &lt;/NOTIFICATION&gt;</pre>
 <p>When an MMS delivery report is received the system will generate a Postback notification. Not all carriers provide MMS delivery receipts.</p>
-<p>&lt;NOTIFICATION ID=&#8221;326&#8243; CREATED=&#8221;2011-08-02 07:20:52.332193-04&#8243;&gt; &lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt; &lt;CODE&gt;N102&lt;/CODE&gt; &lt;BODY&gt; &lt;HISTORYID&gt;249687&lt;/HISTORYID&gt; &lt;MMSID&gt;35674&lt;/MMSID&gt; &lt;TO&gt;16501234123&lt;/TO&gt; &lt;TRACKINGID&gt;MMS_12346&lt;/TRACKINGID&gt; &lt;SPID&gt;000189&lt;/SPID&gt; &lt;HANDSET&gt;motol7c&lt;/HANDSET&gt; &lt;STATUS CELLY=&#8221;20&#8243; PROVIDER=&#8221;1000&#8243; TEXT=&#8221;Retrieved&#8221; DESCRIPTION=&#8221;" /&gt; &lt;TIMESTAMP&gt;2011-08-02 07:20:49-04&lt;/TIMESTAMP&gt; &lt;/BODY&gt; &lt;/NOTIFICATION&gt;</p>
+<pre>&lt;NOTIFICATION ID=&#8221;326&#8243; CREATED=&#8221;2011-08-02 07:20:52.332193-04&#8243;&gt;
+	&lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;
+	&lt;CODE&gt;N102&lt;/CODE&gt; 
+	&lt;BODY&gt; 
+	&lt;HISTORYID&gt;249687&lt;/HISTORYID&gt; 
+	&lt;MMSID&gt;35674&lt;/MMSID&gt; 
+	&lt;TO&gt;16501234123&lt;/TO&gt; 
+	&lt;TRACKINGID&gt;MMS_12346&lt;/TRACKINGID&gt; 
+	&lt;SPID&gt;000189&lt;/SPID&gt; 
+	&lt;HANDSET&gt;motol7c&lt;/HANDSET&gt; 
+	&lt;STATUS CELLY=&#8221;20&#8243; PROVIDER=&#8221;1000&#8243; TEXT=&#8221;Retrieved&#8221; DESCRIPTION=&#8221;" /&gt; 
+	&lt;TIMESTAMP&gt;2011-08-02 07:20:49-04&lt;/TIMESTAMP&gt; 
+	&lt;/BODY&gt; 
+&lt;/NOTIFICATION&gt;</pre>
 <div><strong><a id="sendmmsbarcode"></a>sendMMSBarcode()</strong></div>
 <p><strong>Synopsis:</strong><br />
 This API sends stored content containing a barcode from a specified account using a MMSID to a one number. The barcodeid along with the number is added to database and then MMS is delivered with barcode containing passed barcodeid.</p>
