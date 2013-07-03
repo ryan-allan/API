@@ -1,7 +1,18 @@
+<a href="/APPENDIX%20A.md">APPENDIX A</a>
+<BR>
+<a href="/APPENDIX%20B.md">APPENDIX B</a>
+<BR>
+<a href="/APPENDIX%20C.md">APPENDIX C</a>
+<BR>
+<a href="/APPENDIX%20E.md/">APPENDIX E</a>
+<BR>
 
+<h1>APPENDIX D</h1>
+<h2></h2>
 
+<BR>
 
-</a>Appendix D Special Considerations</strong></div>
+</a>Special Considerations</strong></div>
 
 
 <p><strong>International format numbers: </strong> a number format that includes the country, carrier and phone numbers 
