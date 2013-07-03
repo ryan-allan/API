@@ -22,8 +22,14 @@ This API Sends an SMS from the specified account and short code to a recipientâ€
 	&lt;TEXT&gt;SMS Text message text&lt;/TEXT&gt;
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request Parameters:</strong></div>
-<strong>Mandatory:</strong> Action, API_KEY, To, Text, From
-<strong>Optional:</strong> SPID, CampaignRef
+<strong>Mandatory:</strong> 
+
+	<pre>Action, API_KEY, To, Text, From</pre>
+	
+<strong>Optional:</strong>
+
+	<pre>SPID, CampaignRef</pre>
+	
 <p><strong>Response Parameters:</strong><br />
 
 	<pre>Status, TrackingID, To, Errorcode, Errorinfo</pre>
