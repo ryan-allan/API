@@ -2,7 +2,7 @@
 <BR>
 <BR>
 
-<b>API XML Overview</b>
+<h1>API XML Overview</h1>
 
 <b>Request</b>
 
