@@ -15,9 +15,9 @@ This API Sends an SMS from the specified account and short code to a recipientâ€
 <pre><strong>Mandatory:</strong> Action, API_KEY, To, Text, From
 <strong>Optional:</strong> SPID, CampaignRef</pre>
 <p><strong>Response Parameters:</strong><br />
-Status, TrackingID, To, Errorcode, Errorinfo</p>
+	Status, TrackingID, To, Errorcode, Errorinfo</p>
 <p><strong>Related Error codes: </strong><br />
-E712, E201, E713, E110, E628, E111</p>
+	E712, E201, E713, E110, E628, E111</p>
 <div><strong>Request Example:</strong></div>
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;sendSMS&lt;/ACTION&gt;
