@@ -16,7 +16,7 @@ This API function creates a session for an account so that widgets can be launch
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong> Action, API_KEY
-<pre><strong>Optional:</strong> N/A</pre>
+<strong>Optional:</strong> N/A</pre>
 <strong>Response Parameters:</strong><br />
 
     Status, SessionID
