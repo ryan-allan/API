@@ -9,7 +9,7 @@
 <body>
 <ul>
 
-	<b>API FUNCTIONS</b>
+	<h1>API FUNCTIONS</h1>
 	<BR>
 	<BR>
 	<a href="/sendSMS().md">sendSMS()</a>
