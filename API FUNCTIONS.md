@@ -39,6 +39,17 @@
 	<a href="/subscribeEmail()+unsubscribeEmail().md">subscribeEmail()+unsubscribeEmail()</a>
 	<BR>
 	<a href="/RemoveMMSInboxContent().md">RemoveMMSInboxContent()</a>
+	<BR>
+	<a href="/addPassData().md">addPassData()</a>
+	<BR>
+	<a href="/updatePass().md">updatePass()</a>
+	<BR>
+	<a href="/deletePassData().md">deletePassData()</a>
+	<BR>
+	<a href="/sendPassInMMS().md">sendPassInMMS()</a>
+	<BR>
+	<a href="/sendPassInEmail().md">sendPassInEmail()</a>
+
 
 </ul>
 </body>
