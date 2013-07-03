@@ -1,10 +1,12 @@
+<a href="/TABLE%20OF%20CONTENTS.md">BACK TO TABLE OF CONTENTS</a>
+<BR>
+<a href="/API%20FUNCTIONS.md">BACK TO API FUNCTIONS</a>
+<BR>
+<BR>
 
+<h1>loginUser()</h1>
+<BR>
 
-
-
-
-
-<div><strong><a id="loginuser"></a>loginUser()</strong></div>
 <p><strong>Synopsis:</strong><br />
 This API function creates a session for an account so that widgets can be launched and linked to it such as the SWF MMS Composer Object or the MMS Preview SWF Objects.</p>
 <div><strong>Request:</strong></div>
