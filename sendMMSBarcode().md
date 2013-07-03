@@ -26,11 +26,11 @@ This API sends stored content containing a barcode from a specified account usin
 <strong>Optional: </strong>CampaignRef</pre>
 <strong>Response Parameters:</strong><br />
 
-  MMSID, Status, To, TrackingID, Errorcode, Errorinfo</p>
+  	MMSID, Status, To, TrackingID, Errorcode, Errorinfo</p>
   
 <p><strong>Related Errorcodes: </strong><br />
 
-  E110, E111, E241, E620, E621, E623, E626, E628, E629, E630, E631, E632, E713, E714, E715</p>
+  	E110, E111, E241, E620, E621, E623, E626, E628, E629, E630, E631, E632, E713, E714, E715</p>
   
 <div><strong>Request Example:</strong></div>
 <pre>&lt;REQUEST&gt;
