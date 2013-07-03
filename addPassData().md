@@ -70,7 +70,7 @@ This API adds a data row to the pass database. This data will be used when the p
 <pre><strong>Mandatory:</strong>
 action, apikey, passTemplateID, 
 barcodeValue (if "Barcode=Allowed" &amp; "BarcodeType=Dynamic" &amp; "BarcodeValueSource=API" for Pass Template otherwise IGNORED)
-<strong>Optional: N/A</strong>
+<strong>Optional: </strong>
 barcodeText (if "Barcode = Allowed" &amp;&amp; "Barcode Alternate Text = API" for Pass Template otherwise IGNORED), 
 hLabel1, hString1, pLabel1, pString1, 
 pLabel2, pString2 - if "Pass Template Type = Boarding Pass" otherwise IGNORED, 
