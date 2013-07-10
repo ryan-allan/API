@@ -1,4 +1,4 @@
-<a href="/1.3/README.md">BACK TO TABLE OF CONTENTS</a>
+<p align="right"><a href="/1.3/README.md">BACK TO TABLE OF CONTENTS</a></p>
 <BR>
 <BR>
 
