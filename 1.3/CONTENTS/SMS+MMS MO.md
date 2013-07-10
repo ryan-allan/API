@@ -2,7 +2,7 @@
 <BR>
 <BR>
 
-<h1>MMS MO / SMS&nbsp;MO</h1>
+<h1>SMS/MMS&nbsp;MO</h1>
 
 
 <BR>
