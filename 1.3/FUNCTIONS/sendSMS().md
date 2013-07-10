@@ -1,6 +1,6 @@
 <a href="https://github.com/SkycoreMobile/api/blob/master/1.3/CONTENTS.md">BACK TO TABLE OF CONTENTS</a>
 <BR>
-<a href="/API%20FUNCTIONS.md">BACK TO API FUNCTIONS</a>
+<a href="API%20FUNCTIONS.md">BACK TO API FUNCTIONS</a>
 <BR>
 <BR>
 
