@@ -12,7 +12,7 @@
 
 <body>
 
-<div class="text-2"><a id="appendix-b"></a><strong>Error, Notification and Protocol code reference</strong></div>
+<div class="text-2"><a id="appendix-b"></a><strong>Error/Notification/Protocol Code Reference</strong></div>
 <p><strong>i. Error Codes </strong></p>
 <table class="toc" style="font-size:11px;">
 <tbody>
