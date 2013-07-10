@@ -22,7 +22,8 @@ HTTP Posts on URL of your choice for each MMS MO received on the MMS MO Keyword.
 the MMS MO moderation panel then the postback notifictions will only be sent upon manual approval by the moderator.</p>
 <p><a name="the_xml_bundle1"></a> <strong>The SMS MO XML Bundle:</strong></p>
 <p>The XML bundle has the following anatomy:</p>
-<p>&lt;POSTBACK&gt;<br />
+<p>
+&lt;POSTBACK&gt;<br />
 &lt;NOTIFICATION id=&#8221;264&#8243; created=&#8221;2011-09-28 17:31:02.835577-04&#8243;&gt;<br />
 &lt;ORIGIN&gt;SMS_MO&lt;/ORIGIN&gt;<br />
 &lt;CODE&gt;N211&lt;/CODE&gt;<br />
