@@ -12,43 +12,43 @@
 	<h1>API FUNCTIONS</h1>
 	<BR>
 	<BR>
-	<a href="/sendSMS().md">sendSMS()</a>
+	<a href="sendSMS().md">sendSMS()</a>
 	<BR>
-	<a href="/saveMMS().md">saveMMS()</a>
+	<a href="saveMMS().md">saveMMS()</a>
 	<BR>
-	<a href="/sendSavedMMS().md">sendSavedMMS()</a>
+	<a href="sendSavedMMS().md">sendSavedMMS()</a>
 	<BR>
-	<a href="/sendMMSBarcode().md">sendMMSBarcode()</a>
+	<a href="sendMMSBarcode().md">sendMMSBarcode()</a>
 	<BR>
-	<a href="/sendSavedMMSCampaign().md">sendSavedMMSCampaign()</a>
+	<a href="sendSavedMMSCampaign().md">sendSavedMMSCampaign()</a>
 	<BR>
-	<a href="/sendSavedEmail().md">sendSavedEmail()</a>
+	<a href="sendSavedEmail().md">sendSavedEmail()</a>
 	<BR>
-	<a href="/createUser().md">createUser()</a>
+	<a href="createUser().md">createUser()</a>
 	<BR>
-	<a href="/createMMSCampaign().md">createMMSCampaign()</a>
+	<a href="createMMSCampaign().md">createMMSCampaign()</a>
 	<BR>
-	<a href="/createEmailCampaign().md">createEmailCampaign()</a>
+	<a href="createEmailCampaign().md">createEmailCampaign()</a>
 	<BR>
-	<a href="/loginUser().md">loginUser()</a>
+	<a href="loginUser().md">loginUser()</a>
 	<BR>
-	<a href="/getSendingStatistics().md">getSendingStatistics()</a>
+	<a href="getSendingStatistics().md">getSendingStatistics()</a>
 	<BR>
-	<a href="/subscribe()+unsubscribe().md">subscribe()+unsubscribe()</a>
+	<a href="subscribe()+unsubscribe().md">subscribe()+unsubscribe()</a>
 	<BR>
-	<a href="/subscribeEmail()+unsubscribeEmail().md">subscribeEmail()+unsubscribeEmail()</a>
+	<a href="subscribeEmail()+unsubscribeEmail().md">subscribeEmail()+unsubscribeEmail()</a>
 	<BR>
-	<a href="/removeMMSInboxContent().md">removeMMSInboxContent()</a>
+	<a href="removeMMSInboxContent().md">removeMMSInboxContent()</a>
 	<BR>
-	<a href="/addPassData().md">addPassData()</a>
+	<a href="addPassData().md">addPassData()</a>
 	<BR>
-	<a href="/updatePass().md">updatePass()</a>
+	<a href="updatePass().md">updatePass()</a>
 	<BR>
-	<a href="/deletePassData().md">deletePassData()</a>
+	<a href="deletePassData().md">deletePassData()</a>
 	<BR>
-	<a href="/sendPassInMMS().md">sendPassInMMS()</a>
+	<a href="sendPassInMMS().md">sendPassInMMS()</a>
 	<BR>
-	<a href="/sendPassInEmail().md">sendPassInEmail()</a>
+	<a href="sendPassInEmail().md">sendPassInEmail()</a>
 
 
 </ul>
