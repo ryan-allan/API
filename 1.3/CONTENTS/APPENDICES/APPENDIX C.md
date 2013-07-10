@@ -8,6 +8,8 @@
 
 <BR>
 
+<div class="text-2"><a id="appendix-b"></a><strong>XML Reports, Campaign Batches/Autoresponders/Subscriptions and Sending Lists</strong></div>
+
 <p>When getSendingStatistics() API function is called the Platform responds with a URL link that leads to an XML file to be downloaded. You are limited in the number of requests you can make per day to this API and in the period duration for which you want to get the report.</p>
 <p>The report is a list of sent SMS/MMS xml reports grouped into sections.</p>
 <p><strong>SMS sending XML</strong></p>
