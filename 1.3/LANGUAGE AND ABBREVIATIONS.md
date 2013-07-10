@@ -9,7 +9,7 @@
 
 The following words in this documentation are to be interpreted literally:
 
-
+<ul>
 
 <li>&#8220;MUST&#8221;</li>
 <li>&#8220;MUST NOT&#8221;</li>
@@ -22,6 +22,6 @@ The following words in this documentation are to be interpreted literally:
 <li>&#8220;MAY&#8221;</li> 
 <li>&#8220;OPTIONAL&#8221;</li>
 
-
+</ul>
 
 </p>
