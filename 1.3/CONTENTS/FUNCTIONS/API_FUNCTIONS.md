@@ -25,8 +25,6 @@
 	<BR>
 		<a href="subscribe()+unsubscribe().md">subscribe()+unsubscribe()</a>
 	<BR>
-		<a href="subscribe()+unsubscribe().md">subscribe()+unsubscribe()</a>
-	<BR>
 		<a href="createMMSCampaign().md">createMMSCampaign()</a>
 	<BR>
 		<a href="removeMMSInboxContent().md">removeMMSInboxContent()</a>
