@@ -8,7 +8,7 @@
 
 <BR>
 
-<strong>Special Considerations</strong>
+<strong>Special Considerations Regarding API Usage</strong>
 
 
 <p><strong>International format numbers: </strong> a number format that includes the country, carrier and phone numbers 
