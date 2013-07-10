@@ -7,7 +7,9 @@
 
 <p>
 
-The following words in this document are to be interpreted literally:
+The following words in this documentation are to be interpreted literally:
+
+<li>
 
 &#8220;MUST&#8221;
 &#8220;MUST NOT&#8221;
@@ -19,5 +21,7 @@ The following words in this document are to be interpreted literally:
 &#8220;RECOMMENDED&#8221;,
 &#8220;MAY&#8221;, 
 &#8220;OPTIONAL&#8221; 
+
+</li>
 
 </p>
