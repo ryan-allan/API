@@ -12,15 +12,18 @@
 	<h1>API FUNCTIONS</h1>
 	<BR>
 	<BR>
+			<b>Generic</b>
+	<BR>
+		<a href="createUser().md">createUser()</a>
+	<BR>
+		<a href="loginUser().md">loginUser()</a>
+	<BR>
 
-			<b>SMS Functions</b>
+			<b>SMS/MMS</b>
 	<BR>
 		<a href="sendSMS().md">sendSMS()</a>
 	<BR>
 		<a href="subscribe()+unsubscribe().md">subscribe()+unsubscribe()</a>
-	<BR>
-	
-			<b>MMS Functions</b>
 	<BR>
 		<a href="subscribe()+unsubscribe().md">subscribe()+unsubscribe()</a>
 	<BR>
@@ -36,7 +39,9 @@
 	<BR>
 		<a href="sendSavedMMSCampaign().md">sendSavedMMSCampaign()</a>
 	<BR>
-			<b>Email Functions</b>		
+		<a href="getSendingStatistics().md">getSendingStatistics()</a>
+	<BR>
+			<b>Email</b>		
 	<BR>
 		<a href="createEmailCampaign().md">createEmailCampaign()</a>
 	<BR>
@@ -44,7 +49,7 @@
 	<BR>
 		<a href="sendSavedEmail().md">sendSavedEmail()</a>
 	<BR>
-			<b>Pass Functions</b>
+			<b>Pass</b>
 	<BR>
 		<a href="addPassData().md">addPassData()</a>
 	<BR>
@@ -55,16 +60,6 @@
 		<a href="sendPassInMMS().md">sendPassInMMS()</a>
 	<BR>
 		<a href="sendPassInEmail().md">sendPassInEmail()</a>
-	<BR>
-			<b>User Functions</b>
-	<BR>
-		<a href="createUser().md">createUser()</a>
-	<BR>
-		<a href="loginUser().md">loginUser()</a>
-	<BR>
-			<b>Miscellaneous Functions</b>
-	<BR>
-		<a href="getSendingStatistics().md">getSendingStatistics()</a>
 	<BR>
 
 
