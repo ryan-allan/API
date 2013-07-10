@@ -15,7 +15,7 @@
 
 <BR>
 
-<p>When getSendingStatistics() API function is called the Platform responds with a URL link that leads to an XML file to be downloaded. You are limited in the number of requests you can make per day to this API and in the period duration you want to get report for.</p>
+<p>When getSendingStatistics() API function is called the Platform responds with a URL link that leads to an XML file to be downloaded. You are limited in the number of requests you can make per day to this API and in the period duration you want to get the report for.</p>
 <p>Report is a list of sending SMS/MMS xml report grouped into sections.</p>
 <p><strong>SMS sending XML</strong></p>
 <p>All data related to sending one SMS are encapsulated inside <em>&lt;TEXT&gt;</em> tag which contain few attributes:</p>
