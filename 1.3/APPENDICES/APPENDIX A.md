@@ -1,4 +1,4 @@
-<a href="https://github.com/SkycoreMobile/api/master/1.3/CONTENTS.md">BACK TO TABLE OF CONTENTS</a>
+<a href="https://github.com/SkycoreMobile/api/blob/master/1.3/CONTENTS.md">BACK TO TABLE OF CONTENTS</a>
 <BR>
 <BR>
 <a href="APPENDIX%20B.md">APPENDIX B</a>
