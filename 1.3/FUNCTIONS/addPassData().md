@@ -1,6 +1,6 @@
 <a href="/TABLE%20OF%20CONTENTS.md">BACK TO TABLE OF CONTENTS</a>
 <BR>
-<a href=history.go(-1)>BACK TO API FUNCTIONS</a>
+<a href="">BACK TO API FUNCTIONS</a>
 <BR>
 <BR>
 
