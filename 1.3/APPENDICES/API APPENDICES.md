@@ -3,8 +3,12 @@
 
 <h2> API APPENDICES </h2>
 
-<a href="APPENDIX%20A.md">APPENDIX A</a>
-<a href="APPENDIX%20B.md">APPENDIX B</a>
-<a href="APPENDIX%20C.md">APPENDIX C</a>
-<a href="APPENDIX%20D.md">APPENDIX D</a>
-<a href="APPENDIX%20E.md">APPENDIX E</a>
+<ul>
+
+<li><a href="APPENDIX%20A.md">APPENDIX A</a></li>
+<li><a href="APPENDIX%20B.md">APPENDIX B</a></li>
+<li><a href="APPENDIX%20C.md">APPENDIX C</a></li>
+<li><a href="APPENDIX%20D.md">APPENDIX D</a></li>
+<li><a href="APPENDIX%20E.md">APPENDIX E</a></li>
+
+</ul>
