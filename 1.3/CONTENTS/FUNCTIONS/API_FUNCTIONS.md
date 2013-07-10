@@ -36,12 +36,6 @@
 	<BR>
 		<a href="sendSavedMMSCampaign().md">sendSavedMMSCampaign()</a>
 	<BR>
-			<b>SMS Functions</b>
-	<BR>
-		<a href="sendSMS().md">sendSMS()</a>
-	<BR>
-		<a href="subscribe()+unsubscribe().md">subscribe()+unsubscribe()</a>
-	<BR>
 			<b>Email Functions</b>		
 	<BR>
 		<a href="createEmailCampaign().md">createEmailCampaign()</a>
