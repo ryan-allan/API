@@ -1,13 +1,13 @@
-<a href="/TABLE%20OF%20CONTENTS.md">BACK TO TABLE OF CONTENTS</a>
+<a href="https://github.com/SkycoreMobile/api/blob/master/1.3/CONTENTS.md">BACK TO TABLE OF CONTENTS</a>
 <BR>
 <BR>
-<a href="/APPENDIX%20A.md">APPENDIX A</a>
+<a href="APPENDIX%20A.md">APPENDIX A</a>
 <BR>
-<a href="/APPENDIX%20C.md">APPENDIX C</a>
+<a href="APPENDIX%20C.md">APPENDIX C</a>
 <BR>
-<a href="/APPENDIX%20D.md">APPENDIX D</a>
+<a href="APPENDIX%20D.md">APPENDIX D</a>
 <BR>
-<a href="/APPENDIX%20E.md">APPENDIX E</a>
+<a href="APPENDIX%20E.md">APPENDIX E</a>
 <BR>
 
 <html>
