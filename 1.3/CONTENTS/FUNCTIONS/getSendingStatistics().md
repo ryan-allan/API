@@ -35,4 +35,4 @@ This API requests a report of all messaging transactions between two dates. The 
 	&lt;END_DATE&gt;2010-11-01 12:00:00&lt;/END_DATE&gt;
 &lt;/REQUEST&gt;</pre>
 <p><strong>Response Example:</strong><br />
-Responses will be a link to a XML file containing the report. All results are saved to file which must be downloaded by the requestor. Detailed Information about the report will be in Appendix C.</p>
+Responses will be a link to a XML file containing the report. All results are saved to file which must be downloaded by the requestor. Detailed Information about the report will be in <a href="/1.3/CONTENTS/APPENDICES/APPENDIX_C.md">Appendix C</a>.</p>
