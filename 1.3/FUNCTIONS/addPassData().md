@@ -1,6 +1,6 @@
 <a href="/TABLE%20OF%20CONTENTS.md">BACK TO TABLE OF CONTENTS</a>
 <BR>
-<INPUT Type="button" VALUE="BACK TO API FUNCTIONS" onClick="history.go(-1);return true;">
+<a href=history.go(-1)>BACK TO TABLE OF CONTENTS</a>
 <BR>
 <BR>
 
