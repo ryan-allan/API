@@ -8,6 +8,8 @@
 
 <BR>
 
+<div class="text-2"><a id="appendix-b"></a><strong>Key Term Definitions</strong></div>
+
 <b>BRANDNAME –</b> The company, brand, or individual that will appear as the sender’s name for campaign.
 <BR>
 <b>CAMPAIGNID -</b> ID of the campaign to subscribe the user to (integer)
