@@ -12,43 +12,66 @@
 	<h1>API FUNCTIONS</h1>
 	<BR>
 	<BR>
-	<a href="sendSMS().md">sendSMS()</a>
+
+			<b>SMS Functions</b>
 	<BR>
-	<a href="saveMMS().md">saveMMS()</a>
+		<a href="sendSMS().md">sendSMS()</a>
 	<BR>
-	<a href="sendSavedMMS().md">sendSavedMMS()</a>
+		<a href="subscribe()+unsubscribe().md">subscribe()+unsubscribe()</a>
 	<BR>
-	<a href="sendMMSBarcode().md">sendMMSBarcode()</a>
+	
+			<b>MMS Functions</b>
 	<BR>
-	<a href="sendSavedMMSCampaign().md">sendSavedMMSCampaign()</a>
+		<a href="subscribe()+unsubscribe().md">subscribe()+unsubscribe()</a>
 	<BR>
-	<a href="sendSavedEmail().md">sendSavedEmail()</a>
+		<a href="createMMSCampaign().md">createMMSCampaign()</a>
 	<BR>
-	<a href="createUser().md">createUser()</a>
+		<a href="removeMMSInboxContent().md">removeMMSInboxContent()</a>
+	<BR>	
+		<a href="saveMMS().md">saveMMS()</a>
 	<BR>
-	<a href="createMMSCampaign().md">createMMSCampaign()</a>
+		<a href="sendSavedMMS().md">sendSavedMMS()</a>
 	<BR>
-	<a href="createEmailCampaign().md">createEmailCampaign()</a>
+		<a href="sendMMSBarcode().md">sendMMSBarcode()</a>
 	<BR>
-	<a href="loginUser().md">loginUser()</a>
+		<a href="sendSavedMMSCampaign().md">sendSavedMMSCampaign()</a>
 	<BR>
-	<a href="getSendingStatistics().md">getSendingStatistics()</a>
+			<b>SMS Functions</b>
 	<BR>
-	<a href="subscribe()+unsubscribe().md">subscribe()+unsubscribe()</a>
+		<a href="sendSMS().md">sendSMS()</a>
 	<BR>
-	<a href="subscribeEmail()+unsubscribeEmail().md">subscribeEmail()+unsubscribeEmail()</a>
+		<a href="subscribe()+unsubscribe().md">subscribe()+unsubscribe()</a>
 	<BR>
-	<a href="removeMMSInboxContent().md">removeMMSInboxContent()</a>
+			<b>Email Functions</b>		
 	<BR>
-	<a href="addPassData().md">addPassData()</a>
+		<a href="createEmailCampaign().md">createEmailCampaign()</a>
 	<BR>
-	<a href="updatePass().md">updatePass()</a>
+		<a href="subscribeEmail()+unsubscribeEmail().md">subscribeEmail()+unsubscribeEmail()</a>
 	<BR>
-	<a href="deletePassData().md">deletePassData()</a>
+		<a href="sendSavedEmail().md">sendSavedEmail()</a>
 	<BR>
-	<a href="sendPassInMMS().md">sendPassInMMS()</a>
+			<b>Pass Functions</b>
 	<BR>
-	<a href="sendPassInEmail().md">sendPassInEmail()</a>
+		<a href="addPassData().md">addPassData()</a>
+	<BR>
+		<a href="updatePass().md">updatePass()</a>
+	<BR>
+		<a href="deletePassData().md">deletePassData()</a>
+	<BR>
+		<a href="sendPassInMMS().md">sendPassInMMS()</a>
+	<BR>
+		<a href="sendPassInEmail().md">sendPassInEmail()</a>
+	<BR>
+			<b>User Functions</b>
+	<BR>
+		<a href="createUser().md">createUser()</a>
+	<BR>
+		<a href="loginUser().md">loginUser()</a>
+	<BR>
+			<b>Miscellaneous Functions</b>
+	<BR>
+		<a href="getSendingStatistics().md">getSendingStatistics()</a>
+	<BR>
 
 
 </ul>
