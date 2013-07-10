@@ -5,7 +5,7 @@
 
 <ul>
 
-<li><a href="APPENDIX%20A.md">APPENDIX A</a></li>
+<li><a href="APPENDIX%20A.md">APPENDIX A [KEY TERM DEFINITIONS]</a></li>
 <li><a href="APPENDIX%20B.md">APPENDIX B</a></li>
 <li><a href="APPENDIX%20C.md">APPENDIX C</a></li>
 <li><a href="APPENDIX%20D.md">APPENDIX D</a></li>
