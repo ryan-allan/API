@@ -9,19 +9,19 @@
 
 The following words in this documentation are to be interpreted literally:
 
-<li>
 
-&#8220;MUST&#8221;
-&#8220;MUST NOT&#8221;
-&#8220;REQUIRED&#8221;
-&#8220;SHALL&#8221;
-&#8220;SHALL NOT&#8221;
-&#8220;SHOULD&#8221;,
-&#8220;SHOULD NOT&#8221;,
-&#8220;RECOMMENDED&#8221;,
-&#8220;MAY&#8221;, 
-&#8220;OPTIONAL&#8221; 
 
-</li>
+<li>&#8220;MUST&#8221;</li>
+<li>&#8220;MUST NOT&#8221;</li>
+<li>&#8220;REQUIRED&#8221;</li>
+<li>&#8220;SHALL&#8221;</li>
+<li>&#8220;SHALL NOT&#8221;</li>
+<li>&#8220;SHOULD&#8221;</li>
+<li>&#8220;SHOULD NOT&#8221;</li>
+<li>&#8220;RECOMMENDED&#8221;</li>
+<li>&#8220;MAY&#8221;</li> 
+<li>&#8220;OPTIONAL&#8221;</li>
+
+
 
 </p>
