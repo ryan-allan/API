@@ -4,7 +4,6 @@
 
 <h1>Overview: Postback Notification System</h1>
 <BR>
-<BR>
 <p>The Postback system notifies remote servers about different events related to the account. For each event, a notification in XML format is inserted into a Postback queue. The  notifications in the Postback queue are processed as a batch every minute. The notifications for each account are batched together and wrapped with &lt;POSTBACK&gt; XML tag then sent in one HTTP request to the Postback URL. The Postback URL is an address on your server where you would like to receive these notifications and is defined in your API Account settings. If establishing a connection to the Postback URL takes longer than 10 seconds, the connection will time out and fail. if establishing a connection is successful, we expect the remote server to respond with a properly formed HTTP header containing 200 HTTP code. If no HTTP response is provided or the HTTP code is not 200, we consider the Postback Notification a failed request and will retry five minutes later up to five times.</p>
 <h1>Postback Groups</h1>
 <p>Our servers generate different Postbacks, which we divide into three groups. There are sub-groups within each Postback group. Each postback contain few unified fields:</p>
