@@ -2,14 +2,14 @@
 <BR>
 <BR>
 
-<h1>SMS/MMS&nbsp;MO</h1>
+<h1>INCOMING&nbsp;SMS/MMS&nbsp;POSTBACK</h1>
 
 
 <BR>
 
 
 <div id="page-content"><p><strong>Brief Overview:</strong></p>
-<p>This document will provide a technical description of the MMS/SMS MO API. In brief, this API allows those with an 
+<p>This document will provide a technical description of the MMS/SMS MO POSTBACK API. In brief, this API allows those with an 
 SMS/MMS MO-enabled shortcode to forward received messages (MMS/SMS MO) to your server.</p>
 <p><strong>SMS MO</strong></p>
 <p>To receive SMS MO postback notification you need to have that option enabled in your account. Once the SMS MO 
