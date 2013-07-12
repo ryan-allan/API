@@ -92,7 +92,7 @@
 &lt;/BODY&gt;<br />
 &lt;/NOTIFICATION&gt;<br />
 </code></small></p>
-<h3><strong><strong>N102 Example:</strong></strong></h3>
+<p><strong>N102 Example:</strong></p>
 <p><small><code>&lt;NOTIFICATION id="521495" created="2012-06-07 07:27:34.398593-04"&gt;<br />
 &lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;<br />
 &lt;CODE&gt;N102&lt;/CODE&gt;<br />
