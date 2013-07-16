@@ -18,10 +18,10 @@
             <li><b>Pass</b></li>
             <ul>
              <li><a href="addPassData().md">addPassData()</a></li>
+             <li><a href="updatePass().md">updatePass()</a></li>
              <li><a href="deletePassData().md">deletePassData()</a></li>
              <li><a href="sendPassInEmail().md">sendPassInEmail()</a></li>
              <li><a href="sendPassInMMS().md">sendPassInMMS()</a></li>
-             <li><a href="updatePass().md">updatePass()</a></li>
             </ul><br/>
             <li><b>SMS/MMS</b></li>
             <ul>
