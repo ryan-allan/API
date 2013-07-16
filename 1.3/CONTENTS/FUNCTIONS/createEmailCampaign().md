@@ -1,12 +1,5 @@
-<a href="/1.3/README.md">BACK TO TABLE OF CONTENTS</a>
-<BR>
-<a href="API_FUNCTIONS.md">BACK TO API FUNCTIONS</a>
-<BR>
-<BR>
-
+<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_FUNCTIONS.md">Back to API Methods</a>
 <h1>createEmailCampaign()</h1>
-<BR>
-
 <p><strong>Synopsis:</strong><br />
 This API function creates new email campaign within the account holders account and returns a CampaignID.</p>
 <div><strong>Request:</strong></div>
@@ -20,13 +13,9 @@ This API function creates new email campaign within the account holders account 
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong> Action, API_KEY, CampaignName, BrandName, MailingAddress</pre>
 <strong>Response Parameters:</strong><br />
-
-    CampaignID, CampaignName, BrandName, MailingAddress, ErrorInfo, Errorcode
-    
+CampaignID, CampaignName, BrandName, MailingAddress, ErrorInfo, Errorcode
 <strong>Related Error codes:</strong><br />
-
-    E170, E171, E172, E173
-    
+E170, E171, E172, E173    
 <div><strong>Request Example:</strong></div>
 <pre>&lt;REQUEST&gt;
 	&lt;ACTION&gt;createEmailCampaign&lt;/ACTION&gt;
