@@ -1,14 +1,5 @@
-<a href="/1.3/README.md">BACK TO TABLE OF CONTENTS</a>
-<BR>
-<a href="API_FUNCTIONS.md">BACK TO API FUNCTIONS</a>
-<BR>
-<BR>
-
-
-<h1>sendSMS()</h1>
-<BR>
-
-
+<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_FUNCTIONS.md">Back to API Methods</a>
+<h2>sendSMS()</h2>
 <p><strong>Synopsis: </strong><br />
 This API Sends an SMS from the specified account and short code to a recipientâ€™s mobile number</p>
 <div><strong>Request:</strong></div>
@@ -29,11 +20,11 @@ This API Sends an SMS from the specified account and short code to a recipientâ€
 	
 <p><strong>Response Parameters:</strong><br />
 
-	<pre>Status, TrackingID, To, Errorcode, Errorinfo</pre>
+<pre>Status, TrackingID, To, Errorcode, Errorinfo</pre>
 	
 <strong>Related Error codes: </strong><br />
 
-	<pre>E712, E201, E713, E110, E628, E111</pre>
+<pre>E712, E201, E713, E110, E628, E111</pre>
 	
 <div><strong>Request Example:</strong></div>
 <pre>&lt;REQUEST&gt;
