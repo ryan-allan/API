@@ -1,15 +1,6 @@
-<a href="/1.3/README.md">BACK TO TABLE OF CONTENTS</a>
-<BR>
-<a href="API_APPENDICES.md">BACK TO API APPENDICES</a>
-<BR>
-
-<h1>APPENDIX C</h1>
-<h2></h2>
-
-<BR>
-
-<div class="text-2"><a id="appendix-b"></a><strong>XML Reports, Campaign Batches/Autoresponders/Subscriptions and Sending Lists</strong></div>
-<BR>
+<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_APPENDICES.md">Back to Appendix List</a>
+<h2>APPENDIX C</h2>
+<div class="text-2"><a id="appendix-b"></a><strong>XML Reports,Campaign Batches,Autoresponders, Subscriptions and Sending Lists</strong></div><br/>
 <div class="text-2"><a id="appendix-b"></a><strong>Request Limit for getSendingStatistics()</strong></div>
 <p>When getSendingStatistics() API function is called the Platform responds with a URL link that leads to an XML file to be downloaded. You are limited in the number of requests you can make per day to this API and in the period duration for which you want to get the report.</p>
 <p>The report is a list of sent SMS/MMS xml reports grouped into sections.</p>
@@ -86,7 +77,7 @@
    &lt;XHTML_HANDSETID&gt;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 
     (KHTML, like Gecko) Chrome/18.0.1025.162 Safari/535.19&lt;/XHTML_HANDSETID&gt;
 &lt;/CONTENT&gt;</pre>
-<h2>Report</h2>
+<h3>Report</h3>
 <p>The Report itself contains a list of all messages grouped into sections encapsulated into &lt;RESPONSE&gt; tag. Here are more detailed examples of what we have in each section.</p>
 <p><strong>A) Campaign Batches</strong> are encapsulated inside <em>&lt;BATCHES&gt;&lt;/BATCHES&gt;.</em> Each MMS/SMS batch contain a list of SMS/MMS XML that is encalpsulated inside &lt;<em>BATCH</em>&gt;&lt;/<em>BATCH</em>&gt; tag.Batches represent Campaign scheduled sending of the MMS or SMS. Each<em> &lt;BATCH&gt; </em>tag contain attributes:</p>
 <p>- <em>id</em> &#8211; this is campaign scheduled sending id</p>
