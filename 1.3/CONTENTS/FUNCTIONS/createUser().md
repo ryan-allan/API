@@ -1,12 +1,5 @@
-<a href="/1.3/README.md">BACK TO TABLE OF CONTENTS</a>
-<BR>
-<a href="API_FUNCTIONS.md">BACK TO API FUNCTIONS</a>
-<BR>
-<BR>
-
-<h1>createUser()</h1>
-<BR>
-
+<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_FUNCTIONS.md">Back to API Methods</a>
+<h2>createUser()</h2>
 <p><strong>Synopsis:</strong><br />
 Creates new user with given username, password and email. The rest of the parameters required for account creation are inherited from creator’s account.</p>
 <div><strong>Request:</strong></div>
@@ -19,13 +12,9 @@ Creates new user with given username, password and email. The rest of the parame
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong> Action, API_KEY, NewUser, NewPass</pre>
 <strong>Response Parameters:</strong><br />
-
     Status, Username, Password, API_KEY, Errorcode, Errorinfo
-    
 <strong>Related Error codes: </strong><br />
-
     E150, E151, E152, E153, E154
-    
 <div><strong>Request Example:</strong></div>
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;createUser&lt;/ACTION&gt;
