@@ -1,6 +1,5 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_FUNCTIONS.md">Back to API Methods</a>
 <h2>loginUser()</h2>
-<br/>
 <p><strong>Synopsis:</strong><br />
 This API function creates a session for an account so that widgets can be launched and linked to it such as the SWF MMS Composer Object or the MMS Preview SWF Objects.</p>
 <div><strong>Request:</strong></div>
