@@ -1,12 +1,5 @@
-<a href="/1.3/README.md">BACK TO TABLE OF CONTENTS</a>
-<BR>
-<a href="API_FUNCTIONS.md">BACK TO API FUNCTIONS</a>
-<BR>
-<BR>
-
-<h1>removeMMSInboxContent()</h1>
-<BR>
-
+<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_FUNCTIONS.md">Back to API Methods</a>
+<h2>removeMMSInboxContent()</h2>
 <p><strong>Synopsis:</strong><br />
 Immediately removes all stored inbox content and text files attached to the MMS inbox and return the status of operation. Removing content files does not remove the transaction record. The content to remove is identified using the mmsinboxid tag, which can be obtained from MMS MO Postback notification XML inside TRACKINGID node (for details go to <a href="/SMS+MMS%20MO.md">SMS MO / MMS MO</a>) or from UI under MMS Inbox &gt;&gt; Moderation Panel</p>
 <div><strong>Request:</strong></div>
@@ -19,13 +12,9 @@ Immediately removes all stored inbox content and text files attached to the MMS 
 <pre><strong>Mandatory:</strong> Action, API_KEY, MMSInboxID
 <strong>Optional:</strong> N/A</pre>
 <strong>Response Parameters:</strong><br />
-
-    Status, MMSInboxID, Errorcode, Errorinfo
-
+Status, MMSInboxID, Errorcode, Errorinfo
 <strong>Related Error codes: </strong><br />
-
-    E640, E641, E642, E643
-
+E640, E641, E642, E643
 <div><strong>Request Example:</strong></div>
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;removeMMSInboxContent&lt;/ACTION&gt;
