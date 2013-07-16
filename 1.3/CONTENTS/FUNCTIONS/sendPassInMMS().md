@@ -1,12 +1,5 @@
-<a href="/1.3/README.md">BACK TO TABLE OF CONTENTS</a>
-<BR>
-<a href="API_FUNCTIONS.md">BACK TO API FUNCTIONS</a>
-<BR>
-<BR>
-
-<h1>sendPassInMMS()</h1>
-<BR>
-
+<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_FUNCTIONS.md">Back to API Methods</a>
+<h2>sendPassInMMS()</h2>
 <p><strong>Synopsis:</strong><br />
 This API function generates a pass with the data supplied in the API and sends it via MMS.</p>
 <div><strong>Request: XML</strong></div>
@@ -80,13 +73,9 @@ sLabel1, sString1, sLabel2, sString2, sLabel3, sString3, sLabel4, sString4,
 aLabel1, aString1, aLabel2, aString2, aLabel3, aString3, aLabel4, aString4, 
 bLabel1, bString1, bLabel2, bString2, bLabel3, bString3, bLabel4, bString4</pre>
 <strong>Response Parameters:</strong><br />
-
-    status, to, mmsid, trackingID, Errorcode, Errorinfo
-
+status, to, mmsid, trackingID, Errorcode, Errorinfo
 <strong>Related Errorcodes: </strong><br />
-
-    E110, E111, E241, E620, E621, E626, E628, E629, E713, E714, E715, E802, E803, E806, E810, E811, E812, E813, E814, E815, E816, E817, E818, E819, E820, E822, E825
-
+E110, E111, E241, E620, E621, E626, E628, E629, E713, E714, E715, E802, E803, E806, E810, E811, E812, E813, E814, E815, E816, E817, E818, E819, E820, E822, E825
 <div><strong>Request Example:</strong></div>
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;sendPassInMMS&lt;/ACTION&gt;
