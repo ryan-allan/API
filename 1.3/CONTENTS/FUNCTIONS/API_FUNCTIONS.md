@@ -28,6 +28,7 @@
 </ul><br/>
 <li><b>Passbook Pass</b></li>
 <ul>
+<li><a href="getPassTemplate().md">getPassTemplate ()</a></li>
 <li><a href="getPassTemplateIds().md">getPassTemplateIds ()</a></li>
 <li><a href="addPassData().md">addPassData ()</a></li>
 <li><a href="updatePass().md">updatePass ()</a></li>
