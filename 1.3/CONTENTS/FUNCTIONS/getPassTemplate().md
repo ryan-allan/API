@@ -6,17 +6,17 @@ This API function returns the pass template information when given passTemplateI
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;getPassTemplate&lt;/ACTION&gt;
     &lt;API_KEY&gt;apiKey&lt;/API_KEY&gt;
-    &lt;PASSTEMPLATEID&gt;apiKey&lt;/PASSTEMPLATEID&gt;
+    &lt;PASSTEMPLATEID&gt;passTemplateId&lt;/PASSTEMPLATEID&gt;
 &lt;/REQUEST&gt;</pre>
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;getPassTemplate&lt;/ACTION&gt;
     &lt;API_KEY&gt;apiKey&lt;/API_KEY&gt;
-    &lt;MMSID&gt;apiKey&lt;/MMSID&gt;
+    &lt;MMSID&gt;mmsId&lt;/MMSID&gt;
 &lt;/REQUEST&gt;</pre>
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;getPassTemplate&lt;/ACTION&gt;
     &lt;API_KEY&gt;apiKey&lt;/API_KEY&gt;
-    &lt;EMAILID&gt;apiKey&lt;/EMAILID&gt;
+    &lt;EMAILID&gt;emailId&lt;/EMAILID&gt;
 &lt;/REQUEST&gt;</pre>
 
 <div><strong>Request: GET</strong></div>
@@ -31,7 +31,7 @@ action, apikey, mmsid, emailid, passtemplateid
 --
 </pre>
 <strong>Response Parameters:</strong><br />
-status, Errorcode, Errorinfo, passTemplate, passTemplateID
+status, Errorcode, Errorinfo, passTemplateId, passTemplate
 
 <strong>Related Errorcodes: </strong><br />
 E174, E402, E802, E822, E823, E828, E827
