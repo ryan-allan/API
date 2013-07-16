@@ -1,12 +1,5 @@
-<a href="/1.3/README.md">BACK TO TABLE OF CONTENTS</a>
-<BR>
-<a href="API_FUNCTIONS.md">BACK TO API FUNCTIONS</a>
-<BR>
-<BR>
-
-<h1>deletePassData()</h1>
-<BR>
-
+<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_FUNCTIONS.md">Back to API Methods</a>
+<h2>deletePassData()</h2>
 <p><strong>Synopsis:</strong><br />
 This API function deletes the pass data row. This will avoid generating pass with this data for any future requests.</p>
 <div><strong>Request:</strong></div>
