@@ -1,13 +1,5 @@
-<a href="/1.3/README.md">BACK TO TABLE OF CONTENTS</a>
-<BR>
-<a href="API_APPENDICES.md">BACK TO API APPENDICES</a>
-<BR>
-
-<h1>APPENDIX E</h1>
-<h2></h2>
-
-<BR>
-
+<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_APPENDICES.md">Back to Appendix List</a>
+<h2>APPENDIX E</h2>
 <div class="text-2"><a id="appendix-e" name="appendix-e"></a><strong>SPID Reference Table</strong></div>
 <table class="SMS-code-look-up" style="font-size:11px;" width="100%" cellspacing="0" cellpadding="0">
 <tbody>
