@@ -1,7 +1,7 @@
 <html>
     <head></head> 
     <body>
-        <a href="/1.3/README.md">Back to the Table of Contents</a><br/><br/>
+        <a href="/1.3/README.md">Back to the Table of Contents</a>
         <h2>API Methods</h2>
         <ul>
 	    <li><b>Generic</b></li>
