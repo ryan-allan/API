@@ -1,13 +1,5 @@
-<a href="/1.3/README.md">BACK TO TABLE OF CONTENTS</a>
-<BR>
-<a href="API_FUNCTIONS.md">BACK TO API FUNCTIONS</a>
-<BR>
-<BR>
-
-
-<h1>sendMMSBarcode()</h1>
-<BR>
-
+<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_FUNCTIONS.md">Back to API Methods</a>
+<h2>sendMMSBarcode()</h2>
 <p><strong>Synopsis:</strong><br />
 This API sends stored content containing a barcode from a specified account using a MMSID to a one number. The barcodeid along with the number is added to database and then MMS is delivered with barcode containing passed barcodeid.</p>
 <div><strong>Request:</strong></div>
@@ -25,12 +17,9 @@ This API sends stored content containing a barcode from a specified account usin
 <pre><strong>Mandatory:</strong> Action, API_KEY, MMSID, To, DatabaseID, BarcodeID, From
 <strong>Optional: </strong>CampaignRef</pre>
 <strong>Response Parameters:</strong><br />
-
-  	MMSID, Status, To, TrackingID, Errorcode, Errorinfo
-  
+MMSID, Status, To, TrackingID, Errorcode, Errorinfo
 <strong>Related Errorcodes: </strong><br />
-
-  	E110, E111, E241, E620, E621, E623, E626, E628, E629, E630, E631, E632, E713, E714, E715
+E110, E111, E241, E620, E621, E623, E626, E628, E629, E630, E631, E632, E713, E714, E715
   
 <div><strong>Request Example:</strong></div>
 <pre>&lt;REQUEST&gt;
