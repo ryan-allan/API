@@ -22,15 +22,14 @@
 </ul><br/>
 <li><b>SMS/MMS</b></li>
 <ul>
-<li><a href="createMMSCampaign().md">createMMSCampaign()</a></li>
-<li><a href="getSendingStatistics().md">getSendingStatistics()</a></li>
-<li><a href="removeMMSInboxContent().md">removeMMSInboxContent()</a></li>
+<li><a href="sendSMS().md">sendSMS()</a></li>
 <li><a href="saveMMS().md">saveMMS()</a></li>
-<li><a href="sendMMSBarcode().md">sendMMSBarcode()</a></li>
 <li><a href="sendSavedMMS().md">sendSavedMMS()</a></li>
 <li><a href="sendMMSBarcode().md">sendMMSBarcode()</a></li>
 <li><a href="sendSavedMMSCampaign().md">sendSavedMMSCampaign()</a></li>
-<li><a href="sendSMS().md">sendSMS()</a></li>
-<li><a href="subscribe()+unsubscribe().md">subscribe()+unsubscribe()</a></li>
+<li><a href="subscribe()+unsubscribe().md">subscribe() + unsubscribe()</a></li>
+<li><a href="createMMSCampaign().md">createMMSCampaign()</a></li>
+<li><a href="getSendingStatistics().md">getSendingStatistics()</a></li>
+<li><a href="removeMMSInboxContent().md">removeMMSInboxContent()</a></li>
 </ul><br/>
 </ul>
