@@ -1,7 +1,7 @@
-<a href="/1.3/README.md">BACK TO TABLE OF CONTENTS</a>
+<a href="/1.3/README.md">Back to the table of contents</a>
 
 
-<h2> API APPENDICES </h2>
+<h2>APPENDIX</h2>
 
 <ul>
 
