@@ -1,13 +1,5 @@
-<a href="/1.3/README.md">BACK TO TABLE OF CONTENTS</a>
-<BR>
-<BR>
-
-<h1>INCOMING&nbsp;SMS/MMS&nbsp;POSTBACK</h1>
-
-
-<BR>
-
-
+<a href="/1.3/README.md">Back to the Table of Contents</a>
+<h2>Incoming&nbsp;SMS/MMS&nbsp;Postback</h2>
 <div id="page-content"><p><strong>Brief Overview:</strong></p>
 <p>This document will provide a technical description of the MMS/SMS MO POSTBACK API. In brief, this API allows those with an 
 SMS/MMS MO-enabled shortcode to forward received messages (MMS/SMS MO) to your server.</p>
