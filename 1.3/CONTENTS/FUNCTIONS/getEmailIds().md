@@ -20,7 +20,7 @@ action, apikey
 status, emailids, Errorcode, Errorinfo
 
 <strong>Related Errorcodes: </strong><br />
-E200
+E400
 <div><strong>Request Example:</strong></div>
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;getEmailIds&lt;/ACTION&gt;
