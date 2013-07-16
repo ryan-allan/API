@@ -1,13 +1,6 @@
-<a href="/1.3/README.md">BACK TO TABLE OF CONTENTS</a>
-<BR>
-<a href="API_FUNCTIONS.md">BACK TO API FUNCTIONS</a>
-<BR>
-<BR>
-
-<h1>addPassData()</h1>
-<BR>
-
-<p><strong>Synopsis:</strong><br />
+<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_FUNCTIONS.md">Back to API Methods</a>
+<h2>addPassData()</h2>
+<p><strong>Synopsis:<strong><br />
 This API adds a data row to the pass database. This data will be used when the pass generation is triggered.</p>
 <div><strong>Request: XML</strong></div>
 <pre>&lt;REQUEST&gt;
@@ -80,13 +73,9 @@ bLabel1, bString1, bLabel2, bString2, bLabel3, bString3, bLabel4, bString4,
 email (if Pass Template setting allows pass delivery by Email, otherwise IGNORED),
 phone (if Pass Template setting allows pass delivery by Phone, otherwise IGNORED )</pre>
 <strong>Response Parameters:</strong><br />
-
-    status, passDataID, passTemplateID, Errorcode, Errorinfo
-
+status, passDataID, passTemplateID, Errorcode, Errorinfo
 <strong>Related Errorcodes: </strong><br />
-
-    E801, E802, E803, E804, E805, E806, E810, E811, E812, E813, E814, E815, E816, E817, E818, E819, E820
-
+E801, E802, E803, E804, E805, E806, E810, E811, E812, E813, E814, E815, E816, E817, E818, E819, E820
 <div><strong>Request Example:</strong></div>
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;addPassData&lt;/ACTION&gt;
