@@ -15,8 +15,10 @@ action, apikey
 <strong>Optional:</strong>
 --
 </pre>
+
 <strong>Response Parameters:</strong><br />
 status, mmsids, Errorcode, Errorinfo
+
 <strong>Related Errorcodes: </strong><br />
 E200
 <div><strong>Request Example:</strong></div>
