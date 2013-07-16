@@ -1,16 +1,6 @@
-<a href="/1.3/README.md">BACK TO TABLE OF CONTENTS</a>
-<BR>
-<a href="API_FUNCTIONS.md">BACK TO API FUNCTIONS</a>
-<BR>
-<BR>
-
-
-<h1>sendSavedMMSCampaign()</h1>
-<BR>
-
+<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_FUNCTIONS.md">Back to API Methods</a>
+<h2>sendSavedMMSCampaign()</h2>
 <div><strong>*Postback Notifications for this action are the same as for SendSavedMMS*</strong></div>
-<div></div>
-<BR>
 <p><strong>Synopsis:</strong><br />
 This API sends stored content from a specified account using a MMSID to a list of mobile numbers that are subscribed to a campaign. Recipient addresses are not specified, only the CampaignID is specified. Content will be sent from campaign default shortcode.</p>
 <div><strong>Request:</strong></div>
@@ -24,13 +14,10 @@ This API sends stored content from a specified account using a MMSID to a list o
 <pre><strong>Mandatory:</strong> Action, API_KEY, MMSID, ToCampaign
 <strong>Optional:</strong> N/A</pre>
 <strong>Response Parameters:</strong><br />
-
-    MMSID, Status, To, ScheduledID, Errorcode, Errorinfo
-    
+MMSID, Status, To, ScheduledID, Errorcode, Errorinfo
 <strong>Related Errorcodes: </strong><br />
+E241, E620, E624, E626, E629, E714
 
-    E241, E620, E624, E626, E629, E714
-    
 <div><strong>Request Example:</strong></div>
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt; sendSavedMMSCampaign&lt;/ACTION&gt;
