@@ -1,12 +1,5 @@
-<a href="/1.3/README.md">BACK TO TABLE OF CONTENTS</a>
-<BR>
-<a href="API_FUNCTIONS.md">BACK TO API FUNCTIONS</a>
-<BR>
-<BR>
-
-<h1>getSendingStatistics()</h1>
-<BR>
-
+<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_FUNCTIONS.md">Back to API Methods</a>
+<h2>getSendingStatistics()</h2>
 <p><strong>Synopsis:</strong><br />
 This API requests a report of all messaging transactions between two dates. The server returns the path to an XML file containing the meta data.</p>
 <div><strong>Request:</strong></div>
@@ -20,13 +13,9 @@ This API requests a report of all messaging transactions between two dates. The 
 <pre><strong>Mandatory:</strong> Action, API_KEY, EndDate, StartDate
 <strong>Optional:</strong> N/A</pre>
 <strong>Response Parameters:</strong><br />
-
-    Errorcode, Errorinfo, MMSID, Status
-
+Errorcode, Errorinfo, MMSID, Status
 <strong>Related Errorcodes: </strong><br />
-
-    E506, E507, E508, E509, E510
-
+E506, E507, E508, E509, E510
 <div><strong>Request Example:</strong></div>
 <pre>&lt;REQUEST&gt;
   &lt;ACTION&gt;getSendingStatus&lt;/ACTION&gt;
