@@ -1,4 +1,4 @@
-<a href="/1.3/README.md">BacktotheTableofContents</a>
+<a href="/1.3/README.md">Back to the Table of Contents</a>
 <h2>APIMethods</h2>
 <ul>
 <li><b>Generic</b></li>
