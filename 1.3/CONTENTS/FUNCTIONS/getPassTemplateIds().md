@@ -19,7 +19,7 @@ action, apikey
 status, passtemplateids, Errorcode, Errorinfo
 
 <strong>Related Errorcodes: </strong><br />
-E200
+E800
 <div><strong>Request Example:</strong></div>
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;getPassTemplateIds&lt;/ACTION&gt;
