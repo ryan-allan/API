@@ -1,8 +1,4 @@
-<html>
-<head>
-  <h2>Table of Contents</h2>
-</head>
-<body>
+<h2>Table of Contents</h2>
 <ul>
   <li> <a href="CONTENTS/API_XML_OVERVIEW.md">API XML Overview</a> </li>
   <li> <a href="CONTENTS/LANGUAGE_AND_ABBREVIATIONS.md">Language and Abbreviations</a> </li>  	  
