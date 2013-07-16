@@ -8,7 +8,7 @@ This API function returns a list of MMSIDS for that account.</p>
     &lt;API_KEY&gt;apiKey&lt;/API_KEY&gt;
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request: GET</strong></div>
-<pre>API_URL?action=addpassdata&amp;api_key=apiKey</pre>
+<pre>API_URL?action=getmmsids&amp;api_key=apiKey</pre>
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong>
 action, apikey
