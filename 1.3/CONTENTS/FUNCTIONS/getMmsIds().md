@@ -23,7 +23,7 @@ status, mmsids, Errorcode, Errorinfo
 E200
 <div><strong>Request Example:</strong></div>
 <pre>&lt;REQUEST&gt;
-    &lt;ACTION&gt;addPassData&lt;/ACTION&gt;
+    &lt;ACTION&gt;getMmsIds&lt;/ACTION&gt;
     &lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;    
 &lt;/REQUEST&gt;</pre>
 <div><strong>Response Example: Success</strong></div>
