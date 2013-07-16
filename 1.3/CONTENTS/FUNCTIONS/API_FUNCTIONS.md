@@ -1,7 +1,7 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>
 <h2>APIMethods</h2>
 <ul>
-<li><b>Generic</b></li>
+<li><b>User</b></li>
 <ul>
 <li><a href="createUser().md">createUser ()</a></li>
 <li><a href="loginUser().md">loginUser ()</a></li>
