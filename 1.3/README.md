@@ -39,7 +39,7 @@
     <li><a href="CONTENTS/METHODS/deletePassData.md">deletePassData ()</a></li>
     <li><a href="CONTENTS/METHODS/sendPassInEmail.md">sendPassInEmail ()</a></li>
     <li><a href="CONTENTS/METHODS/sendPassInMMS.md">sendPassInMMS ()</a></li>
-    </ul><br/>
+    </ul></ul><br/>
 
   <li> <a href="CONTENTS/POSTBACK_NOTIFICATION_SYSTEM.md">Postback Notification System</a></li>
   <ul>
