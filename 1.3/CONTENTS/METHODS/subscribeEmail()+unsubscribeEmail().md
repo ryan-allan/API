@@ -1,4 +1,4 @@
-<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_FUNCTIONS.md">Back to API Methods</a>
+<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
 <h2>subscribeEmail() + unsubscribeEmail()</h2>
 <p><strong>Synopsis:</strong><br/>
 This API will subscribe or unsubscribe EMAIL addresses to a particular campaign. Once an EMAIL address is subscribed to a campaign they will receive all auto responders and scheduled messages for that campaign until they are unsubscribed through the API or UI. You can unsubscribe ALL subscribers from campaign by using &#8216;ALL&#8217; as an EMAIL address.</p>
