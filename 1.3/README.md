@@ -46,5 +46,14 @@
     <li> <a href="CONTENTS/INCOMING_SMS+MMS_POSTBACK.md">Incoming SMS/MMS Postback</a> </li>
   </ul>
   <li> <a href="CONTENTS/APPENDIX/API_APPENDIX.md">APPENDIX</a> </li>
+  
+    <ul>
+      <li><a href="CONTENTS/APPENDIX/APPENDIX_A.md">APPENDIX A [Key Term Definitions]</a></li>
+      <li><a href="CONTENTS/APPENDIX/APPENDIX_B.md">APPENDIX B [Error/Notification/Protocol Code References]</a></li>
+      <li><a href="CONTENTS/APPENDIX/APPENDIX_C.md">APPENDIX C [XML Reports, Campaign Batches/Autoresponders/Subscriptions and Sending Lists]</a></li>
+      <li><a href="CONTENTS/APPENDIX/APPENDIX_D.md">APPENDIX D [Special Considerations regarding API Implementation]</a></li>
+      <li><a href="CONTENTS/APPENDIX/APPENDIX_E.md">APPENDIX E [SPID Reference Table]</a></li>
+   </ul>
+   
 </ul>
 
