@@ -1,11 +1,13 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_APPENDIX.md">Back to Appendix List</a>
 <h2>APPENDIX B</h2>
 <div class="text-2"><a id="appendix-b"></a><strong>Error/Notification/Protocol Code Reference</strong></div>
+<ul>
 
-<a id="Error Codes">i. Error Codes</a>
-<a id="Postback Notification Codes">ii. Postback Notification Codes</a>
-<a id="SMS Protocol Code Look Up">iii. SMS Protocol Code Look Up</a>
+<li><a id="Error Codes">i. Error Codes</a></li>
+<li><a id="Postback Notification Codes">ii. Postback Notification Codes</a></li>
+<li><a id="SMS Protocol Code Look Up">iii. SMS Protocol Code Look Up</a></li>
 
+</ul>
 <p><strong><a href="#Error Codes">i. Error Codes </a></strong></p>
 <table class="toc" style="font-size:11px;">
 <tbody>
