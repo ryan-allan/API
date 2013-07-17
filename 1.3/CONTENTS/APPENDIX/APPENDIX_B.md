@@ -3,12 +3,12 @@
 <div class="text-2"><a id="appendix-b"></a><strong>Error/Notification/Protocol Code Reference</strong></div>
 <ul>
 
-<li><a href="#ErrorCodes">i. Error Codes</a></li>
-<li><a href="#PostbackNotificationCodes">ii. Postback Notification Codes</a></li>
-<li><a href="#SMSProtocolCodeLookUp">iii. SMS Protocol Code Look Up</a></li>
+<li><a href="#Error Codes">i. Error Codes</a></li>
+<li><a href="#Postback Notification Codes">ii. Postback Notification Codes</a></li>
+<li><a href="#SMS Protocol Code Look Up">iii. SMS Protocol Code Look Up</a></li>
 
 </ul>
-<p><strong><a id="ErrorCodes">i. Error Codes </a></strong></p>
+<p><strong><a id="Error Codes">i. Error Codes </a></strong></p>
 <table class="toc" style="font-size:11px;">
 <tbody>
 <tr>
@@ -257,7 +257,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong><a id="PostbackNotificationCodes">ii. Postback Notification Codes</a></strong></p>
+<p><strong><a id="Postback Notification Codes">ii. Postback Notification Codes</a></strong></p>
 <table class="toc" id="toc" style="font-size:11px;">
 <tbody>
 <tr>
