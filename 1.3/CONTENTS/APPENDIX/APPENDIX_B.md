@@ -3,12 +3,12 @@
 <div class="text-2"><a id="appendix-b"></a><strong>Error/Notification/Protocol Code Reference</strong></div>
 <ul>
 
-<li><a id="Error Codes">i. Error Codes</a></li>
-<li><a id="Postback Notification Codes">ii. Postback Notification Codes</a></li>
-<li><a id="SMS Protocol Code Look Up">iii. SMS Protocol Code Look Up</a></li>
+<li><a href="#Error Codes">i. Error Codes</a></li>
+<li><a href="#Postback Notification Codes">ii. Postback Notification Codes</a></li>
+<li><a href="#SMS Protocol Code Look Up">iii. SMS Protocol Code Look Up</a></li>
 
 </ul>
-<p><strong><a href="#Error Codes">i. Error Codes </a></strong></p>
+<p><strong><a id="Error Codes">i. Error Codes </a></strong></p>
 <table class="toc" style="font-size:11px;">
 <tbody>
 <tr>
@@ -257,7 +257,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong><a href="#Postback Notification Codes">ii. Postback Notification Codes</a></strong></p>
+<p><strong><a id="Postback Notification Codes">ii. Postback Notification Codes</a></strong></p>
 <table class="toc" id="toc" style="font-size:11px;">
 <tbody>
 <tr>
@@ -295,7 +295,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong><a href="#SMS Protocol Code Look Up">iii. SMS Protocol Code Look Up</a></strong></p>
+<p><strong><a id="Postback Notification Codes">iii. SMS Protocol Code Look Up</a></strong></p>
 <table class="SMS-code-look-up" style="font-size:11px;">
 <tbody>
 <tr>
