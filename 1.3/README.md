@@ -7,6 +7,6 @@
   <ul>
     <li> <a href="CONTENTS/INCOMING_SMS+MMS_POSTBACK.md">Incoming SMS/MMS Postback</a> </li>
   </ul>
-  <li> <a href="CONTENTS/APPENDICES/API_APPENDIX.md">APPENDIX</a> </li>
+  <li> <a href="CONTENTS/APPENDIX/API_APPENDIX.md">APPENDIX</a> </li>
 </ul>
 
