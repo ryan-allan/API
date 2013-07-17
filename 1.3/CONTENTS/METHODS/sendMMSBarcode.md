@@ -1,5 +1,5 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
-<h2>sendMMSBarcode()</h2>
+<h2>sendMMSBarcode</h2>
 <p><strong>Synopsis:</strong><br />
 This API sends stored content containing a barcode from a specified account using a MMSID to a one number. The barcodeid along with the number is added to database and then MMS is delivered with barcode containing passed barcodeid.</p>
 <div><strong>Request:</strong></div>
