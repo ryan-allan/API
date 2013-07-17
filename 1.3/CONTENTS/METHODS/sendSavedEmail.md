@@ -1,5 +1,5 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
-<h2>sendSavedEmail()</h2>
+<h2>sendSavedEmail</h2>
 <p><strong>Synopsis:</strong><br />
 This API sends stored email template from a specified account using a EMAILID to one EMAIL address.</p>
 <p><strong>Request:</strong></p>
