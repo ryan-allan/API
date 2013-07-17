@@ -1,4 +1,4 @@
-<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_APPENDICES.md">Back to Appendix List</a>
+<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_APPENDIX.md">Back to Appendix List</a>
 <h2>APPENDIX D</h2>
 <strong>Special Considerations Regarding API Usage</strong>
 <p><strong>International format numbers: </strong> a number format that includes the country, carrier and phone numbers 
