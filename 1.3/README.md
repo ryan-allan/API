@@ -18,7 +18,7 @@
     <li><a href="CONTENTS/METHODS/sendSavedMMS.md">sendSavedMMS</a></li>
     <li><a href="CONTENTS/METHODS/sendMMSBarcode.md">sendMMSBarcode</a></li>
     <li><a href="CONTENTS/METHODS/sendSavedMMSCampaign.md">sendSavedMMSCampaign</a></li>
-    <li><a href="CONTENTS/METHODS/subscribe+unsubscribe.md">subscribe+unsubscribe</a></li>
+    <li><a href="CONTENTS/METHODS/subscribe+unsubscribe.md">subscribe + unsubscribe</a></li>
     <li><a href="CONTENTS/METHODS/createMMSCampaign.md">createMMSCampaign</a></li>
     <li><a href="CONTENTS/METHODS/getSendingStatistics.md">getSendingStatistics</a></li>
     <li><a href="CONTENTS/METHODS/removeMMSInboxContent.md">removeMMSInboxContent</a></li>
@@ -28,7 +28,7 @@
     <li><a href="CONTENTS/METHODS/getEmailIds.md">getEmailIds</a></li>
     <li><a href="CONTENTS/METHODS/createEmailCampaign.md">createEmailCampaign</a></li>
     <li><a href="CONTENTS/METHODS/sendSavedEmail.md">sendSavedEmail</a></li>
-    <li><a href="CONTENTS/METHODS/subscribeEmail+unsubscribeEmail.md">subscribeEmail+ unsubscribeEmail</a></li>
+    <li><a href="CONTENTS/METHODS/subscribeEmail+unsubscribeEmail.md">subscribeEmail + unsubscribeEmail</a></li>
     </ul><br/>
     <li><b>Passbook Pass</b></li>
     <ul>
