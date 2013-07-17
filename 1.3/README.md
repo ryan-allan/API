@@ -17,7 +17,7 @@
     <li><a href="CONTENTS/METHODS/saveMMS.md">saveMMS</a></li>
     <li><a href="CONTENTS/METHODS/sendSavedMMS.md">sendSavedMMS</a></li>
     <li><a href="CONTENTS/METHODS/sendMMSBarcode.md">sendMMSBarcode</a></li>
-    <li><a href="CONTENTS/METHODS/sendSavedMMSCampaign.md">sendSavedMMSCampaign ()</a></li>
+    <li><a href="CONTENTS/METHODS/sendSavedMMSCampaign.md">sendSavedMMSCampaign</a></li>
     <li><a href="CONTENTS/METHODS/subscribe+unsubscribe.md">subscribe+unsubscribe</a></li>
     <li><a href="CONTENTS/METHODS/createMMSCampaign.md">createMMSCampaign</a></li>
     <li><a href="CONTENTS/METHODS/getSendingStatistics.md">getSendingStatistics</a></li>
