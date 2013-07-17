@@ -19,7 +19,7 @@
 <li><a href="getSendingStatistics.md">getSendingStatistics</a></li>
 <li><a href="removeMMSInboxContent.md">removeMMSInboxContent</a></li>
 </ul><br/>
-<li><b>Email</b></li>
+<li><b>E-mail</b></li>
 <ul>
 <li><a href="getEmailIds.md">getEmailIds</a></li>
 <li><a href="createEmailCampaign.md">createEmailCampaign</a></li>
