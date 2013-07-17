@@ -1,12 +1,5 @@
-<a href="/1.3/README.md">BACK TO TABLE OF CONTENTS</a>
-<BR>
-<a href="API_METHODS.md">BACK TO API FUNCTIONS</a>
-<BR>
-<BR>
-
-<h1>updatePass()</h1>
-<BR>
-
+<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
+<h2>updatePass()</h2>
 <p><strong>Synopsis:</strong><br />
 This API function updates a pass with the data supplied in the API. This will also trigger the updates to the pass that was installed on the device.</p>
 <div><strong>Request: XML</strong></div>
@@ -76,12 +69,9 @@ aLabel1, aString1, aLabel2, aString2, aLabel3, aString3, aLabel4, aString4,
 bLabel1, bString1, bLabel2, bString2, bLabel3, bString3, bLabel4, bString4</pre>
 
 <strong>Response Parameters:</strong><br />
-
-    status, passDataId, updateStatusID, Errorcode, Errorinfo
-
+status, passDataId, updateStatusID, Errorcode, Errorinfo
 <strong>Related Errorcodes: </strong><br />
-
-    E802, E803, E807, E808, E809, E810, E811, E812, E813, E814, E815, E816, E817, E818, E819, E820
+E802, E803, E807, E808, E809, E810, E811, E812, E813, E814, E815, E816, E817, E818, E819, E820
 
 <div><strong>Request Example:</strong></div>
 <pre>&lt;REQUEST&gt;
