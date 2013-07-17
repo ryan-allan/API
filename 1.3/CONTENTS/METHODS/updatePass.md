@@ -1,5 +1,5 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
-<h2>updatePass()</h2>
+<h2>updatePass</h2>
 <p><strong>Synopsis:</strong><br />
 This API function updates a pass with the data supplied in the API. This will also trigger the updates to the pass that was installed on the device.</p>
 <div><strong>Request: XML</strong></div>
