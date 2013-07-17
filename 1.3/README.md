@@ -1,9 +1,9 @@
 <h2>Table of Contents</h2>
 <ul>
   <li> <a href="CONTENTS/API_XML_OVERVIEW.md">API XML Overview</a> </li>
-  <br/>
+
   <li> <a href="CONTENTS/LANGUAGE_AND_ABBREVIATIONS.md">Language and Abbreviations</a> </li>  
-   <br/>
+ 
   <li> <a href="CONTENTS/METHODS/API_METHODS.md">API Methods</a></li>
   
     <ul>
