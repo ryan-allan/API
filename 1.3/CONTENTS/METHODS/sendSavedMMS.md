@@ -1,5 +1,5 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
-<h2>sendSavedMMS()</h2>
+<h2>sendSavedMMS</h2>
 <p><strong>Synopsis:</strong><br />
 This API sends stored content from a specified account using a MMSID to a one or a list of mobile numbers. Recipient addresses are specified by a comma delimited list of valid mobile numbers. List up to 100 numbers is supported. FROM must be one of shortcodes allowed for your account. In case there are numbers from different countries than FROM shortcode is assigned to &#8211; default shortcode for those countries will be used.</p>
 <p><strong>Content Transcoding:</strong><br />
