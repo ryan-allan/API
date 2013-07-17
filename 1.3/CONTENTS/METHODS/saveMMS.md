@@ -1,5 +1,5 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
-<h2>saveMMS()</h2>
+<h2>saveMMS</h2>
 <b>Synopsis</b>:
 &nbsp;
 This API stores an MMS from XML. The MMS may contain slides embedded with video, audio, images and text. 
