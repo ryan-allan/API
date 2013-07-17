@@ -1,4 +1,4 @@
-<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_FUNCTIONS.md">Back to API Methods</a>
+<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
 <h2>sendSavedMMSCampaign()</h2>
 <div><strong>*Postback Notifications for this action are the same as for SendSavedMMS*</strong></div>
 <p><strong>Synopsis:</strong><br />
