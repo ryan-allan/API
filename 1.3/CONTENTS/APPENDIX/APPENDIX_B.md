@@ -163,7 +163,7 @@
 </tr>
 <tr>
 <td>E402 Invalid emailid</td>
-<td></td>
+<td>E915 Email not sent due to previous opt-out, bounce, or spam report.</td>
 </tr>
 <tr>
 <td>E403 Could not send email due to missing dataset entry</td>
