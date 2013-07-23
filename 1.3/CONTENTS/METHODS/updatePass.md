@@ -70,6 +70,7 @@ bLabel1, bString1, bLabel2, bString2, bLabel3, bString3, bLabel4, bString4</pre>
 
 <strong>Response Parameters:</strong><br />
 status, passDataId, updateStatusID, Errorcode, Errorinfo
+
 <strong>Related Errorcodes: </strong><br />
 E802, E803, E807, E808, E809, E810, E811, E812, E813, E814, E815, E816, E817, E818, E819, E820
 
