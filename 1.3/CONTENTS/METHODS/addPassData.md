@@ -74,6 +74,7 @@ email (if Pass Template setting allows pass delivery by Email, otherwise IGNORED
 phone (if Pass Template setting allows pass delivery by Phone, otherwise IGNORED )</pre>
 <strong>Response Parameters:</strong><br />
 status, passDataID, passTemplateID, Errorcode, Errorinfo
+
 <strong>Related Errorcodes: </strong><br />
 E801, E802, E803, E804, E805, E806, E810, E811, E812, E813, E814, E815, E816, E817, E818, E819, E820
 <div><strong>Request Example:</strong></div>
