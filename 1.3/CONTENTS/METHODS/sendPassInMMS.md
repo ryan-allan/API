@@ -74,6 +74,7 @@ aLabel1, aString1, aLabel2, aString2, aLabel3, aString3, aLabel4, aString4,
 bLabel1, bString1, bLabel2, bString2, bLabel3, bString3, bLabel4, bString4</pre>
 <strong>Response Parameters:</strong><br />
 status, to, mmsid, trackingID, Errorcode, Errorinfo
+
 <strong>Related Errorcodes: </strong><br />
 E110, E111, E241, E620, E621, E626, E628, E629, E713, E714, E715, E802, E803, E806, E810, E811, E812, E813, E814, E815, E816, E817, E818, E819, E820, E822, E825
 <div><strong>Request Example:</strong></div>
