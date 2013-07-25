@@ -5,7 +5,7 @@ This API request updates the pass data for that passDataId if exists.
 If this pass data was already used to generate a Passbook Pass which is installed on the device,
 then this request will also trigger an update on that device. All the data is updated in limitation to the settings on 
 Pass Template and all the other/extra data is ignored. You cannot update Email (or) Phone in this request but 
-the pass data. On Success, it will return the UpdateStatusId. For more info see below for Mandatory/Optional fields and Error codes.
+the pass data. On success, it will return the UpdateStatusId. For more info see below for Mandatory/Optional fields and Error codes.
 </p>
 <div><strong>Request: XML</strong></div>
 <pre>&lt;REQUEST&gt;
