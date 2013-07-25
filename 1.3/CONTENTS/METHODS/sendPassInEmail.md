@@ -1,7 +1,9 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
 <h2>sendPassInEmail</h2>
 <p><strong>Synopsis:</strong><br />
-This API function generates a pass with the data supplied in the API and sends it via Email.</p>
+This API request triggers sending an Email with Dynamic Pass. Pass data passed in the API request will be used to create a Passbook pass sent via Email. 
+The pass data gets locked with the Email address in the request and is used in limitation to the Pass Template settings.
+All the other/extra pass data is ignored. On success, it will return the EmailStatusID. For more info see below for Mandatory/Optional fields and Error codes.</p>
 <div><strong>Request: XML</strong></div>
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;sendPassInEmail&lt;/ACTION&gt;
