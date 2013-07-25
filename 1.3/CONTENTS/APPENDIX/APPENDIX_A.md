@@ -2,9 +2,9 @@
 <h2>APPENDIX A</h2>
 <div class="text-2"><a id="appendix-b"></a><strong>KEY TERM DEFINITIONS</strong></div>
 
-<table border = "1" width="30%">
+<table border = "1">
 
-<tr><td><b>BRANDNAME –</b> The company, brand, or individual that will appear as the sender’s name for campaign.</td></tr>
+<tr><td width="30%"><b>BRANDNAME –</b> The company, brand, or individual that will appear as the sender’s name for campaign.</td></tr>
 <tr><td><b>CAMPAIGNID -</b> ID of the campaign to subscribe the user to (integer)</td></tr>
 <tr><td><b>CAMPAIGNREF –</b> Depending on your API settings you may be required to subscribe a user first before sending them messages. If you are required to subscribe a user first then a valid Campaign Reference is required. This would be the campaign ID to which the user is subscribed.</td></tr>
 <tr><td><b>CTA – </b> mobile owner will be prompted for subscribing/unsubscribing confirmation via SMS. They will be sent a SMS Opt-in request (yes/no)</td></tr>
