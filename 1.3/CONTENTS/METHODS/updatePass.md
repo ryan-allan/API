@@ -1,7 +1,12 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
 <h2>updatePass</h2>
 <p><strong>Synopsis:</strong><br />
-This API function updates a pass with the data supplied in the API. This will also trigger the updates to the pass that was installed on the device.</p>
+This API request updates the pass data for that passDataId if exists. 
+If this pass data was already used to generate a Passbook Pass which is installed on the device,
+then this request will also trigger an update on that device. All the data is updated in limitation to the settings on 
+Pass Template and all the other/extra data is ignored. You cannot update Email (or) Phone in this request but 
+the pass data. On Success, it will return the UpdateStatusId. For more info see below for Mandatory/Optional fields and Error codes.
+</p>
 <div><strong>Request: XML</strong></div>
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;updatePass&lt;/ACTION&gt;
