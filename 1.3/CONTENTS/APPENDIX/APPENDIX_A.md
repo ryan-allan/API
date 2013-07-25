@@ -32,8 +32,8 @@
 <tr><td><b>USER -</b> Valid account username</td></tr>
 <tr><td><b>PASSTEMPLATEID -</b> Valid Pass Template ID (Integer)</td></tr>
 <tr><td><b>PASSDATAID -</b> Valid Pass Data Row ID (Integer)</td></tr>
-<tr><th><b>PASSDATA -</b></th><td>  All the data that goes on the pass (Array)</td></tr>
-<tr><th><b>BARCODEVALUE -</b></th><td>  Barcode value or Id that will be encoded into the barcode on the pass</td></tr>
-<tr><th><b>BARCODETEXT -</b></th><td> Barcode text that will be shown below the barcode image on the pass</td></tr>
+<tr><td colspan = "1"><b>PASSDATA -</b></td><td>  All the data that goes on the pass (Array)</td></tr>
+<tr><td colspan = "1"><b>BARCODEVALUE -</b></td><td>  Barcode value or Id that will be encoded into the barcode on the pass</td></tr>
+<tr><td colspan = "1"><b>BARCODETEXT -</b></td><td> Barcode text that will be shown below the barcode image on the pass</td></tr>
 
 </table>
