@@ -2,8 +2,10 @@
 <h2>APPENDIX A</h2>
 <div class="text-2"><a id="appendix-b"></a><strong>KEY TERM DEFINITIONS</strong></div>
 
-<table class="toc" style="font-size:11px;">
-<tbody>
+//<table class="toc" style="font-size:11px;">
+//<tbody>
+
+<table border = "1">
 <tr>
 
 <td><b>BRANDNAME –</b> The company, brand, or individual that will appear as the sender’s name for campaign.</td>
