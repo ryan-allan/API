@@ -8,10 +8,10 @@
 <table border = "1">
 
 <tr><td><b>BRANDNAME –</b> The company, brand, or individual that will appear as the sender’s name for campaign.</td></tr>
-<tr><td>><b>CAMPAIGNID -</b> ID of the campaign to subscribe the user to (integer)</td></tr>
-<tr><b>CAMPAIGNREF –</b> Depending on your API settings you may be required to subscribe a user first before sending them messages. If you are required to subscribe a user first then a valid Campaign Reference is required. This would be the campaign ID to which the user is subscribed.</tr>
-<tr><b>CTA – </b> mobile owner will be prompted for subscribing/unsubscribing confirmation via SMS. They will be sent a SMS Opt-in request (yes/no)</tr>
-<tr><b>DURATION –</b> Duration of the slide displayed in seconds (integer)</tr>
+<tr><td><b>CAMPAIGNID -</b> ID of the campaign to subscribe the user to (integer)</td></tr>
+<tr><td><b>CAMPAIGNREF –</b> Depending on your API settings you may be required to subscribe a user first before sending them messages. If you are required to subscribe a user first then a valid Campaign Reference is required. This would be the campaign ID to which the user is subscribed.</td></tr>
+<tr><td><b>CTA – </b> mobile owner will be prompted for subscribing/unsubscribing confirmation via SMS. They will be sent a SMS Opt-in request (yes/no)</td></tr>
+<tr><td><b>DURATION –</b> Duration of the slide displayed in seconds (integer</td>)</tr>
 
 </table>
 
