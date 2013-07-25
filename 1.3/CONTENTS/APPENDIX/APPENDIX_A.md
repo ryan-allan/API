@@ -2,9 +2,6 @@
 <h2>APPENDIX A</h2>
 <div class="text-2"><a id="appendix-b"></a><strong>KEY TERM DEFINITIONS</strong></div>
 
-//<table class="toc" style="font-size:11px;">
-//<tbody>
-
 <table border = "1">
 
 <tr><td><b>BRANDNAME –</b> The company, brand, or individual that will appear as the sender’s name for campaign.</td></tr>
@@ -35,7 +32,8 @@
 <tr><td><b>USER -</b> Valid account username</td></tr>
 <tr><td><b>PASSTEMPLATEID -</b> Valid Pass Template ID (Integer)</td></tr>
 <tr><td><b>PASSDATAID -</b> Valid Pass Data Row ID (Integer)</td></tr>
-<tr><td><b>PASSDATA -</b> All the data that goes on the pass (Array)</td></tr>
-<tr><td><b>BARCODEVALUE -</b> Barcode value or Id that will be encoded into the barcode on the pass</td></tr>
-<tr><td><b>BARCODETEXT -</b> Barcode text that will be shown below the barcode image on the pass</td></tr>
+<tr><td><b>PASSDATA -</b></td><td>  All the data that goes on the pass (Array)</td></tr>
+<tr><td><b>BARCODEVALUE -</b></td><td>  Barcode value or Id that will be encoded into the barcode on the pass</td></tr>
+<tr><td><b>BARCODETEXT -</b></td><td> Barcode text that will be shown below the barcode image on the pass</td></tr>
 
+</table>
