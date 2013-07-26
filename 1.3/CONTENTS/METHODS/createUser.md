@@ -12,7 +12,7 @@ Creates new user with given username, password and email. The rest of the parame
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong> Action, API_KEY, NewUser, NewPass</pre>
 <strong>Response Parameters:</strong><br />
-    Status, Username, Password, API_KEY, Errorcode, Errorinfo
+    Status, Username, Password, API_KEY, Errorcode, Errorinfo<br>
 <strong>Related Error codes: </strong><br />
     E150, E151, E152, E153, E154
 <div><strong>Request Example:</strong></div>
