@@ -11,8 +11,13 @@
 <tr><td><b>CAMPAIGNNAME</b></td><td> Name for new campaign created with createMMSCampaign or createEmailCampaign function</td></tr>
 <tr><td><b>CAMPAIGNREF</b></td><td> Depending on your API settings you may be required to subscribe a user first before sending them messages. If you are required to subscribe a user first then a valid Campaign Reference is required. This would be the campaign ID to which the user is subscribed.</td></tr>
 <tr><td><b>CTA</b></td><td> mobile owner will be prompted for subscribing/unsubscribing confirmation via SMS. They will be sent a SMS Opt-in request (yes/no)</td></tr>
+<tr><td><b>CUSTOMTEXT</b></td><td> Custom text that will overwrite given slide text used in sendSavedMMS function</td></tr>
+<tr><td><b>CUSTOMTITLE</b></td><td> Custom Title that will overwrite MMS Subject used in sendSavedMMS function</td></tr>
 <tr><td><b>DURATION</b></td><td> Duration of the slide displayed in seconds (integer)</td></tr>
 <tr><td><b>DATABASEID</b></td><td> The identification code for Barcode Database(integer)
+<tr><td><b>DDMTITLE</b></td><td> Title for DDM message (Device Discover Message) used in sendSavedMMS function</td></tr>
+<tr><td><b>DDMTEXT</b></td><td> Text/Body for DDM message (Device Discover Message) used in sendSavedMMS function</td></tr>
+<tr><td><b>DDMTIMEOUT</b></td><td>  Timeout (in minutes) for DDM message (Device Discover Message) used in sendSavedMMS function. After this time we send MMS even if there is no DDM result received.</td></tr>
 <tr><td><b>ENDDATE</b></td><td> The format should be YYYY-MM-DD hh:mm:ss</td></tr>
 <tr><td><b>EMAIL</b></td><td> valid email address</td></tr>
 <tr><td><b>EMAILID</b></td><td> The identification code for email template</td></tr>
@@ -20,6 +25,7 @@
 <tr><td><b>HISTORYID</b></td><td> This is permanent refference number used to indentify the SMS/MMS messae sending in our History. HISTORYID is used API reports.</td></tr>
 <tr><td><b>MAILINGADDRESS</b></td><td> This is the physical address that will appear in your email footers. You are required to provide your physical address in accordance with the CAN-SPAM act of 2003. Please make sure to include your company name and country in the address.</td></tr>
 <tr><td><b>MMSID</b></td><td> The identification code of saved MMS</td></tr>
+<tr><td><b>MMSINBOXID</b></td><td> ID of saved MMS to be removed inside removeMMSInboxContent function</td></tr>
 <tr><td><b>NEWUSER</b></td><td> Username for new account created with 'createUser' function</td></tr>
 <tr><td><b>NEWPASS</b></td><td> Password for new account created with 'createUser' function</td></tr>
 <tr><td><b>NOTIFY</b></td><td> mobile owner will be notified via SMS about being subscribed/unsubscribed. They will be sent confirmation SMS (yes/no)</td></tr>
