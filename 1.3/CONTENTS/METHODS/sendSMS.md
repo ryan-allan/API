@@ -26,15 +26,19 @@ This API Sends an SMS from the specified account and short code to a recipientâ€
 
 <pre>E712, E201, E713, E110, E628, E111</pre>
 	
-<div><strong>Request Example:</strong></div>
+<div><strong>Request Examples</strong></div>
+XML:
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;sendSMS&lt;/ACTION&gt;
     &lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;
-    &lt;TO&gt;15551234888 &lt;/TO&gt;
+    &lt;TO&gt;15551234888&lt;/TO&gt;
     &lt;FROM&gt;60856&lt;/FROM&gt;
     &lt;CAMPAIGNREF&gt;77676&lt;/CAMPAIGNREF&gt;
-    &lt;TEXT&gt;Hello Jerry â€“ Greetings from Marc!!&lt;/TEXT&gt;
+    &lt;TEXT&gt;Hello Jerry, Greetings from Marc&lt;/TEXT&gt;
 &lt;/REQUEST&gt;</pre>
+GET:
+<pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=sendsms&api_key=w6874u6Br4hAVgrolveksjEiiu8yJX
+&to=15551234888&from=60856&text=Hello+Jerry%2C+Greetings+from+Marc</pre>
 <div><strong>Response Example: Success</strong></div>
 <pre>&lt;RESPONSE&gt;
 	&lt;STATUS&gt;Success&lt;/STATUS&gt;
@@ -48,6 +52,7 @@ This API Sends an SMS from the specified account and short code to a recipientâ€
 	&lt;ERRORINFO&gt;There is billing problem on your account&lt;/ERRORINFO&gt;
 	&lt;TO&gt;15551234888&lt;/TO&gt;
 &lt;/RESPONSE&gt;</pre>
+
 <div><strong>Postback Notification:</strong><br />
 When the SMS is sent we will generate a Postback notification.</div>
 <pre>&lt;NOTIFICATION  ID="325" CREATED="2011-07-26 10:22:26.975911-04" &gt;
