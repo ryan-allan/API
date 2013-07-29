@@ -36,7 +36,8 @@ MMSID, Status, To, TrackingID, Errorcode, Errorinfo
 <strong>Related Errorcodes: </strong><br />
 E110, E111, E241, E620, E621, E623, E626, E628, E629, E713, E714, E715
 
-<div><strong>Request Example:</strong></div>
+<div><strong>Request Examples</strong></div>
+XML:
 <pre>&lt;REQUEST&gt;
 	&lt;ACTION&gt; sendSavedMMS &lt;/ACTION&gt;
 	&lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;
@@ -53,6 +54,11 @@ E110, E111, E241, E620, E621, E623, E626, E628, E629, E713, E714, E715
         &lt;/CUSTOMTEXT&gt;
         &lt;/CUSTOMSUBJECT&gt;My Custom Subject&lt;/CUSTOMSUBJECT&gt;
 &lt;/REQUEST&gt;</pre>
+GET:
+<pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=sendsavedmms&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
+&to=16501234123%2C16501234124&from=60856&mmsid=35674&ddmtitle=We+are+detecting+your+handset
+&ddmtext=This+message+is+free+of+charge+and+will+allow+us+to+deliver+your+content+nice+and+smooth&ddmtimeout=5
+&customtext_1=My+Custom+text+in+first+slide&customsubject=My+Custom+Subject</pre>
 <div><strong>Response Example: Success</strong></div>
 <pre>&lt;RESPONSE&gt;
     &lt;STATUS&gt;Success&lt;/STATUS&gt;
