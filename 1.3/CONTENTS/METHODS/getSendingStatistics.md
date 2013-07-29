@@ -13,7 +13,7 @@ This API requests a report of all messaging transactions between two dates. The 
 <pre><strong>Mandatory:</strong> Action, API_KEY, End_Date, Start_Date
 <strong>Optional:</strong> N/A</pre>
 <strong>Response Parameters:</strong><br />
-Errorcode, Errorinfo, MMSID, Status
+Errorcode, Errorinfo, MMSID, Status<br>
 <strong>Related Errorcodes: </strong><br />
 E506, E507, E508, E509, E510
 <div><strong>Request Example:</strong></div>
