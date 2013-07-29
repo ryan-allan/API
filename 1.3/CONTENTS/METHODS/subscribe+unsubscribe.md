@@ -23,7 +23,7 @@ This API will subscribe or unsubscribe users to a particular campaign. Once a us
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong> Action, API_KEY, CAMPAIGNID, Mobile
-<strong>Optional:</strong> CTA, Notify, SPID</pre>
+<strong>Optional:</strong> CTA, Notify, SPID, TZ</pre>
 <strong>Response Parameters:</strong><br />
 CAMPAIGNID, Errorcode, Errorinfo, mobile, Status
 
