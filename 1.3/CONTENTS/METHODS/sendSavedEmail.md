@@ -14,10 +14,11 @@ This API sends stored email template from a specified account using a EMAILID to
 <pre><strong>Mandatory:</strong> Action, API_KEY, EMAILID, Email
 <strong>Optional:</strong> N/A</pre>
 <strong>Response Parameters:</strong>
-EMAILID, Status, Email, TrackingID, Errorcode, Errorinfo
+EMAILID, Status, Email, TrackingID, Errorcode, Errorinfo<br>
 <strong>Related Errorcodes: </strong><br />
 E401, E402, E403, E713, E915  
-<div><strong>Request Example:</strong></div>
+<div><strong>Request Examples</strong></div>
+XML:
 <pre>&lt;REQUEST&gt;
 	&lt;ACTION&gt;sendSavedEmail&lt;/ACTION&gt;
 	&lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;
@@ -25,6 +26,9 @@ E401, E402, E403, E713, E915
 	&lt;EMAILID&gt;1234&lt;/EMAILID&gt;
 	&lt;CAMPAIGNREF&gt;5678&lt;/CAMPAIGNREF&gt;
 &lt;/REQUEST&gt;</pre>
+GET:
+<pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=sendsavedemail&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
+&email=john@email.com&emailid=1234&campaignref=5678</pre>
 <div><strong>Response Example: Success</strong></div>
 <pre>&lt;RESPONSE&gt;
     &lt;STATUS&gt;Success&lt;/STATUS&gt;
