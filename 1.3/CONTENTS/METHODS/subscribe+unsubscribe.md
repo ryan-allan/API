@@ -30,7 +30,8 @@ CAMPAIGNID, Errorcode, Errorinfo, mobile, Status
 <strong>Related Errorcodes: </strong><br />
 E901, E902, E903, E904, E905
 
-<div><strong>Request Example:</strong></div>
+<div><strong>Request Examples</strong></div>
+XML:
 <pre>&lt;REQUEST&gt;
 	&lt;ACTION&gt;subscribe&lt;/ACTION&gt;
 	&lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;
@@ -39,6 +40,9 @@ E901, E902, E903, E904, E905
 	&lt;NOTIFY&gt;no&lt;/NOTIFY&gt;
 	&lt;CTA&gt;no&lt;/ CTA&gt;
 &lt;/REQUEST&gt;</pre>
+GET:
+<pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=subscribe&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
+&mobile=16502426055&campaignid=1116&notify=no&cta=no</pre>
 <div><strong>Response Example: Success</strong></div>
 <pre>&lt;RESPONSE&gt;
     &lt;STATUS&gt;Success&lt;/STATUS&gt;
