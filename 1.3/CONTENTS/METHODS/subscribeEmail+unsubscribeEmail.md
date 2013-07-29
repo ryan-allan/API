@@ -28,7 +28,8 @@ This API will subscribe or unsubscribe EMAIL addresses to a particular campaign.
 
     E911, E912, E913, E914
 
-<div><strong>Request Example:</strong></div>
+<div><strong>Request Examples</strong></div>
+XML:
 <pre>&lt;REQUEST&gt;
 	&lt;ACTION&gt;subscribeEmail&lt;/ACTION&gt;
 	&lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;
@@ -36,6 +37,9 @@ This API will subscribe or unsubscribe EMAIL addresses to a particular campaign.
 	&lt;EMAIL&gt;john@email.com&lt;/EMAIL&gt;
 	&lt;NOTIFY&gt;yes&lt;/NOTIFY&gt;
 &lt;/REQUEST&gt;</pre>
+GET:
+<pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=subscribeemail&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
+&email=john@email.com&campaignid=1116&notify=yes</pre>
 <div><strong>Response Example: Success</strong></div>
 <pre>&lt;RESPONSE&gt;
     &lt;STATUS&gt;Success&lt;/STATUS&gt;
