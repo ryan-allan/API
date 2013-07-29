@@ -30,14 +30,14 @@ This API Sends an SMS from the specified account and short code to a recipientâ€
 XML:
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;sendSMS&lt;/ACTION&gt;
-    &lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;
+    &lt;API_KEY&gt;Y6r74u6Br4hAVgrolveksjEiiu8yJX&lt;/API_KEY&gt;
     &lt;TO&gt;15551234888&lt;/TO&gt;
     &lt;FROM&gt;60856&lt;/FROM&gt;
     &lt;CAMPAIGNREF&gt;77676&lt;/CAMPAIGNREF&gt;
     &lt;TEXT&gt;Hello Jerry, Greetings from Marc&lt;/TEXT&gt;
 &lt;/REQUEST&gt;</pre>
 GET:
-<pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=sendsms&api_key=w6874u6Br4hAVgrolveksjEiiu8yJX
+<pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=sendsms&api_key=Y6r74u6Br4hAVgrolveksjEiiu8yJX
 &to=15551234888&from=60856&text=Hello+Jerry%2C+Greetings+from+Marc</pre>
 <div><strong>Response Example: Success</strong></div>
 <pre>&lt;RESPONSE&gt;
