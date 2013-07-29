@@ -10,7 +10,7 @@ This API requests a report of all messaging transactions between two dates. The 
     &lt;END_DATE&gt;EndDate&lt;/ END_DATE&gt;
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request Parameters:</strong></div>
-<pre><strong>Mandatory:</strong> Action, API_KEY, EndDate, StartDate
+<pre><strong>Mandatory:</strong> Action, API_KEY, End_Date, Start_Date
 <strong>Optional:</strong> N/A</pre>
 <strong>Response Parameters:</strong><br />
 Errorcode, Errorinfo, MMSID, Status
