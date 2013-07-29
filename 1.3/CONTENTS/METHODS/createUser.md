@@ -15,13 +15,17 @@ Creates new user with given username, password and email. The rest of the parame
     Status, Username, Password, API_KEY, Errorcode, Errorinfo<br>
 <strong>Related Error codes: </strong><br />
     E150, E151, E152, E153, E154
-<div><strong>Request Example:</strong></div>
+<div><strong>Request Examples</strong></div>
+XML:
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;createUser&lt;/ACTION&gt;
     &lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;
     &lt;NewUser&gt;john&lt;/NewUser&gt;
     &lt;NewPass&gt;john_pass&lt;/NewPass&gt;
 &lt;/REQUEST&gt;</pre>
+GET:
+<pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=createuser&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
+&newuser=john&newpass=john_pass</pre>
 <div><strong>Response Example: Success</strong></div>
 <pre>&lt;RESPONSE&gt;
     &lt;STATUS&gt;Success&lt;/STATUS&gt;
