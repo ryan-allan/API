@@ -15,12 +15,16 @@ Immediately removes all stored inbox content and text files attached to the MMS 
 Status, MMSInboxID, Errorcode, Errorinfo
 <strong>Related Error codes: </strong><br />
 E640, E641, E642, E643
-<div><strong>Request Example:</strong></div>
+<div><strong>Request Examples</strong></div>
+XML:
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;removeMMSInboxContent&lt;/ACTION&gt;
     &lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;
     &lt;MMSINBOXID&gt;1234&lt;/MMSINBOXID&gt;
 &lt;/REQUEST&gt;</pre>
+GET:
+<pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=removemmsinboxcontent&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
+&mmsinboxid=1234</pre>
 <div><strong>Response Example: Success</strong></div>
 <pre>&lt;RESPONSE&gt;
     &lt;STATUS&gt;Success&lt;/STATUS&gt;
