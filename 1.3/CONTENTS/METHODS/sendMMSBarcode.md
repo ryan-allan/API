@@ -18,7 +18,7 @@ This API sends stored MMS containing a barcode image template from a specified a
 <strong>Response Parameters:</strong><br />
 MMSID, Status, To, TrackingID, Errorcode, Errorinfo
 <strong>Related Errorcodes: </strong><br />
-E110, E111, E241, E620, E621, E623, E626, E628, E629, E630, E631, E632, E713, E714, E715
+E110, E111, E241, E620, E621, E623, E626, E628, E629, E630, E631, E632, E633, E713, E714, E715
   
 <div><strong>Request Examples</strong></div>
 XML:
