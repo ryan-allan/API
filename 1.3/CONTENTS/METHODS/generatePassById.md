@@ -13,8 +13,10 @@ For more info see below for Mandatory/Optional fields and Error codes.
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong> action, apiKey, passDataId
 <strong>Optional:</strong> N/A</pre>
+
 <strong>Response Parameters:</strong><br />
 status, Errorcode, Errorinfo
+
 <strong>Related Errorcodes: </strong><br />
 E807, E808, E830, E831
     
