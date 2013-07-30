@@ -158,6 +158,10 @@
 <td></td>
 </tr>
 <tr>
+<td>E400 No Email Templates were created in this account</td>
+<td></td>
+</tr>
+<tr>
 <td>E401 Invalid email</td>
 <td></td>
 </tr>
@@ -167,6 +171,10 @@
 </tr>
 <tr>
 <td>E403 Could not send email due to missing dataset entry</td>
+<td></td>
+</tr>
+<tr>
+<td>E404 No Email Campaigns were created in this account</td>
 <td></td>
 </tr>
 <tr>
@@ -231,6 +239,11 @@
 </tr>
 <tr>
 <td>E632 Invalid &#8216;databaseid&#8217;</td>
+<td></td>
+</tr>
+<tr>
+<td>E633 This MMS does not contain barcode object
+</td>
 <td></td>
 </tr>
 <tr>
