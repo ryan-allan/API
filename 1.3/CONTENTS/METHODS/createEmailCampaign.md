@@ -16,7 +16,8 @@ This API function creates new email campaign within the account holders account 
 CampaignID, CampaignName, BrandName, MailingAddress, ErrorInfo, Errorcode
 <strong>Related Error codes:</strong><br />
 E170, E171, E172, E173    
-<div><strong>Request Example:</strong></div>
+<div><strong>Request Examples</strong></div>
+XML:
 <pre>&lt;REQUEST&gt;
 	&lt;ACTION&gt;createEmailCampaign&lt;/ACTION&gt;
 	&lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;
@@ -26,6 +27,10 @@ E170, E171, E172, E173
             214 Lincoln Street, Suite 360
             Allston, MA 02134&lt;/MAILINGADDRESS&gt;
 &lt;/REQUEST&gt;</pre>
+GET:
+<pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=createemailcampaign&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
+&campaignname=Winter+Sale&brandname=Codereadr
+&mailingaddress=Skycore%2C+LLC%0A214+Lincoln+Street%2C+Suite+360%0AAllston%2C+MA+02134</pre>
 <div><strong>Response Example: Success</strong></div>
 <pre>&lt;RESPONSE&gt;
 	&lt;STATUS&gt;Success&lt;/STATUS&gt;
