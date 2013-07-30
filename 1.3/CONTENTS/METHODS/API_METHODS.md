@@ -35,5 +35,6 @@
 <li><a href="deletePassData.md">deletePassData</a></li>
 <li><a href="sendPassInEmail.md">sendPassInEmail</a></li>
 <li><a href="sendPassInMMS.md">sendPassInMMS</a></li>
+<li><a href="generatePassById.md">generatePassById</a></li>
 </ul><br/>
 </ul>
