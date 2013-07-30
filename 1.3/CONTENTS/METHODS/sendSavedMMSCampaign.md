@@ -18,13 +18,17 @@ MMSID, Status, To, ScheduledID, Errorcode, Errorinfo
 <strong>Related Errorcodes: </strong><br />
 E241, E620, E624, E626, E629, E714
 
-<div><strong>Request Example:</strong></div>
+<div><strong>Request Examples</strong></div>
+XML:
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt; sendSavedMMSCampaign&lt;/ACTION&gt;
     &lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;
     &lt;TOCAMPAIGN&gt;332&lt;/TOCAMPAIGN&gt;
     &lt;MMSID&gt;35674&lt;/MMSID&gt;
 &lt;/REQUEST&gt;</pre>
+GET:
+<pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=sendsavedmmscampaign&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
+&campaignid=332&mmsid=35674</pre>
 <div><strong>Response Example: Success</strong></div>
 <pre>&lt;RESPONSE&gt;
     &lt;STATUS&gt;Success&lt;/STATUS&gt;
