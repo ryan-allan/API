@@ -127,43 +127,43 @@
 </tr>
 <tr>
 <td>E302 No slides</td>
-<td>E901 The &#8216;mobile&#8217; is required</td>
+<td>E827 Invalid request. MmsID or emailID or passTemplateID is required</td>
 </tr>
 <tr>
 <td>E303 Slide X is empty</td>
-<td>E902 The &#8216;campaignid&#8217; is required</td>
+<td>E828 Invalid request. You can request only by MmsID or emailID or passTemplateID and not more than one</td>
 </tr>
 <tr>
 <td>E331 Image in slide X is too big</td>
-<td>E903 Invalid campaignid</td>
+<td>E830 Pass was not generated. Internal error occured</td>
 </tr>
 <tr>
 <td>E332 Audio in slide X is too big</td>
-<td>E904 Could not subscribe this number</td>
+<td>E831 Pass was not generated. It reached its download limit</td>
 </tr>
 <tr>
 <td>E333 Video in slide X is too big</td>
-<td>E905 Could not unsubscribe this number</td>
+<td></td>
 </tr>
 <tr>
 <td>E334 Text in slide X is too long</td>
-<td>E911 The &#8216;email&#8217; is required</td>
+<td></td>
 </tr>
 <tr>
 <td>E341 Image file in slide X is corrupted</td>
-<td>E912 Invalid campaignid</td>
+<td></td>
 </tr>
 <tr>
 <td>E351 Could not copy Image in slide X</td>
-<td>E913 Could not subscribe this email</td>
+<td></td>
 </tr>
 <tr>
 <td>E401 Invalid email</td>
-<td>E914 Could not unsubscribe this email</td>
+<td></td>
 </tr>
 <tr>
 <td>E402 Invalid emailid</td>
-<td>E915 Email not sent due to previous opt-out, bounce, or spam report.</td>
+<td></td>
 </tr>
 <tr>
 <td>E403 Could not send email due to missing dataset entry</td>
@@ -179,43 +179,43 @@
 </tr>
 <tr>
 <td>E507 Invalid &#8216;start_date&#8217;/'end_date&#8217; format</td>
-<td></td>
+<td>E901 The &#8216;mobile&#8217; is required</td>
 </tr>
 <tr>
 <td>E508 Invalid &#8216;start_date&#8217;/'end_date&#8217; format</td>
-<td></td>
+<td>E902 The &#8216;campaignid&#8217; is required</td>
 </tr>
 <tr>
 <td>E509 Lookup period is too long</td>
-<td></td>
+<td>E903 Invalid campaignid</td>
 </tr>
 <tr>
 <td>E510 Lookup too frequent (you need to set time between the lookups)</td>
-<td></td>
+<td>E904 Could not subscribe this number</td>
 </tr>
 <tr>
 <td>E620 The &#8216;mmsid&#8217; is required</td>
-<td></td>
+<td>E905 Could not unsubscribe this number</td>
 </tr>
 <tr>
 <td>E621 The &#8216;to&#8217; is required</td>
-<td></td>
+<td>E911 The &#8216;email&#8217; is required</td>
 </tr>
 <tr>
 <td>E623 The &#8216;to&#8217; field can contain up to 100 numbers</td>
-<td></td>
+<td>E912 Invalid campaignid</td>
 </tr>
 <tr>
 <td>E624 The &#8216;tocampaign&#8217; is required</td>
-<td></td>
+<td>E913 Could not subscribe this email</td>
 </tr>
 <tr>
 <td>E626 Content unavailable. Encoding in progress, try again later.</td>
-<td></td>
+<td>E914 Could not unsubscribe this email</td>
 </tr>
 <tr>
 <td>E628 Operator Not supported</td>
-<td></td>
+<td>E915 Email not sent due to previous opt-out, bounce, or spam report.</td>
 </tr>
 <tr>
 <td>E629 Unrecognized content type</td>
