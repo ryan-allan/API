@@ -24,7 +24,7 @@ XML:
 	&lt;BRANDNAME&gt;Gap&lt;/BRANDNAME&gt;
 &lt;/REQUEST&gt;</pre>
 GET:
-<pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=createcampaign&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
+<pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=createmmscampaign&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
 &campaignname=Winter+Sale&brandname=Gap</pre>
 <div><strong>Response Example: Success</strong></div>
 <pre>&lt;RESPONSE&gt;
