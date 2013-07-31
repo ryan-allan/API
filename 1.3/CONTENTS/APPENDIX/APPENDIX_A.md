@@ -41,7 +41,7 @@
 <tr><td><b>SCHEDULEDID</b></td><td> This is a reference ID(integer) for a sending campaign. It is used for every number belonging to that campaign. When campaign sending is processed, the system will generate postback notifications linking SCHEDULEDID with TRACKINGID and HISTORYID.</td></tr>
 <tr><td><b>SEQUENCE</b></td><td> This encloses all MMS slide presentation data from one or multiple slides (up to a maximum of 8).</td></tr>
 <tr><td><b>SLIDE</b></td><td> This represents a single slide within the MMS sequence the could include IMAGE/URL/TEXT/PIC etc. (There are special rules for slides within the 'saveMMS' special consideration section).</td></tr>
-<tr><td><b>SPID</b></td><td> The carrier ID(integer). See <a href="/APPENDIX/APPENDIX_D.md">Appendix D</a>.</td></tr>
+<tr><td><b>SPID</b></td><td> The carrier ID(integer). See <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_D.md">Appendix D</a>.</td></tr>
 <tr><td><b>START_DATE</b></td><td> The start date for sending statistics used in the 'getSendingStatistics' function. The format should be "YYYY-MM-DD hh:mm:ss" (ignoring quotations).</td></tr>
 <tr><td><b>TEXT</b></td><td> SMS message limited to 160 characters (string).</td></tr>
 <tr><td><b>TO</b></td><td> This is the message recipient's phone number in an international format.</td></tr>
