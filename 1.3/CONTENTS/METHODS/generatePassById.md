@@ -1,7 +1,8 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
 <h2>generatePassById</h2>
 <p><strong>Synopsis:</strong><br />
-This API function triggers the passbook pass generation for the given passDataID. On success, returns a link to download the generated passbook pass (i.e., pkpass file).
+This API function triggers the passbook pass generation for the given 'passDataID'. 'passDataID' is generated whenever pass data
+is added to the pass database using the addPassData () API request. On success, returns a link to download the generated passbook pass (i.e., pkpass file).
 For more info see below for Mandatory/Optional fields and Error codes.
 </p>
 <div><strong>Request:</strong></div>
