@@ -6,7 +6,7 @@
 
 <tr><td width="30%"><b>ACTION</b></td><td> This is the name of the function you want to execute with the API.</td></tr>
 <tr><td><b>API_KEY</b></td><td> Random key that is assigned to an account that can be used for authorization instead of USER/PASS. You can find and regenerate this key on the 'API Settings' page.</td></tr>
-<tr><td><b>BARCODEID</b></td><td> The alphanumeric value that is encoded inside a barcode sent using the 'sendMMSBarcode' function.</td></tr>
+<tr><td><b>BARCODEID</b></td><td> The alphanumeric value that is encoded inside a barcode that was sent using the 'sendMMSBarcode' function.</td></tr>
 <tr><td><b>BARCODEVALUE</b></td><td> The barcode value or Id that will be encoded into the barcode on the pass.</td></tr>
 <tr><td><b>BARCODETEXT</b></td><td> A barcode text that will be shown below the barcode image on the pass.</td></tr>
 <tr><td><b>BRANDNAME</b></td><td> The company, brand, or individual that will appear as the sender’s name for the campaign.</td></tr>
