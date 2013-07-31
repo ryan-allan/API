@@ -4,21 +4,21 @@
 
 <table border = "1">
 
-<tr><td width="30%"><b>ACTION</b></td><td>This is the function name you want to execute with the API.</td></tr>
-<tr><td><b>API_KEY</b></td><td> Random key assigned to account that can be used for authorization instead of USER/PASS. You can find and regenerate this key on 'API Settigs' page</td></tr>
-<tr><td><b>BARCODEID</b></td><td> Value encoded inside barcode sent using 'sendMMSBarcode' function</td></tr>
-<tr><td><b>BARCODEVALUE</b></td><td> Barcode value or Id that will be encoded into the barcode on the pass</td></tr>
-<tr><td><b>BRANDNAME</b></td><td> The company, brand, or individual that will appear as the sender’s name for campaign.</td></tr>
-<tr><td><b>CAMPAIGNID</b></td><td> ID of the campaign to subscribe the user to (integer)</td></tr>
-<tr><td><b>CAMPAIGNNAME</b></td><td> Name for new campaign created with createMMSCampaign or createEmailCampaign function</td></tr>
+<tr><td width="30%"><b>ACTION</b></td><td> This is the name of the function you want to execute with the API.</td></tr>
+<tr><td><b>API_KEY</b></td><td> Random key that is assigned to an account that can be used for authorization instead of USER/PASS. You can find and regenerate this key on the 'API Settings' page.</td></tr>
+<tr><td><b>BARCODEID</b></td><td> The alphanumeric value that is encoded inside a barcode sent using the 'sendMMSBarcode' function.</td></tr>
+<tr><td><b>BARCODEVALUE</b></td><td> The barcode value or Id that will be encoded into the barcode on the pass.</td></tr>
+<tr><td><b>BRANDNAME</b></td><td> The company, brand, or individual that will appear as the sender’s name for the campaign.</td></tr>
+<tr><td><b>CAMPAIGNID</b></td><td> The ID(integer) of the campaign to which the user will be subscribed.</td></tr>
+<tr><td><b>CAMPAIGNNAME</b></td><td> The name for a new campaign created with either the createMMSCampaign or createEmailCampaign function</td></tr>
 <tr><td><b>CAMPAIGNREF</b></td><td> Depending on your API settings you may be required to subscribe a user first before sending them messages. If you are required to subscribe a user first then a valid Campaign Reference is required. This would be the campaign ID to which the user is subscribed.</td></tr>
-<tr><td><b>CTA</b></td><td> mobile owner will be prompted for subscribing/unsubscribing confirmation via SMS. They will be sent a SMS Opt-in request (yes/no)</td></tr>
-<tr><td><b>CUSTOMTEXT</b></td><td> Custom text that will overwrite given slide text used in sendSavedMMS function</td></tr>
-<tr><td><b>CUSTOMTITLE</b></td><td> Custom Title that will overwrite MMS Subject used in sendSavedMMS function</td></tr>
-<tr><td><b>DURATION</b></td><td> Duration of the slide displayed in seconds (integer)</td></tr>
-<tr><td><b>DATABASEID</b></td><td> The identification code for Barcode Database(integer)</td></tr>
-<tr><td><b>DDMTITLE</b></td><td> Title for DDM message (Device Discover Message) used in sendSavedMMS function</td></tr>
-<tr><td><b>DDMTEXT</b></td><td> Text/Body for DDM message (Device Discover Message) used in sendSavedMMS function</td></tr>
+<tr><td><b>CTA</b></td><td> This will prompt a mobile owner with a subscribe/unsubscribe confirmation via SMS Opt-in request (yes/no).</td></tr>
+<tr><td><b>CUSTOMTEXT</b></td><td> This is custom text that will overwrite a given slide text used in a sendSavedMMS function call.</td></tr>
+<tr><td><b>CUSTOMTITLE</b></td><td> This is a custom title that will overwrite the MMS Subject used in a sendSavedMMS function call</td></tr>
+<tr><td><b>DURATION</b></td><td> The duration of a slide displayed in seconds (integer)</td></tr>
+<tr><td><b>DATABASEID</b></td><td> The identification code for a Barcode Database(integer)</td></tr>
+<tr><td><b>DDMTITLE</b></td><td> Title for a DDM message (Device Discovery Message) used in the sendSavedMMS function</td></tr>
+<tr><td><b>DDMTEXT</b></td><td> Text/Body for DDM message (Device Discovery Message) used in the sendSavedMMS function</td></tr>
 <tr><td><b>DDMTIMEOUT</b></td><td>  Timeout (in minutes) for DDM message (Device Discover Message) used in sendSavedMMS function. After this time we send MMS even if there is no DDM result received.</td></tr>
 <tr><td><b>EMAIL</b></td><td> valid email address</td></tr>
 <tr><td><b>EMAILID</b></td><td> The identification code for email template</td></tr>
@@ -44,13 +44,12 @@
 <tr><td><b>START_DATE</b></td><td> Start date for sending statisticks used in 'getSendingStatistics' function. The format should be YYYY-MM-DD hh:mm:ss</td></tr>
 <tr><td><b>TEXT</b></td><td> SMS message limited to 160 characters (string)</td></tr>
 <tr><td><b>TO</b></td><td> the message recipients phone number in international format.</td></tr>
-<tr><td><b>TOCAMPAIGN</b></td><td> ID of campaign you want to schedule MMS to using sendSavedMMSCampaign function</td></tr>
-<tr><td><b>TRACKINGID</b></td><td> On success API returns with the tracking ID to identify messages seding, on failures no tracking ID is returned. It is the internal reference number for SMS/MMS sending, it is temporary ID and where possible HISTORYID should be used. Once the message sending is processed you shall receive the postback containing both TRACKINGID and HISTORYID.</td></tr>
-<tr><td><b>TRANSACTIONID</b></td><td> The identification that will be encoded into delivered barcode(string)</td></tr>
-<tr><td><b>TIMEZONE</b></td><td> Time zone abbreviation associated with the phone number used inside 'subscribe' function</td></tr>
-<tr><td><b>USER</b></td><td> Valid account username</td></tr>
-
-
-<tr><td><b>BARCODETEXT</b></td><td> Barcode text that will be shown below the barcode image on the pass</td></tr>
+<tr><td><b>TOCAMPAIGN</b></td><td> The ID(integer) of a campaign for which you want to schedule an MMS using the 'sendSavedMMSCampaign' function.</td></tr>
+<tr><td><b>TRACKINGID</b></td><td> On success, the API returns with the tracking ID(integer) to identify sent messages.  On failure, no tracking ID is returned. This is the internal reference number for SMS/MMS sending, it is a temporary ID and (where possible) HISTORYID should be used. Once the message sending is processed you shall receive a postback containing both TRACKINGID and HISTORYID.</td></tr>
+<tr><td><b>TRANSACTIONID</b></td><td> The ID(integer) that will be encoded into a delivered barcode(string).</td></tr>
+<tr><td><b>TIMEZONE</b></td><td> A time zone abbreviation associated with the phone number used inside 'subscribe' function.</td></tr>
+<tr><td><b>USER</b></td><td> A valid account username</td></tr>
+<tr><td><b>BARCODETEXT</b></td><td> A barcode text that will be shown below the barcode image on the pass.</td></tr>
 
 </table>
+
