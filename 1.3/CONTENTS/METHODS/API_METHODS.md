@@ -22,6 +22,7 @@
 <li><b>Email</b></li>
 <ul>
 <li><a href="getEmailIds.md">getEmailIds</a></li>
+<li><a href="getEmailCampaigns.md">getEmailCampaigns</a></li>
 <li><a href="createEmailCampaign.md">createEmailCampaign</a></li>
 <li><a href="sendSavedEmail.md">sendSavedEmail</a></li>
 <li><a href="subscribeEmail+unsubscribeEmail.md">subscribeEmail + unsubscribeEmail</a></li>
