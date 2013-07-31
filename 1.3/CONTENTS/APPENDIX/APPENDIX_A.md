@@ -8,7 +8,7 @@
 <tr><td><b>API_KEY</b></td><td> Random key that is assigned to an account that can be used for authorization instead of USER/PASS. You can find and regenerate this key on the 'API Settings' page.</td></tr>
 <tr><td><b>BARCODEID</b></td><td> The alphanumeric value that is encoded inside a barcode that was sent using the 'sendMMSBarcode' function.</td></tr>
 <tr><td><b>BARCODEVALUE</b></td><td> The barcode value or Id that will be encoded into the barcode image on the pass.</td></tr>
-<tr><td><b>BARCODETEXT</b></td><td> A barcode text that will be shown below the barcode image on the pass.</td></tr>
+<tr><td><b>BARCODETEXT</b></td><td> Added text that will be shown below the barcode image on the pass.</td></tr>
 <tr><td><b>BRANDNAME</b></td><td> The company, brand, or individual that will appear as the sender’s name for the campaign.</td></tr>
 <tr><td><b>CAMPAIGNID</b></td><td> The ID(integer) of the campaign to which the user will be subscribed.</td></tr>
 <tr><td><b>CAMPAIGNNAME</b></td><td> The name for a new campaign created with either the createMMSCampaign or createEmailCampaign function</td></tr>
