@@ -12,7 +12,7 @@
 <tr><td><b>BRANDNAME</b></td><td> The company, brand, or individual that will appear as the sender’s name for the campaign.</td></tr>
 <tr><td><b>CAMPAIGNID</b></td><td> The ID(integer) of the campaign to which the user will be subscribed.</td></tr>
 <tr><td><b>CAMPAIGNNAME</b></td><td> The name for a new campaign created with either the createMMSCampaign or createEmailCampaign function</td></tr>
-<tr><td><b>CAMPAIGNREF</b></td><td> Depending on your API settings, you may be required to subscribe a user first before sending them messages. If you are required to subscribe a user first, then a valid Campaign Reference is required. This would be the campaign ID to which the user is subscribed.</td></tr>
+<tr><td><b>CAMPAIGNREF</b></td><td> Depending on your API settings, you may be required to subscribe a user first before sending them messages. If you are required to subscribe a user first, then a valid Campaign Reference is required. This would be the campaign ID(integer) to which the user is subscribed.</td></tr>
 <tr><td><b>CTA</b></td><td> This will prompt a mobile owner with a subscribe/unsubscribe confirmation via SMS Opt-in request (yes/no).</td></tr>
 <tr><td><b>CUSTOMTEXT</b></td><td> This is custom text that will overwrite a given slide text used in a sendSavedMMS function call.</td></tr>
 <tr><td><b>CUSTOMTITLE</b></td><td> This is a custom title that will overwrite the MMS Subject used in a sendSavedMMS function call.</td></tr>
