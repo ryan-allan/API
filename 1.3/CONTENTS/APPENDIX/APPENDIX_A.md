@@ -47,7 +47,7 @@
 <tr><td><b>TOCAMPAIGN</b></td><td> The ID(integer) of a campaign for which you want to schedule an MMS using the 'sendSavedMMSCampaign' function.</td></tr>
 <tr><td><b>TRACKINGID</b></td><td> On success, the API returns with the tracking ID(integer) to identify sent messages.  On failure, no tracking ID is returned. This is the internal reference number for SMS/MMS sending, it is a temporary ID and (where possible) HISTORYID should be used. Once the message sending is processed you shall receive a postback containing both TRACKINGID and HISTORYID.</td></tr>
 <tr><td><b>TRANSACTIONID</b></td><td> The ID(integer) that will be encoded into a delivered barcode(string).</td></tr>
-<tr><td><b>TIMEZONE</b></td><td> A time zone abbreviation associated with the phone number used inside 'subscribe' function.</td></tr>
+<tr><td><b>TIMEZONE</b></td><td> A time zone abbreviation associated with the phone number used inside the 'subscribe' function.</td></tr>
 <tr><td><b>USER</b></td><td> A valid account username</td></tr>
 <tr><td><b>BARCODETEXT</b></td><td> A barcode text that will be shown below the barcode image on the pass.</td></tr>
 
