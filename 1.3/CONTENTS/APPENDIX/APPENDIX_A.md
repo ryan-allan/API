@@ -44,7 +44,7 @@
 <tr><td><b>SPID</b></td><td> The carrier ID (integer – appendix D).</td></tr>
 <tr><td><b>START_DATE</b></td><td> The start date for sending statistics used in the 'getSendingStatistics' function. The format should be "YYYY-MM-DD hh:mm:ss" (ignoring quotations).</td></tr>
 <tr><td><b>TEXT</b></td><td> SMS message limited to 160 characters (string).</td></tr>
-<tr><td><b>TO</b></td><td> This is the message recipients phone number in an international format.</td></tr>
+<tr><td><b>TO</b></td><td> This is the message recipient's phone number in an international format.</td></tr>
 <tr><td><b>TOCAMPAIGN</b></td><td> The ID(integer) of a campaign for which you want to schedule an MMS using the 'sendSavedMMSCampaign' function.</td></tr>
 <tr><td><b>TRACKINGID</b></td><td> On success, the API returns with the tracking ID(integer) to identify sent messages.  On failure, no tracking ID is returned. This is the internal reference number for SMS/MMS sending, it is a temporary ID and (where possible) HISTORYID should be used. Once the message sending is processed you shall receive a postback containing both TRACKINGID and HISTORYID.</td></tr>
 <tr><td><b>TRANSACTIONID</b></td><td> The ID(integer) that will be encoded into a delivered barcode(string).</td></tr>
