@@ -19,8 +19,8 @@
 <tr><td><b>DATABASEID</b></td><td> The identification code for a Barcode Database(integer).</td></tr>
 <tr><td><b>DDMTITLE</b></td><td> Title for a DDM message (Device Discovery Message) used in the sendSavedMMS function.</td></tr>
 <tr><td><b>DDMTEXT</b></td><td> Text/Body for DDM message (Device Discovery Message) used in the sendSavedMMS function.</td></tr>
-<tr><td><b>DDMTIMEOUT</b></td><td>  Timeout (in minutes) for DDM message (Device Discover Message) used in sendSavedMMS function. After this time we send MMS even if there is no DDM result received.</td></tr>
-<tr><td><b>EMAIL</b></td><td> valid email address</td></tr>
+<tr><td><b>DDMTIMEOUT</b></td><td>  The time(in minutes) for a DDM message (Device Discovery Message) used in the 'sendSavedMMS' function. After this time expires, we send an MMS even if there is not a DDM result received.</td></tr>
+<tr><td><b>EMAIL</b></td><td> A valid email address.</td></tr>
 <tr><td><b>EMAILID</b></td><td> The identification code for email template.</td></tr>
 <tr><td><b>END_DATE</b></td><td> End date for sending statisticks used in 'getSendingStatistics' function. The format should be YYYY-MM-DD hh:mm:ss.</td></tr>
 <tr><td><b>FROM</b></td><td> A valid shortcode or longcode for the sender address (string). When sending to a list of many numbers (SendSavedContent) if the FROM value cannot be used for a certain country the system will re-write the sender address to use a valid shortcode for those numbers.</td></tr>
