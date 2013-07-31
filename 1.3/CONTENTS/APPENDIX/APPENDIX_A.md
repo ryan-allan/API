@@ -26,7 +26,7 @@
 <tr><td><b>END_DATE</b></td><td> The end date of the sending statistics used in the 'getSendingStatistics' function. The format should be "YYYY-MM-DD hh:mm:ss" (ignoring quotations).</td></tr>
 <tr><td><b>FROM</b></td><td> A valid shortcode or longcode for the sender address(string). When sending to a list of many numbers using the 'sendSavedContent' function and if the 'FROM' value cannot be used for a certain country, then the system will re-write the sender address to use a valid shortcode for those numbers.</td></tr>
 <tr><td><b>HISTORYID</b></td><td> This is a permanent reference number used to indentify the SMS/MMS message sending in our History. The 'HISTORYID' is used in the API reports.</td></tr>
-<tr><td><b>MAILINGADDRESS</b></td><td> This is the physical address that will appear in your email footers. You are required to provide your physical address in accordance with the "CAN-SPAM Act of 2003". Please make sure to include your company name and country in the address.</td></tr>
+<tr><td><b>MAILINGADDRESS</b></td><td> This is the physical address that will appear in your email footers. You are required to provide your physical address in accordance with the "CAN-SPAM Act of 2003". Please make sure to include your company name and country in the address when you create a campaign. This field is used when creating an Email campaign.</td></tr>
 <tr><td><b>MMSID</b></td><td> The ID(integer) of a saved MMS.</td></tr>
 <tr><td><b>MMSINBOXID</b></td><td> The ID(integer) of a saved MMS to be removed inside the 'removeMMSInboxContent' function.</td></tr>
 <tr><td><b>MOBILE</b></td><td> A Phone Number used inside the 'subscribe'/'unsubscribe' function.</td></tr>
