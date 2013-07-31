@@ -33,7 +33,7 @@
 <tr><td><b>NEWPASS</b></td><td> A Password for a new account created with the 'createUser' function.</td></tr>
 <tr><td><b>NEWUSER</b></td><td> A Username for a new account created with the 'createUser' function.</td></tr>
 <tr><td><b>NOTIFY</b></td><td> A mobile owner will be notified about being subscribed/unsubscribed via a confirmation SMS (yes/no).</td></tr>
-<tr><td><b>ORIGIN</b></td><td> This identifies the Postback. It can be 'SMS_MT', 'MMS_MT' or 'SUB'.</td></tr>
+<tr><td><b>ORIGIN</b></td><td> This identifies the Postback. It can be SMS_MT, MMS_MT or SUB.</td></tr>
 <tr><td><b>PASS</b></td><td> A valid, md5() encoded account password.</td></tr>
 <tr><td><b>PASSDATA</b></td><td>  All the data that goes on the pass(Array).</td></tr>
 <tr><td><b>PASSDATAID</b></td><td> A valid Pass Data Row ID(integer).</td></tr>
