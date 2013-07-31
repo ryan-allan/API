@@ -20,6 +20,7 @@
     <li><a href="CONTENTS/METHODS/getSendingStatistics.md">getSendingStatistics</a></li>
     <li><a href="CONTENTS/METHODS/removeMMSInboxContent.md">removeMMSInboxContent</a></li>
     <li><a href="CONTENTS/METHODS/getEmailIds.md">getEmailIds</a></li>
+    <li><a href="CONTENTS/METHODS/getEmailCampaigns.md">getEmailCampaigns</a></li>
     <li><a href="CONTENTS/METHODS/createEmailCampaign.md">createEmailCampaign</a></li>
     <li><a href="CONTENTS/METHODS/sendSavedEmail.md">sendSavedEmail</a></li>
     <li><a href="CONTENTS/METHODS/subscribeEmail+unsubscribeEmail.md">subscribeEmail + unsubscribeEmail</a></li>
