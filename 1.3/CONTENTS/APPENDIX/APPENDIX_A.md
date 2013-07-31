@@ -21,29 +21,29 @@
 <tr><td><b>DDMTEXT</b></td><td> Text/Body for DDM message (Device Discovery Message) used in the sendSavedMMS function.</td></tr>
 <tr><td><b>DDMTIMEOUT</b></td><td>  The time(in minutes) for a DDM message (Device Discovery Message) used in the 'sendSavedMMS' function. After this time expires, we send an MMS even if there is not a DDM result received.</td></tr>
 <tr><td><b>EMAIL</b></td><td> A valid email address.</td></tr>
-<tr><td><b>EMAILID</b></td><td> The identification code for email template.</td></tr>
-<tr><td><b>END_DATE</b></td><td> End date for sending statisticks used in 'getSendingStatistics' function. The format should be YYYY-MM-DD hh:mm:ss.</td></tr>
-<tr><td><b>FROM</b></td><td> A valid shortcode or longcode for the sender address (string). When sending to a list of many numbers (SendSavedContent) if the FROM value cannot be used for a certain country the system will re-write the sender address to use a valid shortcode for those numbers.</td></tr>
-<tr><td><b>HISTORYID</b></td><td> This is permanent refference number used to indentify the SMS/MMS messae sending in our History. HISTORYID is used API reports.</td></tr>
-<tr><td><b>MAILINGADDRESS</b></td><td> This is the physical address that will appear in your email footers. You are required to provide your physical address in accordance with the CAN-SPAM act of 2003. Please make sure to include your company name and country in the address.</td></tr>
-<tr><td><b>MMSID</b></td><td> The identification code of saved MMS.</td></tr>
-<tr><td><b>MMSINBOXID</b></td><td> ID of saved MMS to be removed inside removeMMSInboxContent function.</td></tr>
-<tr><td><b>MOBILE</b></td><td> Phone Number used inside 'subscribe'/'unsubscribe' function.</td></tr>
-<tr><td><b>NEWPASS</b></td><td> Password for new account created with 'createUser' function.</td></tr>
-<tr><td><b>NEWUSER</b></td><td> Username for new account created with 'createUser' function.</td></tr>
-<tr><td><b>NOTIFY</b></td><td> mobile owner will be notified via SMS about being subscribed/unsubscribed. They will be sent confirmation SMS (yes/no).</td></tr>
-<tr><td><b>ORIGIN</b></td><td> This identifies the Postback. It can be SMS_MT, MMS_MT or SUB.</td></tr>
-<tr><td><b>PASS</b></td><td> Valid, md5() encoded account password.</td></tr>
-<tr><td><b>PASSDATA</b></td><td>  All the data that goes on the pass (Array).</td></tr>
-<tr><td><b>PASSDATAID</b></td><td> Valid Pass Data Row ID (Integer).</td></tr>
-<tr><td><b>PASSTEMPLATEID</b></td><td> Valid Pass Template ID (Integer).</td></tr>
-<tr><td><b>SCHEDULEDID</b></td><td> This is refference ID for sending campaign. It is common for every number belonging to that campaign. When campaign sending is processed system will generate postback notifications linking SCHEDULEDID with TRACKINGID and HISTORYID.</td></tr>
-<tr><td><b>SEQUENCE</b></td><td> encloses all MMS slide presentation data, encloses one or multiple SLIDEs (up to a max of 8).</td></tr>
-<tr><td><b>SLIDE</b></td><td> Represents a single slide within the MMS sequence could include IMAGE/URL/TEXT/PIC etc. (special rules for slides within save MMS special consideration section).</td></tr>
+<tr><td><b>EMAILID</b></td><td> The ID(integer) for an email template.</td></tr>
+<tr><td><b>END_DATE</b></td><td> The end date of the sending statistics used in the 'getSendingStatistics' function. The format should be "YYYY-MM-DD hh:mm:ss" (ignoring quotations).</td></tr>
+<tr><td><b>FROM</b></td><td> A valid shortcode or longcode for the sender address(string). When sending to a list of many numbers using the 'sendSavedContent' function and if the 'FROM' value cannot be used for a certain country, then the system will re-write the sender address to use a valid shortcode for those numbers.</td></tr>
+<tr><td><b>HISTORYID</b></td><td> This is a permanent reference number used to indentify the SMS/MMS message sending in our History. The 'HISTORYID' is used in the API reports.</td></tr>
+<tr><td><b>MAILINGADDRESS</b></td><td> This is the physical address that will appear in your email footers. You are required to provide your physical address in accordance with the "CAN-SPAM Act of 2003". Please make sure to include your company name and country in the address.</td></tr>
+<tr><td><b>MMSID</b></td><td> The ID(integer) of a saved MMS.</td></tr>
+<tr><td><b>MMSINBOXID</b></td><td> The ID(integer) of a saved MMS to be removed inside the 'removeMMSInboxContent' function.</td></tr>
+<tr><td><b>MOBILE</b></td><td> A Phone Number used inside the 'subscribe'/'unsubscribe' function.</td></tr>
+<tr><td><b>NEWPASS</b></td><td> A Password for a new account created with the 'createUser' function.</td></tr>
+<tr><td><b>NEWUSER</b></td><td> A Username for a new account created with the 'createUser' function.</td></tr>
+<tr><td><b>NOTIFY</b></td><td> A mobile owner will be notified about being subscribed/unsubscribed via a confirmation SMS (yes/no).</td></tr>
+<tr><td><b>ORIGIN</b></td><td> This identifies the Postback. It can be 'SMS_MT', 'MMS_MT' or 'SUB'.</td></tr>
+<tr><td><b>PASS</b></td><td> A valid, md5() encoded account password.</td></tr>
+<tr><td><b>PASSDATA</b></td><td>  All the data that goes on the pass(Array).</td></tr>
+<tr><td><b>PASSDATAID</b></td><td> A valid Pass Data Row ID(integer).</td></tr>
+<tr><td><b>PASSTEMPLATEID</b></td><td> Valid Pass Template ID(integer).</td></tr>
+<tr><td><b>SCHEDULEDID</b></td><td> This is a reference ID(integer) for a sending campaign. It is used for every number belonging to that campaign. When campaign sending is processed, the system will generate postback notifications linking SCHEDULEDID with TRACKINGID and HISTORYID.</td></tr>
+<tr><td><b>SEQUENCE</b></td><td> This encloses all MMS slide presentation data from one or multiple slides (up to a maximum of 8).</td></tr>
+<tr><td><b>SLIDE</b></td><td> This represents a single slide within the MMS sequence the could include IMAGE/URL/TEXT/PIC etc. (There are special rules for slides within the save MMS special consideration section).</td></tr>
 <tr><td><b>SPID</b></td><td> The carrier ID (integer – appendix D).</td></tr>
-<tr><td><b>START_DATE</b></td><td> Start date for sending statisticks used in 'getSendingStatistics' function. The format should be YYYY-MM-DD hh:mm:ss.</td></tr>
+<tr><td><b>START_DATE</b></td><td> The start date for sending statistics used in the 'getSendingStatistics' function. The format should be "YYYY-MM-DD hh:mm:ss" (ignoring quotations).</td></tr>
 <tr><td><b>TEXT</b></td><td> SMS message limited to 160 characters (string).</td></tr>
-<tr><td><b>TO</b></td><td> the message recipients phone number in international format.</td></tr>
+<tr><td><b>TO</b></td><td> This is the message recipients phone number in an international format.</td></tr>
 <tr><td><b>TOCAMPAIGN</b></td><td> The ID(integer) of a campaign for which you want to schedule an MMS using the 'sendSavedMMSCampaign' function.</td></tr>
 <tr><td><b>TRACKINGID</b></td><td> On success, the API returns with the tracking ID(integer) to identify sent messages.  On failure, no tracking ID is returned. This is the internal reference number for SMS/MMS sending, it is a temporary ID and (where possible) HISTORYID should be used. Once the message sending is processed you shall receive a postback containing both TRACKINGID and HISTORYID.</td></tr>
 <tr><td><b>TRANSACTIONID</b></td><td> The ID(integer) that will be encoded into a delivered barcode(string).</td></tr>
