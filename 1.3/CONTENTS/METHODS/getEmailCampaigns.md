@@ -32,18 +32,20 @@ GET:
 <div><strong>Response Example: Success</strong></div>
 <pre>&lt;RESPONSE&gt;
     &lt;STATUS&gt;Success&lt;/STATUS&gt;
-    &lt;CAMPAIGN&gt;
-        &lt;ID&gt;1233&lt;/ID&gt;
-        &lt;NAME&gt;Winter Sale&lt;/NAME&gt;
-    &lt;/CAMPAIGN&gt;
-    &lt;CAMPAIGN&gt;
-        &lt;ID&gt;1234&lt;/ID&gt;
-        &lt;NAME&gt;Summer Sale&lt;/NAME&gt;
-    &lt;/CAMPAIGN&gt;
-    &lt;CAMPAIGN&gt;
-        &lt;ID&gt;1235&lt;/ID&gt;
-        &lt;NAME&gt;Store opening&lt;/NAME&gt;
-    &lt;/CAMPAIGN&gt;
+    &lt;EMAILCAMPAIGNS&gt;    
+        &lt;CAMPAIGN&gt;
+            &lt;ID&gt;1233&lt;/ID&gt;
+            &lt;NAME&gt;Winter Sale&lt;/NAME&gt;
+        &lt;/CAMPAIGN&gt;
+        &lt;CAMPAIGN&gt;
+            &lt;ID&gt;1234&lt;/ID&gt;
+            &lt;NAME&gt;Summer Sale&lt;/NAME&gt;
+        &lt;/CAMPAIGN&gt;
+        &lt;CAMPAIGN&gt;
+            &lt;ID&gt;1235&lt;/ID&gt;
+            &lt;NAME&gt;Store opening&lt;/NAME&gt;
+        &lt;/CAMPAIGN&gt;
+    &lt;/EMAILCAMPAIGNS&gt;
 &lt;/RESPONSE&gt;</pre>
 <div><strong>Response Example: Failure</strong></div>
 <pre>&lt;RESPONSE&gt;
