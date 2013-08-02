@@ -178,6 +178,10 @@
 <td></td>
 </tr>
 <tr>
+<td>E405 No MMS Campaigns were created in this account</td>
+<td></td>
+</tr>
+<tr>
 <td>E503 Internal error</td>
 <td></td>
 </tr>
