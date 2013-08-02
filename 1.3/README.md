@@ -11,6 +11,7 @@
     <li><a href="CONTENTS/METHODS/loginUser.md">loginUser</a></li>
     <li><a href="CONTENTS/METHODS/sendSMS.md">sendSMS</a></li>
     <li><a href="CONTENTS/METHODS/getMmsIds.md">getMmsIds</a></li>
+    <li><a href="CONTENTS/METHODS/getMmsCampaigns.md">getMmsCampaigns</a></li>
     <li><a href="CONTENTS/METHODS/saveMMS.md">saveMMS</a></li>
     <li><a href="CONTENTS/METHODS/sendSavedMMS.md">sendSavedMMS</a></li>
     <li><a href="CONTENTS/METHODS/sendMMSBarcode.md">sendMMSBarcode</a></li>
