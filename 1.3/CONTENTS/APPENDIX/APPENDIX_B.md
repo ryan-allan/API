@@ -54,6 +54,10 @@
 <td>E808 Invalid &#8216;PassDataID&#8217;. Pass is either deleted or does not belong to this user.</td>
 </tr>
 <tr>
+<td>E120 Account has reached the API request limit.</td>
+<td></td>
+</tr>
+<tr>
 <td>E150 The &#8216;newuser&#8217; is required</td>
 <td>E809 Pass was not updated. Internal error occured.</td>
 </tr>
