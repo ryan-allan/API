@@ -15,12 +15,12 @@ This API Sends an SMS from the specified account and short code to a recipientâ€
 <div><strong>Request Parameters:</strong></div>
 
 <pre>
-(If Enforce Campaign Check is NOT Enabled)
+<strong>(If Enforce Campaign Check is NOT Enabled)</strong>
 <strong>Mandatory:</strong> Action, API_KEY, To, Text, From
 	
 <strong>Optional:</strong>SPID, CampaignRef
 
-(If Enforce Campaign Check IS Enabled)
+<strong>(If Enforce Campaign Check IS Enabled)</strong>
 <strong>Mandatory:</strong> Action, API_KEY, To, Text, From, CampaignRef
 	
 <strong>Optional:</strong>SPID
