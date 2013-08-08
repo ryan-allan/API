@@ -16,11 +16,13 @@ This API Sends an SMS from the specified account and short code to a recipientâ€
 
 <pre>
 <strong>(If Enforce Campaign Check is NOT Enabled)</strong>
+
 <strong>Mandatory:</strong> Action, API_KEY, To, Text, From
 	
 <strong>Optional:</strong>SPID, CampaignRef
 
 <strong>(If Enforce Campaign Check IS Enabled)</strong>
+
 <strong>Mandatory:</strong> Action, API_KEY, To, Text, From, CampaignRef
 	
 <strong>Optional:</strong>SPID
