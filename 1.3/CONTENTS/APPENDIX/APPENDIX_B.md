@@ -123,11 +123,11 @@
 </tr>
 <tr>
 <td>E241 This content does not exist</td>
-<td>E825 The pass contained in the MMS template do not allow MMS delivery.</td>
+<td>E825 The Pass Template contained in the MMS template does not allow dynamic Pass Data.</td>
 </tr>
 <tr>
 <td>E301 The &#8216;name&#8217; is required</td>
-<td>E826 The pass contained in the Email template do not allow Email delivery.</td>
+<td>E826 The Pass Template contained in this Email Template does not allow dynamic Pass Data.</td>
 </tr>
 <tr>
 <td>E302 No slides</td>
