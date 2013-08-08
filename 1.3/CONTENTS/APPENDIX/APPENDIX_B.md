@@ -55,95 +55,94 @@
 </tr>
 <tr>
 <td>E120 Account has reached the API request limit.</td>
-<td></td>
-</tr>
-<tr>
-<td>E150 The &#8216;newuser&#8217; is required</td>
 <td>E809 Pass was not updated. Internal error occured.</td>
 </tr>
 <tr>
-<td>E151 &#8216;newuser&#8217; already exists</td>
+<td>E150 The &#8216;newuser&#8217; is required</td>
 <td>E810 &#8216;Pass Template &#8216;Header-1&#8242; value type has to be &#8216;Text&#8217; to allow &#8216;Header-1&#8242; API value&#8217;</td>
 </tr>
 <tr>
-<td>E152 The &#8216;newpass&#8217; is required</td>
+<td>E151 &#8216;newuser&#8217; already exists</td>
 <td>E811 &#8216;Pass Template &#8216;Primary-1&#8242; value type has to be &#8216;Text&#8217; to allow &#8216;Primary-1&#8242; API value&#8217;</td>
 </tr>
 <tr>
-<td>E153 User was not created. Internal error occurred</td>
+<td>E152 The &#8216;newpass&#8217; is required</td>
 <td>E812 &#8216;Pass Template &#8216;Primary-2&#8242; value type has to be &#8216;Text&#8217; to allow &#8216;Primary-2&#8242; API value&#8217;</td>
 </tr>
 <tr>
-<td>E154 User was not created. Internal error occurred.</td>
+<td>E153 User was not created. Internal error occurred</td>
 <td>E813 &#8216;Pass Template &#8216;Secondary-1&#8242; value type has to be &#8216;Text&#8217; to allow &#8216;Secondary-1&#8242; API value&#8217;</td>
 </tr>
 <tr>
-<td>E170 &#8216;campaignname is required</td>
+<td>E154 User was not created. Internal error occurred.</td>
 <td>E814 &#8216;Pass Template &#8216;Secondary-2&#8242; value type has to be &#8216;Text&#8217; to allow &#8216;Secondary-2&#8242; API value&#8217;</td>
 </tr>
 <tr>
-<td>E171 &#8216;brandname&#8217; is required</td>
+<td>E170 &#8216;campaignname is required</td>
 <td>E815 &#8216;Pass Template &#8216;Secondary-3&#8242; value type has to be &#8216;Text&#8217; to allow &#8216;Secondary-3&#8242; API value&#8217;</td>
 </tr>
 <tr>
-<td>E172 Campaign was not created. Internal error occured. Please try again later.</td>
+<td>E171 &#8216;brandname&#8217; is required</td>
 <td>E816 &#8216;Pass Template &#8216;Secondary-4&#8242; value type has to be &#8216;Text&#8217; to allow &#8216;Secondary-4&#8242; API value&#8217;</td>
 </tr>
 <tr>
-<td>E173 &#8216;mailingaddress&#8217; is required</td>
+<td>E172 Campaign was not created. Internal error occured. Please try again later.</td>
 <td>E817 &#8216;Pass Template &#8216;Auxiliary-1&#8242; value type has to be &#8216;Text&#8217; to allow &#8216;Auxiliary-1&#8242; API value&#8217;</td>
 </tr>
 <tr>
-<td>E201 The receiver number is required</td>
+<td>E173 &#8216;mailingaddress&#8217; is required</td>
 <td>E818 &#8216;Pass Template &#8216;Auxiliary-2&#8242; value type has to be &#8216;Text&#8217; to allow &#8216;Auxiliary-2&#8242; API value&#8217;</td>
 </tr>
 <tr>
-<td>E225 Too many Slides</td>
+<td>E201 The receiver number is required</td>
 <td>E819 &#8216;Pass Template &#8216;Auxiliary-3&#8242; value type has to be &#8216;Text&#8217; to allow &#8216;Auxiliary-3&#8242; API value&#8217;</td>
 </tr>
 <tr>
-<td>E226 Audio and Video not allowed in same slide</td>
+<td>E225 Too many Slides</td>
 <td>E820 &#8216;Pass Template &#8216;Auxiliary-4&#8242; value type has to be &#8216;Text&#8217; to allow &#8216;Auxiliary-4&#8242; API value&#8217;</td>
 </tr>
 <tr>
-<td>E227 Video and Image not allowed in same slide</td>
+<td>E226 Audio and Video not allowed in same slide</td>
 <td>E821 Pass was not deleted. Internal error occured.</td>
 </tr>
 <tr>
-<td>E228 Text more than X characters</td>
+<td>E227 Video and Image not allowed in same slide</td>
 <td>E822 There is no pass found in this MMS Template to send.</td>
 </tr>
 <tr>
-<td>E229 Content not allowed</td>
+<td>E228 Text more than X characters</td>
 <td>E823 There is no pass found in this Email template to send.</td>
 </tr>
 <tr>
-<td>E230 Bad X slide duration</td>
+<td>E229 Content not allowed</td>
 <td>E824 Invalid call to the API. There is no pass data supplied.</td>
 </tr>
 <tr>
-<td>E241 This content does not exist</td>
+<td>E230 Bad X slide duration</td>
 <td>E825 The Pass Template contained in the MMS template does not allow dynamic Pass Data.</td>
 </tr>
 <tr>
-<td>E301 The &#8216;name&#8217; is required</td>
+<td>E241 This content does not exist</td>
 <td>E826 The Pass Template contained in this Email Template does not allow dynamic Pass Data.</td>
 </tr>
 <tr>
-<td>E302 No slides</td>
+<td>E301 The &#8216;name&#8217; is required</td>
 <td>E827 Invalid request. MmsID or emailID or passTemplateID is required</td>
 </tr>
 <tr>
-<td>E303 Slide X is empty</td>
+<td>E302 No slides</td>
 <td>E828 Invalid request. You can request only by MmsID or emailID or passTemplateID and not more than one</td>
-</tr>
 <tr>
-<td>E331 Image in slide X is too big</td>
+<td>E303 Slide X is empty</td>
 <td>E830 Pass was not generated. Internal error occured</td>
 </tr>
 <tr>
-<td>E332 Audio in slide X is too big</td>
+<td>E331 Image in slide X is too big</td>
 <td>E831 Pass was not generated. It reached its download limit</td>
+</tr>
+<tr>
+<td>E332 Audio in slide X is too big</td>
+<td>E832 This Pass Template does not allow dynamic Pass Data.</td>
 </tr>
 <tr>
 <td>E333 Video in slide X is too big</td>
