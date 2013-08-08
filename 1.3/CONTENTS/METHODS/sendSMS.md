@@ -14,9 +14,18 @@ This API Sends an SMS from the specified account and short code to a recipientâ€
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request Parameters:</strong></div>
 
-<pre><strong>Mandatory:</strong> Action, API_KEY, To, Text, From
+<pre>
+(If Enforce Campaign Check is NOT Enabled)
+<strong>Mandatory:</strong> Action, API_KEY, To, Text, From
 	
-<strong>Optional:</strong>SPID, CampaignRef</pre>
+<strong>Optional:</strong>SPID, CampaignRef
+
+(If Enforce Campaign Check IS Enabled)
+<strong>Mandatory:</strong> Action, API_KEY, To, Text, From, CampaignRef
+	
+<strong>Optional:</strong>SPID
+
+</pre>
 	
 <p><strong>Response Parameters:</strong><br />
 
