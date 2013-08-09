@@ -119,11 +119,11 @@
 </tr>
 <tr>
 <td>E230 Bad X slide duration</td>
-<td>E825 The Pass Template contained in the MMS template does not allow dynamic Pass Data.</td>
+<td>E825 The Pass Template attached to this MMS does not allow dynamic Pass Data.</td>
 </tr>
 <tr>
 <td>E241 This content does not exist</td>
-<td>E826 The Pass Template contained in this Email Template does not allow dynamic Pass Data.</td>
+<td>E826 The Pass Template attached to this Email does not allow dynamic Pass Data.</td>
 </tr>
 <tr>
 <td>E301 The &#8216;name&#8217; is required</td>
