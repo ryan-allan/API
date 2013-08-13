@@ -134,23 +134,23 @@
 <td>E828 Invalid request. You can request only by MmsID or emailID or passTemplateID and not more than one</td>
 <tr>
 <td>E303 Slide X is empty</td>
-<td>E830 Pass was not generated. Internal error occured</td>
+<td>E829 Custom Data Identifier is the invalid. Only Alphabet, Numbers or a Space is allowed</td>
 </tr>
 <tr>
 <td>E331 Image in slide X is too big</td>
-<td>E831 Pass was not generated. It reached its download limit</td>
+<td>E830 Pass was not generated. Internal error occured</td>
 </tr>
 <tr>
 <td>E332 Audio in slide X is too big</td>
-<td>E832 This Pass Template does not allow dynamic Pass Data.</td>
+<td>E831 Pass was not generated. It reached its download limit</td>
 </tr>
 <tr>
 <td>E333 Video in slide X is too big</td>
-<td>E833 This Pass Template is set to send Personalized Passes. Atleast Email or Phone or CustomDataId is required with the Pass Data</td>
+<td>E832 This Pass Template does not allow dynamic Pass Data</td>
 </tr>
 <tr>
 <td>E334 Text in slide X is too long</td>
-<td></td>
+<td>E833 This Pass Template is set to send Personalized Passes. Atleast Email or Phone or CustomDataId is required with the Pass Data</td>
 </tr>
 <tr>
 <td>E341 Image file in slide X is corrupted</td>
