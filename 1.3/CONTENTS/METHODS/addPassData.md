@@ -80,7 +80,7 @@ email, phone, customDataId </pre>
 status, passDataID, passTemplateID, Errorcode, Errorinfo
 
 <strong>Related Errorcodes: </strong><br />
-E801, E802, E803, E804, E805, E806, E810, E811, E812, E813, E814, E815, E816, E817, E818, E819, E820, E832, E833
+E801, E802, E803, E804, E805, E806, E810, E811, E812, E813, E814, E815, E816, E817, E818, E819, E820, E829, E832, E833
 <div><strong>Request Example:</strong></div>
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;addPassData&lt;/ACTION&gt;
