@@ -146,7 +146,7 @@
 </tr>
 <tr>
 <td>E333 Video in slide X is too big</td>
-<td></td>
+<td>E833 This Pass Template is set to send Personalized Passes. Atleast Email or Phone or CustomDataId is required with the Pass Data</td>
 </tr>
 <tr>
 <td>E334 Text in slide X is too long</td>
