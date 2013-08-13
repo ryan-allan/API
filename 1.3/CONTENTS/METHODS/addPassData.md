@@ -46,6 +46,7 @@ For more info see below for Mandatory/Optional fields and Error codes.</p>
         &lt;BACKVALUE4&gt;backValue4&lt;/BACKVALUE4&gt;
         &lt;EMAIL&gt;email&lt;/EMAIL&gt;
         &lt;PHONE&gt;phone&lt;/PHONE&gt;
+        &lt;CUSTOMDATAID&gt;phone&lt;/CUSTOMDATAID&gt;
     &lt;/PASSDATA&gt;    
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request: GET</strong></div>
@@ -62,7 +63,7 @@ For more info see below for Mandatory/Optional fields and Error codes.</p>
 &amp;pd_auxvalue4=auxValue4&amp;pd_backlabel1=backLabel1&amp;pd_backvalue1=backValue1
 &amp;pd_backlabel2=backLabel2&amp;pd_backvalue2=backValue2&amp;pd_backlabel3=backLabel3
 &amp;pd_backvalue3=backValue3&amp;pd_backlabel4=backLabel4&amp;pd_backvalue4=backValue4
-&amp;pd_email=Email&amp;pd_phone=Phone</pre>
+&amp;pd_email=Email&amp;pd_phone=Phone&amp;pd_customdataid=customDataId</pre>
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong>
 action, apikey, passTemplateID, 
@@ -107,6 +108,7 @@ E801, E802, E803, E804, E805, E806, E810, E811, E812, E813, E814, E815, E816, E8
         &lt;BACKVALUE3&gt;Event arrangements are done by Eve Event Arrangement. Please take a small survey to win a free ticket for our next event. https://www.survey.com/event/12748493fgh/&lt;/BACKVALUE3&gt;
         &lt;EMAIL&gt;vik.muth@mail.com&lt;/EMAIL&gt;
         &lt;PHONE&gt;16501234123&lt;/PHONE&gt;
+        &lt;CUSTOMDATAID&gt;AC34573&lt;/CUSTOMDATAID&gt;
     &lt;/PASSDATA&gt;    
 &lt;/REQUEST&gt;</pre>
 <div><strong>Response Example: Success</strong></div>
