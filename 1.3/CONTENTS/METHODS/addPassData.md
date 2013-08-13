@@ -75,8 +75,7 @@ pLabel2, pString2 - if "Pass Template Type = Boarding Pass" otherwise IGNORED,
 sLabel1, sString1, sLabel2, sString2, sLabel3, sString3, sLabel4, sString4, 
 aLabel1, aString1, aLabel2, aString2, aLabel3, aString3, aLabel4, aString4, 
 bLabel1, bString1, bLabel2, bString2, bLabel3, bString3, bLabel4, bString4,
-email (if Pass Template setting allows pass delivery by Email, otherwise IGNORED),
-phone (if Pass Template setting allows pass delivery by Phone, otherwise IGNORED )</pre>
+email, phone, customDataId </pre>
 <strong>Response Parameters:</strong><br />
 status, passDataID, passTemplateID, Errorcode, Errorinfo
 
