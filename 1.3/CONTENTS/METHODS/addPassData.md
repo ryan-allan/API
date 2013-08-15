@@ -46,7 +46,7 @@ For more info see below for Mandatory/Optional fields and Error codes.</p>
         &lt;BACKVALUE4&gt;backValue4&lt;/BACKVALUE4&gt;
         &lt;EMAIL&gt;email&lt;/EMAIL&gt;
         &lt;PHONE&gt;phone&lt;/PHONE&gt;
-        &lt;CUSTOMDATAID&gt;phone&lt;/CUSTOMDATAID&gt;
+        &lt;CUSTOMDATAID&gt;customDataId&lt;/CUSTOMDATAID&gt;
     &lt;/PASSDATA&gt;    
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request: GET</strong></div>
