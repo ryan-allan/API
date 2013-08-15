@@ -3,8 +3,8 @@
 <p><strong>Synopsis:</strong><br />
 This API request adds pass data to the pass database. This data will be used to create the Passbook Pass whenever the pass generation is triggered.
 Based on the settings of the Pass Template the pass data need to be passed accordingly in the request and all the other/extra data will be ignored.
-Additionally, Phone (or/and) Email can be passed along with the pass data to lock down the pass data to that Email (or/and) Phone that means that this 
-pass data will used to generate a pass whenever it is delivered via that Email (or/and) Phone. On success, it returns PassDataId which should be stored and kept in your database along with the data.
+Additionally, Phone (or/and) Email (or/and) customDataId can be passed along with the pass data to lock down the pass data to the respective entity, that means that this 
+pass data will used to generate a pass whenever it is delivered to that Email, Phone (OR) generated on Mobile Web/App when requested using that customDataId. On success, it returns PassDataId which should be stored and kept in your database along with the data.
 For more info see below for Mandatory/Optional fields and Error codes.</p>
 <div><strong>Request: XML</strong></div>
 <pre>&lt;REQUEST&gt;
