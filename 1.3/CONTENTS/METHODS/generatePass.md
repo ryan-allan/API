@@ -113,6 +113,6 @@ E801, E802, E803, E806, E810, E811, E812, E813, E814, E815, E816, E817, E818, E8
 <div><strong>Response Example: Failure</strong></div>
 <pre>&lt;RESPONSE&gt;
     &lt;STATUS&gt;Failure&lt;/STATUS&gt;
-    &lt;ERRORCODE&gt;E806&lt;/ERRORCODE&gt;
-    &lt;ERRORINFO&gt;PassDataID was not created. Internal error occurred.&lt;/ERRORINFO&gt;
+    &lt;ERRORCODE&gt;E830&lt;/ERRORCODE&gt;
+    &lt;ERRORINFO&gt;Passbook Pass was not generated. Internal error occured.&lt;/ERRORINFO&gt;
 &lt;/RESPONSE&gt;</pre>
