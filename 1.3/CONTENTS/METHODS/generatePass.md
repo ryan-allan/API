@@ -108,7 +108,7 @@ E801, E802, E803, E806, E810, E811, E812, E813, E814, E815, E816, E817, E818, E8
     &lt;STATUS&gt;Success&lt;/STATUS&gt;
     &lt;PASSTEMPLATEID&gt;100&lt;/PASSTEMPLATEID&gt;
     &lt;PASSDATAID&gt;1233&lt;/PASSDATAID&gt;
-    &lt;PASSLINK&gt;passDownloadLink&lt;/PASSLINK&gt;
+    &lt;PASSLINK&gt;https://d2c.skycore.com/passes/downloadpass.php?pass=4jfjhsus&lt;/PASSLINK&gt;
 &lt;/RESPONSE&gt;</pre>
 <div><strong>Response Example: Failure</strong></div>
 <pre>&lt;RESPONSE&gt;
