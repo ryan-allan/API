@@ -37,5 +37,6 @@
 <li><a href="sendPassInEmail.md">sendPassInEmail</a></li>
 <li><a href="sendPassInMMS.md">sendPassInMMS</a></li>
 <li><a href="generatePassById.md">generatePassById</a></li>
+<li><a href="generatePass.md">generatePass</a></li>
 </ul><br/>
 </ul>
