@@ -16,7 +16,7 @@ For more info see below for Mandatory/Optional fields and Error codes.
 <strong>Optional:</strong> N/A</pre>
 
 <strong>Response Parameters:</strong><br />
-status, Errorcode, Errorinfo, passDownloadUrl
+status, Errorcode, Errorinfo, passDownloadLink
 
 <strong>Related Errorcodes: </strong><br />
 E807, E808, E830, E831
