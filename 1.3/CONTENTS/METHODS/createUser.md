@@ -1,7 +1,7 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
 <h2>createUser</h2>
 <p><strong>Synopsis:</strong><br />
-Creates new user with given username, password and email. The rest of the parameters required for account creation are inherited from creator’s account.</p>
+Creates new user with given username and password. The rest of the parameters required for account creation are inherited from creator’s account.</p>
 <div><strong>Request:</strong></div>
 <pre>&lt;REQUEST&gt;
   &lt;ACTION&gt;createUser&lt;/ACTION&gt;
