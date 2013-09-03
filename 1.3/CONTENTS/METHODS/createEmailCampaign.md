@@ -2,9 +2,9 @@
 <h2>createEmailCampaign</h2>
 <p><strong>Synopsis:</strong><br />
 This API function creates new email campaign within the account holders account and returns a CampaignID. 
-Campaign will be created under campaignname in our system. <i>Campaignname</i> will be sent to users in opt-in/opt-out emails. 
-Brandname will be used in 'from' field of all sent emails. 
-Mailingadress will be inserted into email footer.
+Campaign will be created under <i>campaignname</i> in our system. <i>Campaignname</i> will be sent to users in opt-in/opt-out emails. 
+<i>Brandname</i> will be used in 'from' field of all sent emails. 
+<i>Mailingadress</i> will be inserted into email footer.
 <div><strong>Request:</strong></div>
 <pre>&lt;REQUEST&gt;
   &lt;ACTION&gt;createEmailCampaign&lt;/ACTION&gt;
