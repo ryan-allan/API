@@ -1,7 +1,8 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
 <h2>sendMMSBarcode</h2>
 <p><strong>Synopsis:</strong><br />
-This API sends stored MMS containing a barcode image template from a specified account using a MMSID to a one number. The barcodeID along with the phone number is added to Database. The BarcodeID is encoded into a barcode image which is inserted into the MMS and is delivered to the number.
+This API function sends stored MMS containing a barcode image template from a specified account using a MMSID to a one number. BarcodeID passed in the request along with the phone number is added to Database. The BarcodeID is encoded into a barcode image which is inserted into the MMS and delivered to the number.
+NOTE: BarcodeID passed in API call will always be used even for Databases with 'Always generate new IDs' switch set to 'Yes' 
 <br>
 NOTE: BarcodeID passed in API call will always be used even for Databases with 'Always generate new IDs' switch set to 'Yes'</p>
 <div><strong>Request:</strong></div>
