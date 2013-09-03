@@ -1,7 +1,8 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
 <h2>sendSavedEmail</h2>
 <p><strong>Synopsis:</strong><br />
-This API sends stored email template from a specified account using a EMAILID to one EMAIL address.</p>
+This API function sends stored email template using an <i>emailid</i> from a specified account to one <i>email</i> address. 
+If 'Enforce Campaign Check' is turned ON this function will require the ID of email campaign that email address is subscribed to passed inside campaignref node.
 <p><strong>Request:</strong></p>
 <pre>&lt;REQUEST&gt;
   &lt;ACTION&gt;sendSavedEmail&lt;/ACTION&gt;
