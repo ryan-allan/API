@@ -1,7 +1,7 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
 <h2>getEmailIds</h2>
 <p><strong>Synopsis:</strong><br />
-This API function returns a list of Email Template Ids for that account.</p>
+This API function returns a comma separated list of Email Template Ids for that account. </p>
 <div><strong>Request: XML</strong></div>
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;getEmailIds&lt;/ACTION&gt;
