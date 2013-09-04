@@ -8,6 +8,12 @@ This API will subscribe or unsubscribe users to a particular campaign. Once a us
 	&lt;API_KEY&gt;API KEY&lt;/API_KEY&gt;
 	&lt;CAMPAIGNID&gt;Campaign ID&lt;/CAMPAIGNID&gt;
 	&lt;MOBILE&gt;Number to subscribe&lt;/MOBILE&gt;
+	&lt;DATA&gt;
+		&lt;FIRST_NAME&gt;First Name&lt;/FIRST_NAME&gt;
+		&lt;LAST_NAME&gt;Last Name&lt;/LAST_NAME&gt;
+		&lt;GENDER&gt;Gender&lt;/GENDER&gt;
+		...
+	&lt;/DATA&gt;	
 	&lt;NOTIFY&gt;'yes/no' on whether to notify user on successful opt in&lt;/NOTIFY&gt;
 	&lt;SPID&gt; the carrier ID &lt;/SPID&gt;
 	&lt;CTA&gt;'yes/no' to request double opt in from the user to opt-in&lt;/CTA&gt;
@@ -37,12 +43,19 @@ XML:
 	&lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;
 	&lt;CAMPAIGNID&gt;1116&lt;/CAMPAIGNID&gt;
 	&lt;MOBILE&gt;16502426055&lt;/MOBILE&gt;
+	&lt;DATA&gt;
+		&lt;FIRST_NAME&gt;John&lt;/FIRST_NAME&gt;
+		&lt;LAST_NAME&gt;Smith&lt;/LAST_NAME&gt;
+		&lt;AGE&gt;29&lt;/AGE&gt;
+		&lt;PET&gt;Dog&lt;/PET&gt;
+	&lt;/DATA&gt;	
 	&lt;NOTIFY&gt;no&lt;/NOTIFY&gt;
 	&lt;CTA&gt;no&lt;/ CTA&gt;
 &lt;/REQUEST&gt;</pre>
 GET:
 <pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=subscribe&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
-&mobile=16502426055&campaignid=1116&notify=no&cta=no</pre>
+&mobile=16502426055&campaignid=1116&notify=no&cta=no&sdata_first_name=John&sdata_last_name=Smith&sdata_age=29&
+sdata_pet=Dog</pre>
 <div><strong>Response Example: Success</strong></div>
 <pre>&lt;RESPONSE&gt;
     &lt;STATUS&gt;Success&lt;/STATUS&gt;
