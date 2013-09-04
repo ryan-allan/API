@@ -1,7 +1,7 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
 <h2>sendSavedMMS</h2>
 <p><strong>Synopsis:</strong><br />
-This API sends stored content from a specified account using a MMSID to a one or a list of mobile numbers. Recipient addresses are specified by a comma delimited list of valid mobile numbers. List up to 100 numbers is supported. FROM must be one of shortcodes allowed for your account. In case there are numbers from different countries than FROM shortcode is assigned to &#8211; default shortcode for those countries will be used.</p>
+This API sends stored content from a specified account using a MMSID to a single mobile number. FROM must be one of shortcodes allowed for your account. In case the number is from a different country than the FROM shortcode is assigned to &#8211; default shortcode for those countries will be used.</p>
 <p><strong>Content Transcoding:</strong><br />
 Every binary MMS we deliver can be transcoded for the destination handset and every web page we deliver is transcoded for the browsing handset. To transcode a binary MMS we must know what type of handset the user has. We are able to obtain this handset type information from delivery receipts and store the record in a handset cache for later use. We have a database of attributes which we manually match to every new handset in the cache so we can adapt the content during MMS delivery.</p>
 <p>Our API allows you to dynamically change each slide text by setting up CUSTOMTEXT (value, slide) and MMS Subject by setting CUSTOMSUBJECT.
@@ -26,10 +26,16 @@ DDMTIMEOUT &#8211; when we send DDM we wait for the Delivery Report which contai
         	&lt;SLIDE&gt;Slide ID&lt;/SLIDE&gt;
         &lt;/CUSTOMTEXT&gt;
         &lt;/CUSTOMSUBJECT&gt;MMS Custom Subject&lt;/CUSTOMSUBJECT&gt;
+	&lt;DATA&gt;
+		&lt;FIRST_NAME&gt;First Name&lt;/FIRST_NAME&gt;
+		&lt;LAST_NAME&gt;Last Name&lt;/LAST_NAME&gt;
+		&lt;GENDER&gt;Gender&lt;/GENDER&gt;
+		...
+	&lt;/DATA&gt;        
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong> Action, API_KEY, MMSID, To, From
-<strong>Optional: </strong>CampaignRef, CustomSubject, CustomText</pre>
+<strong>Optional: </strong>CampaignRef, CustomSubject, CustomText, Data</pre>
 <strong>Response Parameters:</strong><br />
 MMSID, Status, To, TrackingID, Errorcode, Errorinfo
 
@@ -41,7 +47,7 @@ XML:
 <pre>&lt;REQUEST&gt;
 	&lt;ACTION&gt; sendSavedMMS &lt;/ACTION&gt;
 	&lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;
-	&lt;TO&gt;16501234123,16501234124&lt;/TO&gt;
+	&lt;TO&gt;16501234123&lt;/TO&gt;
 	&lt;FROM&gt;60856&lt;/FROM&gt;
 	&lt;CAMPAIGNREF&gt;12333&lt;/CAMPAIGNREF&gt;
 	&lt;MMSID&gt;35674&lt;/MMSID&gt;
@@ -53,12 +59,19 @@ XML:
         	&lt;SLIDE&gt;1&lt;/SLIDE&gt;
         &lt;/CUSTOMTEXT&gt;
         &lt;/CUSTOMSUBJECT&gt;My Custom Subject&lt;/CUSTOMSUBJECT&gt;
+	&lt;DATA&gt;
+		&lt;FIRST_NAME&gt;John&lt;/FIRST_NAME&gt;
+		&lt;LAST_NAME&gt;Smith&lt;/LAST_NAME&gt;
+		&lt;AGE&gt;30&lt;/AGE&gt;
+		&lt;PET&gt;Dog&lt;/PET&gt;
+	&lt;/DATA&gt;        
 &lt;/REQUEST&gt;</pre>
 GET:
 <pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=sendsavedmms&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
-&to=16501234123%2C16501234124&from=60856&mmsid=35674&ddmtitle=We+are+detecting+your+handset
+&to=16501234123&from=60856&mmsid=35674&ddmtitle=We+are+detecting+your+handset
 &ddmtext=This+message+is+free+of+charge+and+will+allow+us+to+deliver+your+content+nice+and+smooth&ddmtimeout=5
-&customtext_1=My+Custom+text+in+first+slide&customsubject=My+Custom+Subject</pre>
+&customtext_1=My+Custom+text+in+first+slide&customsubject=My+Custom+Subject&sdata_first_name=John&sdata_last_name=Smith
+&sdata_age=30&sdata_pet=Dog</pre>
 <div><strong>Response Example: Success</strong></div>
 <pre>&lt;RESPONSE&gt;
     &lt;STATUS&gt;Success&lt;/STATUS&gt;
@@ -77,7 +90,7 @@ GET:
 <pre>&lt;RESPONSE&gt;
 	 &lt;STATUS&gt;Failure&lt;/STATUS&gt;
 	 &lt;ERRORCODE&gt;E713&lt;/ERRORCODE&gt;
-	 &lt;TO&gt;16501234123,16501234124&lt;/TO&gt;
+	 &lt;TO&gt;16501234123&lt;/TO&gt;
 	 &lt;ERRORINFO&gt;There is billing problem on your account&lt;/ERRORINFO&gt;
 &lt;/RESPONSE&gt;</pre>
 <div><strong>Postback Notifications For SendSavedMMS</strong></div>
