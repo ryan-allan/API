@@ -8,6 +8,12 @@ This API will subscribe or unsubscribe EMAIL addresses to a particular campaign.
 	&lt;API_KEY&gt;API KEY&lt;/API_KEY&gt;
 	&lt;CAMPAIGNID&gt;Campaign ID&lt;/CAMPAIGNID&gt;
 	&lt;EMAIL&gt;Email address to subscribe&lt;/EMAIL&gt;
+	&lt;DATA&gt;
+		&lt;FIRST_NAME&gt;First Name&lt;/FIRST_NAME&gt;
+		&lt;LAST_NAME&gt;Last Name&lt;/LAST_NAME&gt;
+		&lt;GENDER&gt;Gender&lt;/GENDER&gt;
+		...
+	&lt;/DATA&gt;	
 	&lt;NOTIFY&gt;'yes/no' on whether to notify user on successful opt in&lt;/NOTIFY&gt;
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request: unsubscribeEmail</strong></div>
@@ -19,7 +25,7 @@ This API will subscribe or unsubscribe EMAIL addresses to a particular campaign.
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong> Action, API_KEY, CAMPAIGNID, Email
-<strong>Optional:</strong> Notify</pre>
+<strong>Optional:</strong> Data, Notify</pre>
 <strong>Response Parameters:</strong><br />
 
     CAMPAIGNID, Errorcode, Errorinfo, Email, Status
@@ -35,11 +41,17 @@ XML:
 	&lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;
 	&lt;CAMPAIGNID&gt;1116&lt;/CAMPAIGNID&gt;
 	&lt;EMAIL&gt;john@email.com&lt;/EMAIL&gt;
+	&lt;DATA&gt;
+		&lt;FIRST_NAME&gt;John&lt;/FIRST_NAME&gt;
+		&lt;LAST_NAME&gt;Smith&lt;/LAST_NAME&gt;
+		&lt;AGE&gt;30&lt;/AGE&gt;
+		&lt;PET&gt;Dog&lt;/PET&gt;
+	&lt;/DATA&gt;	
 	&lt;NOTIFY&gt;yes&lt;/NOTIFY&gt;
 &lt;/REQUEST&gt;</pre>
 GET:
 <pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=subscribeemail&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
-&email=john@email.com&campaignid=1116&notify=yes</pre>
+&email=john@email.com&campaignid=1116&notify=yes&sdata_first_name=John&sdata_last_name=Smith&sdata_age=30&sdata_pet=Dog</pre>
 <div><strong>Response Example: Success</strong></div>
 <pre>&lt;RESPONSE&gt;
     &lt;STATUS&gt;Success&lt;/STATUS&gt;
