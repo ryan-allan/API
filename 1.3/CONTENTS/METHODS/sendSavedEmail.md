@@ -10,6 +10,12 @@ If 'Enforce Campaign Check' is turned ON this function will require the ID of em
 	&lt;EMAILID&gt;EMAILID&lt;/EMAILID&gt;
 	&lt;EMAIL&gt;EMAIL&lt;/EMAIL&gt;
 	&lt;CAMPAIGNREF&gt;CAMPAIGN ID&lt;/CAMPAIGNREF&gt;
+	&lt;DATA&gt;
+		&lt;FIRST_NAME&gt;First Name&lt;/FIRST_NAME&gt;
+		&lt;LAST_NAME&gt;Last Name&lt;/LAST_NAME&gt;
+		&lt;GENDER&gt;Gender&lt;/GENDER&gt;
+		...
+	&lt;/DATA&gt;	
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong> Action, API_KEY, EMAILID, Email
@@ -26,10 +32,17 @@ XML:
 	&lt;EMAIL&gt;john@email.com&lt;/EMAIL&gt;
 	&lt;EMAILID&gt;1234&lt;/EMAILID&gt;
 	&lt;CAMPAIGNREF&gt;5678&lt;/CAMPAIGNREF&gt;
+	&lt;DATA&gt;
+		&lt;FIRST_NAME&gt;John&lt;/FIRST_NAME&gt;
+		&lt;LAST_NAME&gt;Smith&lt;/LAST_NAME&gt;
+		&lt;AGE&gt;29&lt;/AGE&gt;
+		&lt;PET&gt;Dog&lt;/PET&gt;
+	&lt;/DATA&gt;	
 &lt;/REQUEST&gt;</pre>
 GET:
 <pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=sendsavedemail&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
-&email=john@email.com&emailid=1234&campaignref=5678</pre>
+&email=john@email.com&emailid=1234&campaignref=5678&sdata_first_name=John&sdata_last_name=Smith&sdata_age=29
+&sdata_pet=Dog</pre>
 <div><strong>Response Example: Success</strong></div>
 <pre>&lt;RESPONSE&gt;
     &lt;STATUS&gt;Success&lt;/STATUS&gt;
