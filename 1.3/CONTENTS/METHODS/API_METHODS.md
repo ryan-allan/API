@@ -18,6 +18,7 @@
 <li><a href="createMMSCampaign.md">createMMSCampaign</a></li>
 <li><a href="getSendingStatistics.md">getSendingStatistics</a></li>
 <li><a href="removeMMSInboxContent.md">removeMMSInboxContent</a></li>
+<li><a href="getMMSCampaigns.md">getMMSCampaigns</a></li>
 </ul><br/>
 <li><b>Email</b></li>
 <ul>
