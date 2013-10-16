@@ -77,7 +77,7 @@ bLabel1, bString1, bLabel2, bString2, bLabel3, bString3, bLabel4, bString4</pre>
 status, email, emailid, trackingID, Errorcode, Errorinfo
 
 <strong>Related Errorcodes: </strong><br />
-E401, E402, E713, E714, E802, E803, E806, E810, E811, E812, E813, E814, E815, E816, E817, E818, E819, E820, E823, E826
+E401, E402, E713, E714, E802, E803, E806, E823, E826, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869
 <div><strong>Request Example:</strong></div>
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;sendPassInEmail&lt;/ACTION&gt;
