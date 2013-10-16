@@ -7,162 +7,162 @@
 <tbody>
 <tr>
 <td>E100 Invalid request. Make request via GET method or send valid XML inside &#8216;xml&#8217; field via POST.</td>
-<td>E712 The &#8216;text&#8217; is required</td>
-</tr>
-<tr>
-<td>E101 &#8216;action&#8217; required/Invalid Action</td>
-<td>E713 There is billing problem on your account</td>
-</tr>
-<tr>
-<td>E102 &#8216;user&#8217; or &#8216;api_key&#8217; required</td>
-<td>E714 Missing/Invalid CampaignID</td>
-</tr>
-<tr>
-<td>E103 &#8216;pass&#8217; md5(password) required</td>
-<td>E715 Number is not subscribed to this campaign</td>
-</tr>
-<tr>
-<td>E104 User Authentication FAILED</td>
-<td>E801 &#8216;passTemplateID&#8217; is required.</td>
-</tr>
-<tr>
-<td>E105 This account has no API rights</td>
-<td>E802 Invalid &#8216;PassTemplateID&#8217;. Pass template is either deleted or do not belong to this user.</td>
-</tr>
-<tr>
-<td>E106 You can call API every X seconds</td>
-<td>E803 &#8216;BarcodeValue&#8217; is required.</td>
-</tr>
-<tr>
-<td>E107 This account has no rights to use this action</td>
-<td>E804 &#8216;Email&#8217; is invalid.</td>
-</tr>
-<tr>
-<td>E108 XML Parse error: $error</td>
-<td>E805 &#8216;Phone&#8217; is invalid.</td>
-</tr>
-<tr>
-<td>E109 API not activated</td>
-<td>E806 &#8216;PassDataID&#8217; was not created. Internal error occurred.</td>
-</tr>
-<tr>
-<td>E110 Invalid receiver number</td>
-<td>E807 &#8216;PassDataID&#8217; is required.</td>
-</tr>
-<tr>
-<td>E111 Invalid shortcode</td>
-<td>E808 Invalid &#8216;PassDataID&#8217;. Pass is either deleted or does not belong to this user.</td>
-</tr>
-<tr>
-<td>E120 Account has reached the API request limit.</td>
-<td>E809 Pass was not updated. Internal error occured.</td>
-</tr>
-<tr>
-<td>E150 The &#8216;newuser&#8217; is required</td>
-<td>E810 &#8216;Pass Template &#8216;Header-1&#8242; value type has to be &#8216;Text&#8217; to allow &#8216;Header-1&#8242; API value&#8217;</td>
-</tr>
-<tr>
-<td>E151 &#8216;newuser&#8217; already exists</td>
-<td>E811 &#8216;Pass Template &#8216;Primary-1&#8242; value type has to be &#8216;Text&#8217; to allow &#8216;Primary-1&#8242; API value&#8217;</td>
-</tr>
-<tr>
-<td>E152 The &#8216;newpass&#8217; is required</td>
-<td>E812 &#8216;Pass Template &#8216;Primary-2&#8242; value type has to be &#8216;Text&#8217; to allow &#8216;Primary-2&#8242; API value&#8217;</td>
-</tr>
-<tr>
-<td>E153 User was not created. Internal error occurred</td>
-<td>E813 &#8216;Pass Template &#8216;Secondary-1&#8242; value type has to be &#8216;Text&#8217; to allow &#8216;Secondary-1&#8242; API value&#8217;</td>
-</tr>
-<tr>
-<td>E154 User was not created. Internal error occurred.</td>
-<td>E814 &#8216;Pass Template &#8216;Secondary-2&#8242; value type has to be &#8216;Text&#8217; to allow &#8216;Secondary-2&#8242; API value&#8217;</td>
-</tr>
-<tr>
-<td>E170 &#8216;campaignname is required</td>
-<td>E815 &#8216;Pass Template &#8216;Secondary-3&#8242; value type has to be &#8216;Text&#8217; to allow &#8216;Secondary-3&#8242; API value&#8217;</td>
-</tr>
-<tr>
-<td>E171 &#8216;brandname&#8217; is required</td>
-<td>E816 &#8216;Pass Template &#8216;Secondary-4&#8242; value type has to be &#8216;Text&#8217; to allow &#8216;Secondary-4&#8242; API value&#8217;</td>
-</tr>
-<tr>
-<td>E172 Campaign was not created. Internal error occured. Please try again later.</td>
-<td>E817 &#8216;Pass Template &#8216;Auxiliary-1&#8242; value type has to be &#8216;Text&#8217; to allow &#8216;Auxiliary-1&#8242; API value&#8217;</td>
-</tr>
-<tr>
-<td>E173 &#8216;mailingaddress&#8217; is required</td>
-<td>E818 &#8216;Pass Template &#8216;Auxiliary-2&#8242; value type has to be &#8216;Text&#8217; to allow &#8216;Auxiliary-2&#8242; API value&#8217;</td>
-</tr>
-<tr>
-<td>E201 The receiver number is required</td>
-<td>E819 &#8216;Pass Template &#8216;Auxiliary-3&#8242; value type has to be &#8216;Text&#8217; to allow &#8216;Auxiliary-3&#8242; API value&#8217;</td>
-</tr>
-<tr>
-<td>E225 Too many Slides</td>
-<td>E820 &#8216;Pass Template &#8216;Auxiliary-4&#8242; value type has to be &#8216;Text&#8217; to allow &#8216;Auxiliary-4&#8242; API value&#8217;</td>
-</tr>
-<tr>
-<td>E226 Audio and Video not allowed in same slide</td>
 <td>E821 Pass was not deleted. Internal error occured.</td>
 </tr>
 <tr>
-<td>E227 Video and Image not allowed in same slide</td>
+<td>E101 &#8216;action&#8217; required/Invalid Action</td>
 <td>E822 There is no pass found in this MMS Template to send.</td>
 </tr>
 <tr>
-<td>E228 Text more than X characters</td>
+<td>E102 &#8216;user&#8217; or &#8216;api_key&#8217; required</td>
 <td>E823 There is no pass found in this Email template to send.</td>
 </tr>
 <tr>
-<td>E229 Content not allowed</td>
+<td>E103 &#8216;pass&#8217; md5(password) required</td>
 <td>E824 Invalid call to the API. There is no pass data supplied.</td>
 </tr>
 <tr>
-<td>E230 Bad X slide duration</td>
-<td>E825 The Pass Template attached to this MMS does not allow dynamic Pass Data.</td>
-</tr>
-<tr>
-<td>E241 This content does not exist</td>
-<td>E826 The Pass Template attached to this Email does not allow dynamic Pass Data.</td>
-</tr>
-<tr>
-<td>E301 The &#8216;name&#8217; is required</td>
+<td>E104 User Authentication FAILED</td>
 <td>E827 Invalid request. MmsID or emailID or passTemplateID is required</td>
 </tr>
 <tr>
-<td>E302 No slides</td>
+<td>E105 This account has no API rights</td>
 <td>E828 Invalid request. You can request only by MmsID or emailID or passTemplateID and not more than one</td>
+</tr>
 <tr>
-<td>E303 Slide X is empty</td>
+<td>E106 You can call API every X seconds</td>
 <td>E829 Custom Data Identifier is the invalid. Only Alphabet, Numbers or a Space is allowed</td>
 </tr>
 <tr>
-<td>E331 Image in slide X is too big</td>
+<td>E107 This account has no rights to use this action</td>
 <td>E830 Pass was not generated. Internal error occured</td>
 </tr>
 <tr>
-<td>E332 Audio in slide X is too big</td>
+<td>E108 XML Parse error: $error</td>
 <td>E831 Pass was not generated. It reached its download limit</td>
 </tr>
 <tr>
-<td>E333 Video in slide X is too big</td>
-<td>E832 This Pass Template does not allow dynamic Pass Data</td>
-</tr>
-<tr>
-<td>E334 Text in slide X is too long</td>
+<td>E109 API not activated</td>
 <td>E833 This Pass Template is set to send Personalized Passes. Atleast Email or Phone or CustomDataId is required with the Pass Data</td>
 </tr>
 <tr>
+<td>E110 Invalid receiver number</td>
+<td>E840 Header-1 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
+<td>E111 Invalid shortcode</td>
+<td>E841 Header-1 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
+<td>E120 Account has reached the API request limit.</td>
+<td>E842 Primary-1 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
+<td>E150 The &#8216;newuser&#8217; is required</td>
+<td>E843 Primary-1 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
+<td>E151 &#8216;newuser&#8217; already exists</td>
+<td>E844 Primary-2 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
+<td>E152 The &#8216;newpass&#8217; is required</td>
+<td>E845 Primary-2 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
+<td>E153 User was not created. Internal error occurred</td>
+<td>E846 Secondary-1 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
+<td>E154 User was not created. Internal error occurred.</td>
+<td>E847 Secondary-1 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
+<td>E170 &#8216;campaignname is required</td>
+<td>E848 Secondary-2 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
+<td>E171 &#8216;brandname&#8217; is required</td>
+<td>E849 Secondary-2 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
+<td>E172 Campaign was not created. Internal error occured. Please try again later.</td>
+<td>E850 Secondary-3 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
+<td>E173 &#8216;mailingaddress&#8217; is required</td>
+<td>E851 Secondary-3 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
+<td>E201 The receiver number is required</td>
+<td>E852 Secondary-4 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
+<td>E225 Too many Slides</td>
+<td>E853 Secondary-4 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
+<td>E226 Audio and Video not allowed in same slide</td>
+<td>E854 Auxiliary-1 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
+<td>E227 Video and Image not allowed in same slide</td>
+<td>E855 Auxiliary-1 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
+<td>E228 Text more than X characters</td>
+<td>E856 Auxiliary-2 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
+<td>E229 Content not allowed</td>
+<td>E857 Auxiliary-2 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
+<td>E230 Bad X slide duration</td>
+<td>E858 Auxiliary-3 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
+<td>E241 This content does not exist</td>
+<td>E859 Auxiliary-3 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
+<td>E301 The &#8216;name&#8217; is required</td>
+<td>E860 Auxiliary-4 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
+<td>E302 No slides</td>
+<td>E861 Auxiliary-4 Value is not accepted. It has to be set as Dynamic in the Pass Template</td> 
+<tr>
+<td>E303 Slide X is empty</td>
+<td>E862 Back-1 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
+<td>E331 Image in slide X is too big</td>
+<td>E863 Back-1 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
+<td>E332 Audio in slide X is too big</td>
+<td>E864 Back-2 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
+<td>E333 Video in slide X is too big</td>
+<td>E865 Back-2 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
+<td>E334 Text in slide X is too long</td>
+<td>E866 Back-3 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+</tr>
+<tr>
 <td>E341 Image file in slide X is corrupted</td>
-<td></td>
+<td>E867 Back-3 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E351 Could not copy Image in slide X</td>
-<td></td>
+<td>E868 Back-4 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E400 No Email Templates were created in this account</td>
-<td></td>
+<td>E869 Back-4 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E401 Invalid email</td>
@@ -249,8 +249,7 @@
 <td></td>
 </tr>
 <tr>
-<td>E633 This MMS does not contain barcode object
-</td>
+<td>E633 This MMS does not contain barcode object</td>
 <td></td>
 </tr>
 <tr>
@@ -269,6 +268,57 @@
 <td>E643 Could not clean up MMS Inbox content.</td>
 <td></td>
 </tr>
+<tr>
+<td>E712 The &#8216;text&#8217; is required</td>
+<td></td>
+</tr>
+<tr>
+<td>E713 There is billing problem on your account</td>
+<td></td>
+</tr>
+<tr>
+<td>E714 Missing/Invalid CampaignID</td>
+<td></td>
+</tr>
+<tr>
+<td>E715 Number is not subscribed to this campaign</td>
+<td></td>
+</tr>
+<tr>
+<td>E801 &#8216;passTemplateID&#8217; is required.</td>
+<td></td>
+</tr>
+<tr>
+<td>E802 Invalid &#8216;PassTemplateID&#8217;. Pass template is either deleted or do not belong to this user.</td>
+<td></td>
+</tr>
+<tr>
+<td>E803 &#8216;BarcodeValue&#8217; is required.</td>
+<td></td>
+</tr>
+<tr>
+<td>E804 &#8216;Email&#8217; is invalid.</td>
+<td></td>
+</tr>
+<tr>
+<td>E805 &#8216;Phone&#8217; is invalid.</td><td></td></tr>
+<tr>
+<td>E806 &#8216;PassDataID&#8217; was not created. Internal error occurred.</td>
+<td></td>
+</tr>
+<tr>
+<td>E807 &#8216;PassDataID&#8217; is required.</td>
+<td></td>
+</tr>
+<tr>
+<td>E808 Invalid &#8216;PassDataID&#8217;. Pass is either deleted or does not belong to this user.</td>
+<td></td>
+</tr>
+<tr>
+<td>E809 Pass was not updated. Internal error occured.</td>
+<td></td>
+</tr>
+
 </tbody>
 </table>
 <p><strong>ii. Postback Notification Codes</strong></p>
