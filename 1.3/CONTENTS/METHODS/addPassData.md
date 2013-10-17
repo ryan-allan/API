@@ -1,10 +1,12 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
 <h2>addPassData</h2>
 <p><strong>Synopsis:</strong><br />
-This API request is allowed only when the Pass Data is set to use Dynamic data on the Pass Template. It adds pass data to the pass database and will be used to create the Passbook Pass whenever the pass generation is triggered.
+This API request is used to add pass dynamic data for the pass template. The fields which are set as dynamic on the Pass template are only allowed to be added. 
+The pass data is added to the pass database and will be used to create the Passbook Pass whenever the pass generation is triggere.
 Based on the settings of the Pass Template the pass data need to be passed accordingly in the request and all the other/extra data will be ignored.
 Additionally, Phone (or/and) Email (or/and) customDataId can be passed along with the pass data to lock down the pass data to the respective entity, that means that this 
-pass data will used to generate a pass whenever it is delivered to that Email, Phone (OR) generated on Mobile Web/App when requested using that customDataId. On success, it returns PassDataId which should be stored and kept in your database along with the data.
+pass data will used to generate a pass whenever it is delivered to that Email, Phone (OR) generated on Mobile Web/App when requested using that customDataId. 
+On success, it returns PassDataId which should be stored and kept in your database along with the data.
 For more info see below for Mandatory/Optional fields and Error codes.</p>
 <div><strong>Request: XML</strong></div>
 <pre>&lt;REQUEST&gt;
