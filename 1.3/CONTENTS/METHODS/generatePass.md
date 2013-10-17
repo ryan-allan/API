@@ -1,9 +1,8 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
 <h2>generatePass</h2>
 <p><strong>Synopsis:</strong><br />
-This API request is used to create Dynamic and Static Passes depending on how the Pass Template was created. 
-Dynamic Passes are created based on the Pass Data passed in the request which is used in restriction to the Pass Template Settings. 
-Static Passes do not require Pass Data to be passed and simply create Passes from the Pass Template directly. 
+This API request is used to create Passbook Passes depending on how the Pass Template was created. 
+Passes are created based on the dynamic pass data passed in the request which is used in restriction to the Pass Template Settings. 
 On success, returns a link to download the generated passbook pass (i.e., pkpass file). For more info see below for Mandatory/Optional fields and Error codes.</p>
 <div><strong>Request: XML</strong></div>
 <pre>&lt;REQUEST&gt;
