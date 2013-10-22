@@ -85,12 +85,11 @@ All the other/extra pass data is ignored. On success, it will return the EmailSt
         &lt;RELLONGITUDE10&gt;relLongitude10&lt;/RELLONGITUDE10&gt;
         &lt;RELTEXT10&gt;relText10&lt;/RELTEXT10&gt;
     &lt;/PASSDATA&gt; 
-    
-        &lt;DATA&gt;
+    &lt;DATA&gt;
         &lt;FIRST_NAME&gt;First Name&lt;/FIRST_NAME&gt;
         &lt;LAST_NAME&gt;Last Name&lt;/LAST_NAME&gt;
         ...
-    &gt;/DATA&gt; 
+    &lt;/DATA&gt; 
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request: GET</strong></div>
 <pre>
