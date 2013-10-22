@@ -166,123 +166,123 @@
 </tr>
 <tr>
 <td>E401 Invalid email</td>
-<td></td>
+<td>E870 Relevance Location Address - 1, Latitude - 1, Longitude - 1 and Relevance Text - 1 are not accepted. Relevance location has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E402 Invalid emailid</td>
-<td></td>
+<td>E871 Relevance Location Address - 2, Latitude - 2, Longitude - 2 and Relevance Text - 2 are not accepted. Relevance location has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E403 Could not send email due to missing dataset entry</td>
-<td></td>
+<td>E872 Relevance Location Address - 3, Latitude - 3, Longitude - 3 and Relevance Text - 3 are not accepted. Relevance location has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E404 No Email Campaigns were created in this account</td>
-<td></td>
+<td>E873 Relevance Location Address - 4, Latitude - 4, Longitude - 4 and Relevance Text - 4 are not accepted. Relevance location has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E405 No MMS Campaigns were created in this account</td>
-<td></td>
+<td>E874 Relevance Location Address - 5, Latitude - 5, Longitude - 5 and Relevance Text - 5 are not accepted. Relevance location has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E503 Internal error</td>
-<td></td>
+<td>E875 Relevance Location Address - 6, Latitude - 6, Longitude - 6 and Relevance Text - 6 are not accepted. Relevance location has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E506 &#8216;start_date&#8217;/'end_date&#8217; is required</td>
-<td></td>
+<td>E876 Relevance Location Address - 7, Latitude - 7, Longitude - 7 and Relevance Text - 7 are not accepted. Relevance location has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E507 Invalid &#8216;start_date&#8217;/'end_date&#8217; format</td>
-<td>E901 The &#8216;mobile&#8217; is required</td>
+<td>E877 Relevance Location Address - 8, Latitude - 8, Longitude - 8 and Relevance Text - 8 are not accepted. Relevance location has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E508 Invalid &#8216;start_date&#8217;/'end_date&#8217; format</td>
-<td>E902 The &#8216;campaignid&#8217; is required</td>
+<td>E878 Relevance Location Address - 9, Latitude - 9, Longitude - 9 and Relevance Text - 9 are not accepted. Relevance location has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E509 Lookup period is too long</td>
-<td>E903 Invalid campaignid</td>
+<td>E879 Relevance Location Address - 10, Latitude - 10, Longitude - 10 and Relevance Text - 10 are not accepted. Relevance location has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E510 Lookup too frequent (you need to set time between the lookups)</td>
-<td>E904 Could not subscribe this number</td>
+<td>E880 Relevance Location Latitude - 1 value is invalid</td>
 </tr>
 <tr>
 <td>E620 The &#8216;mmsid&#8217; is required</td>
-<td>E905 Could not unsubscribe this number</td>
+<td>E881 Relevance Location Latitude - 2 value is invalid</td>
 </tr>
 <tr>
 <td>E621 The &#8216;to&#8217; is required</td>
-<td>E911 The &#8216;email&#8217; is required</td>
+<td>E882 Relevance Location Latitude - 3 value is invalid</td>
 </tr>
 <tr>
 <td>E623 The &#8216;to&#8217; field can contain up to 100 numbers</td>
-<td>E912 Invalid campaignid</td>
+<td>E883 Relevance Location Latitude - 4 value is invalid</td>
 </tr>
 <tr>
 <td>E624 The &#8216;tocampaign&#8217; is required</td>
-<td>E913 Could not subscribe this email</td>
+<td>E884 Relevance Location Latitude - 5 value is invalid</td>
 </tr>
 <tr>
 <td>E626 Content unavailable. Encoding in progress, try again later.</td>
-<td>E914 Could not unsubscribe this email</td>
+<td>E885 Relevance Location Latitude - 6 value is invalid</td>
 </tr>
 <tr>
 <td>E628 Operator Not supported</td>
-<td>E915 Email not sent due to previous opt-out, bounce, or spam report.</td>
+<td>E886 Relevance Location Latitude - 7 value is invalid</td>
 </tr>
 <tr>
 <td>E629 Unrecognized content type</td>
-<td></td>
+<td>E887 Relevance Location Latitude - 8 value is invalid</td>
 </tr>
 <tr>
 <td>E630 The &#8216;databaseid&#8217; is required</td>
-<td></td>
+<td>E888 Relevance Location Latitude - 9 value is invalid</td>
 </tr>
 <tr>
 <td>E631 The &#8216;barcodeid&#8217; is required</td>
-<td></td>
+<td>E889 Relevance Location Latitude - 10 value is invalid</td>
 </tr>
 <tr>
 <td>E632 Invalid &#8216;databaseid&#8217;</td>
-<td></td>
+<td>E890 Relevance Location Longitude - 1 value is invalid</td>
 </tr>
 <tr>
 <td>E633 This MMS does not contain barcode object</td>
-<td></td>
+<td>E891 Relevance Location Longitude - 2 value is invalid</td>
 </tr>
 <tr>
 <td>E640 The &#8216;mmsinboxid&#8217; is required</td>
-<td></td>
+<td>E892 Relevance Location Longitude - 3 value is invalid</td>
 </tr>
 <tr>
 <td>E641 Invalid MMS Inbox ID</td>
-<td></td>
+<td>E893 Relevance Location Longitude - 4 value is invalid</td>
 </tr>
 <tr>
 <td>E642 MMS Inbox content is empty.</td>
-<td></td>
+<td>E894 Relevance Location Longitude - 5 value is invalid</td>
 </tr>
 <tr>
 <td>E643 Could not clean up MMS Inbox content.</td>
-<td></td>
+<td>E895 Relevance Location Longitude - 6 value is invalid</td>
 </tr>
 <tr>
 <td>E712 The &#8216;text&#8217; is required</td>
-<td></td>
+<td>E896 Relevance Location Longitude - 7 value is invalid</td>
 </tr>
 <tr>
 <td>E713 There is billing problem on your account</td>
-<td></td>
+<td>E897 Relevance Location Longitude - 8 value is invalid</td>
 </tr>
 <tr>
 <td>E714 Missing/Invalid CampaignID</td>
-<td></td>
+<td>E898 Relevance Location Longitude - 9 value is invalid</td>
 </tr>
 <tr>
 <td>E715 Number is not subscribed to this campaign</td>
-<td></td>
+<td>E899 Relevance Location Longitude - 10 value is invalid</td>
 </tr>
 <tr>
 <td>E801 &#8216;passTemplateID&#8217; is required.</td>
@@ -318,7 +318,46 @@
 <td>E809 Pass was not updated. Internal error occured.</td>
 <td></td>
 </tr>
-
+<tr>
+<td>E901 The &#8216;mobile&#8217; is required</td>
+<td></td>
+</tr>
+<tr>
+<td>E902 The &#8216;campaignid&#8217; is required</td>
+<td></td>
+</tr>
+<tr>
+<td>E903 Invalid campaignid</td>
+<td></td>
+</tr>
+<tr>
+<td>E904 Could not subscribe this number</td>
+<td></td>
+</tr>
+<tr>
+<td>E905 Could not unsubscribe this number</td>
+<td></td>
+</tr>
+<tr>
+<td>E911 The &#8216;email&#8217; is required</td>
+<td></td>
+</tr>
+<tr>
+<td>E912 Invalid campaignid</td>
+<td></td>
+</tr>
+<tr>
+<td>E913 Could not subscribe this email</td>
+<td></td>
+</tr>
+<tr>
+<td>E914 Could not unsubscribe this email</td>
+<td></td>
+</tr>
+<tr>
+<td>E915 Email not sent due to previous opt-out, bounce, or spam report.</td>
+<td></td>
+</tr>
 </tbody>
 </table>
 <p><strong>ii. Postback Notification Codes</strong></p>
