@@ -45,6 +45,46 @@ On success, it will return the MMSTrackingID. For more info see below for Mandat
         &lt;BACKVALUE3&gt;backValue3&lt;/BACKVALUE3&gt;
         &lt;BACKLABEL4&gt;backLabel4&lt;/BACKLABEL4&gt;
         &lt;BACKVALUE4&gt;backValue4&lt;/BACKVALUE4&gt;
+        &lt;RELADDRESS1&gt;relAddress1&lt;/RELADDRESS1&gt;
+        &lt;RELLATITUDE1&gt;relLatitude1&lt;/RELLATITUDE1&gt;
+        &lt;RELLONGITUDE1&gt;relLongitude1&lt;/RELLONGITUDE1&gt;
+        &lt;RELTEXT1&gt;relText1&lt;/RELTEXT1&gt;
+        &lt;RELADDRESS2&gt;relAddress2&lt;/RELADDRESS2&gt;
+        &lt;RELLATITUDE2&gt;relLatitude2&lt;/RELLATITUDE2&gt;
+        &lt;RELLONGITUDE2&gt;relLongitude2&lt;/RELLONGITUDE2&gt;
+        &lt;RELTEXT2&gt;relText2&lt;/RELTEXT2&gt;
+        &lt;RELADDRESS3&gt;relAddress3&lt;/RELADDRESS3&gt;
+        &lt;RELLATITUDE3&gt;relLatitude3&lt;/RELLATITUDE3&gt;
+        &lt;RELLONGITUDE3&gt;relLongitude3&lt;/RELLONGITUDE3&gt;
+        &lt;RELTEXT3&gt;relText3&lt;/RELTEXT3&gt;
+        &lt;RELADDRESS4&gt;relAddress4&lt;/RELADDRESS4&gt;
+        &lt;RELLATITUDE4&gt;relLatitude4&lt;/RELLATITUDE4&gt;
+        &lt;RELLONGITUDE4&gt;relLongitude4&lt;/RELLONGITUDE4&gt;
+        &lt;RELTEXT4&gt;relText4&lt;/RELTEXT4&gt;
+        &lt;RELADDRESS5&gt;relAddress5&lt;/RELADDRESS5&gt;
+        &lt;RELLATITUDE5&gt;relLatitude5&lt;/RELLATITUDE5&gt;
+        &lt;RELLONGITUDE5&gt;relLongitude5&lt;/RELLONGITUDE5&gt;
+        &lt;RELTEXT5&gt;relText5&lt;/RELTEXT5&gt;
+        &lt;RELADDRESS6&gt;relAddress6&lt;/RELADDRESS6&gt;
+        &lt;RELLATITUDE6&gt;relLatitude6&lt;/RELLATITUDE6&gt;
+        &lt;RELLONGITUDE6&gt;relLongitude6&lt;/RELLONGITUDE6&gt;
+        &lt;RELTEXT6&gt;relText6&lt;/RELTEXT6&gt;
+        &lt;RELADDRESS7&gt;relAddress7&lt;/RELADDRESS7&gt;
+        &lt;RELLATITUDE7&gt;relLatitude7&lt;/RELLATITUDE7&gt;
+        &lt;RELLONGITUDE7&gt;relLongitude7&lt;/RELLONGITUDE7&gt;
+        &lt;RELTEXT7&gt;relText7&lt;/RELTEXT7&gt;
+        &lt;RELADDRESS8&gt;relAddress8&lt;/RELADDRESS8&gt;
+        &lt;RELLATITUDE8&gt;relLatitude8&lt;/RELLATITUDE8&gt;
+        &lt;RELLONGITUDE8&gt;relLongitude8&lt;/RELLONGITUDE8&gt;
+        &lt;RELTEXT8&gt;relText8&lt;/RELTEXT8&gt;
+        &lt;RELADDRESS9&gt;relAddress9&lt;/RELADDRESS9&gt;
+        &lt;RELLATITUDE9&gt;relLatitude9&lt;/RELLATITUDE9&gt;
+        &lt;RELLONGITUDE9&gt;relLongitude9&lt;/RELLONGITUDE9&gt;
+        &lt;RELTEXT9&gt;relText9&lt;/RELTEXT9&gt;
+        &lt;RELADDRESS10&gt;relAddress10&lt;/RELADDRESS10&gt;
+        &lt;RELLATITUDE10&gt;relLatitude10&lt;/RELLATITUDE10&gt;
+        &lt;RELLONGITUDE10&gt;relLongitude10&lt;/RELLONGITUDE10&gt;
+        &lt;RELTEXT10&gt;relText10&lt;/RELTEXT10&gt;
     &lt;/PASSDATA&gt;    
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request: GET</strong></div>
@@ -61,15 +101,24 @@ API_URL?action=sendpassinmms&amp;api_key=apiKey&amp;mmsid=MMSTemplateID&amp;to=P
 &amp;pd_auxvalue2=auxValue2&amp;pd_auxlabel3=auxLabel3&amp;pd_auxvalue3=auxValue3
 &amp;pd_auxlabel4=auxLabel4&amp;pd_auxvalue4=auxValue4&amp;pd_backlabel1=backLabel1
 &amp;pd_backvalue1=backValue1&amp;pd_backlabel2=backLabel2&amp;pd_backvalue2=backValue2
-&amp;pd_backlabel3=backLabel3&amp;pd_backvalue3=backValue3&amp;pd_backlabel4=backLabel4
-&amp;pd_backvalue4=backValue4
+&amp;pd_backlabel3=backLabel3&amp;pd_backvalue3=backValue3&amp;pd_backlabel4=backLabel4&amp;pd_backvalue4=backValue4
+&amp;pd_reladdress1=relAddress1&amp;pd_rellatitude1=relLatitude1&amp;pd_rellongitude1=relLongitude1&amp;pd_reltext1=relText1
+&amp;pd_reladdress2=relAddress2&amp;pd_rellatitude2=relLatitude2&amp;pd_rellongitude2=relLongitude2&amp;pd_reltext2=relText2
+&amp;pd_reladdress3=relAddress3&amp;pd_rellatitude3=relLatitude3&amp;pd_rellongitude3=relLongitude3&amp;pd_reltext3=relText3
+&amp;pd_reladdress4=relAddress4&amp;pd_rellatitude4=relLatitude4&amp;pd_rellongitude4=relLongitude4&amp;pd_reltext4=relText4
+&amp;pd_reladdress5=relAddress5&amp;pd_rellatitude5=relLatitude5&amp;pd_rellongitude5=relLongitude5&amp;pd_reltext5=relText5
+&amp;pd_reladdress6=relAddress6&amp;pd_rellatitude6=relLatitude6&amp;pd_rellongitude6=relLongitude6&amp;pd_reltext6=relText6
+&amp;pd_reladdress3=relAddress7&amp;pd_rellatitude7=relLatitude7&amp;pd_rellongitude7=relLongitude7&amp;pd_reltext7=relText7
+&amp;pd_reladdress3=relAddress8&amp;pd_rellatitude8=relLatitude8&amp;pd_rellongitude8=relLongitude8&amp;pd_reltext8=relText8
+&amp;pd_reladdress9=relAddress9&amp;pd_rellatitude9=relLatitude9&amp;pd_rellongitude9=relLongitude9&amp;pd_reltext9=relText9
+&amp;pd_reladdress10=relAddress10&amp;pd_rellatitude10=relLatitude10&amp;pd_rellongitude10=relLongitude10&amp;pd_reltext10=relText10
 </pre>
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong> 
 action, apikey, mmsid, to, from, 
-barcodeValue (if "Barcode=Allowed" &amp; "BarcodeType=Dynamic" &amp; "BarcodeValueSource=API" for Pass Template otherwise IGNORED),
+barcodeValue (if "Barcode = Allowed" &amp;&amp; "Barcode Type = Dynamic" &amp;&amp; "Barcode Value Source = Dynamic Value" for Pass Template otherwise IGNORED),
 <strong>Optional: </strong>
-barcodeText (if "Barcode = Allowed" &amp;&amp; "Barcode Alternate Text = API" for Pass Template otherwise IGNORED), campaignref, hLabel1, hString1, pLabel1, pString1, 
+barcodeText (if "Barcode = Allowed" &amp;&amp; "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), campaignref, hLabel1, hString1, pLabel1, pString1, 
 pLabel2, pString2 - if "Pass Template Type = Boarding Pass" otherwise IGNORED, 
 sLabel1, sString1, sLabel2, sString2, sLabel3, sString3, sLabel4, sString4, 
 aLabel1, aString1, aLabel2, aString2, aLabel3, aString3, aLabel4, aString4, 
@@ -79,6 +128,8 @@ status, to, mmsid, trackingID, Errorcode, Errorinfo
 
 <strong>Related Errorcodes: </strong><br />
 E110, E111, E241, E620, E621, E626, E628, E629, E713, E714, E715, E802, E803, E806, E822, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869
+E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888, E889, E890, E891, E892, E893, E894, E895, E896, E897, E898, E899
+
 <div><strong>Request Example:</strong></div>
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;sendPassInMMS&lt;/ACTION&gt;
