@@ -119,10 +119,10 @@ For more info see below for Mandatory/Optional fields and Error codes.</p>
 
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong>
-action, apiKey, passTemplateId
+action, apiKey, passTemplateId,
+barcodeValue (if "Barcode=Allowed" &amp;&amp; "BarcodeType=Dynamic" &amp;&amp; "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED)
 
 <strong>Optional: </strong>
-barcodeValue (if "Barcode=Allowed" &amp;&amp; "BarcodeType=Dynamic" &amp;&amp; "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED),
 barcodeText (if "Barcode = Allowed" &amp;&amp; "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
 headerLabel1, headerValue1, 
 primaryLabel1, primaryValue1, 
