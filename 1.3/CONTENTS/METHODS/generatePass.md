@@ -8,7 +8,7 @@ On success, returns a link to download the generated passbook pass (i.e., pkpass
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;generatePass&lt;/ACTION&gt;
     &lt;API_KEY&gt;apiKey&lt;/API_KEY&gt;
-    &lt;PASSTEMPLATEID&gt;passTemplateID&lt;/PASSTEMPLATEID&gt;
+    &lt;PASSTEMPLATEID&gt;passTemplateId&lt;/PASSTEMPLATEID&gt;
     &lt;PASSDATA&gt;
         &lt;BARCODEVALUE&gt;barcodeValue&lt;/BARCODEVALUE&gt;
         &lt;BARCODETEXT&gt;barcodeText&lt;/BARCODETEXT&gt;
@@ -85,7 +85,7 @@ On success, returns a link to download the generated passbook pass (i.e., pkpass
     &lt;/PASSDATA&gt;    
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request: GET</strong></div>
-<pre>API_URL?action=generatepass&amp;api_key=apiKey&amp;passtemplateid=PassTemplateID
+<pre>API_URL?action=generatepass&amp;api_key=apiKey&amp;passtemplateid=passTemplateId
 &amp;pd_barcodevalue=barcodeValue&amp;pd_barcodetext=barcodeText
 &amp;pd_headerlabel1=headerLabel1&amp;pd_headervalue1=headerValue1
 &amp;pd_primarylabel1=primaryLabel1&amp;pd_primaryvalue1=primaryValue1
@@ -111,18 +111,29 @@ On success, returns a link to download the generated passbook pass (i.e., pkpass
 </pre>
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong>
-action, apikey, passTemplateID, 
-barcodeValue (if "Barcode=Allowed" &amp; "BarcodeType=Dynamic" &amp; "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED)
+action, apikey, passTemplateId, 
+barcodeValue (if "Barcode=Allowed" &amp;&amp; "BarcodeType=Dynamic" &amp;&amp; "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED),
+
 <strong>Optional: </strong>
 barcodeText (if "Barcode = Allowed" &amp;&amp; "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
-hLabel1, hString1, pLabel1, pString1, 
-pLabel2, pString2 - if "Pass Template Type = Boarding Pass" otherwise IGNORED, 
-sLabel1, sString1, sLabel2, sString2, sLabel3, sString3, sLabel4, sString4, 
-aLabel1, aString1, aLabel2, aString2, aLabel3, aString3, aLabel4, aString4, 
-bLabel1, bString1, bLabel2, bString2, bLabel3, bString3, bLabel4, bString4
-</pre>
+headerLabel1, headerValue1, 
+primaryLabel1, primaryValue1, 
+primaryLabel2, primaryValue2 - if "Pass Template Type = Boarding Pass" otherwise IGNORED, 
+secLabel1, secValue1, secLabel2, secValue2, secLabel3, secValue3, secLabel4, secValue4, 
+auxLabel1, auxValue1, auxLabel2, auxValue2, auxLabel3, auxValue3, auxLabel4, auxValue4, 
+backLabel1, backValue1, backLabel2, backValue2, backLabel3, backValue3, backLabel4, backValue4,
+relAddress1, relLatitude1, relLongitude1, relText1,
+relAddress2, relLatitude2, relLongitude2, relText2,
+relAddress3, relLatitude3, relLongitude3, relText3,
+relAddress4, relLatitude4, relLongitude4, relText4,
+relAddress5, relLatitude5, relLongitude5, relText5,
+relAddress6, relLatitude6, relLongitude6, relText6,
+relAddress7, relLatitude7, relLongitude7, relText7,
+relAddress8, relLatitude8, relLongitude8, relText8,
+relAddress9, relLatitude9, relLongitude9, relText9,
+relAddress10, relLatitude10, relLongitude10, relText10</pre>
 <strong>Response Parameters:</strong><br />
-status, passDataID, passTemplateID, Errorcode, Errorinfo, passDownloadLink
+status, passDataID, passTemplateId, Errorcode, Errorinfo, passDownloadLink
 
 <strong>Related Errorcodes: </strong><br />
 E801, E802, E803, E806, E830, E831, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869
@@ -147,11 +158,15 @@ E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E8
         &lt;AUXLABEL1&gt;Address&lt;/AUXLABEL1&gt;
         &lt;AUXVALUE1&gt;Biz Convention Centre, Boston MA 02144&lt;/AUXVALUE1&gt;
         &lt;BACKLABEL1&gt;Terms and Conditions&lt;/BACKLABEL1&gt;
-        &lt;BACKVALUE1&gt;Valid for 1 person only. Valid for 1 visit only. Expires July 6th, 2013. Valid ID required if requested.&lt;/BACKVALUE1&gt;
+        &lt;BACKVALUE1&gt;Valid for 1 person only. Valid ID required if requested.&lt;/BACKVALUE1&gt;
         &lt;BACKLABEL2&gt;Snacks and Drinks&lt;/BACKLABEL2&gt;
         &lt;BACKVALUE2&gt;Free Drinks and Snacks are available in the main lobby.&lt;/BACKVALUE2&gt;
-        &lt;BACKLABEL3&gt;Additional Information&lt;/BACKLABEL3&gt;
-        &lt;BACKVALUE3&gt;Event arrangements are done by Eve Event Arrangement. Please take a small survey to win a free ticket for our next event. https://www.survey.com/event/12748493fgh/&lt;/BACKVALUE3&gt;
+        &lt;BACKLABEL3&gt;Take a survey to win a free ticket for our next event.&lt;/BACKLABEL3&gt;
+        &lt;BACKVALUE3&gt;https://www.survey.com/event/12748493fgh/&lt;/BACKVALUE3&gt;
+        &lt;RELADDRESS2&gt;Hynes Convention Center, Boston MA&lt;/RELADDRESS2&gt;
+        &lt;RELLATITUDE2&gt;42.347888&lt;/RELLATITUDE2&gt;
+        &lt;RELLONGITUDE2&gt;-71.087903&lt;/RELLONGITUDE2&gt;
+        &lt;RELTEXT2&gt;Event at HYNES CONVENTION CENTER&lt;/RELTEXT2&gt;
     &lt;/PASSDATA&gt;    
 &lt;/REQUEST&gt;</pre>
 <div><strong>Response Example: Success</strong></div>
