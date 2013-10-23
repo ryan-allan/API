@@ -8,7 +8,7 @@ Passbook pass with this data will result in failure. For more info see below for
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;deletePassData&lt;/ACTION&gt;
     &lt;API_KEY&gt;apiKey&lt;/API_KEY&gt;
-    &lt;PASSDATAID&gt;passDataID&lt;/PASSDATAID&gt;
+    &lt;PASSDATAID&gt;passDataId&lt;/PASSDATAID&gt;
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong> action, apiKey, passDataId
