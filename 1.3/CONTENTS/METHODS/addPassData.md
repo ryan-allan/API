@@ -1,18 +1,18 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
 <h2>addPassData</h2>
 <p><strong>Synopsis:</strong><br />
-This API request is used to add pass dynamic data for the pass template. The fields which are set as dynamic on the Pass template are only allowed to be added. 
-The pass data is added to the pass database and will be used to create the Passbook Pass whenever the pass generation is triggere.
-Based on the settings of the Pass Template the pass data need to be passed accordingly in the request and all the other/extra data will be ignored.
+This API request is used to add dynamic pass data for the pass template. The fields which are set as dynamic on the Pass template are only allowed to be added. 
+The pass data is added to the pass database and will be used to create the Passbook Pass whenever the pass generation is triggered.
+Based on the settings of the Pass Template the pass data need to be passed accordingly in the API request and all the other/extra data will be ignored.
 Additionally, Phone (or/and) Email (or/and) customDataId can be passed along with the pass data to lock down the pass data to the respective entity, that means that this 
-pass data will used to generate a pass whenever it is delivered to that Email, Phone (OR) generated on Mobile Web/App when requested using that customDataId. 
+pass data will used to generate a pass whenever it is delivered to that Email (via Email), Phone (via MMS). 
 On success, it returns PassDataId which should be stored and kept in your database along with the data.
 For more info see below for Mandatory/Optional fields and Error codes.</p>
 <div><strong>Request: XML</strong></div>
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;addPassData&lt;/ACTION&gt;
     &lt;API_KEY&gt;apiKey&lt;/API_KEY&gt;
-    &lt;PASSTEMPLATEID&gt;passTemplateID&lt;/PASSTEMPLATEID&gt;
+    &lt;PASSTEMPLATEID&gt;passTemplateId&lt;/PASSTEMPLATEID&gt;
     &lt;PASSDATA&gt;
         &lt;BARCODEVALUE&gt;barcodeValue&lt;/BARCODEVALUE&gt;
         &lt;BARCODETEXT&gt;barcodeText&lt;/BARCODETEXT&gt;
@@ -92,7 +92,7 @@ For more info see below for Mandatory/Optional fields and Error codes.</p>
     &lt;/PASSDATA&gt;    
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request: GET</strong></div>
-<pre>API_URL?action=addpassdata&amp;api_key=apiKey&amp;passtemplateid=PassTemplateID
+<pre>API_URL?action=addpassdata&amp;api_key=apiKey&amp;passtemplateid=passTemplateId
 &amp;pd_barcodevalue=barcodeValue&amp;pd_barcodetext=barcodeText
 &amp;pd_headerlabel1=headerLabel1&amp;pd_headervalue1=headerValue1
 &amp;pd_primarylabel1=primaryLabel1&amp;pd_primaryvalue1=primaryValue1
@@ -115,18 +115,21 @@ For more info see below for Mandatory/Optional fields and Error codes.</p>
 &amp;pd_reladdress3=relAddress8&amp;pd_rellatitude8=relLatitude8&amp;pd_rellongitude8=relLongitude8&amp;pd_reltext8=relText8
 &amp;pd_reladdress9=relAddress9&amp;pd_rellatitude9=relLatitude9&amp;pd_rellongitude9=relLongitude9&amp;pd_reltext9=relText9
 &amp;pd_reladdress10=relAddress10&amp;pd_rellatitude10=relLatitude10&amp;pd_rellongitude10=relLongitude10&amp;pd_reltext10=relText10
-&amp;pd_email=Email&amp;pd_phone=Phone&amp;pd_customdataid=customDataId</pre>
+&amp;pd_email=email&amp;pd_phone=phone&amp;pd_customdataid=customDataId</pre>
+
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong>
-action, apikey, passTemplateID, 
-barcodeValue (if "Barcode=Allowed" &amp; "BarcodeType=Dynamic" &amp; "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED)
+action, apiKey, passTemplateId
+
 <strong>Optional: </strong>
+barcodeValue (if "Barcode=Allowed" &amp;&amp; "BarcodeType=Dynamic" &amp;&amp; "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED),
 barcodeText (if "Barcode = Allowed" &amp;&amp; "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
-hLabel1, hString1, pLabel1, pString1, 
-pLabel2, pString2 - if "Pass Template Type = Boarding Pass" otherwise IGNORED, 
-sLabel1, sString1, sLabel2, sString2, sLabel3, sString3, sLabel4, sString4, 
-aLabel1, aString1, aLabel2, aString2, aLabel3, aString3, aLabel4, aString4, 
-bLabel1, bString1, bLabel2, bString2, bLabel3, bString3, bLabel4, bString4,
+headerLabel1, headerValue1, 
+primaryLabel1, primaryValue1, 
+primaryLabel2, primaryValue2 - if "Pass Template Type = Boarding Pass" otherwise IGNORED, 
+secLabel1, secValue1, secLabel2, secValue2, secLabel3, secValue3, secLabel4, secValue4, 
+auxLabel1, auxValue1, auxLabel2, auxValue2, auxLabel3, auxValue3, auxLabel4, auxValue4, 
+backLabel1, backValue1, backLabel2, backValue2, backLabel3, backValue3, backLabel4, backValue4,
 relAddress1, relLatitude1, relLongitude1, relText1,
 relAddress2, relLatitude2, relLongitude2, relText2,
 relAddress3, relLatitude3, relLongitude3, relText3,
@@ -139,7 +142,7 @@ relAddress9, relLatitude9, relLongitude9, relText9,
 relAddress10, relLatitude10, relLongitude10, relText10,
 email, phone, customDataId </pre>
 <strong>Response Parameters:</strong><br />
-status, passDataID, passTemplateID, Errorcode, Errorinfo
+status, passDataID, passTemplateId, Errorcode, Errorinfo
 
 <strong>Related Errorcodes: </strong><br />
 E801, E802, E803, E804, E805, E806, E829, E833, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869,
@@ -164,11 +167,11 @@ E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E8
         &lt;AUXLABEL1&gt;Address&lt;/AUXLABEL1&gt;
         &lt;AUXVALUE1&gt;Hynes Convention Centre, Boston MA&lt;/AUXVALUE1&gt;
         &lt;BACKLABEL1&gt;Terms and Conditions&lt;/BACKLABEL1&gt;
-        &lt;BACKVALUE1&gt;Valid for 1 person only. Valid for 1 visit only. Expires July 6th, 2013. Valid ID required if requested.&lt;/BACKVALUE1&gt;
+        &lt;BACKVALUE1&gt;Valid for 1 person only. Expires July 6th, 2013. Valid ID required if requested.&lt;/BACKVALUE1&gt;
         &lt;BACKLABEL2&gt;Snacks and Drinks&lt;/BACKLABEL2&gt;
         &lt;BACKVALUE2&gt;Free Drinks and Snacks are available in the main lobby.&lt;/BACKVALUE2&gt;
         &lt;BACKLABEL3&gt;Additional Information&lt;/BACKLABEL3&gt;
-        &lt;BACKVALUE3&gt;Event arrangements are done by Eve Event Arrangement. Please take a small survey to win a free ticket for our next event. https://www.survey.com/event/12748493fgh/&lt;/BACKVALUE3&gt;
+        &lt;BACKVALUE3&gt;Take a survey to win a free ticket for our next coming event. https://www.survey.com/event/12748493fgh/&lt;/BACKVALUE3&gt;
         &lt;RELADDRESS1&gt;Hynes Convention Center, Boston MA&lt;/RELADDRESS1&gt;
         &lt;RELLATITUDE1&gt;42.347888&lt;/RELLATITUDE1&gt;
         &lt;RELLONGITUDE1&gt;-71.087903&lt;/RELLONGITUDE1&gt;
