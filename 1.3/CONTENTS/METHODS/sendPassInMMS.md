@@ -165,7 +165,7 @@ E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E8
         &lt;AUXLABEL1&gt;Address&lt;/AUXLABEL1&gt;
         &lt;AUXVALUE1&gt;Biz Convention Centre, Boston MA 02144&lt;/AUXVALUE1&gt;
         &lt;BACKLABEL1&gt;Terms and Conditions&lt;/BACKLABEL1&gt;
-        &lt;BACKVALUE1&gt;Valid for 1 person only. Valid for 1 visit only. Expires July 6th, 2013. Valid ID required if requested.&lt;/BACKVALUE1&gt;
+        &lt;BACKVALUE1&gt;Valid for 1 person only. Expires July 6th, 2013. Valid ID required if requested.&lt;/BACKVALUE1&gt;
         &lt;BACKLABEL2&gt;Snacks and Drinks&lt;/BACKLABEL2&gt;
         &lt;BACKVALUE2&gt;Free Drinks and Snacks are available in the main lobby.&lt;/BACKVALUE2&gt;
         &lt;BACKLABEL3&gt;Please take a small survey to win a free ticket for our next event. &lt;/BACKLABEL3&gt;
