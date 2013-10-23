@@ -10,16 +10,17 @@ Passbook pass with this data will result in failure. For more info see below for
     &lt;API_KEY&gt;apiKey&lt;/API_KEY&gt;
     &lt;PASSDATAID&gt;passDataId&lt;/PASSDATAID&gt;
 &lt;/REQUEST&gt;</pre>
+<div><strong>Request: GET</strong></div>
+<pre>API_URL?action=deletepassdata&amp;api_key=apiKey&amp;passdataid=passDataId</pre>
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong> action, apiKey, passDataId
 <strong>Optional:</strong> N/A</pre>
-<strong>Response Parameters:</strong><br />
 
-    status, Errorcode, Errorinfo
+<strong>Response Parameters:</strong><br />
+status, Errorcode, Errorinfo
 
 <strong>Related Errorcodes: </strong><br />
-
-    E807, E808, E821
+E807, E808, E821
     
 <div><strong>Request Example:</strong></div>
 <pre>&lt;REQUEST&gt;
