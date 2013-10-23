@@ -171,7 +171,7 @@ E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E8
         &lt;BACKLABEL2&gt;Snacks and Drinks&lt;/BACKLABEL2&gt;
         &lt;BACKVALUE2&gt;Free Drinks and Snacks are available in the main lobby.&lt;/BACKVALUE2&gt;
         &lt;BACKLABEL3&gt;Additional Information&lt;/BACKLABEL3&gt;
-        &lt;BACKVALUE3&gt;Take a survey to win a free ticket for our next coming event. https://www.survey.com/event/12748493fgh/&lt;/BACKVALUE3&gt;
+        &lt;BACKVALUE3&gt;Take a survey to win a free ticket for our next coming event. <br/>https://www.survey.com/event/12748493fgh/&lt;/BACKVALUE3&gt;
         &lt;RELADDRESS1&gt;Hynes Convention Center, Boston MA&lt;/RELADDRESS1&gt;
         &lt;RELLATITUDE1&gt;42.347888&lt;/RELLATITUDE1&gt;
         &lt;RELLONGITUDE1&gt;-71.087903&lt;/RELLONGITUDE1&gt;
