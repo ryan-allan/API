@@ -41,8 +41,8 @@ XML:
 &lt;/REQUEST&gt;</pre>
 GET:
 <pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=sendsavedemail&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
-&email=john@email.com&emailid=1234&campaignref=5678&sdata_first_name=John&sdata_last_name=Smith&sdata_age=29
-&sdata_pet=Dog</pre>
+&email=john@email.com&emailid=1234&campaignref=5678&data_first_name=John&data_last_name=Smith&data_age=29
+&data_pet=Dog</pre>
 <div><strong>Response Example: Success</strong></div>
 <pre>&lt;RESPONSE&gt;
     &lt;STATUS&gt;Success&lt;/STATUS&gt;
