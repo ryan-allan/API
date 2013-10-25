@@ -51,7 +51,7 @@ XML:
 &lt;/REQUEST&gt;</pre>
 GET:
 <pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=subscribeemail&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
-&email=john@email.com&campaignid=1116&notify=yes&sdata_first_name=John&sdata_last_name=Smith&sdata_age=30&sdata_pet=Dog</pre>
+&email=john@email.com&campaignid=1116&notify=yes&data_first_name=John&data_last_name=Smith&data_age=30&data_pet=Dog</pre>
 <div><strong>Response Example: Success</strong></div>
 <pre>&lt;RESPONSE&gt;
     &lt;STATUS&gt;Success&lt;/STATUS&gt;
