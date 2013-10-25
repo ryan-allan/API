@@ -14,3 +14,11 @@ request to the Postback URL. If establishing a connection to the Postback URL ta
 connection will time out and fail. We expect the remote server to respond with a proper http header containing 200 HTTP 
 code, which is considered as successful status. If no response is given or the HTTP code is not 200 we will consider it
 a failed request and will retry five minutes later up to 5 times.</p>
+<p><strong>GET Requests:</strong> We strongly recommend url encoding the values in the query string of your API GET 
+requests. Failure to do so may result in the API failing to interpret or process your request. For example, your 
+unencoded query string may look like this:</p>
+
+<p><u>Before encoding</u>:<br /><pre>&data_full_name=John Smith&data_age=35</pre></p>
+
+<p><u>After encoding</u>: (space replaced with plus sign)<br />
+<pre>&data_full_name=John+Smith&data_age=35</pre></p>
