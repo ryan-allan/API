@@ -10,6 +10,14 @@ Every binary MMS we deliver can be transcoded for the destination handset and ev
 DDMTITLE &#8211; this is the DDM title<br />
 DDMTEXT &#8211; this is the DDM body<br />
 DDMTIMEOUT &#8211; when we send DDM we wait for the Delivery Report which contain the handset profile. In some cases we don&#8217;t receive it or it takes very long (handset turned off or out of range). This variable tells the system how long should it wait for DDM Delivery Report before sending actual content using Default parameters. Default value of this parameter is 5 minutes.</p>
+
+<p>SendSavedMMS allow you to pass HandsetID inside DEVICE parameter. 
+We will store this information and (if HandsetID is recognized by our system) use handset profile to adapt content for current and future MMS delivery.
+<br>
+NOTE: Once we receive Delivery Receipt with HandsetID we overwrite current value assigned to that number, we consider HandsetID from Delivery Receipt more up-to-date.
+<br>
+DEVICE parameter can be used with DDM as a fallback mechanism. If HandsetID passed in API call is not recognized by our system, it will send DDM (if specified in the request) to the handset to detect it. If there was no DDM specified in the request, system will use generic settings for MMS delivery.</p>
+
 <div><strong>Request:</strong></div>
 <pre>&lt;REQUEST&gt;
 	&lt;ACTION&gt;sendSavedMMS&lt;/ACTION&gt;
@@ -21,6 +29,7 @@ DDMTIMEOUT &#8211; when we send DDM we wait for the Delivery Report which contai
         &lt;DDMTITLE&gt;DDM Title&lt;/DDMTITLE&gt;
         &lt;DDMTEXT&gt;DDM Body&lt;/DDMTEXT&gt;
         &lt;DDMTIMEOUT&gt;DDM Timeout in minutes&lt;/DDMTIMEOUT&gt;
+        &lt;DEVICE&gt;HandsetID&lt;/DEVICE&gt;
         &lt;CUSTOMTEXT&gt;
         	&lt;VALUE&gt;Custom Text for slide&lt;/VALUE&gt;
         	&lt;SLIDE&gt;Slide ID&lt;/SLIDE&gt;
@@ -35,7 +44,7 @@ DDMTIMEOUT &#8211; when we send DDM we wait for the Delivery Report which contai
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong> Action, API_KEY, MMSID, To, From
-<strong>Optional: </strong>CampaignRef, CustomSubject, CustomText, Data</pre>
+<strong>Optional: </strong>CampaignRef, CustomSubject, CustomText, Data, DDMTitle, DDMText, DDMTimeout, Device</pre>
 <strong>Response Parameters:</strong><br />
 MMSID, Status, To, TrackingID, Errorcode, Errorinfo
 
@@ -54,6 +63,7 @@ XML:
         &lt;DDMTITLE&gt;We are detecting your handset&lt;/DDMTITLE&gt;
         &lt;DDMTEXT&gt;This message is free of charge and will allow us to deliver your content nice and smooth&lt;/DDMTEXT&gt;
         &lt;DDMTIMEOUT&gt;10&lt;/DDMTIMEOUT&gt;
+        &lt;DEVICE&gt;iPhoneOS&lt;/DEVICE&gt;
         &lt;CUSTOMTEXT&gt;
         	&lt;VALUE&gt;My Custom text in first slide&lt;/VALUE&gt;
         	&lt;SLIDE&gt;1&lt;/SLIDE&gt;
@@ -70,7 +80,8 @@ GET:
 <pre>https://secure.skycore.com/API/wxml/1.3/index.php?action=sendsavedmms&api_key=qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ
 &to=16501234123&from=60856&mmsid=35674&ddmtitle=We+are+detecting+your+handset
 &ddmtext=This+message+is+free+of+charge+and+will+allow+us+to+deliver+your+content+nice+and+smooth&ddmtimeout=5
-&customtext_1=My+Custom+text+in+first+slide&customsubject=My+Custom+Subject&data_first_name=John&data_last_name=Smith
+&device=iPhoneOS&customtext_1=My+Custom+text+in+first+slide&customsubject=My+Custom+Subject&data_first_name=John
+&data_last_name=Smith
 &data_age=30&data_pet=Dog</pre>
 <div><strong>Response Example: Success</strong></div>
 <pre>&lt;RESPONSE&gt;
