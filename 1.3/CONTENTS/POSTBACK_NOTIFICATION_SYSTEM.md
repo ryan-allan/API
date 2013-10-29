@@ -107,8 +107,8 @@
 <p><strong>b) The XHTML Method</strong></p>
 <p>For XHTML, we send one Postback N101 notifying that we started to process the message. N102 is generated once the SMS with a link to the content is sent out. When we receive Delivery Report(DLR) for SMS, we generate Postback notification N202. N101, N102 and N202 are described above.</p>
 <p><strong>PLEASE NOTE:</strong></p>
-<p>Notification N101 is linked to N102 via TRACKINGID and HISTORYID</p>
-<p>Notification N102 contain additional field SMSID and is linked to N202 via SMSID in N102 and TRACKINGID in N202</p>
+<p>Notification N101,N102,N202 share same HISTORYID</p>
+<p>Notification N101 and N102 share same TRACKINGID, N102 contain additional field SMSID, which is TRACKINGID in N202 notification</p>
 <p><strong>N101 Example:</strong><br />
 <small><code> &lt;NOTIFICATION id="521536" created="2012-06-07 07:27:34.398593-04"&gt;<br />
 &lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;<br />
