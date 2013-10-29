@@ -44,43 +44,33 @@ All the other/extra pass data is ignored. On success, it will return the EmailSt
         &lt;BACKVALUE3&gt;backValue3&lt;/BACKVALUE3&gt;
         &lt;BACKLABEL4&gt;backLabel4&lt;/BACKLABEL4&gt;
         &lt;BACKVALUE4&gt;backValue4&lt;/BACKVALUE4&gt;
-        &lt;RELADDRESS1&gt;relAddress1&lt;/RELADDRESS1&gt;
         &lt;RELLATITUDE1&gt;relLatitude1&lt;/RELLATITUDE1&gt;
         &lt;RELLONGITUDE1&gt;relLongitude1&lt;/RELLONGITUDE1&gt;
         &lt;RELTEXT1&gt;relText1&lt;/RELTEXT1&gt;
-        &lt;RELADDRESS2&gt;relAddress2&lt;/RELADDRESS2&gt;
         &lt;RELLATITUDE2&gt;relLatitude2&lt;/RELLATITUDE2&gt;
         &lt;RELLONGITUDE2&gt;relLongitude2&lt;/RELLONGITUDE2&gt;
         &lt;RELTEXT2&gt;relText2&lt;/RELTEXT2&gt;
-        &lt;RELADDRESS3&gt;relAddress3&lt;/RELADDRESS3&gt;
         &lt;RELLATITUDE3&gt;relLatitude3&lt;/RELLATITUDE3&gt;
         &lt;RELLONGITUDE3&gt;relLongitude3&lt;/RELLONGITUDE3&gt;
         &lt;RELTEXT3&gt;relText3&lt;/RELTEXT3&gt;
-        &lt;RELADDRESS4&gt;relAddress4&lt;/RELADDRESS4&gt;
         &lt;RELLATITUDE4&gt;relLatitude4&lt;/RELLATITUDE4&gt;
         &lt;RELLONGITUDE4&gt;relLongitude4&lt;/RELLONGITUDE4&gt;
         &lt;RELTEXT4&gt;relText4&lt;/RELTEXT4&gt;
-        &lt;RELADDRESS5&gt;relAddress5&lt;/RELADDRESS5&gt;
         &lt;RELLATITUDE5&gt;relLatitude5&lt;/RELLATITUDE5&gt;
         &lt;RELLONGITUDE5&gt;relLongitude5&lt;/RELLONGITUDE5&gt;
         &lt;RELTEXT5&gt;relText5&lt;/RELTEXT5&gt;
-        &lt;RELADDRESS6&gt;relAddress6&lt;/RELADDRESS6&gt;
         &lt;RELLATITUDE6&gt;relLatitude6&lt;/RELLATITUDE6&gt;
         &lt;RELLONGITUDE6&gt;relLongitude6&lt;/RELLONGITUDE6&gt;
         &lt;RELTEXT6&gt;relText6&lt;/RELTEXT6&gt;
-        &lt;RELADDRESS7&gt;relAddress7&lt;/RELADDRESS7&gt;
         &lt;RELLATITUDE7&gt;relLatitude7&lt;/RELLATITUDE7&gt;
         &lt;RELLONGITUDE7&gt;relLongitude7&lt;/RELLONGITUDE7&gt;
         &lt;RELTEXT7&gt;relText7&lt;/RELTEXT7&gt;
-        &lt;RELADDRESS8&gt;relAddress8&lt;/RELADDRESS8&gt;
         &lt;RELLATITUDE8&gt;relLatitude8&lt;/RELLATITUDE8&gt;
         &lt;RELLONGITUDE8&gt;relLongitude8&lt;/RELLONGITUDE8&gt;
         &lt;RELTEXT8&gt;relText8&lt;/RELTEXT8&gt;
-        &lt;RELADDRESS9&gt;relAddress9&lt;/RELADDRESS9&gt;
         &lt;RELLATITUDE9&gt;relLatitude9&lt;/RELLATITUDE9&gt;
         &lt;RELLONGITUDE9&gt;relLongitude9&lt;/RELLONGITUDE9&gt;
         &lt;RELTEXT9&gt;relText9&lt;/RELTEXT9&gt;
-        &lt;RELADDRESS10&gt;relAddress10&lt;/RELADDRESS10&gt;
         &lt;RELLATITUDE10&gt;relLatitude10&lt;/RELLATITUDE10&gt;
         &lt;RELLONGITUDE10&gt;relLongitude10&lt;/RELLONGITUDE10&gt;
         &lt;RELTEXT10&gt;relText10&lt;/RELTEXT10&gt;
@@ -101,16 +91,16 @@ API_URL?action=sendpassinemail&amp;api_key=apiKey&amp;emailid=emailTemplateId
 &amp;pd_auxlabel4=auxLabel4&amp;pd_auxvalue4=auxValue4&amp;pd_backlabel1=backLabel1
 &amp;pd_backvalue1=backValue1&amp;pd_backlabel2=backLabel2&amp;pd_backvalue2=backValue2
 &amp;pd_backlabel3=backLabel3&amp;pd_backvalue3=backValue3&amp;pd_backlabel4=backLabel4&amp;pd_backvalue4=backValue4
-&amp;pd_reladdress1=relAddress1&amp;pd_rellatitude1=relLatitude1&amp;pd_rellongitude1=relLongitude1&amp;pd_reltext1=relText1
-&amp;pd_reladdress2=relAddress2&amp;pd_rellatitude2=relLatitude2&amp;pd_rellongitude2=relLongitude2&amp;pd_reltext2=relText2
-&amp;pd_reladdress3=relAddress3&amp;pd_rellatitude3=relLatitude3&amp;pd_rellongitude3=relLongitude3&amp;pd_reltext3=relText3
-&amp;pd_reladdress4=relAddress4&amp;pd_rellatitude4=relLatitude4&amp;pd_rellongitude4=relLongitude4&amp;pd_reltext4=relText4
-&amp;pd_reladdress5=relAddress5&amp;pd_rellatitude5=relLatitude5&amp;pd_rellongitude5=relLongitude5&amp;pd_reltext5=relText5
-&amp;pd_reladdress6=relAddress6&amp;pd_rellatitude6=relLatitude6&amp;pd_rellongitude6=relLongitude6&amp;pd_reltext6=relText6
-&amp;pd_reladdress3=relAddress7&amp;pd_rellatitude7=relLatitude7&amp;pd_rellongitude7=relLongitude7&amp;pd_reltext7=relText7
-&amp;pd_reladdress3=relAddress8&amp;pd_rellatitude8=relLatitude8&amp;pd_rellongitude8=relLongitude8&amp;pd_reltext8=relText8
-&amp;pd_reladdress9=relAddress9&amp;pd_rellatitude9=relLatitude9&amp;pd_rellongitude9=relLongitude9&amp;pd_reltext9=relText9
-&amp;pd_reladdress10=relAddress10&amp;pd_rellatitude10=relLatitude10&amp;pd_rellongitude10=relLongitude10&amp;pd_reltext10=relText10
+&amp;pd_rellatitude1=relLatitude1&amp;pd_rellongitude1=relLongitude1&amp;pd_reltext1=relText1
+&amp;pd_rellatitude2=relLatitude2&amp;pd_rellongitude2=relLongitude2&amp;pd_reltext2=relText2
+&amp;pd_rellatitude3=relLatitude3&amp;pd_rellongitude3=relLongitude3&amp;pd_reltext3=relText3
+&amp;pd_rellatitude4=relLatitude4&amp;pd_rellongitude4=relLongitude4&amp;pd_reltext4=relText4
+&amp;pd_rellatitude5=relLatitude5&amp;pd_rellongitude5=relLongitude5&amp;pd_reltext5=relText5
+&amp;pd_rellatitude6=relLatitude6&amp;pd_rellongitude6=relLongitude6&amp;pd_reltext6=relText6
+&amp;pd_rellatitude7=relLatitude7&amp;pd_rellongitude7=relLongitude7&amp;pd_reltext7=relText7
+&amp;pd_rellatitude8=relLatitude8&amp;pd_rellongitude8=relLongitude8&amp;pd_reltext8=relText8
+&amp;pd_rellatitude9=relLatitude9&amp;pd_rellongitude9=relLongitude9&amp;pd_reltext9=relText9
+&amp;pd_rellatitude10=relLatitude10&amp;pd_rellongitude10=relLongitude10&amp;pd_reltext10=relText10
 </pre>
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong>
@@ -125,16 +115,16 @@ primaryLabel2, primaryValue2 - if "Pass Template Type = Boarding Pass" otherwise
 secLabel1, secValue1, secLabel2, secValue2, secLabel3, secValue3, secLabel4, secValue4, 
 auxLabel1, auxValue1, auxLabel2, auxValue2, auxLabel3, auxValue3, auxLabel4, auxValue4, 
 backLabel1, backValue1, backLabel2, backValue2, backLabel3, backValue3, backLabel4, backValue4,
-relAddress1, relLatitude1, relLongitude1, relText1,
-relAddress2, relLatitude2, relLongitude2, relText2,
-relAddress3, relLatitude3, relLongitude3, relText3,
-relAddress4, relLatitude4, relLongitude4, relText4,
-relAddress5, relLatitude5, relLongitude5, relText5,
-relAddress6, relLatitude6, relLongitude6, relText6,
-relAddress7, relLatitude7, relLongitude7, relText7,
-relAddress8, relLatitude8, relLongitude8, relText8,
-relAddress9, relLatitude9, relLongitude9, relText9,
-relAddress10, relLatitude10, relLongitude10, relText10</pre>
+relLatitude1, relLongitude1, relText1,
+relLatitude2, relLongitude2, relText2,
+relLatitude3, relLongitude3, relText3,
+relLatitude4, relLongitude4, relText4,
+relLatitude5, relLongitude5, relText5,
+relLatitude6, relLongitude6, relText6,
+relLatitude7, relLongitude7, relText7,
+relLatitude8, relLongitude8, relText8,
+relLatitude9, relLongitude9, relText9,
+relLatitude10, relLongitude10, relText10</pre>
 <strong>Response Parameters:</strong><br />
 status, email, emailid, trackingID, Errorcode, Errorinfo
 
@@ -168,7 +158,6 @@ E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E8
         &lt;BACKVALUE2&gt;Free Drinks and Snacks are available in the main lobby.&lt;/BACKVALUE2&gt;
         &lt;BACKLABEL3&gt;Please take a small survey to win a free ticket for our next event&lt;/BACKLABEL3&gt;
         &lt;BACKVALUE3&gt;https://www.survey.com/event/12748493fgh/&lt;/BACKVALUE3&gt;
-        &lt;RELADDRESS2&gt;Hynes Convention Center, Boston MA&lt;/RELADDRESS2&gt;
         &lt;RELLATITUDE2&gt;42.347888&lt;/RELLATITUDE2&gt;
         &lt;RELLONGITUDE2&gt;-71.087903&lt;/RELLONGITUDE2&gt;
         &lt;RELTEXT2&gt;Event at HYNES CONVENTION CENTRE&lt;/RELTEXT2&gt;
