@@ -3,6 +3,7 @@
 <p><strong>Synopsis:</strong><br />
 This API request triggers sending an MMS with Dynamic Pass. Dynamic pass data passed in the API request will be used to create a Passbook pass sent via MMS. 
 The pass data gets locked with the Phone number in the request and is used in limitation to the Pass Template settings. All the other/extra pass data is ignored.
+In the case of Relevance, Relevant Text is considered only when Relevance lat,long values are passed in the API otherwise ignored.
 On success, it will return the MMSTrackingID. For more info see below for Mandatory/Optional fields and Error codes.</p>
 <div><strong>Request: XML</strong></div>
 <pre>&lt;REQUEST&gt;
