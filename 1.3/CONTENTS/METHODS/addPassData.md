@@ -6,6 +6,7 @@ The pass data is added to the pass database and will be used to create the Passb
 Based on the settings of the Pass Template the pass data need to be passed accordingly in the API request and all the other/extra data will be ignored.
 Additionally, Phone (or/and) Email (or/and) customDataId can be passed along with the pass data to lock down the pass data to the respective entity, that means that this 
 pass data will used to generate a pass whenever it is delivered to that Email (via Email), Phone (via MMS). 
+In the case of Relevance, Relevant Text is considered only when Relevance lat,long values are passed in the API otherwise ignored.
 On success, it returns PassDataId which should be stored and kept in your database along with the data.
 For more info see below for Mandatory/Optional fields and Error codes.</p>
 <div><strong>Request: XML</strong></div>
