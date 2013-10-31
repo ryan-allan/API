@@ -4,7 +4,30 @@
 This API request triggers sending an MMS with Dynamic Pass. Dynamic pass data passed in the API request will be used to create a Passbook pass sent via MMS. 
 The pass data gets locked with the Phone number in the request and is used in limitation to the Pass Template settings. All the other/extra pass data is ignored.
 In the case of Relevance, Relevant Text is considered only when Relevance lat,long values are passed in the API otherwise ignored.
+MMS is sent from a specified account using a MMSID to a single mobile number. 
+FROM must be one of shortcodes allowed for your account. 
+In case the number is from a different country than the FROM shortcode is assigned to &#8211; default shortcode for those countries will be used.</p>
+<p><strong>Content Transcoding:</strong><br />
+Every binary MMS we deliver can be transcoded for the destination handset and every web page we deliver is transcoded for the browsing handset. 
+To transcode a binary MMS we must know what type of handset the user has. 
+We are able to obtain this handset type information from delivery receipts and store the record in a handset cache for later use. 
+We have a database of attributes which we manually match to every new handset in the cache so we can adapt the content during MMS delivery.</p>
+<p>Our API allows you to dynamically change each slide text by setting up CUSTOMTEXT (value, slide) and MMS Subject by setting CUSTOMSUBJECT.
+<p>A Device Discovery Message (DDM) is a short textual MMS message that is sent to the number to discover what handset the end user is using. 
+We store this handset information in our system and reuse it, so a DDM is sent only to new numbers. 
+If the DDM settings are not included within your API call and the number is not in the handset cache we will deliver the MMS with generic settings. 
+If the handset is in the handset cache the DDM will not be sent and the MMS message will be transcoded and delivered immediately.</p>
+<p>Our API allows you to customize DDM by setting 3 parameters:<br />
+DDMTITLE &#8211; this is the DDM title<br />
+DDMTEXT &#8211; this is the DDM body<br />
+DDMTIMEOUT &#8211; when we send DDM we wait for the Delivery Report which contain the handset profile. In some cases we don&#8217;t receive it or it takes very long (handset turned off or out of range). This variable tells the system how long should it wait for DDM Delivery Report before sending actual content using Default parameters. Default value of this parameter is 5 minutes.</p>
+<p>This API allow you to pass DeviceId/HandsetId inside DEVICE parameter. We will store this information and (if HandsetID is recognized by our system) use handset profile to adapt content for current and future MMS delivery.
+<br />
+NOTE: Once we receive Delivery Receipt with HandsetId we overwrite current value assigned to that number, we consider HandsetId from Delivery Receipt more up-to-date.
+<br />
+DEVICE parameter can be used with DDM as a fallback mechanism. If HandsetId passed in API call is not recognized by our system, it will send DDM (if specified in the request) to the handset to detect it. If there was no DDM specified in the request, system will use generic settings for MMS delivery.</p>
 On success, it will return the MMSTrackingID. For more info see below for Mandatory/Optional fields and Error codes.</p>
+
 <div><strong>Request: XML</strong></div>
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;sendPassInMMS&lt;/ACTION&gt;
@@ -13,6 +36,21 @@ On success, it will return the MMSTrackingID. For more info see below for Mandat
     &lt;TO&gt;phone&lt;/TO&gt;
     &lt;FROM&gt;shortcode&lt;/FROM&gt;
     &lt;CAMPAIGNREF&gt;campaignId&lt;/CAMPAIGNREF&gt;
+    &lt;DDMTITLE&gt;DDMTitle&lt;/DDMTITLE&gt;
+	&lt;DDMTEXT&gt;DDMText&lt;/DDMTEXT&gt;
+	&lt;DDMTIMEOUT&gt;DDMTimeout (in mins)&lt;/DDMTIMEOUT&gt;
+	&lt;DEVICE&gt;handsetId&lt;/DEVICE&gt;
+	&lt;CUSTOMTEXT&gt;
+		&lt;VALUE&gt;customText&lt;/VALUE&gt;
+		&lt;SLIDE&gt;slideId&lt;/SLIDE&gt;
+	&lt;/CUSTOMTEXT&gt;
+	&lt;/CUSTOMSUBJECT&gt;MMSCustomSubject&lt;/CUSTOMSUBJECT&gt;
+	&lt;DATA&gt;
+		&lt;FIRST_NAME&gt;firstName&lt;/FIRST_NAME&gt;
+		&lt;LAST_NAME&gt;lastName&lt;/LAST_NAME&gt;
+		&lt;GENDER&gt;gender&lt;/GENDER&gt;
+		...
+	&lt;/DATA&gt;
     &lt;PASSDATA&gt;
         &lt;BARCODEVALUE&gt;barcodeValue&lt;/BARCODEVALUE&gt;
         &lt;BARCODETEXT&gt;barcodeText&lt;/BARCODETEXT&gt;
@@ -81,8 +119,10 @@ On success, it will return the MMSTrackingID. For more info see below for Mandat
 <div><strong>Request: GET</strong></div>
 <pre>
 API_URL?action=sendpassinmms&amp;api_key=apiKey&amp;mmsid=mmsId&amp;to=phone
-&amp;from=shortcode&amp;campaignref=campaignId&amp;pd_barcodevalue=barcodeValue
-&amp;pd_barcodetext=barcodeText&amp;pd_headerlabel1=headerLabel1
+&amp;from=shortcode&amp;campaignref=campaignId&amp;ddmtitle=ddmTitle&amp;ddmtext=ddmText&amp;ddmtimeout=ddmTimeout&amp;device=deviceId
+&amp;customtext_1=customTextSlide1&amp;customsubject=customSubject
+&amp;data_first_name=firstName&amp;data_last_name=lastName&amp;data_age=age
+&amp;pd_barcodevalue=barcodeValue&amp;pd_barcodetext=barcodeText&amp;pd_headerlabel1=headerLabel1
 &amp;pd_headervalue1=headerValue1&amp;pd_primarylabel1=primaryLabel1
 &amp;pd_primaryvalue1=primaryValue1&amp;pd_primarylabel2=primaryLabel2
 &amp;pd_primaryvalue2=primaryValue2&amp;pd_seclabel1=secLabel1&amp;pd_secvalue1=secValue1
@@ -106,30 +146,31 @@ API_URL?action=sendpassinmms&amp;api_key=apiKey&amp;mmsid=mmsId&amp;to=phone
 </pre>
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong> 
-action, apiKey, mmsId, to, from, 
-barcodeValue (if "Barcode=Allowed" &amp;&amp; "BarcodeType=Dynamic" &amp;&amp; "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED),
+action, apiKey, mmsid, to, from, 
+barcodevalue (if "Barcode=Allowed" &amp;&amp; "BarcodeType=Dynamic" &amp;&amp; "Barcode value source=Dynamic Value" for Pass Template otherwise IGNORED),
 
 <strong>Optional: </strong>
-barcodeText (if "Barcode = Allowed" &amp;&amp; "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
-headerLabel1, headerValue1, 
-primaryLabel1, primaryValue1, 
-primaryLabel2, primaryValue2 - if "Pass Template Type = Boarding Pass" otherwise IGNORED, 
-secLabel1, secValue1, secLabel2, secValue2, secLabel3, secValue3, secLabel4, secValue4, 
-auxLabel1, auxValue1, auxLabel2, auxValue2, auxLabel3, auxValue3, auxLabel4, auxValue4, 
-backLabel1, backValue1, backLabel2, backValue2, backLabel3, backValue3, backLabel4, backValue4,
-relLatitude1, relLongitude1, relText1,
-relLatitude2, relLongitude2, relText2,
-relLatitude3, relLongitude3, relText3,
-relLatitude4, relLongitude4, relText4,
-relLatitude5, relLongitude5, relText5,
-relLatitude6, relLongitude6, relText6,
-relLatitude7, relLongitude7, relText7,
-relLatitude8, relLongitude8, relText8,
-relLatitude9, relLongitude9, relText9,
-relLatitude10, relLongitude10, relText10</pre>
+campaignref, ddmtitle, ddmtext, ddmtimeout, device, customsubject, customText, data, 
+barcodetext (if "Barcode = Allowed" &amp;&amp; "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
+headerlabel1, headervalue1, 
+primarylabel1, primaryvalue1, 
+primarylabel2, primaryvalue2 - if "Pass template type = Boarding Pass" otherwise IGNORED, 
+seclabel1, secvalue1, seclabel2, secvalue2, seclabel3, secvalue3, seclabel4, secvalue4, 
+auxlabel1, auxvalue1, auxlabel2, auxvalue2, auxlabel3, auxvalue3, auxlabel4, auxvalue4, 
+backlabel1, backvalue1, backlabel2, backvalue2, backlabel3, backvalue3, backlabel4, backvalue4,
+rellatitude1, rellongitude1, reltext1,
+rellatitude2, rellongitude2, reltext2,
+rellatitude3, rellongitude3, reltext3,
+rellatitude4, rellongitude4, reltext4,
+rellatitude5, rellongitude5, reltext5,
+rellatitude6, rellongitude6, reltext6,
+rellatitude7, rellongitude7, reltext7,
+rellatitude8, rellongitude8, reltext8,
+rellatitude9, rellongitude9, reltext9,
+rellatitude10, rellongitude10, reltext10</pre>
 
 <strong>Response Parameters:</strong><br />
-status, to, mmsId, trackingID, Errorcode, Errorinfo
+status, to, mmsid, trackingid, errorcode, errorinfo
 
 <strong>Related Errorcodes: </strong><br />
 E110, E111, E241, E620, E621, E626, E628, E629, E713, E714, E715, E802, E803, E806, E822, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869
@@ -142,19 +183,35 @@ E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E8
     &lt;MMSID&gt;45633&lt;/MMSID&gt;
     &lt;TO&gt;16501234123&lt;/TO&gt;
     &lt;FROM&gt;11111&lt;/FROM&gt;
+    &lt;CAMPAIGNREF&gt;12333&lt;/CAMPAIGNREF&gt;
+    &lt;DDMTITLE&gt;We are detecting your handset&lt;/DDMTITLE&gt;
+        &lt;DDMTEXT&gt;This message is free of charge and will allow us to deliver your content nice and smooth&lt;/DDMTEXT&gt;
+        &lt;DDMTIMEOUT&gt;10&lt;/DDMTIMEOUT&gt;
+        &lt;DEVICE&gt;iPhoneOS&lt;/DEVICE&gt;
+        &lt;CUSTOMTEXT&gt;
+        	&lt;VALUE&gt;Hyes Convention Event Ticket&lt;/VALUE&gt;
+        	&lt;SLIDE&gt;1&lt;/SLIDE&gt;
+        &lt;/CUSTOMTEXT&gt;
+        &lt;/CUSTOMSUBJECT&gt;Your Event Ticket&lt;/CUSTOMSUBJECT&gt;
+	&lt;DATA&gt;
+		&lt;FIRST_NAME&gt;John&lt;/FIRST_NAME&gt;
+		&lt;LAST_NAME&gt;Smith&lt;/LAST_NAME&gt;
+		&lt;AGE&gt;30&lt;/AGE&gt;
+		&lt;GENDER&gt;Male&lt;/GENDER&gt;
+	&lt;/DATA&gt;        
     &lt;PASSDATA&gt;
         &lt;BARCODEVALUE&gt;1234578961A&lt;/BARCODEVALUE&gt;
         &lt;BARCODETEXT&gt;PASS-123-457&lt;/BARCODETEXT&gt;
         &lt;HEADERLABEL1&gt;SEAT&lt;/HEADERLABEL1&gt;
         &lt;HEADERVALUE1&gt;1C&lt;/HEADERVALUE1&gt;
         &lt;PRIMARYLABEL1&gt;Name&lt;/PRIMARYLABEL1&gt;
-        &lt;PRIMARYVALUE1&gt;Vikram Muthyala&lt;/PRIMARYVALUE1&gt; 
+        &lt;PRIMARYVALUE1&gt;John Smith&lt;/PRIMARYVALUE1&gt; 
         &lt;SECLABEL1&gt;Date&lt;/SECLABEL1&gt;
         &lt;SECVALUE1&gt;4th July, 2013&lt;/SECVALUE1&gt;
         &lt;SECLABEL2&gt;Auditorium&lt;/SECLABEL2&gt;
         &lt;SECVALUE2&gt;Gold Room&lt;/SECVALUE2&gt;
         &lt;AUXLABEL1&gt;Address&lt;/AUXLABEL1&gt;
-        &lt;AUXVALUE1&gt;Biz Convention Centre, Boston MA 02144&lt;/AUXVALUE1&gt;
+        &lt;AUXVALUE1&gt;Hyes Convention Centre, Boston MA 02144&lt;/AUXVALUE1&gt;
         &lt;BACKLABEL1&gt;Terms and Conditions&lt;/BACKLABEL1&gt;
         &lt;BACKVALUE1&gt;Valid for 1 person only. Expires July 6th, 2013. Valid ID required if requested.&lt;/BACKVALUE1&gt;
         &lt;BACKLABEL2&gt;Snacks and Drinks&lt;/BACKLABEL2&gt;
@@ -163,7 +220,7 @@ E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E8
         &lt;BACKVALUE3&gt;https://www.survey.com/event/12748493fgh/&lt;/BACKVALUE3&gt;
         &lt;RELLATITUDE2&gt;42.347888&lt;/RELLATITUDE2&gt;
         &lt;RELLONGITUDE2&gt;-71.087903&lt;/RELLONGITUDE2&gt;
-        &lt;RELTEXT2&gt;Event at HYNES CONVENTION CENTRE&lt;/RELTEXT2&gt;
+        &lt;RELTEXT2&gt;Event at HYES CONVENTION CENTRE&lt;/RELTEXT2&gt;
     &lt;/PASSDATA&gt;    
 &lt;/REQUEST&gt;</pre>
 <div><strong>Response Example: Success</strong></div>
@@ -177,6 +234,36 @@ E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E8
 <pre>&lt;RESPONSE&gt;
     &lt;STATUS&gt;Failure&lt;/STATUS&gt;
     &lt;ERRORCODE&gt;E713&lt;/ERRORCODE&gt;
-    &lt;ERRORINFO&gt;There is billing problem on your account.&lt;/ERRORINFO&gt;
     &lt;TO&gt;16501234123&lt;/TO&gt;
+    &lt;ERRORINFO&gt;There is billing problem on your account.&lt;/ERRORINFO&gt;
 &lt;/RESPONSE&gt;</pre>
+
+<div><strong>Postback Notifications For SendPassInMMS</strong></div>
+<p>When the MMS delivery is processed successfully the system will generate a Postback notification.</p>
+<pre>&lt;NOTIFICATION   ID="325" CREATED="2011-08-02 07:20:45.870623-04"&gt;
+	&lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;
+	&lt;CODE&gt;N101&lt;/CODE&gt;
+	&lt;BODY&gt;
+        &lt;HISTORYID&gt;249687&lt;/HISTORYID&gt;
+        &lt;MMSID&gt;35674&lt;/MMSID&gt;
+        &lt;TO&gt;16501234123&lt;/TO&gt;
+        &lt;TRACKINGID&gt;MMS_12346&lt;/TRACKINGID&gt;
+        &lt;SPID&gt;000189&lt;/SPID&gt;
+        &lt;TIMESTAMP&gt;2011-08-02 07:20:44-04&lt;/TIMESTAMP&gt;
+	&lt;/BODY&gt;
+&lt;/NOTIFICATION&gt;</pre>
+<p>When an MMS delivery report is received the system will generate a Postback notification. Not all carriers provide MMS delivery receipts.</p>
+<pre>&lt;NOTIFICATION ID=&#8221;326&#8243; CREATED=&#8221;2011-08-02 07:20:52.332193-04&#8243;&gt;
+	&lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;
+	&lt;CODE&gt;N102&lt;/CODE&gt; 
+	&lt;BODY&gt; 
+	&lt;HISTORYID&gt;249687&lt;/HISTORYID&gt; 
+	&lt;MMSID&gt;35674&lt;/MMSID&gt; 
+	&lt;TO&gt;16501234123&lt;/TO&gt; 
+	&lt;TRACKINGID&gt;MMS_12346&lt;/TRACKINGID&gt; 
+	&lt;SPID&gt;000189&lt;/SPID&gt; 
+	&lt;HANDSET&gt;motol7c&lt;/HANDSET&gt; 
+	&lt;STATUS CELLY=&#8221;20&#8243; PROVIDER=&#8221;1000&#8243; TEXT=&#8221;Retrieved&#8221; DESCRIPTION=&#8221;" /&gt; 
+	&lt;TIMESTAMP&gt;2011-08-02 07:20:49-04&lt;/TIMESTAMP&gt; 
+	&lt;/BODY&gt; 
+&lt;/NOTIFICATION&gt;</pre>
