@@ -166,123 +166,123 @@
 </tr>
 <tr>
 <td>E401 Invalid email</td>
-<td>E870 Relevance Location Address - 1, Latitude - 1, Longitude - 1 and Relevance Text - 1 are not accepted. Relevance location has to be set as Dynamic in the Pass Template</td>
+<td>E870 Relevance Location Latitude1, Longitude1 and Relevance Text1 are not accepted. Relevance Location has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E402 Invalid emailid</td>
-<td>E871 Relevance Location Address - 2, Latitude - 2, Longitude - 2 and Relevance Text - 2 are not accepted. Relevance location has to be set as Dynamic in the Pass Template</td>
+<td>E871 Relevance Location Latitude2, Longitude2 and Relevance Text2 are not accepted. Relevance Location has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E403 Could not send email due to missing dataset entry</td>
-<td>E872 Relevance Location Address - 3, Latitude - 3, Longitude - 3 and Relevance Text - 3 are not accepted. Relevance location has to be set as Dynamic in the Pass Template</td>
+<td>E872 Relevance Location Latitude3, Longitude3 and Relevance Text3 are not accepted. Relevance Location has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E404 No Email Campaigns were created in this account</td>
-<td>E873 Relevance Location Address - 4, Latitude - 4, Longitude - 4 and Relevance Text - 4 are not accepted. Relevance location has to be set as Dynamic in the Pass Template</td>
+<td>E873 Relevance Location Latitude4, Longitude4 and Relevance Text4 are not accepted. Relevance Location has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E405 No MMS Campaigns were created in this account</td>
-<td>E874 Relevance Location Address - 5, Latitude - 5, Longitude - 5 and Relevance Text - 5 are not accepted. Relevance location has to be set as Dynamic in the Pass Template</td>
+<td>E874 Relevance Location Latitude5, Longitude5 and Relevance Text5 are not accepted. Relevance Location has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E503 Internal error</td>
-<td>E875 Relevance Location Address - 6, Latitude - 6, Longitude - 6 and Relevance Text - 6 are not accepted. Relevance location has to be set as Dynamic in the Pass Template</td>
+<td>E875 Relevance Location Latitude6, Longitude6 and Relevance Text6 are not accepted. Relevance Location has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E506 &#8216;start_date&#8217;/'end_date&#8217; is required</td>
-<td>E876 Relevance Location Address - 7, Latitude - 7, Longitude - 7 and Relevance Text - 7 are not accepted. Relevance location has to be set as Dynamic in the Pass Template</td>
+<td>E876 Relevance Location Latitude7, Longitude7 and Relevance Text7 are not accepted. Relevance Location has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E507 Invalid &#8216;start_date&#8217;/'end_date&#8217; format</td>
-<td>E877 Relevance Location Address - 8, Latitude - 8, Longitude - 8 and Relevance Text - 8 are not accepted. Relevance location has to be set as Dynamic in the Pass Template</td>
+<td>E877 Relevance Location Latitude8, Longitude8 and Relevance Text8 are not accepted. Relevance Location has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E508 Invalid &#8216;start_date&#8217;/'end_date&#8217; format</td>
-<td>E878 Relevance Location Address - 9, Latitude - 9, Longitude - 9 and Relevance Text - 9 are not accepted. Relevance location has to be set as Dynamic in the Pass Template</td>
+<td>E878 Relevance Location Latitude9, Longitude9 and Relevance Text9 are not accepted. Relevance Location has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E509 Lookup period is too long</td>
-<td>E879 Relevance Location Address - 10, Latitude - 10, Longitude - 10 and Relevance Text - 10 are not accepted. Relevance location has to be set as Dynamic in the Pass Template</td>
+<td>E879 Relevance Location Latitude10, Longitude10 and Relevance Text10 are not accepted. Relevance Location has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E510 Lookup too frequent (you need to set time between the lookups)</td>
-<td>E880 Relevance Location Latitude - 1 value is invalid</td>
+<td>E880 Relevance Location Latitude1 value is invalid</td>
 </tr>
 <tr>
 <td>E620 The &#8216;mmsid&#8217; is required</td>
-<td>E881 Relevance Location Latitude - 2 value is invalid</td>
+<td>E881 Relevance Location Latitude2 value is invalid</td>
 </tr>
 <tr>
 <td>E621 The &#8216;to&#8217; is required</td>
-<td>E882 Relevance Location Latitude - 3 value is invalid</td>
+<td>E882 Relevance Location Latitude3 value is invalid</td>
 </tr>
 <tr>
 <td>E623 The &#8216;to&#8217; field can contain up to 100 numbers</td>
-<td>E883 Relevance Location Latitude - 4 value is invalid</td>
+<td>E883 Relevance Location Latitude4 value is invalid</td>
 </tr>
 <tr>
 <td>E624 The &#8216;tocampaign&#8217; is required</td>
-<td>E884 Relevance Location Latitude - 5 value is invalid</td>
+<td>E884 Relevance Location Latitude5 value is invalid</td>
 </tr>
 <tr>
 <td>E626 Content unavailable. Encoding in progress, try again later.</td>
-<td>E885 Relevance Location Latitude - 6 value is invalid</td>
+<td>E885 Relevance Location Latitude6 value is invalid</td>
 </tr>
 <tr>
 <td>E628 Operator Not supported</td>
-<td>E886 Relevance Location Latitude - 7 value is invalid</td>
+<td>E886 Relevance Location Latitude7 value is invalid</td>
 </tr>
 <tr>
 <td>E629 Unrecognized content type</td>
-<td>E887 Relevance Location Latitude - 8 value is invalid</td>
+<td>E887 Relevance Location Latitude8 value is invalid</td>
 </tr>
 <tr>
 <td>E630 The &#8216;databaseid&#8217; is required</td>
-<td>E888 Relevance Location Latitude - 9 value is invalid</td>
+<td>E888 Relevance Location Latitude9 value is invalid</td>
 </tr>
 <tr>
 <td>E631 The &#8216;barcodeid&#8217; is required</td>
-<td>E889 Relevance Location Latitude - 10 value is invalid</td>
+<td>E889 Relevance Location Latitude10 value is invalid</td>
 </tr>
 <tr>
 <td>E632 Invalid &#8216;databaseid&#8217;</td>
-<td>E890 Relevance Location Longitude - 1 value is invalid</td>
+<td>E890 Relevance Location Longitude1 value is invalid</td>
 </tr>
 <tr>
 <td>E633 This MMS does not contain barcode object</td>
-<td>E891 Relevance Location Longitude - 2 value is invalid</td>
+<td>E891 Relevance Location Longitude2 value is invalid</td>
 </tr>
 <tr>
 <td>E640 The &#8216;mmsinboxid&#8217; is required</td>
-<td>E892 Relevance Location Longitude - 3 value is invalid</td>
+<td>E892 Relevance Location Longitude3 value is invalid</td>
 </tr>
 <tr>
 <td>E641 Invalid MMS Inbox ID</td>
-<td>E893 Relevance Location Longitude - 4 value is invalid</td>
+<td>E893 Relevance Location Longitude4 value is invalid</td>
 </tr>
 <tr>
 <td>E642 MMS Inbox content is empty.</td>
-<td>E894 Relevance Location Longitude - 5 value is invalid</td>
+<td>E894 Relevance Location Longitude5 value is invalid</td>
 </tr>
 <tr>
 <td>E643 Could not clean up MMS Inbox content.</td>
-<td>E895 Relevance Location Longitude - 6 value is invalid</td>
+<td>E895 Relevance Location Longitude6 value is invalid</td>
 </tr>
 <tr>
 <td>E712 The &#8216;text&#8217; is required</td>
-<td>E896 Relevance Location Longitude - 7 value is invalid</td>
+<td>E896 Relevance Location Longitude7 value is invalid</td>
 </tr>
 <tr>
 <td>E713 There is billing problem on your account</td>
-<td>E897 Relevance Location Longitude - 8 value is invalid</td>
+<td>E897 Relevance Location Longitude8 value is invalid</td>
 </tr>
 <tr>
 <td>E714 Missing/Invalid CampaignID</td>
-<td>E898 Relevance Location Longitude - 9 value is invalid</td>
+<td>E898 Relevance Location Longitude9 value is invalid</td>
 </tr>
 <tr>
 <td>E715 Number is not subscribed to this campaign</td>
-<td>E899 Relevance Location Longitude - 10 value is invalid</td>
+<td>E899 Relevance Location Longitude10 value is invalid</td>
 </tr>
 <tr>
 <td>E801 &#8216;passTemplateID&#8217; is required.</td>
