@@ -2,7 +2,8 @@
 <h2>generatePass</h2>
 <p><strong>Synopsis:</strong><br />
 This API request is used to create Passbook Passes dynamically. 
-Passes are created based on the dynamic pass data passed in the request which is used in restriction to the Pass Template Settings. 
+Passes are created based on the dynamic pass data passed in the request which is used in restriction to the Pass Template Settings.
+In the case of Relevance, Relevant Text is considered only when Relevance lat,long values are passed in the API otherwise ignored.
 On success, returns a link to download the generated passbook pass (i.e., pkpass file). For more info see below for Mandatory/Optional fields and Error codes.</p>
 <div><strong>Request: XML</strong></div>
 <pre>&lt;REQUEST&gt;
