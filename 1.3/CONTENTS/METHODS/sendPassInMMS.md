@@ -229,6 +229,7 @@ E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E8
     &lt;MMSID&gt;35674&lt;/MMSID&gt;
     &lt;TRACKINGID&gt;MMS_12346&lt;/TRACKINGID&gt;
     &lt;TO&gt;16501234123&lt;/TO&gt;
+    &lt;FROM&gt;11111&lt;/FROM&gt;
 &lt;/RESPONSE&gt;</pre>
 <div><strong>Response Example: Failure</strong></div>
 <pre>&lt;RESPONSE&gt;
