@@ -379,6 +379,9 @@
 <td>E013 &#8211; encoding of MMS video failed</td>
 </tr>
 <tr>
+<td>E101 &#8211; Error occured. Impossible to send MMS</td>
+</tr>
+<tr>
 <td>N003 &#8211; content was stored / encoded correctly</td>
 </tr>
 <tr>
