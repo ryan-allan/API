@@ -98,7 +98,7 @@ GET:
 <pre>&lt;RESPONSE&gt;
     &lt;STATUS&gt;Success&lt;/STATUS&gt;
     &lt;MMSID&gt;35674&lt;/MMSID&gt;
-    &lt;TRACKINGID&gt;MMS_12346&lt;/TRACKINGID&gt;
+    &lt;TRACKINGID&gt;TU1TXzEyMzQ2&lt;/TRACKINGID&gt;
     &lt;TO&gt;16501234123&lt;/TO&gt;
 &lt;/RESPONSE&gt;</pre>
 <div><strong>Response Example: Failure</strong></div>
@@ -110,32 +110,36 @@ GET:
 &lt;/RESPONSE&gt;</pre>
 
 <div><strong>Postback Notifications For SendMMSBarcode</strong></div>
-<p>When the MMS delivery is processed successfully the system will generate a Postback notification.</p>
-<pre>&lt;NOTIFICATION   ID="325" CREATED="2011-08-02 07:20:45.870623-04"&gt;
-	&lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;
-	&lt;CODE&gt;N101&lt;/CODE&gt;
-	&lt;BODY&gt;
-        &lt;HISTORYID&gt;249687&lt;/HISTORYID&gt;
-        &lt;MMSID&gt;35674&lt;/MMSID&gt;
-        &lt;TO&gt;16501234123&lt;/TO&gt;
-        &lt;TRACKINGID&gt;MMS_12346&lt;/TRACKINGID&gt;
-        &lt;SPID&gt;000189&lt;/SPID&gt;
-        &lt;TIMESTAMP&gt;2011-08-02 07:20:44-04&lt;/TIMESTAMP&gt;
-	&lt;/BODY&gt;
-&lt;/NOTIFICATION&gt;</pre>
+<p>When the MMS delivery is processed successfully the system will generate a Postback notification.
+For more details please visit <a href="https://github.com/SkycoreMobile/API/blob/master/1.3/CONTENTS/POSTBACK_NOTIFICATION_SYSTEM.md">postback doc</a></p>
+<pre>&lt;?xml version='1.0'?&gt;
+&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
+&lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;
+&lt;CODE&gt;N101&lt;/CODE&gt;
+&lt;SENTAS&gt;MMS&lt;/SENTAS&gt;
+&lt;STATUS&gt;Message Sent&lt;/STATUS&gt;
+&lt;MMSID&gt;35674&lt;/MMSID&gt;
+&lt;TO&gt;16501234123&lt;/TO&gt;
+&lt;TRACKINGID&gt;TU1TXzEyMzQ2&lt;/TRACKINGID&gt;
+&lt;SPID&gt;0001890&lt;/SPID&gt;
+&lt;TIMESTAMP&gt;2011-08-02T07:20:44-04:00&lt;/TIMESTAMP&gt;
+&lt;/POSTBACK&gt;
+</pre>
 <p>When an MMS delivery report is received the system will generate a Postback notification. Not all carriers provide MMS delivery receipts.</p>
-<pre>&lt;NOTIFICATION ID=&#8221;326&#8243; CREATED=&#8221;2011-08-02 07:20:52.332193-04&#8243;&gt;
-	&lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;
-	&lt;CODE&gt;N102&lt;/CODE&gt; 
-	&lt;BODY&gt; 
-	&lt;HISTORYID&gt;249687&lt;/HISTORYID&gt; 
-	&lt;MMSID&gt;35674&lt;/MMSID&gt; 
-	&lt;TO&gt;16501234123&lt;/TO&gt; 
-	&lt;TRACKINGID&gt;MMS_12346&lt;/TRACKINGID&gt; 
-	&lt;SPID&gt;000189&lt;/SPID&gt; 
-	&lt;HANDSET&gt;motol7c&lt;/HANDSET&gt; 
-	&lt;STATUS CELLY=&#8221;20&#8243; PROVIDER=&#8221;1000&#8243; TEXT=&#8221;Retrieved&#8221; DESCRIPTION=&#8221;" /&gt; 
-	&lt;TIMESTAMP&gt;2011-08-02 07:20:49-04&lt;/TIMESTAMP&gt; 
-	&lt;/BODY&gt; 
-&lt;/NOTIFICATION&gt;</pre>
+<pre>&lt;?xml version='1.0'?&gt;
+&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
+&lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;
+&lt;CODE&gt;N102&lt;/CODE&gt;
+&lt;SENTAS&gt;MMS&lt;/SENTAS&gt;
+&lt;STATUS&gt;Message Sent/Delivered&lt;/STATUS&gt;
+&lt;MMSID&gt;35674&lt;/MMSID&gt;
+&lt;TO&gt;16501234123&lt;/TO&gt;
+&lt;TRACKINGID&gt;TU1TXzEyMzQ2&lt;/TRACKINGID&gt;
+&lt;SPID&gt;0001890&lt;/SPID&gt;
+&lt;TIMESTAMP&gt;2011-08-02T07:21:04-04:00&lt;/TIMESTAMP&gt;
+&lt;HANDSET&gt;motol7c&lt;/HANDSET&gt;
+&lt;AGGREGATORID&gt;11529-64807-97508-73852-97658&lt;/AGGREGATORID&gt;
+&lt;/POSTBACK&gt;</pre>
 
