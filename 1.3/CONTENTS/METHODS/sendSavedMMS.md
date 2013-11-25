@@ -99,7 +99,8 @@ GET:
 	 &lt;ERRORINFO&gt;There is billing problem on your account&lt;/ERRORINFO&gt;
 &lt;/RESPONSE&gt;</pre>
 <div><strong>Postback Notifications For SendSavedMMS</strong></div>
-<p>When the MMS delivery is processed successfully the system will generate a Postback notification.</p>
+<p>When the MMS delivery is processed successfully the system will generate a Postback notification. 
+For more details please visit <a href="https://github.com/SkycoreMobile/API/blob/master/1.3/CONTENTS/POSTBACK_NOTIFICATION_SYSTEM.md">postback doc</a></p>
 <pre>&lt;?xml version='1.0'?&gt;
 &lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
