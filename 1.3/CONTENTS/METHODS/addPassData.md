@@ -6,6 +6,7 @@ The pass data is added to the pass database and will be used to create the Passb
 Based on the settings of the Pass Template the pass data need to be passed accordingly in the API request and all the other/extra data will be ignored.
 Additionally, Phone (or/and) Email (or/and) customDataId can be passed along with the pass data to lock down the pass data to the respective entity, that means that this 
 pass data will used to generate a pass whenever it is delivered to that Email (via Email), Phone (via MMS). 
+CustomPassId is your system generated Unique Id that will represent this pass data. You can optinally pass it along with pass data to be saved along with pass data and this can be used to refer this pass.
 In the case of Relevance, Relevant Text is considered only when Relevance lat,long values are passed in the API otherwise ignored.
 On success, it returns PassDataId which should be stored and kept in your database along with the data.
 For more info see below for Mandatory/Optional fields and Error codes.</p>
@@ -15,6 +16,7 @@ For more info see below for Mandatory/Optional fields and Error codes.</p>
     &lt;API_KEY&gt;apiKey&lt;/API_KEY&gt;
     &lt;PASSTEMPLATEID&gt;passTemplateId&lt;/PASSTEMPLATEID&gt;
     &lt;PASSDATA&gt;
+        &lt;CUSTOMPASSID&gt;customPassId&lt;/CUSTOMPASSID&gt;
         &lt;BARCODEVALUE&gt;barcodeValue&lt;/BARCODEVALUE&gt;
         &lt;BARCODETEXT&gt;barcodeText&lt;/BARCODETEXT&gt;
         &lt;HEADERLABEL1&gt;headerLabel1&lt;/HEADERLABEL1&gt;
@@ -84,7 +86,7 @@ For more info see below for Mandatory/Optional fields and Error codes.</p>
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request: GET</strong></div>
 <pre>API_URL?action=addpassdata&amp;api_key=apiKey&amp;passtemplateid=passTemplateId
-&amp;pd_barcodevalue=barcodeValue&amp;pd_barcodetext=barcodeText
+&amp;pd_custompassid=customPassId&amp;pd_barcodevalue=barcodeValue&amp;pd_barcodetext=barcodeText
 &amp;pd_headerlabel1=headerLabel1&amp;pd_headervalue1=headerValue1
 &amp;pd_primarylabel1=primaryLabel1&amp;pd_primaryvalue1=primaryValue1
 &amp;pd_primarylabel2=primaryLabel2&amp;pd_primaryvalue2=primaryValue2
@@ -114,6 +116,7 @@ action, apiKey, passTemplateId,
 barcodeValue (if "Barcode=Allowed" &amp;&amp; "BarcodeType=Dynamic" &amp;&amp; "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED)
 
 <strong>Optional: </strong>
+customPassId,
 barcodeText (if "Barcode = Allowed" &amp;&amp; "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
 headerLabel1, headerValue1, 
 primaryLabel1, primaryValue1, 
@@ -145,6 +148,7 @@ E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E8
     &lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;
     &lt;PASSTEMPLATEID&gt;100&lt;/PASSTEMPLATEID&gt;
     &lt;PASSDATA&gt;
+        &lt;CUSTOMPASSID&gt;GM-12345-M&lt;/CUSTOMPASSID&gt;
         &lt;BARCODEVALUE&gt;1234578961A&lt;/BARCODEVALUE&gt;
         &lt;BARCODETEXT&gt;PASS-123-457&lt;/BARCODETEXT&gt;
         &lt;HEADERLABEL1&gt;SEAT&lt;/HEADERLABEL1&gt;
