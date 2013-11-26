@@ -3,6 +3,7 @@
 <p><strong>Synopsis:</strong><br />
 This API request triggers sending an MMS with Dynamic Pass. Dynamic pass data passed in the API request will be used to create a Passbook pass sent via MMS. 
 The pass data gets locked with the Phone number in the request and is used in limitation to the Pass Template settings. All the other/extra pass data is ignored.
+CustomPassId is your system generated Unique Id that will represent this pass data. You can optinally pass it along with pass data to be saved along with pass data and this can be used to refer this pass.
 In the case of Relevance, Relevant Text is considered only when Relevance lat,long values are passed in the API otherwise ignored.
 MMS is sent from a specified account using a MMSID to a single mobile number. 
 FROM must be one of shortcodes allowed for your account. 
@@ -52,6 +53,7 @@ On success, it will return the MMSTrackingID. For more info see below for Mandat
 		...
 	&lt;/DATA&gt;
     &lt;PASSDATA&gt;
+    	&lt;CUSTOMPASSID&gt;customPassId&lt;/CUSTOMPASSID&gt;
         &lt;BARCODEVALUE&gt;barcodeValue&lt;/BARCODEVALUE&gt;
         &lt;BARCODETEXT&gt;barcodeText&lt;/BARCODETEXT&gt;
         &lt;HEADERLABEL1&gt;headerLabel1&lt;/HEADERLABEL1&gt;
@@ -121,7 +123,7 @@ On success, it will return the MMSTrackingID. For more info see below for Mandat
 API_URL?action=sendpassinmms&amp;api_key=apiKey&amp;mmsid=mmsId&amp;to=phone
 &amp;from=shortcode&amp;campaignref=campaignId&amp;ddmtitle=ddmTitle&amp;ddmtext=ddmText&amp;ddmtimeout=ddmTimeout&amp;device=deviceId
 &amp;customtext_1=customTextSlide1&amp;customsubject=customSubject
-&amp;data_first_name=firstName&amp;data_last_name=lastName&amp;data_age=age
+&amp;data_first_name=firstName&amp;data_last_name=lastName&amp;data_age=age&amp;pd_custompassid=customPassId
 &amp;pd_barcodevalue=barcodeValue&amp;pd_barcodetext=barcodeText&amp;pd_headerlabel1=headerLabel1
 &amp;pd_headervalue1=headerValue1&amp;pd_primarylabel1=primaryLabel1
 &amp;pd_primaryvalue1=primaryValue1&amp;pd_primarylabel2=primaryLabel2
