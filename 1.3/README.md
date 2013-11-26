@@ -38,7 +38,7 @@
    <br/>
   <li> <a href="CONTENTS/POSTBACK_NOTIFICATION_SYSTEM.md">MMS/SMS Postback Notification System</a></li>
   <li> <a href="CONTENTS/INCOMING_SMS+MMS_POSTBACK.md">Incoming SMS/MMS Postback</a> </li>
-  <li> <a href="CONTENTS/INCOMING_SMS+MMS_POSTBACK.md">Passes Postback</a> </li>
+  <li> <a href="CONTENTS/PASS_POSTBACK.md">Passes Postback</a> </li>
    <br/>
   <li> <a href="CONTENTS/APPENDIX/API_APPENDIX.md">APPENDIX</a> </li>
   
