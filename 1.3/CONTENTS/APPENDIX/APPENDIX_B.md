@@ -399,6 +399,18 @@
 <tr>
 <td>N302 &#8211; number unsubscribed</td>
 </tr>
+<tr>
+<td>N801 &#8211; Pass was generated succesfully.</td>
+</tr>
+<tr>
+<td>N802 &#8211; Some error occurred. Pass generation failed.</td>
+</tr>
+<tr>
+<td>N803 &#8211; Maximum limit for pass generation reached.</td>
+</tr>
+<tr>
+<td>N811 &#8211; User Account do not have enough credits to generate the pass.</td>
+</tr>
 </tbody>
 </table>
 <p><strong>iii. SMS Protocol Code Look Up</strong></p>
