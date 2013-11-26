@@ -3,6 +3,7 @@
 <p><strong>Synopsis:</strong><br />
 This API request is used to create Passbook Passes dynamically. 
 Passes are created based on the dynamic pass data passed in the request which is used in restriction to the Pass Template Settings.
+CustomPassId is your system generated Unique Id that will represent this pass data. You can optinally pass it along with pass data to be saved along with pass data and this can be used to refer this pass.
 In the case of Relevance, Relevant Text is considered only when Relevance lat,long values are passed in the API otherwise ignored.
 On success, returns a link to download the generated passbook pass (i.e., pkpass file). For more info see below for Mandatory/Optional fields and Error codes.</p>
 <div><strong>Request: XML</strong></div>
@@ -11,6 +12,7 @@ On success, returns a link to download the generated passbook pass (i.e., pkpass
     &lt;API_KEY&gt;apiKey&lt;/API_KEY&gt;
     &lt;PASSTEMPLATEID&gt;passTemplateId&lt;/PASSTEMPLATEID&gt;
     &lt;PASSDATA&gt;
+        &lt;CUSTOMPASSID&gt;customPassId&lt;/CUSTOMPASSID&gt;
         &lt;BARCODEVALUE&gt;barcodeValue&lt;/BARCODEVALUE&gt;
         &lt;BARCODETEXT&gt;barcodeText&lt;/BARCODETEXT&gt;
         &lt;HEADERLABEL1&gt;headerLabel1&lt;/HEADERLABEL1&gt;
@@ -77,7 +79,7 @@ On success, returns a link to download the generated passbook pass (i.e., pkpass
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request: GET</strong></div>
 <pre>API_URL?action=generatepass&amp;api_key=apiKey&amp;passtemplateid=passTemplateId
-&amp;pd_barcodevalue=barcodeValue&amp;pd_barcodetext=barcodeText
+&amp;pd_custompassid=customPassId&amp;pd_barcodevalue=barcodeValue&amp;pd_barcodetext=barcodeText
 &amp;pd_headerlabel1=headerLabel1&amp;pd_headervalue1=headerValue1
 &amp;pd_primarylabel1=primaryLabel1&amp;pd_primaryvalue1=primaryValue1
 &amp;pd_primarylabel2=primaryLabel2&amp;pd_primaryvalue2=primaryValue2
@@ -106,6 +108,7 @@ action, apikey, passTemplateId,
 barcodeValue (if "Barcode=Allowed" &amp;&amp; "BarcodeType=Dynamic" &amp;&amp; "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED),
 
 <strong>Optional: </strong>
+customPassId,
 barcodeText (if "Barcode = Allowed" &amp;&amp; "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
 headerLabel1, headerValue1, 
 primaryLabel1, primaryValue1, 
