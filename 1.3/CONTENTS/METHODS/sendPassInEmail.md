@@ -4,6 +4,7 @@
 This API request triggers sending an Email with Dynamic Pass. Pass data passed in the API request will be used to create a Passbook pass sent via Email. 
 The pass data gets locked with the Email address in the request and is used in limitation to the Pass Template settings.
 All the other/extra pass data is ignored. 
+CustomPassId is your system generated Unique Id that will represent this pass data. You can optinally pass it along with pass data to be saved along with pass data and this can be used to refer this pass.
 In the case of Relevance, Relevant Text is considered only when Relevance lat,long values are passed in the API otherwise ignored.
 On success, it will return the EmailStatusID. For more info see below for Mandatory/Optional fields and Error codes.</p>
 <div><strong>Request: XML</strong></div>
@@ -14,6 +15,7 @@ On success, it will return the EmailStatusID. For more info see below for Mandat
     &lt;EMAIL&gt;email&lt;/EMAIL&gt;
     &lt;CAMPAIGNREF&gt;emailCampaignId&lt;/CAMPAIGNREF&gt;
     &lt;PASSDATA&gt;
+        &lt;CUSTOMPASSID&gt;customPassId&lt;/CUSTOMPASSID&gt;
         &lt;BARCODEVALUE&gt;barcodeValue&lt;/BARCODEVALUE&gt;
         &lt;BARCODETEXT&gt;barcodeText&lt;/BARCODETEXT&gt;
         &lt;HEADERLABEL1&gt;headerLabel1&lt;/HEADERLABEL1&gt;
@@ -81,7 +83,8 @@ On success, it will return the EmailStatusID. For more info see below for Mandat
 <div><strong>Request: GET</strong></div>
 <pre>
 API_URL?action=sendpassinemail&amp;api_key=apiKey&amp;emailid=emailTemplateId
-&amp;email=email&amp;campaignref=emailCampaignId&amp;pd_barcodevalue=barcodeValue
+&amp;email=email&amp;campaignref=emailCampaignId&amp;pd_custompassid=customPassId
+&amp;pd_barcodevalue=barcodeValue
 &amp;pd_barcodetext=barcodeText&amp;pd_headerlabel1=headerLabel1
 &amp;pd_headervalue1=headerValue1&amp;pd_primarylabel1=primaryLabel1
 &amp;pd_primaryvalue1=primaryValue1&amp;pd_primarylabel2=primaryLabel2
@@ -106,10 +109,11 @@ API_URL?action=sendpassinemail&amp;api_key=apiKey&amp;emailid=emailTemplateId
 </pre>
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong>
-action, apiKey, email, emailTemplateId, emailCampaignId, 
+action, apiKey, email, emailTemplateId, emailCampaignId,
 barcodeValue (if "Barcode=Allowed" &amp;&amp; "BarcodeType=Dynamic" &amp;&amp; "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED),
 
 <strong>Optional: </strong>
+customPassId,
 barcodeText (if "Barcode = Allowed" &amp;&amp; "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
 headerLabel1, headerValue1, 
 primaryLabel1, primaryValue1, 
