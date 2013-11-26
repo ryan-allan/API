@@ -82,8 +82,7 @@ All the postbacks are sent as HTTP POST requests on the URL you have used to set
     &lt;/PASSDATA&gt;
 &lt;/POSTBACK&gt;</pre>
 
-<p><a name="breaking_down_each_notification"></a> <strong>Breaking down Each Notification</strong></p>
-<p>Many of the tags are self-explanatory.</p>
+<p><strong>Pass Postback Tags: Explanation</strong></p>
 <pre>
 &lt;ORIGIN&gt;&lt;/ORIGIN&gt; tags contain the origin type. This explains the type of postback notification.
 &lt;STATUSCODE&gt;&lt;/STATUSCODE&gt; tags contain the notification code for success/failure. These codes are explained under <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_B.md">APENDIX B</a>
