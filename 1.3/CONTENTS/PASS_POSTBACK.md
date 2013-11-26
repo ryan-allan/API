@@ -1,7 +1,8 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>
-<h2>Passbook&nbsp;Pass&nbsp;Postback</h2>
+<h2>Passes&nbsp;Postback</h2>
 <div id="page-content"><p><strong>Brief Overview:</strong></p>
-<p>This document will provide a technical description of the PASS POSTBACK API. This API allows to send Pass information back to your server.</p>
+<p>This document will provide a technical description of the PASS POSTBACK API. 
+This API allows to send Pass information back to your server whenever pass generation is triggered.</p>
 <p><strong>PASS GENERATION</strong></p>
 <p>If pass generate postback API is enabled, then you will receive Postback notification for every pass generated in your account.
 All the postbacks are sent as HTTP POST requests on the URL you have used to set it up on Account API settings.</p>
@@ -18,36 +19,36 @@ All the postbacks are sent as HTTP POST requests on the URL you have used to set
 &lt;SERIALNUMBER&gt;5294CE37878AE-112613-113711&lt;/SERIALNUMBER&gt;<br/>
 &lt;TIMESTAMP&gt;2013-11-26T11:37:11-05:00&lt;/TIMESTAMP&gt;<br/>
 &lt;PASSDATA&gt;<br/>
-&lt;BARCODEVALUE&gt;test&lt;/BARCODEVALUE&gt;<br/>
-&lt;BARCODETEXT&gt;test&lt;/BARCODETEXT&gt;<br/>
-&lt;HEADERLABEL1&gt;Test&lt;/HEADERLABEL1&gt;<br/>
-&lt;HEADERVALUE1&gt;Test&lt;/HEADERVALUE1&gt;<br/>
-&lt;PRIMARYLABEL1&gt;Test&lt;/PRIMARYLABEL1&gt;<br/>
-&lt;PRIMARYVALUE1&gt;Test&lt;/PRIMARYVALUE1&gt;<br/>
-&lt;SECLABEL1&gt;Test&lt;/SECLABEL1&gt;<br/>
-&lt;SECVALUE1&gt;Test&lt;/SECVALUE1&gt;<br/>
-&lt;SECLABEL2&gt;Test&lt;/SECLABEL2&gt;<br/>
-&lt;SECVALUE2&gt;Test&lt;/SECVALUE2&gt;<br/>
-&lt;SECLABEL3&gt;Test&lt;/SECLABEL3&gt;<br/>
-&lt;SECVALUE3&gt;Test&lt;/SECVALUE3&gt;<br/>
-&lt;SECLABEL4&gt;Test&lt;/SECLABEL4&gt;<br/>
-&lt;SECVALUE4&gt;Test&lt;/SECVALUE4&gt;<br/>
-&lt;AUXLABEL1&gt;Test&lt;/AUXLABEL1&gt;<br/>
-&lt;AUXVALUE1&gt;Test&lt;/AUXVALUE1&gt;<br/>
-&lt;AUXLABEL2&gt;Test&lt;/AUXLABEL2&gt;<br/>
-&lt;AUXVALUE2&gt;Test&lt;/AUXVALUE2&gt;<br/>
-&lt;AUXLABEL3&gt;Test&lt;/AUXLABEL3&gt;<br/>
-&lt;AUXVALUE3&gt;Test&lt;/AUXVALUE3&gt;<br/>
-&lt;AUXLABEL4&gt;Test&lt;/AUXLABEL4&gt;<br/>
-&lt;AUXVALUE4&gt;Test&lt;/AUXVALUE4&gt;<br/>
-&lt;BACKLABEL1&gt;Test&lt;/BACKLABEL1&gt;<br/>
-&lt;BACKVALUE1&gt;Test&lt;/BACKVALUE1&gt;<br/>
-&lt;BACKLABEL2&gt;Test&lt;/BACKLABEL2&gt;<br/>
-&lt;BACKVALUE2&gt;Test&lt;/BACKVALUE2&gt;<br/>
-&lt;BACKLABEL3&gt;Test&lt;/BACKLABEL3&gt;<br/>
-&lt;BACKVALUE3&gt;Test&lt;/BACKVALUE3&gt;<br/>
-&lt;BACKLABEL4&gt;Test&lt;/BACKLABEL4&gt;<br/>
-&lt;BACKVALUE4&gt;Test&lt;/BACKVALUE4&gt;<br/>
+&lt;BARCODEVALUE&gt;XSSDEW2223&lt;/BARCODEVALUE&gt;<br/>
+&lt;BARCODETEXT&gt;XSSDEW2223&lt;/BARCODETEXT&gt;<br/>
+&lt;HEADERLABEL1&gt;Name&lt;/HEADERLABEL1&gt;<br/>
+&lt;HEADERVALUE1&gt;John&lt;/HEADERVALUE1&gt;<br/>
+&lt;PRIMARYLABEL1&gt;Occupation&lt;/PRIMARYLABEL1&gt;<br/>
+&lt;PRIMARYVALUE1&gt;Software Developer&lt;/PRIMARYVALUE1&gt;<br/>
+&lt;SECLABEL1&gt;Salary&lt;/SECLABEL1&gt;<br/>
+&lt;SECVALUE1&gt;$120,000.00&lt;/SECVALUE1&gt;<br/>
+&lt;SECLABEL2&gt;Experience&lt;/SECLABEL2&gt;<br/>
+&lt;SECVALUE2&gt;5+ Years&lt;/SECVALUE2&gt;<br/>
+&lt;SECLABEL3&gt;XXXXX&lt;/SECLABEL3&gt;<br/>
+&lt;SECVALUE3&gt;XXXXX&lt;/SECVALUE3&gt;<br/>
+&lt;SECLABEL4&gt;XXXXX&lt;/SECLABEL4&gt;<br/>
+&lt;SECVALUE4&gt;XXXXX&lt;/SECVALUE4&gt;<br/>
+&lt;AUXLABEL1&gt;XXXXX&lt;/AUXLABEL1&gt;<br/>
+&lt;AUXVALUE1&gt;Company&lt;/AUXVALUE1&gt;<br/>
+&lt;AUXLABEL2&gt;Sky Technologies Ltd.&lt;/AUXLABEL2&gt;<br/>
+&lt;AUXVALUE2&gt;111 Technology Dr, Boston MA 02111&lt;/AUXVALUE2&gt;<br/>
+&lt;AUXLABEL3&gt;XXXXX&lt;/AUXLABEL3&gt;<br/>
+&lt;AUXVALUE3&gt;XXXXX&lt;/AUXVALUE3&gt;<br/>
+&lt;AUXLABEL4&gt;XXXXX&lt;/AUXLABEL4&gt;<br/>
+&lt;AUXVALUE4&gt;XXXXX&lt;/AUXVALUE4&gt;<br/>
+&lt;BACKLABEL1&gt;Terms and Conditions&lt;/BACKLABEL1&gt;<br/>
+&lt;BACKVALUE1&gt;Please show this pass at the event entrance to get in.&lt;/BACKVALUE1&gt;<br/>
+&lt;BACKLABEL2&gt;XXXXX&lt;/BACKLABEL2&gt;<br/>
+&lt;BACKVALUE2&gt;XXXXX&lt;/BACKVALUE2&gt;<br/>
+&lt;BACKLABEL3&gt;XXXXX&lt;/BACKLABEL3&gt;<br/>
+&lt;BACKVALUE3&gt;XXXXX&lt;/BACKVALUE3&gt;<br/>
+&lt;BACKLABEL4&gt;XXXXX&lt;/BACKLABEL4&gt;<br/>
+&lt;BACKVALUE4&gt;XXXXX&lt;/BACKVALUE4&gt;<br/>
 &lt;RELLATITUDE1&gt;42.35799&lt;/RELLATITUDE1&gt;<br/>
 &lt;RELLONGITUDE1&gt;-71.137081&lt;/RELLONGITUDE1&gt;<br/>
 &lt;RELTEXT1&gt;Software Developers Association Event&lt;/RELTEXT1&gt;<br/>
