@@ -7,7 +7,7 @@ This API allows to send Pass information back to your server whenever pass gener
 <p>If pass generate postback API is enabled, then you will receive Postback notification for every pass generated in your account.
 All the postbacks are sent as HTTP POST requests on the URL you have used to set it up on Account API settings.</p>
 <p><a name="the_xml_bundle1"></a> <strong>The GENERATE PASS XML Bundle:</strong></p>
-<p>The XML bundle has the following anatomy:</p>
+<p>The XML bundle has the following structure:</p>
 <pre>
 &lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/pass-postback.xsd"&gt;
     &lt;ORIGIN&gt;GENERATE_PASS&lt;/ORIGIN&gt;
