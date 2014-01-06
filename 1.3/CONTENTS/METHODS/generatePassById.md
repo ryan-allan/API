@@ -25,7 +25,7 @@ E807, E808, E830, E831
 <pre>&lt;REQUEST&gt;
         &lt;ACTION&gt;generatePassById&lt;/ACTION&gt;
         &lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;
-        &lt;PASSDATAID&gt;1233&lt;/PASSDATAID&gt;
+        &lt;PASSDATAID&gt;63202e8e947626dae377ab2463ca31dhwtdjdien&lt;/PASSDATAID&gt;
     &lt;/REQUEST&gt;</pre>
 <div><strong>Response Example: Success</strong></div>
 <pre>&lt;RESPONSE&gt;
