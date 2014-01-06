@@ -179,7 +179,7 @@ E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E8
 <pre>&lt;RESPONSE&gt;
     &lt;STATUS&gt;Success&lt;/STATUS&gt;
     &lt;PASSTEMPLATEID&gt;100&lt;/PASSTEMPLATEID&gt;
-    &lt;PASSDATAID&gt;1233&lt;/PASSDATAID&gt;
+    &lt;PASSDATAID&gt;63202e8e947626dae377abh6hd56ehs64aeeeb0&lt;/PASSDATAID&gt;
 &lt;/RESPONSE&gt;</pre>
 <div><strong>Response Example: Failure</strong></div>
 <pre>&lt;RESPONSE&gt;
