@@ -1,10 +1,13 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
 <h2>generatePassById</h2>
 <p><strong>Synopsis:</strong><br />
-This API function triggers the passbook pass generation for the given 'passDataID'. 'passDataID' is generated whenever pass data
-is added to the pass database using the addPassData () API request. On success, returns a link to download the generated passbook pass (i.e., pkpass file).
-For more info see below for Mandatory/Optional fields and Error codes.
-</p>
+This API function triggers the passbook pass generation for the given 'passDataID'. 'passDataID' is generated whenever pass data is added to the pass database using the addPassData () API request. 
+On success, the API returns important values such as 'passDataId', 'serialNumber', 'customPassId', 'passLink' and 'downloadUrl'. All these values need to be stored along with passData on your side which will come in use for making pass updates in the future. More explanation about these values are given below: <br/>
+<b>serialNumber</b> - This is the serial number generated for the pass which identifies this pass uniquely. <br/> 
+<b>customPassId</b> - This is the Identifier from your system to identify this pass or pass data uniquely. This value will be empty of it was never passed in addPassData() API request i.e., while generate passDataId.<br/> 
+<b>passLink</b> - This is the pass installation link which allow users to install or download pass to their phones based on User-Agent detection. <br/> 
+<b>downloadUrl</b> - This URL can be used to download PKPass directly to your server. <br/><br/>
+For more info see below for Mandatory/Optional fields and Error codes.</p>
 <div><strong>Request:</strong></div>
 <pre>&lt;REQUEST&gt;
         &lt;ACTION&gt;generatePassById&lt;/ACTION&gt;
