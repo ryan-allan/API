@@ -3,9 +3,15 @@
 <p><strong>Synopsis:</strong><br />
 This API request is used to create Passbook Passes dynamically. 
 Passes are created based on the dynamic pass data passed in the request which is used in restriction to the Pass Template Settings.
-CustomPassId is your system generated Unique Id that will represent this pass data. You can optinally pass it along with pass data to be saved along with pass data and this can be used to refer this pass.
+'CustomPassId' is your system generated unique identifier that will represent this pass data. You can optionally pass it along with the pass data and use this as a reference for any future queries to this pass or pass data.
 In the case of Relevance, Relevant Text is considered only when Relevance lat,long values are passed in the API otherwise ignored.
-On success, returns a link to download the generated passbook pass (i.e., pkpass file). For more info see below for Mandatory/Optional fields and Error codes.</p>
+On success, the API returns important values such as 'passDataId', 'serialNumber', 'customPassId', 'passLink' and 'downloadUrl'. All these values need to be stored along with passData on your side which will come in use for making pass updates in the future. More explanation about these values are given below: <br/>
+<b>passDataId</b> - This is our system generated unique Identifier to identify every pass data.<br/> 
+<b>serialNumber</b> - This is the serial number generated for the pass which identifies this pass uniquely. <br/> 
+<b>customPassId</b> - This is the Identifier from your system to identify this pass or pass data uniquely. <br/> 
+<b>passLink</b> - This is the pass installation link which allow users to install or download pass to their phones based on User-Agent detection. <br/> 
+<b>downloadUrl</b> - This URL can be used to download PKPass directly to your server. <br/><br/>
+For more info see below for Mandatory/Optional fields and Error codes.</p>
 <div><strong>Request: XML</strong></div>
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;generatePass&lt;/ACTION&gt;
