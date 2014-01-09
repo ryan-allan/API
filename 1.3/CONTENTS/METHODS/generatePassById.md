@@ -29,8 +29,12 @@ E807, E808, E830, E831
     &lt;/REQUEST&gt;</pre>
 <div><strong>Response Example: Success</strong></div>
 <pre>&lt;RESPONSE&gt;
-    &lt;STATUS&gt;Success&lt;/STATUS&gt;
-    &lt;PASSLINK&gt;https://d2c.skycore.com/passes/downloadpass.php?pass=4jfjhsus&lt;/PASSLINK&gt;
+        &lt;STATUS&gt;Success&lt;/STATUS&gt;
+        &lt;PASSDATAID&gt;63202e8e947626dae377ab2463ca31dhwtdjdien&lt;/PASSDATAID&gt;
+        &lt;SERIALNUMBER&gt;KJSD3432-232232-2323N32&lt;/SERIALNUMBER&gt;
+        &lt;CUSTOMPASSID&gt;CONT-ID-SKU:112324&lt;/CUSTOMPASSID&gt;
+        &lt;PASSLINK&gt;https://d2c.skycore.com/passes/downloadpass.php?pass=4jfjhsus&lt;/PASSLINK&gt;
+        &lt;DOWNLOADURL&gt;https://d2c.skycore.com/passes/downloadpass.php?pass=4jfjhsus&amp;download=1&lt;/DOWNLOADURL&gt;
 &lt;/RESPONSE&gt;</pre>
 <div><strong>Response Example: Failure</strong></div>
 <pre>&lt;RESPONSE&gt;
