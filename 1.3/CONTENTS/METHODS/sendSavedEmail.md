@@ -1,8 +1,17 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
 <h2>sendSavedEmail</h2>
 <p><strong>Synopsis:</strong><br />
-This API function sends stored email template using an <i>emailid</i> from a specified account to one <i>email</i> address. 
-If 'Enforce Campaign Check' is turned ON this function will require the ID of email campaign that email address is subscribed to passed inside campaignref node.
+This API function sends stored email template using an <i>emailid</i> from a specified account to one <i>email</i> address.<br /><br />
+If 'Enforce Campaign Check' is turned ON this function will require the ID of email campaign that email address is subscribed to passed inside campaignref node.<br /><br />
+We attempt to subscribe <i>email</i> to the campaign associated with <i>campaignref</i>. If subscription is 
+successful, or if <i>email</i> is already subscribed, we will deliver the email. If subscription fails, the email will not be sent, and instead, will be added to the campaign's audience manager under the "unsubscribed" tab. Subscription can fail due to the following reasons:<br />
+<ol>
+<li>The <i>email</i> has already opted-out of a campaign in your account.</li>
+<li>The <i>email</i> has unsubscribed from any campaign associated with the SMTP server you are using.</li>
+<li>The <i>email</i> has filed a spam complaint.</li>
+<li>The <i>email</i> bounced during a previous delivery.</li>
+</ol>
+</p>
 <p><strong>Request:</strong></p>
 <pre>&lt;REQUEST&gt;
   &lt;ACTION&gt;sendSavedEmail&lt;/ACTION&gt;
