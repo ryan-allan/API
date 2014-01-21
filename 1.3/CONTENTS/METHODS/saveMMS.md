@@ -10,24 +10,20 @@ Once the MMS is saved it can be utilized by other functions through the MMSID re
     &lt;ACTION&gt;saveMMS&lt;/ACTION&gt;
     &lt;API_KEY&gt;API KEY&lt;/API_KEY&gt;
     &lt;SUBJECT&gt;Subject &lt;/SUBJECT&gt;
-    &lt;CONTENT&gt;
-    	&lt;NAME&gt;Name to save it as&lt;/NAME&gt;
-       	&lt;SEQUENCE&gt;
-       		&lt;SLIDE duration="Duration in seconds"&gt;
-       			&lt;IMAGE&gt;&lt;URL&gt;URL&lt;/URL&gt;&lt;/IMAGE&gt;
-       			&lt;AUDIO&gt;&lt;URL&gt;URL&lt;/URL&gt;&lt;/AUDIO&gt;
-       			&lt;TEXT&gt;Plain Text&lt;/TEXT&gt;
-       		&lt;/SLIDE&gt;
-       		&lt;SLIDE&gt;
-       			...
-       		&lt;/SLIDE&gt;
-       	 &lt;/SEQUENCE&gt;
-     &lt;/CONTENT&gt;
+    &lt;NAME&gt;Name to save it as&lt;/NAME&gt;
+    &lt;SLIDE duration="Duration in seconds"&gt;
+    	&lt;IMAGE&gt;&lt;URL&gt;URL&lt;/URL&gt;&lt;/IMAGE&gt;
+    	&lt;AUDIO&gt;&lt;URL&gt;URL&lt;/URL&gt;&lt;/AUDIO&gt;
+    	&lt;TEXT&gt;Plain Text&lt;/TEXT&gt;
+    &lt;/SLIDE&gt;
+    &lt;SLIDE&gt;
+    	...
+    &lt;/SLIDE&gt;
 &lt;/REQUEST&gt;
 </pre>
 
 <div><strong>Request Parameters:</strong></div>
-<pre><strong>Mandatory:</strong> Action, API_KEY, Name, Subject, Content, Sequence, Slide
+<pre><strong>Mandatory:</strong> Action, API_KEY, Name, Subject, Slide
 <strong>Optional:</strong>Image, Audio, Video, URL, Text, Duration</pre>
 
 <strong>Response Parameters:</strong><br/>
@@ -41,16 +37,12 @@ E225, E226, E227, E228, E229, E230, E331, E332, E333, E334, E341, E351
 	&lt;ACTION&gt;saveMMS&lt;/ACTION&gt;
 	&lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;
 	&lt;SUBJECT&gt;The subject &lt;/SUBJECT&gt;
-	&lt;CONTENT&gt;
-		&lt;NAME&gt;fishtank&lt;/NAME&gt;
-		&lt;SEQUENCE&gt;
-			&lt;SLIDE duration="5"&gt;
-				&lt;IMAGE&gt;&lt;URL&gt;http://www.yoursite.com/images/1.jpg&lt;/URL&gt;&lt;/IMAGE&gt;
-				&lt;AUDIO&gt;&lt;URL&gt;http://www.yoursite.com/audio/1.mp3&lt;/URL&gt;&lt;/AUDIO&gt;
-				&lt;TEXT&gt;Here is some text&lt;/TEXT&gt;
-			&lt;/SLIDE&gt;
-		&lt;/SEQUENCE&gt;
-	&lt;/CONTENT&gt;
+	&lt;NAME&gt;fishtank&lt;/NAME&gt;
+	&lt;SLIDE duration="5"&gt;
+		&lt;IMAGE&gt;&lt;URL&gt;http://www.yoursite.com/images/1.jpg&lt;/URL&gt;&lt;/IMAGE&gt;
+		&lt;AUDIO&gt;&lt;URL&gt;http://www.yoursite.com/audio/1.mp3&lt;/URL&gt;&lt;/AUDIO&gt;
+		&lt;TEXT&gt;Here is some text&lt;/TEXT&gt;
+	&lt;/SLIDE&gt;
 &lt;/REQUEST&gt;
 </pre>
 
