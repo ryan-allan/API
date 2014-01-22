@@ -5,7 +5,7 @@ This API request is used generates an email HTML template with embedded passbook
 The 'passData' passed in the API will be used to create the dynamic pass using the pass template added in that email template.
 All the 'passData' is used in respect to the pass template settings. CustomPassId is your system generated Unique Id that will represent this pass data and can be used by your system to refer this pass.
 In the case of Relevance, Relevant Text is considered only when Relevance lat,long values are passed in the API otherwise ignored.<br/>
-Email address will be subscribed to the email campaign referenced by the 'emailCampaignId' and all the 'data' is saved as the subscriber data for that email address. 
+Email address will be subscribed to the email campaign referenced by the 'CAMPAIGNREF' and all the 'DATA' is saved as the subscriber data for that email address. 
 If the subscription fails, the API sends a 'emailWarning' to give you the sense why the email subscription failed. The error code sent as the emailWarning can be found in the Apendix B where all the error codes are defined.
 Email address will be added to the campaign's audience manager as subscribed or unsubscribed based on the subscription status. Subscription can fail due to the following reasons:<br/>
 The email has already opted-out of a campaign in your account.<br/>
