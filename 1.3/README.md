@@ -34,6 +34,7 @@
     <li><a href="CONTENTS/METHODS/sendPassInMMS.md">sendPassInMMS</a></li>
     <li><a href="CONTENTS/METHODS/generatePassById.md">generatePassById</a></li>
     <li><a href="CONTENTS/METHODS/generatePass.md">generatePass</a></li>
+    <li><a href="CONTENTS/METHODS/getPassEmailTemplate.md">getPassEmailTemplate</a></li>
     </ul>
    <br/>
   <li> <a href="CONTENTS/POSTBACK_NOTIFICATION_SYSTEM.md">MMS/SMS Postback Notification System</a></li>
