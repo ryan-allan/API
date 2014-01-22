@@ -14,6 +14,12 @@ On success, it will return the EmailStatusID. For more info see below for Mandat
     &lt;EMAILID&gt;emailTemplateId&lt;/EMAILID&gt;
     &lt;EMAIL&gt;email&lt;/EMAIL&gt;
     &lt;CAMPAIGNREF&gt;emailCampaignId&lt;/CAMPAIGNREF&gt;
+       &lt;DATA&gt;
+	      &lt;FIRST_NAME&gt;First Name&lt;/FIRST_NAME&gt;
+		  &lt;LAST_NAME&gt;Last Name&lt;/LAST_NAME&gt;
+		  &lt;GENDER&gt;Gender&lt;/GENDER&gt;
+		...
+	   &lt;/DATA&gt;	
     &lt;PASSDATA&gt;
         &lt;CUSTOMPASSID&gt;customPassId&lt;/CUSTOMPASSID&gt;
         &lt;BARCODEVALUE&gt;barcodeValue&lt;/BARCODEVALUE&gt;
@@ -83,8 +89,9 @@ On success, it will return the EmailStatusID. For more info see below for Mandat
 <div><strong>Request: GET</strong></div>
 <pre>
 API_URL?action=sendpassinemail&amp;api_key=apiKey&amp;emailid=emailTemplateId
-&amp;email=email&amp;campaignref=emailCampaignId&amp;pd_custompassid=customPassId
-&amp;pd_barcodevalue=barcodeValue
+&amp;email=email&amp;campaignref=emailCampaignId
+&amp;data_first_name=firstName&amp;data_last_name=lastname&amp;data_age=age
+&amp;pd_custompassid=customPassId&amp;pd_barcodevalue=barcodeValue
 &amp;pd_barcodetext=barcodeText&amp;pd_headerlabel1=headerLabel1
 &amp;pd_headervalue1=headerValue1&amp;pd_primarylabel1=primaryLabel1
 &amp;pd_primaryvalue1=primaryValue1&amp;pd_primarylabel2=primaryLabel2
@@ -136,7 +143,7 @@ status, email, emailid, trackingID, Errorcode, Errorinfo
 
 <strong>Related Errorcodes: </strong><br />
 E401, E402, E713, E714, E802, E803, E806, E823, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869
-E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888, E889, E890, E891, E892, E893, E894, E895, E896, E897, E898, E899
+E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888, E889, E890, E891, E892, E893, E894, E895, E896, E897, E898, E899, E915, E916, E917
 
 <div><strong>Request Example:</strong></div>
 <pre>&lt;REQUEST&gt;
@@ -145,6 +152,12 @@ E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E8
     &lt;EMAILID&gt;45633&lt;/EMAILID&gt;
     &lt;EMAIL&gt;vik.muth@mail.com&lt;/EMAIL&gt;
     &lt;CAMPAIGNREF&gt;1233&lt;/CAMPAIGNREF&gt;
+       &lt;DATA&gt;
+    	  &lt;FIRST_NAME&gt;John&lt;/FIRST_NAME&gt;
+    	  &lt;LAST_NAME&gt;Smith&lt;/LAST_NAME&gt;
+    	  &lt;AGE&gt;29&lt;/AGE&gt;
+    	  &lt;PET&gt;Dog&lt;/PET&gt;
+       &lt;/DATA&gt;
     &lt;PASSDATA&gt;
         &lt;BARCODEVALUE&gt;1234578961A&lt;/BARCODEVALUE&gt;
         &lt;BARCODETEXT&gt;PASS-123-457&lt;/BARCODETEXT&gt;
