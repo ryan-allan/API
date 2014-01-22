@@ -32,7 +32,7 @@ successful, or if <i>email</i> is already subscribed, we will deliver the email.
 <strong>Response Parameters:</strong>
 EMAILID, Status, Email, TrackingID, Errorcode, Errorinfo<br>
 <strong>Related Errorcodes: </strong><br />
-E401, E402, E403, E713, E915  
+E401, E402, E403, E713, E915, E916, E917
 <div><strong>Request Examples</strong></div>
 XML:
 <pre>&lt;REQUEST&gt;
