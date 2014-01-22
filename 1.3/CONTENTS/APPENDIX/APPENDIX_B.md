@@ -286,77 +286,46 @@
 </tr>
 <tr>
 <td>E801 &#8216;passTemplateID&#8217; is required.</td>
-<td></td>
+<td>E901 The &#8216;mobile&#8217; is required</td>
 </tr>
 <tr>
 <td>E802 Invalid &#8216;PassTemplateID&#8217;. Pass template is either deleted or do not belong to this user.</td>
-<td></td>
+<td>E902 The &#8216;campaignid&#8217; is required</td>
 </tr>
 <tr>
 <td>E803 &#8216;BarcodeValue&#8217; is required.</td>
-<td></td>
+<td>E903 Invalid campaignid</td>
 </tr>
 <tr>
 <td>E804 &#8216;Email&#8217; is invalid.</td>
-<td></td>
+<td>E904 Could not subscribe this number</td>
 </tr>
 <tr>
-<td>E805 &#8216;Phone&#8217; is invalid.</td><td></td></tr>
+<td>E805 &#8216;Phone&#8217; is invalid.</td>
+<td>E905 Could not unsubscribe this number</td></tr>
 <tr>
 <td>E806 &#8216;PassDataID&#8217; was not created. Internal error occurred.</td>
-<td></td>
+<td>E911 The &#8216;email&#8217; is required</td>
 </tr>
 <tr>
 <td>E807 &#8216;PassDataID&#8217; is required.</td>
-<td></td>
+<td>E912 Invalid campaignid</td>
 </tr>
 <tr>
 <td>E808 Invalid &#8216;PassDataID&#8217;. Pass is either deleted or does not belong to this user.</td>
-<td></td>
+<td>E913 Could not subscribe this email</td>
 </tr>
 <tr>
 <td>E809 Pass was not updated. Internal error occured.</td>
-<td></td>
-</tr>
-<tr>
-<td>E901 The &#8216;mobile&#8217; is required</td>
-<td></td>
-</tr>
-<tr>
-<td>E902 The &#8216;campaignid&#8217; is required</td>
-<td></td>
-</tr>
-<tr>
-<td>E903 Invalid campaignid</td>
-<td></td>
-</tr>
-<tr>
-<td>E904 Could not subscribe this number</td>
-<td></td>
-</tr>
-<tr>
-<td>E905 Could not unsubscribe this number</td>
-<td></td>
-</tr>
-<tr>
-<td>E911 The &#8216;email&#8217; is required</td>
-<td></td>
-</tr>
-<tr>
-<td>E912 Invalid campaignid</td>
-<td></td>
-</tr>
-<tr>
-<td>E913 Could not subscribe this email</td>
-<td></td>
-</tr>
-<tr>
 <td>E914 Could not unsubscribe this email</td>
-<td></td>
 </tr>
 <tr>
-<td>E915 Email not sent due to previous opt-out, bounce, or spam report.</td>
-<td></td>
+<td>E915 Email was previously opt-out by this subscriber/email address.</td>
+<td>E916 Email was previously bounce-back on sending to this subscriber/email address.</td>
+</tr>
+<tr>
+<td>E917 Email address/subscriber reported Emails from this account/campaign/email-server as spam.</td>
+<td>E918 Email was opt-out by this account/API user</td>
 </tr>
 </tbody>
 </table>
