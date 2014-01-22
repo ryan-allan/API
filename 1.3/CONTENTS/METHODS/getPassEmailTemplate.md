@@ -1,0 +1,207 @@
+<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
+<h2>getPassEmailTemplate</h2>
+<p><strong>Synopsis:</strong><br />
+This API request is used generates an email HTML template with embedded passbook pass in it. 
+The 'passData' passed in the API will be used to create the dynamic pass using the pass template added in that email template.
+All the 'passData' is used in respect to the pass template settings. CustomPassId is your system generated Unique Id that will represent this pass data and can be used by your system to refer this pass.
+In the case of Relevance, Relevant Text is considered only when Relevance lat,long values are passed in the API otherwise ignored.<br/>
+Email address will be subscribed to the email campaign referenced by the 'emailCampaignId' and all the 'data' is saved as the subscriber data for that email address. 
+If the subscription fails, the API sends a 'emailWarning' to give you the sense why the email subscription failed. The error code sent as the emailWarning can be found in the Apendix B where all the error codes are defined.
+Email address will be added to the campaign's audience manager as subscribed or unsubscribed based on the subscription status. Subscription can fail due to the following reasons:
+The email has already opted-out of a campaign in your account.<br/>
+The email has unsubscribed from any campaign associated with the SMTP server you are using.
+The email has filed a spam complaint.
+The email bounced during a previous delivery.<br/><br/>
+On success, it will return the emailHtml, emailWarning (if subscription failed, otherwise empty) along with the generated pass information such as customPassId if passed, passDataId and serialNumber for the generated pass.
+For more info see below for Mandatory/Optional fields and Error codes.</p>
+<div><strong>Request: XML</strong></div>
+<pre>&lt;REQUEST&gt;
+    &lt;ACTION&gt;getPassEmailTemplate&lt;/ACTION&gt;
+    &lt;API_KEY&gt;apiKey&lt;/API_KEY&gt;
+    &lt;EMAILID&gt;emailTemplateId&lt;/EMAILID&gt;
+    &lt;EMAIL&gt;email&lt;/EMAIL&gt;
+    &lt;CAMPAIGNREF&gt;emailCampaignId&lt;/CAMPAIGNREF&gt;
+    &lt;DATA&gt;
+		&lt;FIRST_NAME&gt;firstName&lt;/FIRST_NAME&gt;
+		&lt;LAST_NAME&gt;lastName&lt;/LAST_NAME&gt;
+		&lt;GENDER&gt;gender&lt;/GENDER&gt;
+		...
+	&lt;/DATA&gt;
+    &lt;PASSDATA&gt;
+        &lt;CUSTOMPASSID&gt;customPassId&lt;/CUSTOMPASSID&gt;
+        &lt;BARCODEVALUE&gt;barcodeValue&lt;/BARCODEVALUE&gt;
+        &lt;BARCODETEXT&gt;barcodeText&lt;/BARCODETEXT&gt;
+        &lt;HEADERLABEL1&gt;headerLabel1&lt;/HEADERLABEL1&gt;
+        &lt;HEADERVALUE1&gt;headerValue1&lt;/HEADERVALUE1&gt;
+        &lt;PRIMARYLABEL1&gt;primaryLabel1&lt;/PRIMARYLABEL1&gt;
+        &lt;PRIMARYVALUE1&gt;primaryValue1&lt;/PRIMARYVALUE1&gt; 
+        &lt;PRIMARYLABEL2&gt;primaryLabel2&lt;/PRIMARYLABEL2&gt;
+        &lt;PRIMARYVALUE2&gt;primaryValue2&lt;/PRIMARYVALUE2&gt; 
+        &lt;SECLABEL1&gt;secLabel1&lt;/SECLABEL1&gt;
+        &lt;SECVALUE1&gt;secValue1&lt;/SECVALUE1&gt;
+        &lt;SECLABEL2&gt;sedLabel2&lt;/SECLABEL2&gt;
+        &lt;SECVALUE2&gt;secValue2&lt;/SECVALUE2&gt;
+        &lt;SECLABEL3&gt;sedLabel3&lt;/SECLABEL3&gt;
+        &lt;SECVALUE3&gt;secValue3&lt;/SECVALUE3&gt;
+        &lt;SECLABEL4&gt;sedLabel4&lt;/SECLABEL4&gt;
+        &lt;SECVALUE4&gt;secValue4&lt;/SECVALUE4&gt;
+        &lt;AUXLABEL1&gt;auxLabel1&lt;/AUXLABEL1&gt;
+        &lt;AUXVALUE1&gt;auxValue1&lt;/AUXVALUE1&gt;
+        &lt;AUXLABEL2&gt;auxLabel2&lt;/AUXLABEL2&gt;
+        &lt;AUXVALUE2&gt;auxValue2&lt;/AUXVALUE2&gt;
+        &lt;AUXLABEL3&gt;auxLabel3&lt;/AUXLABEL3&gt;
+        &lt;AUXVALUE3&gt;auxValue3&lt;/AUXVALUE3&gt;
+        &lt;AUXLABEL4&gt;auxLabel4&lt;/AUXLABEL4&gt;
+        &lt;AUXVALUE4&gt;auxValue4&lt;/AUXVALUE4&gt;
+        &lt;BACKLABEL1&gt;backLabel1&lt;/BACKLABEL1&gt;
+        &lt;BACKVALUE1&gt;backValue1&lt;/BACKVALUE1&gt;
+        &lt;BACKLABEL2&gt;backLabel2&lt;/BACKLABEL2&gt;
+        &lt;BACKVALUE2&gt;backValue2&lt;/BACKVALUE2&gt;
+        &lt;BACKLABEL3&gt;backLabel3&lt;/BACKLABEL3&gt;
+        &lt;BACKVALUE3&gt;backValue3&lt;/BACKVALUE3&gt;
+        &lt;BACKLABEL4&gt;backLabel4&lt;/BACKLABEL4&gt;
+        &lt;BACKVALUE4&gt;backValue4&lt;/BACKVALUE4&gt;
+        &lt;RELLATITUDE1&gt;relLatitude1&lt;/RELLATITUDE1&gt;
+        &lt;RELLONGITUDE1&gt;relLongitude1&lt;/RELLONGITUDE1&gt;
+        &lt;RELTEXT1&gt;relText1&lt;/RELTEXT1&gt;
+        &lt;RELLATITUDE2&gt;relLatitude2&lt;/RELLATITUDE2&gt;
+        &lt;RELLONGITUDE2&gt;relLongitude2&lt;/RELLONGITUDE2&gt;
+        &lt;RELTEXT2&gt;relText2&lt;/RELTEXT2&gt;
+        &lt;RELLATITUDE3&gt;relLatitude3&lt;/RELLATITUDE3&gt;
+        &lt;RELLONGITUDE3&gt;relLongitude3&lt;/RELLONGITUDE3&gt;
+        &lt;RELTEXT3&gt;relText3&lt;/RELTEXT3&gt;
+        &lt;RELLATITUDE4&gt;relLatitude4&lt;/RELLATITUDE4&gt;
+        &lt;RELLONGITUDE4&gt;relLongitude4&lt;/RELLONGITUDE4&gt;
+        &lt;RELTEXT4&gt;relText4&lt;/RELTEXT4&gt;
+        &lt;RELLATITUDE5&gt;relLatitude5&lt;/RELLATITUDE5&gt;
+        &lt;RELLONGITUDE5&gt;relLongitude5&lt;/RELLONGITUDE5&gt;
+        &lt;RELTEXT5&gt;relText5&lt;/RELTEXT5&gt;
+        &lt;RELLATITUDE6&gt;relLatitude6&lt;/RELLATITUDE6&gt;
+        &lt;RELLONGITUDE6&gt;relLongitude6&lt;/RELLONGITUDE6&gt;
+        &lt;RELTEXT6&gt;relText6&lt;/RELTEXT6&gt;
+        &lt;RELLATITUDE7&gt;relLatitude7&lt;/RELLATITUDE7&gt;
+        &lt;RELLONGITUDE7&gt;relLongitude7&lt;/RELLONGITUDE7&gt;
+        &lt;RELTEXT7&gt;relText7&lt;/RELTEXT7&gt;
+        &lt;RELLATITUDE8&gt;relLatitude8&lt;/RELLATITUDE8&gt;
+        &lt;RELLONGITUDE8&gt;relLongitude8&lt;/RELLONGITUDE8&gt;
+        &lt;RELTEXT8&gt;relText8&lt;/RELTEXT8&gt;
+        &lt;RELLATITUDE9&gt;relLatitude9&lt;/RELLATITUDE9&gt;
+        &lt;RELLONGITUDE9&gt;relLongitude9&lt;/RELLONGITUDE9&gt;
+        &lt;RELTEXT9&gt;relText9&lt;/RELTEXT9&gt;
+        &lt;RELLATITUDE10&gt;relLatitude10&lt;/RELLATITUDE10&gt;
+        &lt;RELLONGITUDE10&gt;relLongitude10&lt;/RELLONGITUDE10&gt;
+        &lt;RELTEXT10&gt;relText10&lt;/RELTEXT10&gt;
+    &lt;/PASSDATA&gt;    
+&lt;/REQUEST&gt;</pre>
+<div><strong>Request: GET</strong></div>
+<pre>
+API_URL?action=getpassemailtemplate&amp;api_key=apiKey&amp;emailid=emailTemplateId&amp;email=email&amp;campaignref=emailCampaignId
+&amp;data_first_name=firstName&amp;data_last_name=lastName&amp;data_age=age&amp;data_pet=pet
+&amp;pd_custompassid=customPassId&amp;pd_barcodevalue=barcodeValue&amp;pd_barcodetext=barcodeText
+&amp;pd_headerlabel1=headerLabel1&amp;pd_headervalue1=headerValue1
+&amp;pd_primarylabel1=primaryLabel1&amp;pd_primaryvalue1=primaryValue1&amp;pd_primarylabel2=primaryLabel2
+&amp;pd_primaryvalue2=primaryValue2&amp;pd_seclabel1=secLabel1&amp;pd_secvalue1=secValue1
+&amp;pd_seclabel2=secLabel2&amp;pd_secvalue2=secValue2&amp;pd_seclabel3=secLabel3
+&amp;pd_secvalue3=secValue3&amp;pd_seclabel4=secLabel4&amp;pd_secvalue4=secValue4
+&amp;pd_auxlabel1=auxLabel1&amp;pd_auxvalue1=auxValue1&amp;pd_auxlabel2=auxLabel2
+&amp;pd_auxvalue2=auxValue2&amp;pd_auxlabel3=auxLabel3&amp;pd_auxvalue3=auxValue3
+&amp;pd_auxlabel4=auxLabel4&amp;pd_auxvalue4=auxValue4&amp;pd_backlabel1=backLabel1
+&amp;pd_backvalue1=backValue1&amp;pd_backlabel2=backLabel2&amp;pd_backvalue2=backValue2
+&amp;pd_backlabel3=backLabel3&amp;pd_backvalue3=backValue3&amp;pd_backlabel4=backLabel4&amp;pd_backvalue4=backValue4
+&amp;pd_rellatitude1=relLatitude1&amp;pd_rellongitude1=relLongitude1&amp;pd_reltext1=relText1
+&amp;pd_rellatitude2=relLatitude2&amp;pd_rellongitude2=relLongitude2&amp;pd_reltext2=relText2
+&amp;pd_rellatitude3=relLatitude3&amp;pd_rellongitude3=relLongitude3&amp;pd_reltext3=relText3
+&amp;pd_rellatitude4=relLatitude4&amp;pd_rellongitude4=relLongitude4&amp;pd_reltext4=relText4
+&amp;pd_rellatitude5=relLatitude5&amp;pd_rellongitude5=relLongitude5&amp;pd_reltext5=relText5
+&amp;pd_rellatitude6=relLatitude6&amp;pd_rellongitude6=relLongitude6&amp;pd_reltext6=relText6
+&amp;pd_rellatitude7=relLatitude7&amp;pd_rellongitude7=relLongitude7&amp;pd_reltext7=relText7
+&amp;pd_rellatitude8=relLatitude8&amp;pd_rellongitude8=relLongitude8&amp;pd_reltext8=relText8
+&amp;pd_rellatitude9=relLatitude9&amp;pd_rellongitude9=relLongitude9&amp;pd_reltext9=relText9
+&amp;pd_rellatitude10=relLatitude10&amp;pd_rellongitude10=relLongitude10&amp;pd_reltext10=relText10
+</pre>
+<div><strong>Request Parameters:</strong></div>
+<pre><strong>Mandatory:</strong>
+action, apiKey, email, emailTemplateId, emailCampaignId,
+barcodeValue (if "Barcode=Allowed" &amp;&amp; "BarcodeType=Dynamic" &amp;&amp; "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED),
+
+<strong>Optional: </strong>
+customPassId,
+barcodeText (if "Barcode = Allowed" &amp;&amp; "Barcode Alternate Text = Dynamic Text" for Pass Template otherwise IGNORED), 
+headerLabel1, headerValue1, 
+primaryLabel1, primaryValue1, 
+primaryLabel2, primaryValue2 - if "Pass Template Type = Boarding Pass" otherwise IGNORED, 
+secLabel1, secValue1, secLabel2, secValue2, secLabel3, secValue3, secLabel4, secValue4, 
+auxLabel1, auxValue1, auxLabel2, auxValue2, auxLabel3, auxValue3, auxLabel4, auxValue4, 
+backLabel1, backValue1, backLabel2, backValue2, backLabel3, backValue3, backLabel4, backValue4,
+relLatitude1, relLongitude1, relText1,
+relLatitude2, relLongitude2, relText2,
+relLatitude3, relLongitude3, relText3,
+relLatitude4, relLongitude4, relText4,
+relLatitude5, relLongitude5, relText5,
+relLatitude6, relLongitude6, relText6,
+relLatitude7, relLongitude7, relText7,
+relLatitude8, relLongitude8, relText8,
+relLatitude9, relLongitude9, relText9,
+relLatitude10, relLongitude10, relText10</pre>
+<strong>Response Parameters:</strong><br />
+status, email, emailid, passDataId, serialNumber, customPassId, emailWarning, emailSubject, emailHtml, errorCode, errorInfo
+
+<strong>Related Errorcodes: </strong><br />
+E401, E402, E713, E714, E802, E803, E806, E823, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869
+E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888, E889, E890, E891, E892, E893, E894, E895, E896, E897, E898, E899
+
+<div><strong>Request Example:</strong></div>
+<pre>&lt;REQUEST&gt;
+    &lt;ACTION&gt;getPassEmailTemplate&lt;/ACTION&gt;
+    &lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;
+    &lt;EMAILID&gt;45633&lt;/EMAILID&gt;
+    &lt;EMAIL&gt;vik.muth@mail.com&lt;/EMAIL&gt;
+    &lt;CAMPAIGNREF&gt;1233&lt;/CAMPAIGNREF&gt;
+    &lt;PASSDATA&gt;
+        &lt;CUSTOMPASSID&gt;CONT-ID-SKU:112324&lt;/CUSTOMPASSID&gt;
+        &lt;BARCODEVALUE&gt;1234578961A&lt;/BARCODEVALUE&gt;
+        &lt;BARCODETEXT&gt;PASS-123-457&lt;/BARCODETEXT&gt;
+        &lt;HEADERLABEL1&gt;SEAT&lt;/HEADERLABEL1&gt;
+        &lt;HEADERVALUE1&gt;1C&lt;/HEADERVALUE1&gt;
+        &lt;PRIMARYLABEL1&gt;Name&lt;/PRIMARYLABEL1&gt;
+        &lt;PRIMARYVALUE1&gt;Vikram Muthyala&lt;/PRIMARYVALUE1&gt; 
+        &lt;SECLABEL1&gt;Date&lt;/SECLABEL1&gt;
+        &lt;SECVALUE1&gt;4th July, 2013&lt;/SECVALUE1&gt;
+        &lt;SECLABEL2&gt;Auditorium&lt;/SECLABEL2&gt;
+        &lt;SECVALUE2&gt;Gold Room&lt;/SECVALUE2&gt;
+        &lt;AUXLABEL1&gt;Address&lt;/AUXLABEL1&gt;
+        &lt;AUXVALUE1&gt;Biz Convention Center, Boston MA 02144&lt;/AUXVALUE1&gt;
+        &lt;BACKLABEL1&gt;Terms and Conditions&lt;/BACKLABEL1&gt;
+        &lt;BACKVALUE1&gt;Valid for 1 person only. Valid for 1 visit only. Expires July 6th, 2013. Valid ID required if requested.&lt;/BACKVALUE1&gt;
+        &lt;BACKLABEL2&gt;Snacks and Drinks&lt;/BACKLABEL2&gt;
+        &lt;BACKVALUE2&gt;Free Drinks and Snacks are available in the main lobby.&lt;/BACKVALUE2&gt;
+        &lt;BACKLABEL3&gt;Please take a small survey to win a free ticket for our next event&lt;/BACKLABEL3&gt;
+        &lt;BACKVALUE3&gt;https://www.survey.com/event/12748493fgh/&lt;/BACKVALUE3&gt;
+        &lt;RELLATITUDE2&gt;42.347888&lt;/RELLATITUDE2&gt;
+        &lt;RELLONGITUDE2&gt;-71.087903&lt;/RELLONGITUDE2&gt;
+        &lt;RELTEXT2&gt;Event at HYNES CONVENTION CENTRE&lt;/RELTEXT2&gt;
+    &lt;/PASSDATA&gt;    
+&lt;/REQUEST&gt;</pre>
+<div><strong>Response Example: Success</strong></div>
+<pre>&lt;RESPONSE&gt;
+    &lt;STATUS&gt;Success&lt;/STATUS&gt;
+    &lt;EMAILID&gt;35674&lt;/EMAILID&gt;
+    &lt;EMAIL&gt;vik.muth@mail.com&lt;/EMAIL&gt;
+    &lt;CAMPAIGNREF&gt;1233&lt;/CAMPAIGNREF&gt;
+    &lt;PASSDATAID&gt;63202e8e947626dae377ab2463ca31dhwtdjdien&lt;/PASSDATAID&gt;
+    &lt;SERIALNUMBER&gt;KJSD3432-232232-2323N32&lt;/SERIALNUMBER&gt;
+    &lt;CUSTOMPASSID&gt;CONT-ID-SKU:112324&lt;/CUSTOMPASSID&gt;
+    &lt;EMAILWARNING&gt;E915&lt;/EMAILWARNING&gt;
+    &lt;EMAILSUBJECT&gt;Get Your Pass&lt;/EMAILSUBJECT&gt;
+    &lt;EMAILHTML&gt;<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>Email Template </title><style type="text/css">#outlook a {padding:0; }.ReadMsgBody {width: 100%; background-color: #ffffff;}.ExternalClass {width: 100%; background-color: #ffffff; }.yshortcuts, a .yshortcuts, a .yshortcuts:hover, a .yshortcuts:active, a .yshortcuts:focus{background-color:transparent !important; border:none !important; color:inherit !important;}body, #celly_email-container, #bodyTableInner {background:#f4f4f4;	width:100% !important; height:100% !important;	margin:0;	padding:0;	-webkit-font-smoothing: antialiased; font-family:Arial, Georgia, Times, serif;}table, td {	mso-table-lspace:0pt;	mso-table-rspace:0pt;}img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}.innerTbl{ width:600px;}.footerContent { padding-top:10px;	padding-right:10px;	padding-bottom:5px;	padding-left:10px; }@media only screen and (min-width: 320px) and (max-width: 640px) {.innerTbl { width:100% !Important; }table[class="innerTbl"]{ max-width:600px !important; width:100% !important; }}@media only screen and (max-width: 479px) {.innerTbl { width:100% !Important; }table[class="innerTbl"]{ max-width:600px !important; width:100% !important; }}@media only screen and (max-width: 480px){body, table, td, p, a {-webkit-text-size-adjust:none !important; }body{ width:100% !important; min-width:100% !important; }table[class="innerTbl"]{ max-width:600px !important; width:100% !important; }}</style></head><body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0"><center><table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="celly_email-container" class="template-1-default" bgcolor="#F4F4F4" style="font-size:11pt; font-family:Arial; mso-table-lspace: 0pt;mso-table-rspace: 0pt;background-color: #f4f4f4;margin: 0;padding: 0;height: 100%;width: 100%;"><tbody><tr><td align="center" valign="top" id="bodyTableInner" style="padding:5px; mso-table-lspace: 0pt;mso-table-rspace: 0pt;background-color: #f4f4f4;margin: 0;padding: 0;height: 100%;width: 100%;"><table border="0" cellpadding="0" cellspacing="0" id="innerTbl" class="innerTbl" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 600px;"><tbody><tr><td valign="top" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><table border="0" cellpadding="2" cellspacing="0" width="100%" id="templateBody" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><tbody><tr><td align="center" valign="top" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><table id="bodyContentBlock" style="border: 1pt solid rgb(204, 204, 204); padding: 8px;" bgcolor="#ffffff" border="0" cellpadding="5" cellspacing="0" width="100%"><tbody><tr><td valign="top" class="bodyContent" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><div style="height:0px; font-size:0px; line-height:0px" id="Celly_linkCSS"><style type="text/css">#bodyContentBlock { background-color:#ffffff }.outerContainer a{ color:#4d4d4d !important; }.sc_logo { padding-top:5px !important; padding-bottom:5px !important; }.footerContent, .footer_container a{ color:#4d4d4d;}</style></div><div class="outerContainer" style="background-color: rgb(255, 255, 255);"><div id="drop_content"><div id="objdiv8423" class="item dropItem_4"><table width="100%" cellspacing="2" cellpadding="0" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="text_8423"><tbody><tr><td align="left" bgcolor="#ffffff" id="ObjText" class="ObjText" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><div class="text-parent"><font id="custom_editText" color="#252525" style="font-size: 12pt;">Dear Mr. XXX</font><div class="text-mask"></div></div></td></tr></tbody></table></div><div id="objdiv5473" class="item dropItem_9"><table cellspacing="4" cellpadding="4" align="center" style="max-width:300px; mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="pass_5473"><tbody><tr><td align="center" id="addCustomPass" class="addCustomPass" style="padding:5px;"><a title="Download Pass" style="padding: 6px 10px 6px 8px; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; text-decoration: none; font-family: sans-serif, Arial; display: block; border: 1px solid rgb(146, 146, 149); width: 120px; text-align: left; line-height: 13px; color: rgb(0, 0, 0); font-size: 14px; font-weight: normal;" href="https://d2c.skycore.com/passes/downloadpass.php?pass=n3i91w3qm4"><span style="height:28px; width:35px; display:block; float:left;"><img src="https://www.skycore.com/platform/images/pass-icon-email.png" width="28px" height="28px" border="0px" title="Download Pass"> &nbsp; </span>  <span style="color:#929295; font-size:11px; font-weight:bold;">Add to</span> <span style="color:#333333; font-size:13px; font-weight:bold;">Passbook</span> </a></td></tr></tbody></table><input type="hidden" value="1052" data-pass="" name="pass-id" class="pass-id" alt="food-store-pass"><input type="hidden" value="" name="pass-instr" class="pass-instr"></div><div id="objdiv5294" class="item dropItem_4"><table width="100%" cellspacing="2" cellpadding="0" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;" class="text_5294"><tbody><tr><td align="left" bgcolor="#ffffff" id="ObjText" class="ObjText" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><div class="text-parent"><font id="custom_editText" color="#252525" style="font-size: 12pt;">From,<br>XXX<br>XXX</font><div class="text-mask"></div></div></td></tr></tbody></table></div></div></div><input type="hidden" value="#cccccc" name="background_border_color" class="background_border_color"><input type="hidden" value="#4d4d4d" name="href_color" class="href_color"><input type="hidden" value="" name="footer_font" class="footer_font"><input type="hidden" value="#4d4d4d" name="footer_font-color" class="footer_font-color"><input type="hidden" value="1" name="email-template-type" class="email-template-type"></td></tr></tbody></table></td></tr><tr><td valign="top"><table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><tbody><tr><td class="footerContent" valign="top" align="left" style="mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><div class="footer_container" id="emailfooter" style="color: rgb(77, 77, 77); font-size: 10pt; font-family: Arial;"><div id="footer" style="font-size:11px;"><b>skycore-brand</b><br />214-Lincoln St Allston MA 02134
+<br />,<br />To unsubscribe, <a class="unsub" href="https://d2c.skycore.com/email_unsub.php?id=Yc0Kw3ofR4ZI5icOX5DXGIfm&token=qn8opGgDh0hwmIrCH0UoURaB">Click Here</a><div class="sc_logo" style="padding-top:0px; padding-bottom:0px;"><img src="https://www.skycore.com/platform/sc_logo857.jpg?token=qn8opGgDh0hwmIrCH0UoURaB&type=1" /></div></div></div></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></center></body></html>&lt;/EMAILHTML&gt;
+&lt;/RESPONSE&gt;</pre>
+<div><strong>Response Example: Failure</strong></div>
+<pre>&lt;RESPONSE&gt;
+    &lt;STATUS&gt;Failure&lt;/STATUS&gt;
+    &lt;EMAILID&gt;35674&lt;/EMAILID&gt;
+    &lt;ERRORCODE&gt;E713&lt;/ERRORCODE&gt;
+    &lt;ERRORINFO&gt;There is billing problem on your account.&lt;/ERRORINFO&gt;
+    &lt;EMAIL&gt;vik.muth@mail.com&lt;/EMAIL&gt;
+    &lt;CAMPAIGNREF&gt;1233&lt;/CAMPAIGNREF&gt;
+&lt;/RESPONSE&gt;</pre>
