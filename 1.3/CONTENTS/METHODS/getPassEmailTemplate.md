@@ -17,7 +17,7 @@ The subscriber's data passed in the request will be saved and profiled for this 
 The returned email template HTML can be directly plugged into the email body and can be sent from your email servers. Although, you need to set your email headers properly to support html sent in the email.
 The email html contains an 'unsubscription' link in the footer which could be used by subscriber or email address to unsubscribe from the email campaign to which it was subscribed to during this process. 
 Also, contains a tracking link to keep track of opened/read emails. <br/>
-On success, it will return the email template HTML, warning code and warning status if any, along with the generated pass information such as custom pass ID if passed, pass data ID and serial number for the generated pass.
+On success, it will return the email template HTML, warning code and warning info if any, along with the generated pass information such as custom pass ID if passed, pass data ID and serial number for the generated pass.
 For more info see below for Mandatory/Optional fields and Error codes.<br/>
 The email address is referenced by 'EMAIL', email campaign is referenced by 'CAMPAIGNID', email template is referenced by 'EMAILTEMPLATEID', 
 subscriber's data is referenced by 'DATA' and the pass data is referenced by 'PASSDATA'.
