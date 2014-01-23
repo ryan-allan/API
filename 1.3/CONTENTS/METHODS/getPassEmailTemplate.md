@@ -1,26 +1,34 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
 <h2>getPassEmailTemplate</h2>
 <p><strong>Synopsis:</strong><br />
-This API request is used generates an email HTML template with embedded passbook pass in it. 
-The 'PASSDATA' passed in the API will be used to create the dynamic pass using the pass template added in that email template.
-All the 'PASSDATA' is used in respect to the pass template settings. 'CUSTOMPASSID' is your system generated Unique Id that will represent this pass data and can be used by your system to refer this pass.
-In the case of Relevance, Relevant Text is considered only when Relevance lat,long values are passed in the API otherwise ignored.<br/>
-Email address will be subscribed to the email campaign referenced by the 'CAMPAIGNREF' and all the 'DATA' is saved as the subscriber data for that email address. 
-If the subscription fails, the API sends a 'emailWarning' to give you the sense why the email subscription failed. The error code sent as the emailWarning can be found in the Apendix B where all the error codes are defined.
-Email address will be added to the campaign's audience manager as subscribed or unsubscribed based on the subscription status. Subscription can fail due to the following reasons:<br/>
-The email has already opted-out of a campaign in your account.<br/>
-The email has unsubscribed from any campaign associated with the SMTP server you are using.<br/>
-The email has filed a spam complaint.<br/>
-The email bounced during a previous delivery.<br/>
-On success, it will return the emailHtml, emailWarning (if subscription failed, otherwise empty) along with the generated pass information such as customPassId if passed, passDataId and serialNumber for the generated pass.
-For more info see below for Mandatory/Optional fields and Error codes.</p>
+'getPassEmailTemplate' API is used to get the stored email template html with an embedded passbook pass in it for the specified email address. 
+The pass data in the request is used in limitation to the pass template settings to generate this pass.
+Custom pass ID is your system generated unique ID that will represent this pass data. In the case of Relevance, Relevant Text is considered only when Relevance Lat and Long values are passed in the API otherwise ignored.
+Also, it requires a reference email campaign to which this email address will be subscribed to. 
+If any case, the subscription fails then the email address is added to the email campaign's audience manager as 'unsubscribed' and you will receive a warning code and warning status in the response. 
+The subscriber's data passed in the request will be saved and profiled for this email address. The email campaign subscription might fail due to the following reasons: <br/>
+<ol>
+<li>The <i>email address</i> has already opted-out of a campaign in your account.</li>
+<li>The <i>email address</i> has unsubscribed from any campaign associated with the SMTP server you are using.</li>
+<li>The <i>email address</i> has filed a spam complaint.</li>
+<li>The <i>email address</i> bounced during a previous delivery.</li>
+<li>The <i>email address</i> was opted by this user or account</li>
+</ol><br/>
+The returned email template HTML can be directly plugged into the email body and can be sent from your email servers. Although, you need to set your email headers properly to support html sent in the email.
+The email html contains an 'unsubscription' link in the footer which could be used by subscriber or email address to unsubscribe from the email campaign to which it was subscribed to during this process. 
+Also, contains a tracking link to keep track of opened/read emails. <br/>
+On success, it will return the email template HTML, warning code and warning status if any, along with the generated pass information such as custom pass ID if passed, pass data ID and serial number for the generated pass.
+For more info see below for Mandatory/Optional fields and Error codes.<br/>
+The email address is referenced by 'EMAIL', email campaign is referenced by 'CAMPAIGNID', email template is referenced by 'EMAILTEMPLATEID', 
+subscriber's data is referenced by 'DATA' and the pass data is referenced by 'PASSDATA'.
+</p>
 <div><strong>Request: XML</strong></div>
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;getPassEmailTemplate&lt;/ACTION&gt;
     &lt;API_KEY&gt;apiKey&lt;/API_KEY&gt;
-    &lt;EMAILID&gt;emailTemplateId&lt;/EMAILID&gt;
+    &lt;EMAILTEMPLATEID&gt;emailTemplateId&lt;/EMAILTEMPLATEID&gt;
     &lt;EMAIL&gt;email&lt;/EMAIL&gt;
-    &lt;CAMPAIGNREF&gt;emailCampaignId&lt;/CAMPAIGNREF&gt;
+    &lt;CAMPAIGNID&gt;emailCampaignId&lt;/CAMPAIGNID&gt;
     &lt;DATA&gt;
 		&lt;FIRST_NAME&gt;firstName&lt;/FIRST_NAME&gt;
 		&lt;LAST_NAME&gt;lastName&lt;/LAST_NAME&gt;
@@ -95,7 +103,7 @@ For more info see below for Mandatory/Optional fields and Error codes.</p>
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request: GET</strong></div>
 <pre>
-API_URL?action=getpassemailtemplate&amp;api_key=apiKey&amp;emailid=emailTemplateId&amp;email=email&amp;campaignref=emailCampaignId
+API_URL?action=getpassemailtemplate&amp;api_key=apiKey&amp;emailtemplateid=emailTemplateId&amp;email=email&amp;campaignid=emailCampaignId
 &amp;data_first_name=firstName&amp;data_last_name=lastName&amp;data_age=age&amp;data_pet=pet
 &amp;pd_custompassid=customPassId&amp;pd_barcodevalue=barcodeValue&amp;pd_barcodetext=barcodeText
 &amp;pd_headerlabel1=headerLabel1&amp;pd_headervalue1=headerValue1
@@ -144,19 +152,22 @@ relLatitude8, relLongitude8, relText8,
 relLatitude9, relLongitude9, relText9,
 relLatitude10, relLongitude10, relText10</pre>
 <strong>Response Parameters:</strong><br />
-status, email, emailid, passDataId, serialNumber, customPassId, emailWarning, emailSubject, emailHtml, errorCode, errorInfo
+status, email, emailTemplateId, passDataId, serialNumber, customPassId, warningCode, warningInfo, emailSubject, emailHtml, errorCode, errorInfo
 
 <strong>Related Errorcodes: </strong><br />
 E401, E402, E713, E714, E802, E803, E806, E823, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869
 E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E883, E884, E885, E886, E887, E888, E889, E890, E891, E892, E893, E894, E895, E896, E897, E898, E899
 
+<strong>Related Warningcodes: </strong><br />
+E915, E916, E917, E918
+
 <div><strong>Request Example:</strong></div>
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;getPassEmailTemplate&lt;/ACTION&gt;
     &lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;
-    &lt;EMAILID&gt;45633&lt;/EMAILID&gt;
+    &lt;EMAILTEMPLATEID&gt;45633&lt;/EMAILTEMPLATEID&gt;
     &lt;EMAIL&gt;vik.muth@mail.com&lt;/EMAIL&gt;
-    &lt;CAMPAIGNREF&gt;1233&lt;/CAMPAIGNREF&gt;
+    &lt;CAMPAIGNID&gt;1233&lt;/CAMPAIGNID&gt;
     &lt;PASSDATA&gt;
         &lt;CUSTOMPASSID&gt;CONT-ID-SKU:112324&lt;/CUSTOMPASSID&gt;
         &lt;BARCODEVALUE&gt;1234578961A&lt;/BARCODEVALUE&gt;
@@ -185,13 +196,14 @@ E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E8
 <div><strong>Response Example: Success</strong></div>
 <pre>&lt;RESPONSE&gt;
     &lt;STATUS&gt;Success&lt;/STATUS&gt;
-    &lt;EMAILID&gt;35674&lt;/EMAILID&gt;
+    &lt;EMAILTEMPLATEID&gt;35674&lt;/EMAILTEMPLATEID&gt;
     &lt;EMAIL&gt;vik.muth@mail.com&lt;/EMAIL&gt;
-    &lt;CAMPAIGNREF&gt;1233&lt;/CAMPAIGNREF&gt;
+    &lt;CAMPAIGNID&gt;1233&lt;/CAMPAIGNID&gt;
     &lt;PASSDATAID&gt;63202e8e947626dae377ab2463ca31dhwtdjdien&lt;/PASSDATAID&gt;
     &lt;SERIALNUMBER&gt;KJSD3432-232232-2323N32&lt;/SERIALNUMBER&gt;
     &lt;CUSTOMPASSID&gt;CONT-ID-SKU:112324&lt;/CUSTOMPASSID&gt;
-    &lt;EMAILWARNING&gt;E915&lt;/EMAILWARNING&gt;
+    &lt;WARNINGCODE&gt;E915&lt;/WARNINGCODE&gt;
+    &lt;WARNINGINFO&gt;E915&lt;/WARNINGINFO&gt;
     &lt;EMAILSUBJECT&gt;Get Your Pass&lt;/EMAILSUBJECT&gt;
     &lt;EMAILHTML&gt;
        &lt;!DOCTYPE html ..... &lt;/html&gt;
@@ -200,9 +212,9 @@ E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E8
 <div><strong>Response Example: Failure</strong></div>
 <pre>&lt;RESPONSE&gt;
     &lt;STATUS&gt;Failure&lt;/STATUS&gt;
-    &lt;EMAILID&gt;35674&lt;/EMAILID&gt;
+    &lt;EMAILTEMPLATEID&gt;35674&lt;/EMAILTEMPLATEID&gt;
     &lt;ERRORCODE&gt;E713&lt;/ERRORCODE&gt;
     &lt;ERRORINFO&gt;There is billing problem on your account.&lt;/ERRORINFO&gt;
     &lt;EMAIL&gt;vik.muth@mail.com&lt;/EMAIL&gt;
-    &lt;CAMPAIGNREF&gt;1233&lt;/CAMPAIGNREF&gt;
+    &lt;CAMPAIGNID&gt;1233&lt;/CAMPAIGNID&gt;
 &lt;/RESPONSE&gt;</pre>
