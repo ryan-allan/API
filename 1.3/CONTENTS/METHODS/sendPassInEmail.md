@@ -1,19 +1,26 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="API_METHODS.md">Back to API Methods</a>
 <h2>sendPassInEmail</h2>
 <p><strong>Synopsis:</strong><br />
-This API request triggers sending an Email with Dynamic Pass. Pass data passed in the API request will be used to create a Passbook pass sent via Email. 
-The pass data gets locked with the Email address in the request and is used in limitation to the Pass Template settings.
-All the other/extra pass data is ignored. 
-CustomPassId is your system generated Unique Id that will represent this pass data. You can optinally pass it along with pass data to be saved along with pass data and this can be used to refer this pass.
-In the case of Relevance, Relevant Text is considered only when Relevance lat,long values are passed in the API otherwise ignored.
-On success, it will return the EmailStatusID. For more info see below for Mandatory/Optional fields and Error codes.</p>
+'sendPassInEmail' API triggers sending a stored email template with embedded Passbook Pass in it. Pass data passed in the API will be used to create this passbook pass. 
+The pass data gets locked with the email address in the request and is used in limitation to the pass template settings. All the other/extra pass data is ignored. 
+Custom pass ID is your system generated unique ID that will represent this pass data. In the case of Relevance, Relevant Text is considered only when Relevance Lat and Long values are passed in the API otherwise ignored.
+Also, it requires a reference email campaign to which this email address will be subscribed to. If any case, the subscription fails then the email address is added to the email campaign's audience manager as 'unsubscribed'. Subscription to the campaign may fail if: <br/>
+<ol>
+<li>The <i>email address</i> has already opted-out of a campaign in your account.</li>
+<li>The <i>email address</i> has unsubscribed from any campaign associated with the SMTP server you are using.</li>
+<li>The <i>email address</i> has filed a spam complaint.</li>
+<li>The <i>email address</i> bounced during a previous delivery.</li>
+</ol><br/>
+On success, it will return the tracking ID referenced by 'TRACKINGID'. For more info see below for Mandatory/Optional fields and Error codes.<br/>
+The email template is referenced by 'EMAILTEMPLATEID', email address is referenced by 'EMAIL', email campaign is referenced by CAMPAIGNID and the pass data is referenced by PASSDATA in the API.
+</p>
 <div><strong>Request: XML</strong></div>
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;sendPassInEmail&lt;/ACTION&gt;
     &lt;API_KEY&gt;apiKey&lt;/API_KEY&gt;
-    &lt;EMAILID&gt;emailTemplateId&lt;/EMAILID&gt;
+    &lt;EMAILTEMPLATEID&gt;emailTemplateId&lt;/EMAILTEMPLATEID&gt;
     &lt;EMAIL&gt;email&lt;/EMAIL&gt;
-    &lt;CAMPAIGNREF&gt;emailCampaignId&lt;/CAMPAIGNREF&gt;
+    &lt;CAMPAIGNID&gt;campaignId&lt;/CAMPAIGNID&gt;
        &lt;DATA&gt;
 	      &lt;FIRST_NAME&gt;First Name&lt;/FIRST_NAME&gt;
 		  &lt;LAST_NAME&gt;Last Name&lt;/LAST_NAME&gt;
@@ -88,8 +95,8 @@ On success, it will return the EmailStatusID. For more info see below for Mandat
 &lt;/REQUEST&gt;</pre>
 <div><strong>Request: GET</strong></div>
 <pre>
-API_URL?action=sendpassinemail&amp;api_key=apiKey&amp;emailid=emailTemplateId
-&amp;email=email&amp;campaignref=emailCampaignId
+API_URL?action=sendpassinemail&amp;api_key=apiKey&amp;emailtemplateid=emailTemplateId
+&amp;email=email&amp;campaignid=campaignId
 &amp;data_first_name=firstName&amp;data_last_name=lastname&amp;data_age=age
 &amp;pd_custompassid=customPassId&amp;pd_barcodevalue=barcodeValue
 &amp;pd_barcodetext=barcodeText&amp;pd_headerlabel1=headerLabel1
@@ -116,7 +123,7 @@ API_URL?action=sendpassinemail&amp;api_key=apiKey&amp;emailid=emailTemplateId
 </pre>
 <div><strong>Request Parameters:</strong></div>
 <pre><strong>Mandatory:</strong>
-action, apiKey, email, emailTemplateId, emailCampaignId,
+action, apiKey, email, emailTemplateId, campaignId,
 barcodeValue (if "Barcode=Allowed" &amp;&amp; "BarcodeType=Dynamic" &amp;&amp; "BarcodeValueSource=Dynamic Value" for Pass Template otherwise IGNORED),
 
 <strong>Optional: </strong>
@@ -139,7 +146,7 @@ relLatitude8, relLongitude8, relText8,
 relLatitude9, relLongitude9, relText9,
 relLatitude10, relLongitude10, relText10</pre>
 <strong>Response Parameters:</strong><br />
-status, email, emailid, trackingID, Errorcode, Errorinfo
+status, email, emailtemplateid, trackingID, Errorcode, Errorinfo
 
 <strong>Related Errorcodes: </strong><br />
 E401, E402, E713, E714, E802, E803, E806, E823, E840, E841, E842, E843, E844, E845, E846, E847, E848, E849, E850, E851, E852, E853, E854, E855, E856, E857, E858, E859, E860, E861, E862, E863, E864, E865, E866, E867, E868, E869
@@ -149,9 +156,9 @@ E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E8
 <pre>&lt;REQUEST&gt;
     &lt;ACTION&gt;sendPassInEmail&lt;/ACTION&gt;
     &lt;API_KEY&gt;qTFkykO9JTfahCOqJ0V2Wf5Cg1t8iWlZ&lt;/API_KEY&gt;
-    &lt;EMAILID&gt;45633&lt;/EMAILID&gt;
+    &lt;EMAILTEMPLATEID&gt;45633&lt;/EMAILTEMPLATEID&gt;
     &lt;EMAIL&gt;vik.muth@mail.com&lt;/EMAIL&gt;
-    &lt;CAMPAIGNREF&gt;1233&lt;/CAMPAIGNREF&gt;
+    &lt;CAMPAIGNID&gt;1233&lt;/CAMPAIGNID&gt;
        &lt;DATA&gt;
     	  &lt;FIRST_NAME&gt;John&lt;/FIRST_NAME&gt;
     	  &lt;LAST_NAME&gt;Smith&lt;/LAST_NAME&gt;
@@ -185,17 +192,17 @@ E870, E871, E872, E873, E874, E875, E876, E877, E878, E879, E880, E881, E882, E8
 <div><strong>Response Example: Success</strong></div>
 <pre>&lt;RESPONSE&gt;
     &lt;STATUS&gt;Success&lt;/STATUS&gt;
-    &lt;EMAILID&gt;35674&lt;/EMAILID&gt;
+    &lt;EMAILTEMPLATEID&gt;35674&lt;/EMAILTEMPLATEID&gt;
     &lt;TRACKINGID&gt;EMAIL_12346&lt;/TRACKINGID&gt;
     &lt;EMAIL&gt;vik.muth@mail.com&lt;/EMAIL&gt;
-    &lt;CAMPAIGNREF&gt;1233&lt;/CAMPAIGNREF&gt;
+    &lt;CAMPAIGNID&gt;1233&lt;/CAMPAIGNID&gt;
 &lt;/RESPONSE&gt;</pre>
 <div><strong>Response Example: Failure</strong></div>
 <pre>&lt;RESPONSE&gt;
     &lt;STATUS&gt;Failure&lt;/STATUS&gt;
-    &lt;EMAILID&gt;35674&lt;/EMAILID&gt;
+    &lt;EMAILTEMPLATEID&gt;35674&lt;/EMAILTEMPLATEID&gt;
     &lt;ERRORCODE&gt;E713&lt;/ERRORCODE&gt;
     &lt;ERRORINFO&gt;There is billing problem on your account.&lt;/ERRORINFO&gt;
     &lt;EMAIL&gt;vik.muth@mail.com&lt;/EMAIL&gt;
-    &lt;CAMPAIGNREF&gt;1233&lt;/CAMPAIGNREF&gt;
+    &lt;CAMPAIGNID&gt;1233&lt;/CAMPAIGNID&gt;
 &lt;/RESPONSE&gt;</pre>
