@@ -6,32 +6,32 @@
 <table class="toc" style="font-size:11px;">
 <tbody>
 <tr>
-<td>E100 Invalid request. Make request via GET method or send valid XML inside &#8216;xml&#8217; field via POST.</td>
+<td>E100 Invalid request. Make request via GET method or send valid XML inside 'xml' field via POST.</td>
 <td>E821 Pass was not deleted. Internal error occured.</td>
 </tr>
 <tr>
-<td>E101 &#8216;action&#8217; required/Invalid Action</td>
+<td>E101 'action' required/Invalid Action</td>
 <td>E822 There is no pass found in this MMS Template to send.</td>
 </tr>
 <tr>
-<td>E102 &#8216;user&#8217; or &#8216;api_key&#8217; required</td>
-<td>E823 There is no pass found in this Email template to send.</td>
+<td>E102 'user' or 'api_key' required</td>
+<td>E823 There is no pass found in this email template to send.</td>
 </tr>
 <tr>
-<td>E103 &#8216;pass&#8217; md5(password) required</td>
+<td>E103 'pass' md5(password) required</td>
 <td>E824 Invalid call to the API. There is no pass data supplied.</td>
 </tr>
 <tr>
 <td>E104 User Authentication FAILED</td>
-<td>E827 Invalid request. MmsID or emailID or passTemplateID is required</td>
+<td>E827 Invalid request. 'mmsid' or 'emailtemplateid' or 'passtemplateid' is required</td>
 </tr>
 <tr>
 <td>E105 This account has no API rights</td>
-<td>E828 Invalid request. You can request only by MmsID or emailID or passTemplateID and not more than one</td>
+<td>E828 Invalid request. You can request only by 'mmsid' or 'emailtemplateid' or 'passtemplateid' and not more than one</td>
 </tr>
 <tr>
 <td>E106 You can call API every X seconds</td>
-<td>E829 Custom Data Identifier is the invalid. Only Alphabet, Numbers or a Space is allowed</td>
+<td>E829 'customdataid' is the invalid. Only Alphabet, Numbers or a Space is allowed</td>
 </tr>
 <tr>
 <td>E107 This account has no rights to use this action</td>
@@ -43,289 +43,289 @@
 </tr>
 <tr>
 <td>E109 API not activated</td>
-<td>E833 This Pass Template is set to send Personalized Passes. Atleast Email or Phone or CustomDataId is required with the Pass Data</td>
+<td>E833 This Pass Template is set to send Personalized Passes. Atleast 'email' or 'phone' or 'customdataid' is required with the Pass Data</td>
 </tr>
 <tr>
 <td>E110 Invalid receiver number</td>
-<td>E840 Header-1 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E840 'headerlabel1' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E111 Invalid shortcode</td>
-<td>E841 Header-1 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E841 'headervalue1' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E120 Account has reached the API request limit.</td>
-<td>E842 Primary-1 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E842 'primarylabel1' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
-<td>E150 The &#8216;newuser&#8217; is required</td>
-<td>E843 Primary-1 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E150 The 'newuser' is required</td>
+<td>E843 'primaryvalue1' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
-<td>E151 &#8216;newuser&#8217; already exists</td>
-<td>E844 Primary-2 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E151 'newuser' already exists</td>
+<td>E844 'primarylabel2' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
-<td>E152 The &#8216;newpass&#8217; is required</td>
-<td>E845 Primary-2 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E152 The 'newpass' is required</td>
+<td>E845 'primaryvalue2' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E153 User was not created. Internal error occurred</td>
-<td>E846 Secondary-1 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E846'seclabel1' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E154 User was not created. Internal error occurred.</td>
-<td>E847 Secondary-1 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E847'secvalue1' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
-<td>E170 &#8216;campaignname is required</td>
-<td>E848 Secondary-2 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E170 'campaignname' is required</td>
+<td>E848'seclabel2' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
-<td>E171 &#8216;brandname&#8217; is required</td>
-<td>E849 Secondary-2 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E171 'brandname' is required</td>
+<td>E849'secvalue2' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E172 Campaign was not created. Internal error occured. Please try again later.</td>
-<td>E850 Secondary-3 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E850'seclabel3' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
-<td>E173 &#8216;mailingaddress&#8217; is required</td>
-<td>E851 Secondary-3 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E173 'mailingaddress' is required</td>
+<td>E851'secvalue3' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E201 The receiver number is required</td>
-<td>E852 Secondary-4 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E852'seclabel4' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E225 Too many Slides</td>
-<td>E853 Secondary-4 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E853'secvalue4' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E226 Audio and Video not allowed in same slide</td>
-<td>E854 Auxiliary-1 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E854 'auxlabel1' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E227 Video and Image not allowed in same slide</td>
-<td>E855 Auxiliary-1 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E855 'auxvalue1' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E228 Text more than X characters</td>
-<td>E856 Auxiliary-2 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E856 'auxlabel2' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E229 Content not allowed</td>
-<td>E857 Auxiliary-2 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E857 'auxvalue2' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E230 Bad X slide duration</td>
-<td>E858 Auxiliary-3 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E858 'auxlabel3' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E241 This content does not exist</td>
-<td>E859 Auxiliary-3 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E859 'auxvalue3' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
-<td>E301 The &#8216;name&#8217; is required</td>
-<td>E860 Auxiliary-4 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E301 The 'name' is required</td>
+<td>E860 'auxlabel4' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E302 No slides</td>
-<td>E861 Auxiliary-4 Value is not accepted. It has to be set as Dynamic in the Pass Template</td> 
+<td>E861 'auxvalue4' is not accepted. It has to be set as Dynamic in the Pass Template</td> 
 <tr>
 <td>E303 Slide X is empty</td>
-<td>E862 Back-1 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E862 'backlabel1' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E331 Image in slide X is too big</td>
-<td>E863 Back-1 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E863 'backvalue1' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E332 Audio in slide X is too big</td>
-<td>E864 Back-2 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E864 'backlabel2' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E333 Video in slide X is too big</td>
-<td>E865 Back-2 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E865 'backvalue2' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E334 Text in slide X is too long</td>
-<td>E866 Back-3 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E866 'backlabel3' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E341 Image file in slide X is corrupted</td>
-<td>E867 Back-3 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E867 'backvalue3' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E351 Could not copy Image in slide X</td>
-<td>E868 Back-4 Label is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E868 'backlabel4' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E400 No Email Templates were created in this account</td>
-<td>E869 Back-4 Value is not accepted. It has to be set as Dynamic in the Pass Template</td>
+<td>E869 'backvalue4' is not accepted. It has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E401 Invalid email</td>
-<td>E870 Relevance Location Latitude1, Longitude1 and Relevance Text1 are not accepted. Relevance Location has to be set as Dynamic in the Pass Template</td>
+<td>E870 'rellatitude1', 'relongitude1' and 'reltext1' are not accepted. Relevance Location1 has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
-<td>E402 Invalid emailid</td>
-<td>E871 Relevance Location Latitude2, Longitude2 and Relevance Text2 are not accepted. Relevance Location has to be set as Dynamic in the Pass Template</td>
+<td>E402 Invalid 'emailid' (or) 'emailtemplateid'</td>
+<td>E871 'rellatitude2', 'relongitude2' and 'reltext2' are not accepted. Relevance Location2 has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E403 Could not send email due to missing dataset entry</td>
-<td>E872 Relevance Location Latitude3, Longitude3 and Relevance Text3 are not accepted. Relevance Location has to be set as Dynamic in the Pass Template</td>
+<td>E872 'rellatitude3', 'relongitude3' and 'reltext3' are not accepted. Relevance Location3 has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E404 No Email Campaigns were created in this account</td>
-<td>E873 Relevance Location Latitude4, Longitude4 and Relevance Text4 are not accepted. Relevance Location has to be set as Dynamic in the Pass Template</td>
+<td>E873 'rellatitude4', 'relongitude4' and 'reltext4' are not accepted. Relevance Location4 has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E405 No MMS Campaigns were created in this account</td>
-<td>E874 Relevance Location Latitude5, Longitude5 and Relevance Text5 are not accepted. Relevance Location has to be set as Dynamic in the Pass Template</td>
+<td>E874 'rellatitude5', 'relongitude5' and 'reltext5' are not accepted. Relevance Location5 has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E503 Internal error</td>
-<td>E875 Relevance Location Latitude6, Longitude6 and Relevance Text6 are not accepted. Relevance Location has to be set as Dynamic in the Pass Template</td>
+<td>E875 'rellatitude6', 'relongitude6' and 'reltext6' are not accepted. Relevance Location6 has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
-<td>E506 &#8216;start_date&#8217;/'end_date&#8217; is required</td>
-<td>E876 Relevance Location Latitude7, Longitude7 and Relevance Text7 are not accepted. Relevance Location has to be set as Dynamic in the Pass Template</td>
+<td>E506 'start_date'/'end_date' is required</td>
+<td>E876 'rellatitude7', 'relongitude7' and 'reltext7' are not accepted. Relevance Location7 has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
-<td>E507 Invalid &#8216;start_date&#8217;/'end_date&#8217; format</td>
-<td>E877 Relevance Location Latitude8, Longitude8 and Relevance Text8 are not accepted. Relevance Location has to be set as Dynamic in the Pass Template</td>
+<td>E507 Invalid 'start_date'/'end_date' format</td>
+<td>E877 'rellatitude8', 'relongitude8' and 'reltext8' are not accepted. Relevance Location8 has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
-<td>E508 Invalid &#8216;start_date&#8217;/'end_date&#8217; format</td>
-<td>E878 Relevance Location Latitude9, Longitude9 and Relevance Text9 are not accepted. Relevance Location has to be set as Dynamic in the Pass Template</td>
+<td>E508 Invalid 'start_date'/'end_date' format</td>
+<td>E878 'rellatitude9', 'relongitude9' and 'reltext9' are not accepted. Relevance Location9 has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E509 Lookup period is too long</td>
-<td>E879 Relevance Location Latitude10, Longitude10 and Relevance Text10 are not accepted. Relevance Location has to be set as Dynamic in the Pass Template</td>
+<td>E879 'rellatitude10', 'relongitude10' and 'reltext10' are not accepted. Relevance Location10 has to be set as Dynamic in the Pass Template</td>
 </tr>
 <tr>
 <td>E510 Lookup too frequent (you need to set time between the lookups)</td>
-<td>E880 Relevance Location Latitude1 value is invalid</td>
+<td>E880 'rellatitude1' value is invalid</td>
 </tr>
 <tr>
-<td>E620 The &#8216;mmsid&#8217; is required</td>
-<td>E881 Relevance Location Latitude2 value is invalid</td>
+<td>E620 The 'mmsid' is required</td>
+<td>E881 'rellatitude2' value is invalid</td>
 </tr>
 <tr>
-<td>E621 The &#8216;to&#8217; is required</td>
-<td>E882 Relevance Location Latitude3 value is invalid</td>
+<td>E621 The 'to' is required</td>
+<td>E882 'rellatitude3' value is invalid</td>
 </tr>
 <tr>
-<td>E623 The &#8216;to&#8217; field can contain up to 100 numbers</td>
-<td>E883 Relevance Location Latitude4 value is invalid</td>
+<td>E623 The 'to' field can contain up to 100 numbers</td>
+<td>E883 'rellatitude4' value is invalid</td>
 </tr>
 <tr>
-<td>E624 The &#8216;tocampaign&#8217; is required</td>
-<td>E884 Relevance Location Latitude5 value is invalid</td>
+<td>E624 The 'tocampaign' is required</td>
+<td>E884 'rellatitude5' value is invalid</td>
 </tr>
 <tr>
 <td>E626 Content unavailable. Encoding in progress, try again later.</td>
-<td>E885 Relevance Location Latitude6 value is invalid</td>
+<td>E885 'rellatitude6' value is invalid</td>
 </tr>
 <tr>
 <td>E628 Operator Not supported</td>
-<td>E886 Relevance Location Latitude7 value is invalid</td>
+<td>E886 'rellatitude7' value is invalid</td>
 </tr>
 <tr>
 <td>E629 Unrecognized content type</td>
-<td>E887 Relevance Location Latitude8 value is invalid</td>
+<td>E887 'rellatitude8' value is invalid</td>
 </tr>
 <tr>
-<td>E630 The &#8216;databaseid&#8217; is required</td>
-<td>E888 Relevance Location Latitude9 value is invalid</td>
+<td>E630 The 'databaseid' is required</td>
+<td>E888 'rellatitude9' value is invalid</td>
 </tr>
 <tr>
-<td>E631 The &#8216;barcodeid&#8217; is required</td>
-<td>E889 Relevance Location Latitude10 value is invalid</td>
+<td>E631 The 'barcodeid' is required</td>
+<td>E889 'rellatitude10' value is invalid</td>
 </tr>
 <tr>
-<td>E632 Invalid &#8216;databaseid&#8217;</td>
-<td>E890 Relevance Location Longitude1 value is invalid</td>
+<td>E632 Invalid 'databaseid'</td>
+<td>E890 'rellongitude1' value is invalid</td>
 </tr>
 <tr>
 <td>E633 This MMS does not contain barcode object</td>
-<td>E891 Relevance Location Longitude2 value is invalid</td>
+<td>E891 'rellongitude2' value is invalid</td>
 </tr>
 <tr>
-<td>E640 The &#8216;mmsinboxid&#8217; is required</td>
-<td>E892 Relevance Location Longitude3 value is invalid</td>
+<td>E640 The 'mmsinboxid' is required</td>
+<td>E892 'rellongitude3' value is invalid</td>
 </tr>
 <tr>
 <td>E641 Invalid MMS Inbox ID</td>
-<td>E893 Relevance Location Longitude4 value is invalid</td>
+<td>E893 'rellongitude4' value is invalid</td>
 </tr>
 <tr>
 <td>E642 MMS Inbox content is empty.</td>
-<td>E894 Relevance Location Longitude5 value is invalid</td>
+<td>E894 'rellongitude5' value is invalid</td>
 </tr>
 <tr>
 <td>E643 Could not clean up MMS Inbox content.</td>
-<td>E895 Relevance Location Longitude6 value is invalid</td>
+<td>E895 'rellongitude6' value is invalid</td>
 </tr>
 <tr>
-<td>E712 The &#8216;text&#8217; is required</td>
-<td>E896 Relevance Location Longitude7 value is invalid</td>
+<td>E712 The 'text' is required</td>
+<td>E896 'rellongitude7' value is invalid</td>
 </tr>
 <tr>
 <td>E713 There is billing problem on your account</td>
-<td>E897 Relevance Location Longitude8 value is invalid</td>
+<td>E897 'rellongitude8' value is invalid</td>
 </tr>
 <tr>
-<td>E714 Missing/Invalid CampaignID</td>
-<td>E898 Relevance Location Longitude9 value is invalid</td>
+<td>E714 Missing/Invalid 'campaignid'</td>
+<td>E898 'rellongitude9' value is invalid</td>
 </tr>
 <tr>
 <td>E715 Number is not subscribed to this campaign</td>
-<td>E899 Relevance Location Longitude10 value is invalid</td>
+<td>E899 'rellongitude10' value is invalid</td>
 </tr>
 <tr>
-<td>E801 &#8216;passTemplateID&#8217; is required.</td>
-<td>E901 The &#8216;mobile&#8217; is required</td>
+<td>E801 'passtemplateid' is required.</td>
+<td>E901 The 'mobile' is required</td>
 </tr>
 <tr>
-<td>E802 Invalid &#8216;PassTemplateID&#8217;. Pass template is either deleted or do not belong to this user.</td>
-<td>E902 The &#8216;campaignid&#8217; is required</td>
+<td>E802 Invalid 'passtemplateid'. Pass template is either deleted or do not belong to this user.</td>
+<td>E902 The 'campaignid' is required</td>
 </tr>
 <tr>
-<td>E803 &#8216;BarcodeValue&#8217; is required.</td>
-<td>E903 Invalid campaignid</td>
+<td>E803 'barcodevalue' is required.</td>
+<td>E903 Invalid 'campaignid'</td>
 </tr>
 <tr>
-<td>E804 &#8216;Email&#8217; is invalid.</td>
+<td>E804 'email' is invalid.</td>
 <td>E904 Could not subscribe this number</td>
 </tr>
 <tr>
-<td>E805 &#8216;Phone&#8217; is invalid.</td>
+<td>E805 'Phone' is invalid.</td>
 <td>E905 Could not unsubscribe this number</td></tr>
 <tr>
-<td>E806 &#8216;PassDataID&#8217; was not created. Internal error occurred.</td>
-<td>E911 The &#8216;email&#8217; is required</td>
+<td>E806 'passdataid' was not created. Internal error occurred.</td>
+<td>E911 The 'email' is required</td>
 </tr>
 <tr>
-<td>E807 &#8216;PassDataID&#8217; is required.</td>
-<td>E912 Invalid campaignid</td>
+<td>E807 'passdataid' is required.</td>
+<td>E912 Invalid 'campaignid'</td>
 </tr>
 <tr>
-<td>E808 Invalid &#8216;PassDataID&#8217;. Pass is either deleted or does not belong to this user.</td>
-<td>E913 Could not subscribe this email</td>
+<td>E808 Invalid 'passdataid'. Pass is either deleted or does not belong to this user.</td>
+<td>E913 Could not subscribe this 'email'</td>
 </tr>
 <tr>
 <td>E809 Pass was not updated. Internal error occured.</td>
-<td>E914 Could not unsubscribe this email</td>
+<td>E914 Could not unsubscribe this 'email'</td>
 </tr>
 <tr>
-<td>E915 Email was previously opt-out by this subscriber/email address.</td>
-<td>E916 Email was previously bounce-back on sending to this subscriber/email address.</td>
+<td>E915 This 'email' previously opted out of this or other email campaigns owned by this account/user.</td>
+<td>E916 Sending to this 'email' was previously a bounce-back.</td>
 </tr>
 <tr>
-<td>E917 Email address/subscriber reported Emails from this account/campaign/email-server as spam.</td>
-<td>E918 Email was opt-out by this account/API user</td>
+<td>E917 This 'email' has filed a SPAM complaint on one or more email campaigns owned by this account/user.</td>
+<td>E918 This 'email' was previously opted out by this account/user.</td>
 </tr>
 </tbody>
 </table>
@@ -333,52 +333,52 @@
 <table class="toc" id="toc" style="font-size:11px;">
 <tbody>
 <tr>
-<td>E001 &#8211; encoding of mobile video failed</td>
+<td>E001 - encoding of mobile video failed</td>
 </tr>
 <tr>
-<td>E002 &#8211; encoding of MMS audio failed</td>
+<td>E002 - encoding of MMS audio failed</td>
 </tr>
 <tr>
-<td>E003 &#8211; encoding of MMS video failed</td>
+<td>E003 - encoding of MMS video failed</td>
 </tr>
 <tr>
-<td>E012 &#8211; encoding of MMS audio failed</td>
+<td>E012 - encoding of MMS audio failed</td>
 </tr>
 <tr>
-<td>E013 &#8211; encoding of MMS video failed</td>
+<td>E013 - encoding of MMS video failed</td>
 </tr>
 <tr>
-<td>E101 &#8211; Error occured. Impossible to send MMS</td>
+<td>E101 - Error occured. Impossible to send MMS</td>
 </tr>
 <tr>
-<td>N003 &#8211; content was stored / encoded correctly</td>
+<td>N003 - content was stored / encoded correctly</td>
 </tr>
 <tr>
-<td>N013 &#8211; content was stored / encoded correctly and sending was triggered</td>
+<td>N013 - content was stored / encoded correctly and sending was triggered</td>
 </tr>
 <tr>
-<td>N101 &#8211; when content sending started</td>
+<td>N101 - when content sending started</td>
 </tr>
 <tr>
-<td>N102 &#8211; when we get the Delivery report with either success or error</td>
+<td>N102 - when we get the Delivery report with either success or error</td>
 </tr>
 <tr>
-<td>N301 &#8211; number subscribed</td>
+<td>N301 - number subscribed</td>
 </tr>
 <tr>
-<td>N302 &#8211; number unsubscribed</td>
+<td>N302 - number unsubscribed</td>
 </tr>
 <tr>
-<td>N801 &#8211; Pass was generated succesfully.</td>
+<td>N801 - Pass was generated succesfully.</td>
 </tr>
 <tr>
-<td>N802 &#8211; Some error occurred. Pass generation failed.</td>
+<td>N802 - Some error occurred. Pass generation failed.</td>
 </tr>
 <tr>
-<td>N803 &#8211; Maximum limit for pass generation reached.</td>
+<td>N803 - Maximum limit for pass generation reached.</td>
 </tr>
 <tr>
-<td>N811 &#8211; User Account do not have enough credits to generate the pass.</td>
+<td>N811 - User Account do not have enough credits to generate the pass.</td>
 </tr>
 </tbody>
 </table>
@@ -1130,7 +1130,7 @@ message</td>
 <td>2</td>
 <td>815</td>
 <td>no</td>
-<td>Message Delivery Error &#8211; Message submitted to but not acknowledged by carrier</td>
+<td>Message Delivery Error - Message submitted to but not acknowledged by carrier</td>
 </tr>
 <tr>
 <td>2</td>
@@ -1214,7 +1214,7 @@ message</td>
 <td>2</td>
 <td>2015</td>
 <td>no</td>
-<td>Transaction failed: Wireless subscriber&#8217;s account is deactivated</td>
+<td>Transaction failed: Wireless subscriber's account is deactivated</td>
 </tr>
 <tr>
 <td>2</td>
@@ -1268,7 +1268,7 @@ message</td>
 <td>2</td>
 <td>2024</td>
 <td>no</td>
-<td>Transaction failed: Wireless subscriber&#8217;s account closed, suspended or locked.</td>
+<td>Transaction failed: Wireless subscriber's account closed, suspended or locked.</td>
 </tr>
 <tr>
 <td>2</td>
@@ -1428,7 +1428,7 @@ OpenMarket</td>
 <td>2050</td>
 <td>no</td>
 <td>Transaction failed: The transaction has been denied by the<br />
-carrier&#8217;s billing system</td>
+carrier's billing system</td>
 </tr>
 <tr>
 <td>2</td>
@@ -1464,7 +1464,7 @@ carrier&#8217;s billing system</td>
 <td>2</td>
 <td>2100</td>
 <td>no</td>
-<td>Invalid request&#8211;&lt;request parameter&gt; is missing</td>
+<td>Invalid request-&lt;request parameter&gt; is missing</td>
 </tr>
 <tr>
 <td>2</td>
