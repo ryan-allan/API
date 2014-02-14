@@ -60,10 +60,9 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 
 <strong>MMS MT (Binary)</strong>
 <p><strong>Synopsis:</strong> In binary sending, we deliver a Postback notification called &#8220;N101&#8243; immediately after we begin to process the MMS. Upon receiving Delivery Report (DLR), the system generates Postback notification &#8220;N102&#8243; with the handset name. N101 and N102 notifications are linked by TRACKINGID.<p>
-<strong><p>These postbacks will contain the following nodes:</p></strong>
-
+<strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
-SENTAS &#8211; this node indicate if MMS was delivered as MMS (binary delivery) or SMS (xHTML). For binary delivery it will always be MMS<BR/>
+SENTAS &#8211; indicates if the MMS was delivered as MMS (binary delivery) or SMS (xHTML). Binary delivery will always be MMS<BR/>
 MMSID &#8211; ID of the MMS<BR/>
 TO &#8211; MMS receiver<BR/>
 SPID &#8211; carrier ID &#8211; please check API documentation Appendinx E<BR/>
@@ -74,38 +73,42 @@ STATUS &#8211; For N101 notification status can be "Message Sent". For N102 noti
 STATUSDETAILS &#8211; For N101 notification when status is "Message Failed" postback will contain this node with error details.<BR/>
 AGGREGATORID &#8211; Only in N102 notification, contain Aggregator ID of the sending.<BR/>
 
-<p><strong> N101 Example:</strong></p>
-<p><small><code>&lt;?xml version='1.0'?&gt;<br>
-&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" <br>
-xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;<br>
-&lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;<br />
-&lt;CODE&gt;N101&lt;/CODE&gt;<br />
-&lt;SENTAS&gt;MMS&lt;/SENTAS&gt;<br />
-&lt;STATUS&gt;Message Sent&lt;/STATUS&gt;<br />
-&lt;MMSID&gt;39597&lt;/MMSID&gt;<br />
-&lt;TO&gt;16501112222&lt;/TO&gt;<br />
-&lt;TRACKINGID&gt;TU1TXzU5Nzg3OQ==&lt;/TRACKINGID&gt;<br />
-&lt;SPID&gt;0001570&lt;/SPID&gt;<br />
-&lt;TIMESTAMP&gt;2012-06-07T07:27:29-05:00&lt;/TIMESTAMP&gt;<br />
-&lt;/POSTBACK&gt;<br />
-</code></small></p>
-<p><strong>N102 Example:</strong></p>
-<p><small><code>&lt;?xml version='1.0'?&gt;<br>
-&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" <br>
-xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;<br>
-&lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;<br />
-&lt;CODE&gt;N102&lt;/CODE&gt;<br />
-&lt;SENTAS&gt;MMS&lt;/SENTAS&gt;<br />
-&lt;STATUS&gt;Message Sent/Delivered&lt;/STATUS&gt;<br />
-&lt;MMSID&gt;39597&lt;/MMSID&gt;<br />
-&lt;TO&gt;16501112222&lt;/TO&gt;<br />
-&lt;TRACKINGID&gt;TU1TXzU5Nzg3OQ==&lt;/TRACKINGID&gt;<br />
-&lt;SPID&gt;0001570&lt;/SPID&gt;<br />
-&lt;TIMESTAMP&gt;2012-06-07T07:27:34-05:00&lt;/TIMESTAMP&gt;<br />
-&lt;HANDSET&gt;motol7c&lt;/HANDSET&gt;<br />
-&lt;AGGREGATORID&gt;11529-64807-97508-73852-97658&lt;/AGGREGATORID&gt;<br />
-&lt;/POSTBACK&gt;<br />
-</code></small></p>
+<p><strong>The N101 anatomy:</strong></p>
+<pre>
+&lt;?xml version='1.0'?&gt;
+&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
+  &lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;
+  &lt;CODE&gt;N101&lt;/CODE&gt;
+  &lt;SENTAS&gt;MMS&lt;/SENTAS&gt;
+  &lt;STATUS&gt;Message Sent&lt;/STATUS&gt;
+  &lt;MMSID&gt;39597&lt;/MMSID&gt;
+  &lt;TO&gt;16501112222&lt;/TO&gt;
+  &lt;TRACKINGID&gt;TU1TXzU5Nzg3OQ==&lt;/TRACKINGID&gt;
+  &lt;SPID&gt;0001570&lt;/SPID&gt;
+  &lt;TIMESTAMP&gt;2012-06-07T07:27:29-05:00&lt;/TIMESTAMP&gt;
+&lt;/POSTBACK&gt;
+</pre>
+
+<p><strong>The N102 anatomy:</strong></p>
+<pre>
+&lt;?xml version='1.0'?&gt;
+&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
+  &lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;
+  &lt;CODE&gt;N102&lt;/CODE&gt;
+  &lt;SENTAS&gt;MMS&lt;/SENTAS&gt;
+  &lt;STATUS&gt;Message Sent/Delivered&lt;/STATUS&gt;
+  &lt;MMSID&gt;39597&lt;/MMSID&gt;
+  &lt;TO&gt;16501112222&lt;/TO&gt;
+  &lt;TRACKINGID&gt;TU1TXzU5Nzg3OQ==&lt;/TRACKINGID&gt;
+  &lt;SPID&gt;0001570&lt;/SPID&gt;
+  &lt;TIMESTAMP&gt;2012-06-07T07:27:34-05:00&lt;/TIMESTAMP&gt;
+  &lt;HANDSET&gt;motol7c&lt;/HANDSET&gt;
+  &lt;AGGREGATORID&gt;11529-64807-97508-73852-97658&lt;/AGGREGATORID&gt;
+&lt;/POSTBACK&gt;
+</pre>
+
 
 <p><strong>b) The XHTML Method</strong></p>
 <p>In this method we deliver MMS as SMS link to the content, we send one Postback N101 notifying that we started to process the message. 
