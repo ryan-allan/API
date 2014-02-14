@@ -68,13 +68,50 @@ the MMS MO moderation panel then the postback notifictions will only be sent upo
 &lt;/POSTBACK&gt;
 </pre>
 
-<p><a name="the_xml_bundle"></a> <strong>The MMS MO XML Bundle:</strong></p>
-<p>The XML bundle has the following anatomy:</p>
+<h2>Types of MMS MO:</h2>
+
+<strong>SMS MO Received</strong>
+<p><strong>Synopsis: </strong>This Postback provides a notification when SMS MO is received. This postback will contain following nodes:</p>
+
+<p>CODE, ORIGIN</p>
+<p>FROM &#8211; SMS sender mobile number</p>
+<p>TO &#8211; shortcode the SMS was sent to</p>
+<p>TEXT &#8211; this is actuall text that was sent by the sender</p>
+<p>RECEIVED &#8211; timestamp of the SMS received by our server</p>
+<p><strong>This postback has the following anatomy:</strong></p>
+
+<pre>
+&lt;?xml version='1.0'?&gt;
+&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.skycore.com/schema/postback.xsd"&gt;
+&lt;ORIGIN&gt;SMS_MO&lt;/ORIGIN&gt;
+&lt;CODE&gt;N211&lt;/CODE&gt;
+&lt;FROM&gt;16311112222&lt;/FROM&gt;
+&lt;TO&gt;60856&lt;/TO&gt;
+&lt;TEXT&gt;MYKEYCODE&lt;/TEXT&gt;
+&lt;RECEIVED&gt;2012-04-16T09:05:56-04:00&lt;/RECEIVED&gt;
+&lt;/POSTBACK&gt;
+</pre>
+
+
+<p><strong>MMS MO Received</strong></p>
+<p><strong>Synopsis: </strong>This Postback provides a notification when MMS MO is received. This postback will contain following nodes:</p>
+
+<p>CODE, ORIGIN</p>
+<p>NOTIFICATION &#8211; SMS sender mobile number</p>
+<p>FROM &#8211; tags contain the phone number, including the country code, of the sender.</p>
+<p>TO &#8211; tags contain the destination shortcode.</p>
+<p>KEYWORD &#8211; tags contain the keyword recognized that was passed in the MMS.</p>
+<p>TRACKINGID &#8211; tags contain a tracking ID, which contains the ID we've assigned this MMS MO on our system.</p>
+<p>SPID &#8211; tags contain the SPID of the sender's carrier.</p>
+<p>TIMESTAMP &#8211; tags contain the timestamp that our system received the MMS MO.</p>
+<p>CONTENT &#8211; contains the file nodes sent in the MMS MO</p>
+<p>FILE &#8211; contains a single URL to a picture, video, audio or text file sent in the MMS MO</p>
+<p><strong>This postback has the following anatomy:</strong></p>
 <pre>
 &lt;POSTBACK&gt;
 &lt;NOTIFICATION&gt;
-&lt;ORIGIN>MMS_MO&lt;/ORIGIN&gt;
-&lt;CODE>N401&lt;/CODE&gt;
+&lt;ORIGIN&gt;MMS_MO&lt;/ORIGIN&gt;
+&lt;CODE&gt;N401&lt;/CODE&gt;
 &lt;FROM&gt;13217949521&lt;/FROM&gt;
 &lt;TO&gt;74700&lt;/TO&gt;
 &lt;KEYWORD&gt;all&lt;/KEYWORD>
@@ -100,22 +137,6 @@ The URL points to the location of the content on our servers. For those developi
 URL, you may choose to download/store these content files for whatever purpose you see fit. You may also choose to store
 the URLs for download at a future time.</p>
 
-<p><a name="breaking_down_each_notification"></a> <strong>Breaking down Each Notification</strong></p>
-<p>Many of the tags are self-explanatory.</p>
-<ul>
-<li>&lt;FROM&gt;&lt;/FROM&gt; tags contain the phone number, including the country code, of the sender.</li>
-<li>&lt;TO&gt;&lt;/TO&gt; tags contain the destination shortcode. In the above example, shortcode is 86717.</li>
-<li>&lt;KEYWORD&gt;&lt;/KEYWORD&gt; tags contain the keyword recognized that was passed in the MMS.</li>
-<li>&lt;TRACKINGID&gt;&lt;/TRACKINGID&gt; tags contain a tracking ID, which contains the ID we&#8217;ve assigned this MMS 
-MO on our system.</li>
-<li>&lt;RECEIVED&gt;&lt;/RECEIVED&gt; tags contain the timestamp when the SMS MO was received by our side.</li>
-<li>&lt;SPID&gt;&lt;/SPID&gt; tags contain the SPID of the sender&#8217;s carrier. In the above example, 000165 
-corresponds to the mobile carrier Sprint. For the full list of SPIDs and their corresponding carriers, please refer to 
-the SPID reference table in the last section.</li>
-<li>&lt;TIMESTAMP&gt;&lt;/TIMESTAMP&gt; tags contain the timestamp that our system received the MMS MO. This is different
-from the &#8216;created&#8217; attribute under the notification tag, which represents the time we sent the message to 
-your postback URL.</li>
-</ul>
 <p><a name="setting_your_postback_url"></a> <strong>Setting your Postback URL:</strong></p>
 <p>You can set your postback URL by logging into your account and going to &#8216;Account&#8217; tab and selecting the 
 &#8216;API settings&#8217; button. Enter the URL under the setting &#8216;API Postback URL&#8217; and make sure that the &#8216;enabled&#8217; and &#8216;MMS MO postback&#8217; checkboxes are selected. Hit the save button and any MMS MO campaign you&#8217;ve created with &#8216;Postback Processing&#8217; enabled will start sending messages to your URL in the XML format shown above.</p>
