@@ -15,6 +15,7 @@ the MMS MO moderation panel then the postback notifictions will only be sent upo
 <p><a name="the_xml_bundle1"></a> <strong>The SMS MO XML Bundle:</strong></p>
 <p>The XML bundle has the following anatomy:</p>
 <p>
+<pre>
 &lt;POSTBACK&gt;<br />
 &lt;NOTIFICATION id=&#8221;264&#8243; created=&#8221;2011-09-28 17:31:02.835577-04&#8243;&gt;<br />
 &lt;ORIGIN&gt;SMS_MO&lt;/ORIGIN&gt;<br />
@@ -27,6 +28,7 @@ the MMS MO moderation panel then the postback notifictions will only be sent upo
 &lt;/BODY&gt;<br />
 &lt;/NOTIFICATION&gt;<br />
 &lt;/POSTBACK&gt;</p>
+</pre>
 <p><a name="the_xml_bundle"></a> <strong>The MMS MO XML Bundle:</strong></p>
 <p>The XML bundle has the following anatomy:</p>
 <p>&lt;POSTBACK&gt;<br />
