@@ -20,7 +20,7 @@ the MMS MO moderation panel then the postback notifictions will only be sent upo
 
 
 <strong>The SMS MO</strong>
-<p><strong>Synopsis: </strong>This Postback provides a notification when SMS MO is received.</p>
+<p><strong>Synopsis: </strong>This postback provides a notification when SMS MO is received.</p>
 <strong><p>This postback will contain following nodes:</p></strong>
 
 CODE, ORIGIN<BR/>
@@ -43,7 +43,7 @@ RECEIVED &#8211; timestamp of the SMS received by our server<BR/>
 
 
 <p><strong>The MMS MO</strong></p>
-<p><strong>Synopsis: </strong>This Postback provides a notification when MMS MO is received.</p> 
+<p><strong>Synopsis: </strong>This postback provides a notification when MMS MO is received.</p> 
 <strong><p>This postback will contain following nodes:</p></strong>
 
 CODE, ORIGIN<BR/>
