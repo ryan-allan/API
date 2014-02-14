@@ -5,7 +5,7 @@
 This document will provide a technical description of the Subscribe and Unsubscribe postbacks API for phone and email. Briefly, this API allows those with subscribe and unsubscribe postbacks enabled to generate and forward postbacks to their server whenever an individual subscribes or unsubscribes from a mobile or email campaign.
 
 <strong>Mobile Subscribe</strong>
-<p><strong>Synopsis:</strong> This Postback notification subscribes a phone number to a specific campaign.</p>
+<p><strong>Synopsis:</strong> This postback notification subscribes a phone number to a specific campaign.</p>
 <strong><p>This postback will contain following nodes:</p></strong>
 CODE, ORIGIN<BR/>
 MOBILE &#8211; subscriber&#8217;s mobile<BR/>
@@ -25,7 +25,7 @@ SUBID &#8211; subscription ID<BR/>
 </pre>
 
 <strong>Mobile Unsubscribe</strong>
-<p><strong>Synopsis:</strong> This Postback notification unsubscribes a phone number from a specific campaign.</p>
+<p><strong>Synopsis:</strong> This postback notification unsubscribes a phone number from a specific campaign.</p>
 <strong><p>This postback will contain following nodes:</p></strong>
 CODE, ORIGIN<BR/>
 MOBILE &#8211; subscriber&#8217;s mobile<BR/>
@@ -45,7 +45,7 @@ SUBID &#8211; subscription ID<BR/>
 </pre>
 
 <strong>Email Subscribe</strong>
-<p><strong>Synopsis:</strong> This Postback notification subscribes an email to a specific campaign.</p>
+<p><strong>Synopsis:</strong> This postback notification subscribes an email to a specific campaign.</p>
 <strong><p>This postback will contain following nodes:</p></strong>
 CODE, ORIGIN<BR/>
 EMAIL &#8211; subscriber&#8217;s email<BR/>
@@ -65,7 +65,7 @@ SUBID &#8211; subscription ID<BR/>
 </pre>
 
 <strong>Email Unsubscribe</strong>
-<p><strong>Synopsis:</strong> This Postback notification unsubscribes an email from a specific campaign.</p>
+<p><strong>Synopsis:</strong> This postback notification unsubscribes an email from a specific campaign.</p>
 <strong><p>This postback will contain following nodes:</p></strong>
 CODE, ORIGIN<BR/>
 EMAIL &#8211; subscriber&#8217;s email<BR/>
