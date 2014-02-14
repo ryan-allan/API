@@ -2,13 +2,10 @@
 <h2>Passes&nbsp;Postback</h2>
 <strong>Brief Overview:</strong>
 This document will provide a technical description of the pass postback API. 
-This API allows you to send pass information back to your server whenever pass generation is triggered.</p>
+Having this API enabled allows you to send pass information back to your server whenever pass generation is triggered via any pass generated in your account. </p>
 
 <strong>Pass-Specific URL:</strong>
 You can set your pass postback URL by logging into your account and going to &#8216;Account&#8217; tab and selecting the &#8216;API settings&#8217; button. Enter the URL under the setting &#8216;Pass Postback URL&#8217; and make sure that the URL is &#8216;working&#8217;. Also, make sure &#8216;Pass Generate Postback&#8217; setting is ON. Every pass generation triggered will start sending messages to your URL in the XML format shown above.
-
-<strong>Pass Generation Information:</strong>
-If the generate pass postback API is enabled, then you will receive postbacks for every pass generated in your account.
 
 <p><a name="the_xml_bundle1"></a> <strong>Generate Pass Bundle:</strong></p>
 <strong>Synopsis:</strong> This postback provides a bundle of pass generation postbacks.
