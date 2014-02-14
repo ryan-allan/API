@@ -41,7 +41,7 @@
     <ul>
     <li><a href="CONTENTS/POSTBACKS/POSTBACK_NOTIFICATION_SYSTEM.md">SMS/MMS MO (Mobile Originated) Postbacks</a></li>
     <li><a href="CONTENTS/POSTBACKS/INCOMING_SMS+MMS_POSTBACK.md">SMS/MMS MT (Mobile Terminated) Postbacks</a> </li>
-    <li><a href="CONTENTS/POSTBACKS/PASS_POSTBACK.md">Pass Postbacks</a> </li>
+    <li><a href="CONTENTS/POSTBACKS/PASS_POSTBACK.md">Pass Generation Postbacks</a> </li>
     </ul>
     <br/>
     <li> <a href="CONTENTS/APPENDIX/API_APPENDIX.md">APPENDIX</a> </li>
