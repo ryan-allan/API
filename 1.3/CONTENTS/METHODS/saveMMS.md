@@ -14,8 +14,8 @@ Once the MMS is saved it can be utilized by other functions through the MMSID re
     &lt;SLIDE&gt;
     	&lt;IMAGE&gt;&lt;URL&gt;URL&lt;/URL&gt;&lt;/IMAGE&gt;
     	&lt;AUDIO&gt;&lt;URL&gt;URL&lt;/URL&gt;&lt;/AUDIO&gt;
-    	&lt;DURATION&gt;Duration In Seconds&lt;/DURATION&gt;
     	&lt;TEXT&gt;Plain Text&lt;/TEXT&gt;
+    	&lt;DURATION&gt;Duration In Seconds&lt;/DURATION&gt;
     &lt;/SLIDE&gt;
     &lt;SLIDE&gt;
     	...
