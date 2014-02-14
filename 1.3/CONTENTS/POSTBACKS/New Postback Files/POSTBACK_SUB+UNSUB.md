@@ -6,7 +6,7 @@ This document will provide a technical description of the Subscribe and Unsubscr
 
 <strong>Mobile Subscribe</strong>
 <p><strong>Synopsis:</strong> This postback notification subscribes a phone number to a specific campaign.</p>
-<strong><p>This postback will contain following nodes:</p></strong>
+<strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
 MOBILE &#8211; subscriber&#8217;s mobile<BR/>
 CAMPAIGNID &#8211; ID of the campaign<BR/>
@@ -26,7 +26,7 @@ SUBID &#8211; subscription ID<BR/>
 
 <strong>Mobile Unsubscribe</strong>
 <p><strong>Synopsis:</strong> This postback notification unsubscribes a phone number from a specific campaign.</p>
-<strong><p>This postback will contain following nodes:</p></strong>
+<strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
 MOBILE &#8211; subscriber&#8217;s mobile<BR/>
 CAMPAIGNID &#8211; ID of the campaign<BR/>
@@ -46,7 +46,7 @@ SUBID &#8211; subscription ID<BR/>
 
 <strong>Email Subscribe</strong>
 <p><strong>Synopsis:</strong> This postback notification subscribes an email to a specific campaign.</p>
-<strong><p>This postback will contain following nodes:</p></strong>
+<strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
 EMAIL &#8211; subscriber&#8217;s email<BR/>
 CAMPAIGNID &#8211; ID of the campaign<BR/>
@@ -66,7 +66,7 @@ SUBID &#8211; subscription ID<BR/>
 
 <strong>Email Unsubscribe</strong>
 <p><strong>Synopsis:</strong> This postback notification unsubscribes an email from a specific campaign.</p>
-<strong><p>This postback will contain following nodes:</p></strong>
+<strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
 EMAIL &#8211; subscriber&#8217;s email<BR/>
 CAMPAIGNID &#8211; ID of the campaign<BR/>
