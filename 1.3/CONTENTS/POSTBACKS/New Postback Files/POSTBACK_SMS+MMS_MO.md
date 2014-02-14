@@ -14,20 +14,19 @@ HTTP Posts on URL of your choice for each MMS MO received on the MMS MO Keyword.
 the MMS MO moderation panel then the postback notifictions will only be sent upon manual approval by the moderator.</p>
 <p><a name="the_xml_bundle1"></a> <strong>The SMS MO XML Bundle:</strong></p>
 <p>The XML bundle has the following anatomy:</p>
-<p>
 <pre>
-&lt;POSTBACK&gt;<br />
-&lt;NOTIFICATION id=&#8221;264&#8243; created=&#8221;2011-09-28 17:31:02.835577-04&#8243;&gt;<br />
-&lt;ORIGIN&gt;SMS_MO&lt;/ORIGIN&gt;<br />
-&lt;CODE&gt;N211&lt;/CODE&gt;<br />
-&lt;BODY&gt;<br />
-&lt;FROM&gt;15552312102&lt;/FROM&gt;<br />
-&lt;TO&gt;86717&lt;/TO&gt;<br />
-&lt;KEYWORD&gt;STOP&lt;/KEYWORD&gt;<br />
-&lt;RECEIVED&gt;2011-09-28 17:31:02.278751-04&lt;/RECEIVED&gt;<br />
-&lt;/BODY&gt;<br />
-&lt;/NOTIFICATION&gt;<br />
-&lt;/POSTBACK&gt;</p>
+&lt;POSTBACK&gt;
+&lt;NOTIFICATION id=&#8221;264&#8243; created=&#8221;2011-09-28 17:31:02.835577-04&#8243;&gt;
+&lt;ORIGIN&gt;SMS_MO&lt;/ORIGIN&gt;
+&lt;CODE&gt;N211&lt;/CODE&gt;
+&lt;BODY&gt;
+&lt;FROM&gt;15552312102&lt;/FROM&gt;
+&lt;TO&gt;86717&lt;/TO&gt;
+&lt;KEYWORD&gt;STOP&lt;/KEYWORD&gt;
+&lt;RECEIVED&gt;2011-09-28 17:31:02.278751-04&lt;/RECEIVED&gt;
+&lt;/BODY&gt;
+&lt;/NOTIFICATION&gt;
+&lt;/POSTBACK&gt;
 </pre>
 <p><a name="the_xml_bundle"></a> <strong>The MMS MO XML Bundle:</strong></p>
 <p>The XML bundle has the following anatomy:</p>
