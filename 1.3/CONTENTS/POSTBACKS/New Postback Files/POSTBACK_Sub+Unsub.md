@@ -1,5 +1,9 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/1.3/CONTENTS/POSTBACKS/New%20Postback%20Files/POSTBACK_SYSTEM_OVERVIEW.md">Postback System Overview</a>
 
+<h2>Subscribe and Unsubscribe Postbacks</h2>
+<div id="page-content"><strong>Brief Overview:</strong>
+This document will provide a technical description of the Subscribe and Unsubscribe postbacks API for phone and email. Briefly, this API allows those with subscribe and unsubscribe postbacks enabled to generate and forward postbacks to their server whenever an individual subscribes or unsubscribes from a mobile or email campaign.
+
 <p><strong>Group #3- Subscribe/Unsubscribe for Phone/Email</strong></p>
 <p><strong>a) Synopsis:</strong> This Postback notification subscribes a phone number to a specific campaign. Postback contain following nodes:</p>
 <p>CODE, ORIGIN</p>
