@@ -56,26 +56,26 @@ RECEIVED &#8211; timestamp of the SMS received by our server<BR/>
 
 <pre>
 &lt;POSTBACK&gt;
-&lt;NOTIFICATION id=&#8221;264&#8243; created=&#8221;2011-09-28 17:31:02.835577-04&#8243;&gt;
-&lt;ORIGIN&gt;SMS_MO&lt;/ORIGIN&gt;
-&lt;CODE&gt;N211&lt;/CODE&gt;
-&lt;BODY&gt;
-&lt;FROM&gt;15552312102&lt;/FROM&gt;
-&lt;TO&gt;86717&lt;/TO&gt;
-&lt;KEYWORD&gt;STOP&lt;/KEYWORD&gt;
-&lt;RECEIVED&gt;2011-09-28 17:31:02.278751-04&lt;/RECEIVED&gt;
-&lt;/BODY&gt;
-&lt;/NOTIFICATION&gt;
-&lt;NOTIFICATION id=&#8221;264&#8243; created=&#8221;2011-09-28 17:31:02.835577-04&#8243;&gt;
-&lt;ORIGIN&gt;SMS_MO&lt;/ORIGIN&gt;
-&lt;CODE&gt;N211&lt;/CODE&gt;
-&lt;BODY&gt;
-&lt;FROM&gt;15552312102&lt;/FROM&gt;
-&lt;TO&gt;86717&lt;/TO&gt;
-&lt;KEYWORD&gt;STOP&lt;/KEYWORD&gt;
-&lt;RECEIVED&gt;2011-09-28 17:31:02.278751-04&lt;/RECEIVED&gt;
-&lt;/BODY&gt;
-&lt;/NOTIFICATION&gt;
+  &lt;NOTIFICATION id=&#8221;264&#8243; created=&#8221;2011-09-28 17:31:02.835577-04&#8243;&gt;
+    &lt;ORIGIN&gt;SMS_MO&lt;/ORIGIN&gt;
+    &lt;CODE&gt;N211&lt;/CODE&gt;
+      &lt;BODY&gt;
+        &lt;FROM&gt;15552312102&lt;/FROM&gt;
+        &lt;TO&gt;86717&lt;/TO&gt;
+        &lt;KEYWORD&gt;STOP&lt;/KEYWORD&gt;
+        &lt;RECEIVED&gt;2011-09-28 17:31:02.278751-04&lt;/RECEIVED&gt;
+      &lt;/BODY&gt;
+  &lt;/NOTIFICATION&gt;
+  &lt;NOTIFICATION id=&#8221;264&#8243; created=&#8221;2011-09-28 17:31:02.835577-04&#8243;&gt;
+    &lt;ORIGIN&gt;SMS_MO&lt;/ORIGIN&gt;
+    &lt;CODE&gt;N211&lt;/CODE&gt;
+      &lt;BODY&gt;
+        &lt;FROM&gt;15552312102&lt;/FROM&gt;
+        &lt;TO&gt;86717&lt;/TO&gt;
+        &lt;KEYWORD&gt;STOP&lt;/KEYWORD&gt;
+        &lt;RECEIVED&gt;2011-09-28 17:31:02.278751-04&lt;/RECEIVED&gt;
+      &lt;/BODY&gt;
+  &lt;/NOTIFICATION&gt;
 ...
 &lt;/POSTBACK&gt;
 </pre>
@@ -98,20 +98,20 @@ FILE &#8211; contains a single URL to a picture, video, audio or text file sent 
 <p><strong>This postback has the following anatomy:</strong></p>
 <pre>
 &lt;POSTBACK&gt;
-&lt;NOTIFICATION&gt;
-&lt;ORIGIN&gt;MMS_MO&lt;/ORIGIN&gt;
-&lt;CODE&gt;N401&lt;/CODE&gt;
-&lt;FROM&gt;13217949521&lt;/FROM&gt;
-&lt;TO&gt;74700&lt;/TO&gt;
-&lt;KEYWORD&gt;all&lt;/KEYWORD>
-&lt;TRACKINGID&gt;MMS_MO_iLnCRrL6&lt;/TRACKINGID&gt;
-&lt;SPID&gt;0001470&lt;/SPID&gt;
-&lt;TIMESTAMP&gt;2014-02-03T11:19:49-05:00&lt;/TIMESTAMP&gt;
-&lt;CONTENT&gt;
-&lt;FILE&gt;URL of Content Here&lt;/FILE&gt;
-&lt;FILE&gt;URL of Content Here&lt;/FILE&gt;
-&lt;FILE&gt;URL of Content Here&lt;/FILE&gt;
-&lt;/CONTENT&gt;
-&lt;/NOTIFICATION&gt;
+  &lt;NOTIFICATION&gt;
+    &lt;ORIGIN&gt;MMS_MO&lt;/ORIGIN&gt;
+    &lt;CODE&gt;N401&lt;/CODE&gt;
+    &lt;FROM&gt;13217949521&lt;/FROM&gt;
+    &lt;TO&gt;74700&lt;/TO&gt;
+    &lt;KEYWORD&gt;all&lt;/KEYWORD>
+    &lt;TRACKINGID&gt;MMS_MO_iLnCRrL6&lt;/TRACKINGID&gt;
+    &lt;SPID&gt;0001470&lt;/SPID&gt;
+    &lt;TIMESTAMP&gt;2014-02-03T11:19:49-05:00&lt;/TIMESTAMP&gt;
+    &lt;CONTENT&gt;
+      &lt;FILE&gt;URL of Content Here&lt;/FILE&gt;
+      &lt;FILE&gt;URL of Content Here&lt;/FILE&gt;
+      &lt;FILE&gt;URL of Content Here&lt;/FILE&gt;
+    &lt;/CONTENT&gt;
+  &lt;/NOTIFICATION&gt;
 &lt;/POSTBACK&gt;
 </pre>
