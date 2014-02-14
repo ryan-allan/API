@@ -22,9 +22,12 @@
 
 <strong>Postback Groups</strong>
 <ul>
-<li>Our servers generate event-based postbacks which we divide into a few groups and subgroups.<li>
-
-
+<li>Our servers generate postbacks which contain event-based information and are divided into few groups and subgroups.<li>
+<ul>
+<li>SMS MT Sent</li>
+<li>SMS MT Delivered</li>
+<li>SMS MO</li>
+</ul>
 <p>ORIGIN &#8211; identifies origin of the postback</p>
 <p>CODE &#8211; identifies situation when postback is generated</p>
 <p><strong>Group #1- SMS</strong></p>
