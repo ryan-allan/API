@@ -16,6 +16,7 @@ your account.</p>
 <p>TEXT &#8211; this is actuall text that was sent by the sender</p>
 <p>RECEIVED &#8211; timestamp of the SMS received by our server</p>
 <p><strong>Postback Notification Example:</strong></p>
+<pre>
 &lt;?xml version='1.0'?&gt;
 &lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
@@ -26,7 +27,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 &lt;TEXT&gt;MYKEYCODE&lt;/TEXT&gt;
 &lt;RECEIVED&gt;2012-04-16T09:05:56-04:00&lt;/RECEIVED&gt;
 &lt;/POSTBACK&gt;
-
+</pre>
 
 <p><a name="the_xml_bundle1"></a> <strong>The SMS MO XML Bundle:</strong></p>
 
