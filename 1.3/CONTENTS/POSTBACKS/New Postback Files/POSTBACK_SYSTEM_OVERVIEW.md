@@ -25,8 +25,9 @@
 </ul>
 
 <strong>Postback Groups</strong>
-<a href="/1.3/README.md">Back to the Table of Contents</a>
-<a href="/1.3/README.md">Back to the Table of Contents</a>
-<a href="/1.3/README.md">Back to the Table of Contents</a>
-<a href="/1.3/README.md">Back to the Table of Contents</a>
-<a href="/1.3/README.md">Back to the Table of Contents</a>
+<ul>
+<li><a href="POSTBACK_GENERAL.md">General System Postbacks</a></li>
+<li><a href="POSTBACK_SMS+MMS_MO.md">SMS/MMS MO Postbacks</a></li>
+<li><a href="POSTBACK_SMS+MMS_MT.md">SMS/MMS MT Postbacks</a></li>
+<li><a href="POSTBACK_PASSES.md">Pass Generation Postbacks</a></li>
+</ul>
