@@ -37,7 +37,7 @@
     <li><a href="CONTENTS/METHODS/getPassEmailTemplate.md">getPassEmailTemplate</a></li>
     </ul>
     <br/>
-  <li><a href="CONTENTS/POSTBACKS/POSTBACK_NOTIFICATION_OVERVIEW.md">Postback Notifications</a></li>
+  <li><a href="CONTENTS/POSTBACKS/POSTBACK_SYSTEM_OVERVIEW.md">Postback Notifications</a></li>
     <ul>
     <li><a href="CONTENTS/POSTBACKS/POSTBACK_SMS+MMS_MO.md">SMS/MMS MO (Mobile Originated) Postbacks</a></li>
     <li><a href="CONTENTS/POSTBACKS/POSTBACK_SMS+MMS_MT.md">SMS/MMS MT (Mobile Terminated) Postbacks</a> </li>
