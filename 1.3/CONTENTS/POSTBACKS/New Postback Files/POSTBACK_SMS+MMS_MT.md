@@ -29,7 +29,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 &lt;/POSTBACK&gt;
 </pre>
 
-<strong>Mobile SMS Sent</strong>
+<strong>Mobile SMS Status</strong>
 <p><strong>Synopsis:</strong> This postback provides a notification about the status of an SMS.</p>
 <strong><p>This postback will contain following nodes:</p></strong>
 CODE, ORIGIN<BR/>
@@ -56,11 +56,11 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 &lt;/POSTBACK&gt;
 </pre>
 
-<p><strong>Group #2-MMS</strong></p>
+
 <p>For MMS, we have two methods for delivering content binary and xHTML. We send different Postbacks depending on which method is used.</p>
 <p><strong>a) The Binary Method</strong></p>
 <p>In binary sending, we deliver a Postback notification called &#8220;N101&#8243; immediately after we begin to process the MMS. Upon receiving Delivery Report (DLR), the system generates Postback notification &#8220;N102&#8243; with the handset name. 
-N101 and N102 notifications are linked by TRACKINGID. Postback contain following nodes:</p>
+N101 and N102 notifications are linked by TRACKINGID. These postbacks contain the following nodes:</p>
 <p>CODE, ORIGIN</p>
 <p>SENTAS &#8211; this node indicate if MMS was delivered as MMS (binary delivery) or SMS (xHTML). For binary delivery it will always be MMS</p>
 <p>MMSID &#8211; ID of the MMS</p>
