@@ -1,3 +1,4 @@
+<h2>SMS/MMS MT Postbacks</h2>
 <p><strong>Group #1- SMS</strong></p>
 <p><strong>a) Synopsis: </strong>This Postback provides a notification when the SMS is sent out from our server. Postback will contain following nodes:</p>
 <p>CODE, ORIGIN</p>
