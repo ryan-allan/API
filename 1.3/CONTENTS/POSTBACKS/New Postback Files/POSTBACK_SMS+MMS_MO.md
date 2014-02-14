@@ -7,7 +7,7 @@ This document will provide a technical description of the MMS/SMS MO postback AP
 A separate Postback URL specifically for SMS/MMS MO's(Mobile Originated) maybe be set via the API Settings tab of your account.  If it is not set, all postbacks will be sent to the Postback URL that is set.
 
 <strong>SMS MO General Information:</strong>
-To receive SMS MO postback notification you need to have that option enabled in your account. Once the SMS MO 
+To receive SMS MO postback notifications you need to have that option enabled in your account. Once the SMS MO 
 postback is enabled you will start receiving HTTP Posts on URL of your choice for each SMS MO received related to 
 your account.
 
