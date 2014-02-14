@@ -17,7 +17,6 @@ configure it within the particular MMS MO campaign.  Once the MMS MO postback is
 HTTP Posts on URL of your choice for each MMS MO received on the MMS MO Keyword. If you have (optionally) enabled 
 the MMS MO moderation panel then the postback notifictions will only be sent upon manual approval by the moderator.
 
-<h2>Types of SMS MO:</h2>
 
 <strong>SMS MO Received</strong>
 <p><strong>Synopsis: </strong>This Postback provides a notification when SMS MO is received.</p>
@@ -42,47 +41,6 @@ RECEIVED &#8211; timestamp of the SMS received by our server<BR/>
 &lt;/POSTBACK&gt;
 </pre>
 
-<strong>SMS MO Received Bundle</strong>
-<p><strong>Synopsis: </strong>This Postback provides a bundle of SMS MO Received postbacks.</p>
-<strong><p>This postback bundle will contain following nodes:</p></strong>
-
-CODE, ORIGIN<BR/>
-NOTIFICATION &#8211; Identifies each individual postback<BR/>
-BODY &#8211; Indicates the start of the body of information<BR/>
-FROM &#8211; SMS sender mobile number<BR/>
-TO &#8211; shortcode the SMS was sent to<BR/>
-KEYWORD &#8211; this is actual text that was sent by the sender<BR/>
-RECEIVED &#8211; timestamp of the SMS received by our server<BR/>
-
-<strong><p>This postback bundle has the following anatomy:</p></strong>
-
-<pre>
-&lt;POSTBACK&gt;
-  &lt;NOTIFICATION id=&#8221;264&#8243; created=&#8221;2011-09-28 17:31:02.835577-04&#8243;&gt;
-    &lt;ORIGIN&gt;SMS_MO&lt;/ORIGIN&gt;
-    &lt;CODE&gt;N211&lt;/CODE&gt;
-      &lt;BODY&gt;
-        &lt;FROM&gt;15552312102&lt;/FROM&gt;
-        &lt;TO&gt;86717&lt;/TO&gt;
-        &lt;KEYWORD&gt;STOP&lt;/KEYWORD&gt;
-        &lt;RECEIVED&gt;2011-09-28 17:31:02.278751-04&lt;/RECEIVED&gt;
-      &lt;/BODY&gt;
-  &lt;/NOTIFICATION&gt;
-  &lt;NOTIFICATION id=&#8221;264&#8243; created=&#8221;2011-09-28 17:31:02.835577-04&#8243;&gt;
-    &lt;ORIGIN&gt;SMS_MO&lt;/ORIGIN&gt;
-    &lt;CODE&gt;N211&lt;/CODE&gt;
-      &lt;BODY&gt;
-        &lt;FROM&gt;15552312102&lt;/FROM&gt;
-        &lt;TO&gt;86717&lt;/TO&gt;
-        &lt;KEYWORD&gt;STOP&lt;/KEYWORD&gt;
-        &lt;RECEIVED&gt;2011-09-28 17:31:02.278751-04&lt;/RECEIVED&gt;
-      &lt;/BODY&gt;
-  &lt;/NOTIFICATION&gt;
-...
-&lt;/POSTBACK&gt;
-</pre>
-
-<h2>Types of MMS MO:</h2>
 
 <p><strong>MMS MO Received</strong></p>
 <p><strong>Synopsis: </strong>This Postback provides a notification when MMS MO is received.</p> 
