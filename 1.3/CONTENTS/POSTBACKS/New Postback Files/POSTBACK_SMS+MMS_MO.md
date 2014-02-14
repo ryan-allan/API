@@ -18,8 +18,7 @@ your account.</p>
 <p><strong>Postback Notification Example:</strong></p>
 <pre>
 &lt;?xml version='1.0'?&gt;
-&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
+&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.skycore.com/schema/postback.xsd"&gt;
 &lt;ORIGIN&gt;SMS_MO&lt;/ORIGIN&gt;
 &lt;CODE&gt;N211&lt;/CODE&gt;
 &lt;FROM&gt;16311112222&lt;/FROM&gt;
