@@ -18,7 +18,7 @@ the MMS MO moderation panel then the postback notifictions will only be sent upo
 <h2>Types of SMS MO:</h2>
 
 <strong>SMS MO Received</strong>
-<p><strong>Synopsis: </strong>This Postback provides a notification when SMS MO is received. Postback will contain following nodes:</p>
+<p><strong>Synopsis: </strong>This Postback provides a notification when SMS MO is received. This postback will contain following nodes:</p>
 
 <p>CODE, ORIGIN</p>
 <p>FROM &#8211; SMS sender mobile number</p>
