@@ -5,7 +5,7 @@ This document will provide a technical description of the MMS/SMS MT postback AP
 
 <strong>Current list of the SMS/MMS MT Postbacks</strong>
 <ul>
-<li>[SMS MT Send](#Send)</li>                            
+[SMS MT Send](#Send)                            
 <li>[SMS MT Status](#Status)</li>                         
 <li>[MMS MT (Binary)](#Binary)</li>                       
 <li>[MMS MT (XHTML)](#XHTML)</li>                         
