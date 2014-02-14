@@ -3,10 +3,12 @@
 <div id="page-content"><strong>Brief Overview:</strong>
 This document will provide a technical description of the MMS/SMS MT postback API.  Briefly, this API allows those with SMS/MMS MT postbacks enabled to generate and forward SMS/MMS MT postbacks to their server.
 
+<p>For MMS, we have two methods for delivering content binary and xHTML. We send different Postbacks depending on which method is used.</p>
 
-<strong>Mobile SMS Sent</strong>
+
+<strong>Mobile SMS MT Sent</strong>
 <p><strong>Synopsis:</strong>This postback provides a notification when the SMS is sent out from our server.</p>
-<strong><p>This postback will contain following nodes:</p></strong>
+<strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
 STATUS &#8211; Indicate if the SMS was sent out successfully - allowed values are "Message Sent" or "Message Failed"<BR/>
 TO &#8211; SMS receiver<BR/>
@@ -29,9 +31,9 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 &lt;/POSTBACK&gt;
 </pre>
 
-<strong>Mobile SMS Status</strong>
+<strong>Mobile SMS MT Status</strong>
 <p><strong>Synopsis:</strong> This postback provides a notification about the status of an SMS.</p>
-<strong><p>This postback will contain following nodes:</p></strong>
+<strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
 STATUS &#8211; Indicate if the SMS was sent out successfully - allowed values are "Message Sent/Delivered" or "Message Sent/Failed"<BR/>
 TO &#8211; SMS receiver<BR/>
@@ -56,11 +58,9 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 &lt;/POSTBACK&gt;
 </pre>
 
-
-<p>For MMS, we have two methods for delivering content binary and xHTML. We send different Postbacks depending on which method is used.</p>
-<p><strong>a) The Binary Method</strong></p>
-<p>In binary sending, we deliver a Postback notification called &#8220;N101&#8243; immediately after we begin to process the MMS. Upon receiving Delivery Report (DLR), the system generates Postback notification &#8220;N102&#8243; with the handset name. 
-N101 and N102 notifications are linked by TRACKINGID. These postbacks contain the following nodes:</p>
+<strong>MMS MT (Binary)</strong>
+<p><strong>Synopsis:</strong> In binary sending, we deliver a Postback notification called &#8220;N101&#8243; immediately after we begin to process the MMS. Upon receiving Delivery Report (DLR), the system generates Postback notification &#8220;N102&#8243; with the handset name. N101 and N102 notifications are linked by TRACKINGID.<p>
+<strong><p>These postbacks will contain the following nodes:</p></strong>
 <p>CODE, ORIGIN</p>
 <p>SENTAS &#8211; this node indicate if MMS was delivered as MMS (binary delivery) or SMS (xHTML). For binary delivery it will always be MMS</p>
 <p>MMSID &#8211; ID of the MMS</p>
