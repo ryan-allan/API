@@ -49,7 +49,7 @@ the MMS MO moderation panel then the postback notifictions will only be sent upo
 <p>TO &#8211; shortcode the SMS was sent to</p>
 <p>KEYWORD &#8211; this is actual text that was sent by the sender</p>
 <p>RECEIVED &#8211; timestamp of the SMS received by our server</p>
-<p>This postback bundle has the following anatomy:</p>
+<p><strong>This postback bundle has the following anatomy:</strong></p>
 
 <pre>
 &lt;POSTBACK&gt;
