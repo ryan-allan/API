@@ -4,19 +4,19 @@
 <p>This document will provide a technical description of the MMS/SMS MO POSTBACK API. In brief, this API allows those with an 
 SMS/MMS MO-enabled shortcode to forward received messages (MMS/SMS MO) to your server.</p>
 
-<strong>SMS/MMS MO Specific URL:</strong>
-A separate Postback URL specifically for SMS/MMS MO's(Mobile Originated) maybe be set via the API Settings tab of your account.  If it is not set, all postbacks will be sent to the Postback URL that is set.
+<p><strong>SMS/MMS MO Specific URL:</strong></p>
+<p>A separate Postback URL specifically for SMS/MMS MO's(Mobile Originated) maybe be set via the API Settings tab of your account.  If it is not set, all postbacks will be sent to the Postback URL that is set.</p>
 
-<strong>SMS MO General Information:</strong>
-To receive SMS MO postback notification you need to have that option enabled in your account. Once the SMS MO 
+<p><strong>SMS MO General Information:</strong>
+<p>To receive SMS MO postback notification you need to have that option enabled in your account. Once the SMS MO 
 postback is enabled you will start receiving HTTP Posts on URL of your choice for each SMS MO received related to 
-your account.
+your account.</p>
 
-<strong>MMS MO General Information</strong>
-To receive MMS MO postback notification you need to have that option enabled in your account and you need to 
+<p><strong>MMS MO General Information</strong>
+<p>To receive MMS MO postback notification you need to have that option enabled in your account and you need to 
 configure it within the particular MMS MO campaign.  Once the MMS MO postback is enabled you will start receiving 
 HTTP Posts on URL of your choice for each MMS MO received on the MMS MO Keyword. If you have (optionally) enabled 
-the MMS MO moderation panel then the postback notifictions will only be sent upon manual approval by the moderator.
+the MMS MO moderation panel then the postback notifictions will only be sent upon manual approval by the moderator.</p>
 
 <h2>Types of SMS MO:</h2>
 
