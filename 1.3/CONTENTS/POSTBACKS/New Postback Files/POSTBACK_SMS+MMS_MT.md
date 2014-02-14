@@ -251,7 +251,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 CODE, ORIGIN<BR/>
 MMSID &#8211; ID of the MMS<BR/>
 
-<p><strong>The N003 anatomy:</strong>
+<p><strong>The N003 anatomy:</strong></p>
 <pre>
 &lt;?xml version='1.0'?&gt;
 &lt;POSTBACK&gt;
