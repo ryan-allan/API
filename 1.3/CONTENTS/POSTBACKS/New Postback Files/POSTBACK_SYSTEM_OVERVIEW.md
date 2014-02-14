@@ -3,7 +3,7 @@
 
 <strong>What is a postback?</strong>
 <ul>
-<li>A postback in a notification sent via a single HTTP request in XML format to a user-specified URL containing information regarding SMS/MMS MO's (Mobile Originated), SMS/MMS MT's(Mobile Terminated), and Passes relative to a user's account.</li>
+<li>A postback is a notification sent via a single POST HTTP request in XML format to a user-specified URL containing information regarding SMS/MMS MO's (Mobile Originated), SMS/MMS MT's(Mobile Terminated), or Passes relative to a user's account.</li>
 </ul>
 
 <strong>How do postbacks work?</strong>
