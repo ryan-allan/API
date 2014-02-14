@@ -42,7 +42,7 @@
     <li><a href="CONTENTS/POSTBACKS/POSTBACK_SMS+MMS_MO.md">SMS/MMS MO (Mobile Originated) Postbacks</a></li>
     <li><a href="CONTENTS/POSTBACKS/POSTBACK_SMS+MMS_MT.md">SMS/MMS MT (Mobile Terminated) Postbacks</a> </li>
     <li><a href="CONTENTS/POSTBACKS/POSTBACK_PASS.md">Pass Generation Postbacks</a> </li>
-    <li><a href="CONTENTS/POSTBACKS/POSTBACK_SUB+UNSUB.md">Subscribe and Unsubscribe</a> </li>
+    <li><a href="CONTENTS/POSTBACKS/POSTBACK_SUB+UNSUB.md">Subscribe + Unsubscribe</a> </li>
     </ul>
     <br/>
     <li> <a href="CONTENTS/APPENDIX/API_APPENDIX.md">APPENDIX</a> </li>
