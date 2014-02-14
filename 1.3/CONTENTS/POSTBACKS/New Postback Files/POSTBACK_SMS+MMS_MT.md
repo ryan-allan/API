@@ -38,7 +38,7 @@ CODE, ORIGIN<BR/>
 STATUS &#8211; Indicate if the SMS was sent out successfully - allowed values are "Message Sent/Delivered" or "Message Sent/Failed"<BR/>
 TO &#8211; SMS receiver<BR/>
 TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with API response using this field.<BR/>
-SPID &#8211; Carrier Identification - please reffer to APPENDIX E for more details<BR/>
+SPID &#8211; Carrier Identification - please reffer to <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_E.md">APPENDIX E</a> for more details<BR/>
 TIMESTAMP &#8211; timestamp of the SMS Delivery Receipt<BR/>
 AGGREGATOR &#8211; SMS aggregator ID<BR/>
 
@@ -65,7 +65,7 @@ CODE, ORIGIN<BR/>
 SENTAS &#8211; indicates if the MMS was delivered as MMS (binary delivery) or SMS (xHTML). Binary delivery will always be MMS<BR/>
 MMSID &#8211; ID of the MMS<BR/>
 TO &#8211; MMS receiver<BR/>
-SPID &#8211; carrier ID &#8211; please check API documentation Appendinx E<BR/>
+SPID &#8211; carrier ID &#8211; please check API documentation <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_E.md">APPENDIX E</a><BR/>
 TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with API response using this field.<BR/>
 TIMESTAMP &#8211; timestamp of the MMS was sent (N101) or when MMS was delivered (N102)<BR/>
 HANDSET &#8211; handset profile returned inside Delivery Receipt. This is present only in N102 notification<BR/>
@@ -117,7 +117,7 @@ CODE, ORIGIN<BR/>
 SENTAS &#8211; this node indicate if MMS was delivered as MMS (binary delivery) or SMS (xHTML). For xHTML delivery it will always be SMS<BR/>
 MMSID &#8211; ID of the MMS<BR/>
 TO &#8211; MMS receiver<BR/>
-SPID &#8211; carrier ID &#8211; please check API documentation Appendinx E<BR/>
+SPID &#8211; carrier ID &#8211; please check API documentation <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_E.md">APPENDIX E</a><BR/>
 TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with API response using this field.<BR/>
 TIMESTAMP &#8211; timestamp of the MMS was sent (N101) or when SMS was delivered (N202)<BR/>
 STATUS &#8211; For N101 notification status can be "Message Sent". For N202 notification status can be "Message<BR/> Sent/Delivered" or "Message Sent/Failed"<BR/>
@@ -164,7 +164,7 @@ CODE, ORIGIN<BR/>
 SENTAS &#8211; this node indicate if MMS was delivered as MMS (binary delivery) or SMS (xHTML). For xHTML delivery it will always be SMS<BR/>
 MMSID &#8211; ID of the MMS<BR/>
 TO &#8211; MMS receiver<BR/>
-SPID &#8211; carrier ID &#8211; please check API documentation Appendinx E<BR/>
+SPID &#8211; carrier ID &#8211; please check API documentation <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_E.md">APPENDIX E</a><BR/>
 TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with API response using this field.<BR/>
 TIMESTAMP &#8211; timestamp of the MMS was sent (N101) or when SMS was delivered (N202)<BR/>
 STATUS &#8211; For N101 notification status can be "Message Sent". For N202 notification status can be "Message Sent/Delivered" or "Message Sent/Failed"<BR/>
@@ -213,7 +213,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 CODE, ORIGIN<BR/>
 MMSID &#8211; ID of the MMS<BR/>
 TO &#8211; MMS receiver<BR/>
-SPID &#8211; carrier ID &#8211; please check API documentation Appendinx E<BR/>
+SPID &#8211; carrier ID &#8211; please check API documentation <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_E.md">APPENDIX E</a><BR/>
 TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with API response using this field.<BR/>
 TIMESTAMP &#8211; timestamp of the MMS was sent (N101) or when MMS was delivered (N102)<BR/>
 STATUS &#8211; For E101 notification status can be "Message Failed".<BR/>
