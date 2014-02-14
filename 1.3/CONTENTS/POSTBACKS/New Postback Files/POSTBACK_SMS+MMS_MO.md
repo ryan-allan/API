@@ -13,12 +13,14 @@ your account.</p>
 
 <strong>SMS MO Received</strong>
 <p><strong>Synopsis: </strong>This Postback provides a notification when SMS MO is received. Postback will contain following nodes:</p>
+
 <p>CODE, ORIGIN</p>
 <p>FROM &#8211; SMS sender mobile number</p>
 <p>TO &#8211; shortcode the SMS was sent to</p>
 <p>TEXT &#8211; this is actuall text that was sent by the sender</p>
 <p>RECEIVED &#8211; timestamp of the SMS received by our server</p>
-<p><strong>Postback Notification Example:</strong></p>
+<p><strong>This postback has the following anatomy:</strong></p>
+
 <pre>
 &lt;?xml version='1.0'?&gt;
 &lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.skycore.com/schema/postback.xsd"&gt;
@@ -31,9 +33,17 @@ your account.</p>
 &lt;/POSTBACK&gt;
 </pre>
 
-<p><a name="the_xml_bundle1"></a> <strong>The SMS MO XML Bundle:</strong></p>
+<strong>SMS MO Received Bundle</strong>
+<p><strong>Synopsis: </strong>This Postback provides a bundle of SMS MO Received postbacks. The bundle will contain following nodes:</p>
 
-<p>The XML bundle has the following anatomy:</p>
+<p>CODE, ORIGIN</p>
+<p>FROM &#8211; SMS sender mobile number</p>
+<p>TO &#8211; shortcode the SMS was sent to</p>
+<p>TEXT &#8211; this is actuall text that was sent by the sender</p>
+<p>RECEIVED &#8211; timestamp of the SMS received by our server</p>
+<p><strong>This postback has the following anatomy:</strong></p>
+<p>This bundle has the following anatomy:</p>
+
 <pre>
 &lt;POSTBACK&gt;
 &lt;NOTIFICATION id=&#8221;264&#8243; created=&#8221;2011-09-28 17:31:02.835577-04&#8243;&gt;
