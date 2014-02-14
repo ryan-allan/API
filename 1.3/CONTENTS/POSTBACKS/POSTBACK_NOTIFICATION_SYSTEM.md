@@ -10,14 +10,14 @@
 <ul>
 <li>Each event triggers a postback and places it in a queue.</li>
 <li>Postbacks in the queue are then processed and sent out every second to the user-specified URL.</li>
-<li>Upon your server's reception of the Postback we expect the server to respond with a properly formatted HTTP header containing a 200 HTTP code.</li>
+<li>Upon a server's reception of the postback, we expect the server to respond with a properly formatted HTTP header containing a 200 HTTP code.</li>
 </ul>
 
 <strong>Important Notes</strong>
 <ul>
 <li>A separate Postback URL specifically for SMS/MMS MO's(Mobile Originated) maybe be set via the API Settings tab of your account.  If it is not set, all postbacks will be sent to the Postback URL that is set.</li>
 <li>If establishing a connection to the user-specified Postback URL takes longer than 10 seconds, the connection will time out and fail.  After that, we will attempt to resend the postback every 5 minutes up to a total of 5 times.</li>
-<li>If the HTTP response from your server is not provided or the HTTP code is not 200, we consider the postback a failed request and we will attempt to resend the postback every 5 minutes up to a total of 5 times.</li>
+<li>If the HTTP response from the user's server is not provided or the HTTP code is not 200, we consider the postback a failed request and we will attempt to resend the postback every 5 minutes up to a total of 5 times.</li>
 </ul>
 
 <h1>Postback Groups</h1>
