@@ -10,7 +10,7 @@
 <ul>
 <li>Specific events trigger their respective postbacks and are placed in a queue.</li>
 <li>Postbacks in the queue are then processed and sent out every second to the user-specified URL.</li>
-<li>Upon a server's reception of the postback, we expect the server to respond with a properly formatted HTTP header containing a 200 HTTP code.</li>
+<li>Upon a server's reception of the postback, we expect the server to respond with a properly formatted HTTP header containing an HTTP 200 code.</li>
 </ul>
 
 <strong>Important Notes</strong>
