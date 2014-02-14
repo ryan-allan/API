@@ -53,21 +53,21 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;<
 <p><a name="the_xml_bundle"></a> <strong>The MMS MO XML Bundle:</strong></p>
 <p>The XML bundle has the following anatomy:</p>
 <pre>
-<POSTBACK>
-<NOTIFICATION>
-<ORIGIN>MMS_MO</ORIGIN>
-<CODE>N401</CODE>
-<FROM>13217949521</FROM>
-<TO>74700</TO>
-<KEYWORD>all</KEYWORD><TRACKINGID>MMS_MO_iLnCRrL6</TRACKINGID><SPID>0001470</SPID>
-<TIMESTAMP>2014-02-03T11:19:49-05:00</TIMESTAMP>
-<CONTENT>
-<FILE>URL of Content Here</FILE>
-<FILE>URL of Content Here</FILE>
-<FILE>URL of Content Here</FILE>
-</CONTENT>
-</NOTIFICATION>
-</POSTBACK>
+&lt;POSTBACK&gt;
+&lt;NOTIFICATION&gt;
+&lt;ORIGIN>MMS_MO&lt;/ORIGIN&gt;
+&lt;CODE>N401&lt;/CODE&gt;
+&lt;FROM&gt;13217949521&lt;/FROM&gt;
+&lt;TO&gt;74700&lt;/TO&gt;
+&lt;KEYWORD&gt;all&lt;/KEYWORD>&lt;TRACKINGID&gt;MMS_MO_iLnCRrL6&lt;/TRACKINGID&gt;&lt;SPID&gt;0001470&lt;/SPID&gt;
+&lt;TIMESTAMP&gt;2014-02-03T11:19:49-05:00&lt;/TIMESTAMP&gt;
+&lt;CONTENT&gt;
+&lt;FILE&gt;URL of Content Here&lt;/FILE&gt;
+&lt;FILE&gt;URL of Content Here&lt;/FILE&gt;
+&lt;FILE&gt;URL of Content Here&lt;/FILE&gt;
+&lt;/CONTENT&gt;
+&lt;/NOTIFICATION&gt;
+&lt;/POSTBACK&gt;
 </pre>
 
 <p>Each MMS MO message is represented by a &lt;NOTIFICATION&gt; tag and all of the nodes and data contained within. When
