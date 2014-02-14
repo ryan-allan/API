@@ -10,17 +10,15 @@
 <ul>
 <li>Each event triggers a postback and places it in a queue.</li>
 <li>Postbacks in the queue are then processed and sent out every second to the user-specified URL.</li>
-<li>This user-specified URL is an address on your server where you would like to receive the information and is set via the API Settings tab of your account.</li>
+<li>Upon your server's reception of the Postback we expect the server to respond with a properly formatted HTTP header containing a 200 HTTP code.</li>
 </ul>
-The Postback system notifies remote servers about different events related to the account. 
-For each event, a notification in XML format is inserted into a Postback queue. 
-The  notifications in the Postback queue are processed and sent out every second. 
-The notifications are sent in one HTTP request to a user-specified Postback URL. 
-The Postback URL is an address on your server where you would like to receive these notifications and is defined in your API Account settings. You can specify an optional separate Postback URL for all SMS/MMS MO postbacks.  If there is no MO Postback URL specified, all postbacks will go to the single, specified Postback URL.
-If establishing a connection to the Postback URL takes longer than 10 seconds, the connection will time out and fail.  
-After that, we will attempt to resend the postback notification every 5 minutes up to a total of 5 times. 
-If establishing a connection is successful, we expect the remote server to respond with a properly formed HTTP header containing 200 HTTP code. 
-If no HTTP response is provided or the HTTP code is not 200, we consider the Postback Notification a failed request and will retry five minutes later up to five times.
+
+<strong>Important Notes</strong>
+<ul>
+<li>A separate Postback URL specifically for SMS/MMS MO's(Mobile Originated) maybe be set via the API Settings tab of your account.  If it is not set, all postbacks will be sent to the Postback URL that is set.</li>
+<li>If establishing a connection to the user-specified Postback URL takes longer than 10 seconds, the connection will time out and fail.  After that, we will attempt to resend the postback every 5 minutes up to a total of 5 times.</li>
+<li>If the HTTP response from your server is not provided or the HTTP code is not 200, we consider the postback a failed request and we will attempt to resend the postback every 5 minutes up to a total of 5 times.</li>
+</ul>
 
 <h1>Postback Groups</h1>
 <p>Our servers generate different Postbacks, which we divide into few groups. 
