@@ -9,6 +9,7 @@ SMS/MMS MO-enabled shortcode to forward received messages (MMS/SMS MO) to your s
 postback is enabled you will start receiving HTTP Posts on URL of your choice for each SMS MO received related to 
 your account.</p>
 
+<strong>SMS MO Received</strong>
 <p><strong>Synopsis: </strong>This Postback provides a notification when SMS MO is received. Postback will contain following nodes:</p>
 <p>CODE, ORIGIN</p>
 <p>FROM &#8211; SMS sender mobile number</p>
