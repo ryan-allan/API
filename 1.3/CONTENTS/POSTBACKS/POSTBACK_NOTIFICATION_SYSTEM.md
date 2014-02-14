@@ -25,8 +25,6 @@
   </ul>
 </ul>
 
-<p>ORIGIN &#8211; identifies origin of the postback</p>
-<p>CODE &#8211; identifies situation when postback is generated</p>
 
 <p><strong>Group #2-MMS</strong></p>
 <p>For MMS, we have two methods for delivering content binary and xHTML. We send different Postbacks depending on which method is used.</p>
