@@ -44,7 +44,7 @@ SUBID &#8211; subscription ID<BR/>
 &lt;/POSTBACK&gt;
 </pre>
 
-<strong>Email Subscribe</strong>
+<a name="EmailSub"><strong>Email Subscribe</strong>
 <p><strong>Synopsis:</strong> This postback notification subscribes an email to a specific campaign.</p>
 <strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
@@ -64,7 +64,7 @@ SUBID &#8211; subscription ID<BR/>
 &lt;/POSTBACK&gt;
 </pre>
 
-<strong>Email Unsubscribe</strong>
+<a name="EmailUnsub"><strong>Email Unsubscribe</strong>
 <p><strong>Synopsis:</strong> This postback notification unsubscribes an email from a specific campaign.</p>
 <strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
