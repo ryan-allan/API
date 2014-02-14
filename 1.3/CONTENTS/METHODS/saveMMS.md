@@ -11,9 +11,10 @@ Once the MMS is saved it can be utilized by other functions through the MMSID re
     &lt;API_KEY&gt;API KEY&lt;/API_KEY&gt;
     &lt;SUBJECT&gt;Subject &lt;/SUBJECT&gt;
     &lt;NAME&gt;Name to save it as&lt;/NAME&gt;
-    &lt;SLIDE duration="Duration in seconds"&gt;
+    &lt;SLIDE&gt;
     	&lt;IMAGE&gt;&lt;URL&gt;URL&lt;/URL&gt;&lt;/IMAGE&gt;
     	&lt;AUDIO&gt;&lt;URL&gt;URL&lt;/URL&gt;&lt;/AUDIO&gt;
+    	&lt;DURATION&gt;Duration In Seconds&lt;/DURATION&gt;
     	&lt;TEXT&gt;Plain Text&lt;/TEXT&gt;
     &lt;/SLIDE&gt;
     &lt;SLIDE&gt;
