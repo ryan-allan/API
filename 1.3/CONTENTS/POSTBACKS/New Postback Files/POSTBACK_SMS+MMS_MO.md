@@ -4,12 +4,12 @@
 <p>This document will provide a technical description of the MMS/SMS MO POSTBACK API. In brief, this API allows those with an 
 SMS/MMS MO-enabled shortcode to forward received messages (MMS/SMS MO) to your server.</p>
 
-<p><strong>SMS MO General Information</strong></p>
-<p>To receive SMS MO postback notification you need to have that option enabled in your account. Once the SMS MO 
+<strong>SMS MO General Information:</strong>
+To receive SMS MO postback notification you need to have that option enabled in your account. Once the SMS MO 
 postback is enabled you will start receiving HTTP Posts on URL of your choice for each SMS MO received related to 
-your account.</p>
+your account.
 
-<strong>Types of SMS MO:</strong>
+<h4>Types of SMS MO:</h4>
 
 <strong>SMS MO Received</strong>
 <p><strong>Synopsis: </strong>This Postback provides a notification when SMS MO is received. Postback will contain following nodes:</p>
