@@ -9,7 +9,13 @@ To receive SMS MO postback notification you need to have that option enabled in 
 postback is enabled you will start receiving HTTP Posts on URL of your choice for each SMS MO received related to 
 your account.
 
-<h4>Types of SMS MO:</h4>
+<strong>MMS MO General Information</strong>
+To receive MMS MO postback notification you need to have that option enabled in your account and you need to 
+configure it within the particular MMS MO campaign.  Once the MMS MO postback is enabled you will start receiving 
+HTTP Posts on URL of your choice for each MMS MO received on the MMS MO Keyword. If you have (optionally) enabled 
+the MMS MO moderation panel then the postback notifictions will only be sent upon manual approval by the moderator.
+
+<h2>Types of SMS MO:</h2>
 
 <strong>SMS MO Received</strong>
 <p><strong>Synopsis: </strong>This Postback provides a notification when SMS MO is received. Postback will contain following nodes:</p>
@@ -58,12 +64,6 @@ your account.
 &lt;/NOTIFICATION&gt;
 &lt;/POSTBACK&gt;
 </pre>
-
-<p><strong>MMS MO</strong></p>
-<p>To receive MMS MO postback notification you need to have that option enabled in your account and you need to 
-configure it within the particular MMS MO campaign.  Once the MMS MO postback is enabled you will start receiving 
-HTTP Posts on URL of your choice for each MMS MO received on the MMS MO Keyword. If you have (optionally) enabled 
-the MMS MO moderation panel then the postback notifictions will only be sent upon manual approval by the moderator.</p>
 
 <p><a name="the_xml_bundle"></a> <strong>The MMS MO XML Bundle:</strong></p>
 <p>The XML bundle has the following anatomy:</p>
