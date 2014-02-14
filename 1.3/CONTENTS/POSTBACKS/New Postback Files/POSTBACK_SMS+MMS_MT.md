@@ -14,6 +14,8 @@ This document will provide a technical description of the MMS/SMS MT postback AP
 [MMS MT (Save MMS)](#Save)
 [MMS MT (Save MMS Content Failure)](#ContentFail)
 
+<h3>MT Postback Definitions</h3>
+
 <a name="Send"><strong>SMS MT Sent</strong>
 <p><strong>Synopsis:</strong>This postback provides a notification when the SMS is sent out from our server.</p>
 <strong><p>This postback will contain the following nodes:</p></strong>
