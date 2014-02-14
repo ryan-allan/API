@@ -43,12 +43,13 @@ the MMS MO moderation panel then the postback notifictions will only be sent upo
 <p><strong>Synopsis: </strong>This Postback provides a bundle of SMS MO Received postbacks. The bundle will contain following nodes:</p>
 
 <p>CODE, ORIGIN</p>
+<p>NOTIFICATION &#8211; Identifies each individual notification</p>
+<p>BODY &#8211; Indicates the start of the body of information</p>
 <p>FROM &#8211; SMS sender mobile number</p>
 <p>TO &#8211; shortcode the SMS was sent to</p>
-<p>TEXT &#8211; this is actuall text that was sent by the sender</p>
+<p>KEYWORD &#8211; this is actual text that was sent by the sender</p>
 <p>RECEIVED &#8211; timestamp of the SMS received by our server</p>
-<p><strong>This postback has the following anatomy:</strong></p>
-<p>This bundle has the following anatomy:</p>
+<p>This postback bundle has the following anatomy:</p>
 
 <pre>
 &lt;POSTBACK&gt;
