@@ -9,7 +9,7 @@ You can set your pass postback URL by logging into your account and going to &#8
 
 <p><strong>Generate Pass Bundle</strong></p>
 <strong>Synopsis:</strong> This postback provides a bundle of pass generation postbacks.
-<strong><p>This postback will contain following nodes:</p></strong>
+<strong><p>This postback will contain the following nodes:</p></strong>
 
 CODE, ORIGIN<BR/>
 STATUSCODE &#8211; contains the notification code for success/failure. These codes are explained under <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_B.md">APPENDIX B</a><BR />
