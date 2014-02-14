@@ -2,10 +2,10 @@
 <h2>Passes&nbsp;Postback</h2>
 <div id="page-content"><p><strong>Brief Overview:</strong></p>
 <p>This document will provide a technical description of the pass postback API. 
-This API allows to send Pass information back to your server whenever pass generation is triggered.</p>
-<p><strong>Pass Generation:</strong></p>
+This API allows you to send pass information back to your server whenever pass generation is triggered.</p>
+<p><strong>Pass Generation Information:</strong></p>
 <p>If the generate pass postback API is enabled, then you will receive postbacks for every pass generated in your account.</p>
-<p><a name="the_xml_bundle1"></a> <strong>The GENERATE PASS XML Bundle:</strong></p>
+<p><a name="the_xml_bundle1"></a> <strong>The Generate Pass XML Bundle:</strong></p>
 <p>The XML bundle has the following structure:</p>
 <pre>
 &lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/pass-postback.xsd"&gt;
