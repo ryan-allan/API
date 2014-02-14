@@ -61,17 +61,19 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 <strong>MMS MT (Binary)</strong>
 <p><strong>Synopsis:</strong> In binary sending, we deliver a Postback notification called &#8220;N101&#8243; immediately after we begin to process the MMS. Upon receiving Delivery Report (DLR), the system generates Postback notification &#8220;N102&#8243; with the handset name. N101 and N102 notifications are linked by TRACKINGID.<p>
 <strong><p>These postbacks will contain the following nodes:</p></strong>
-<p>CODE, ORIGIN</p>
-<p>SENTAS &#8211; this node indicate if MMS was delivered as MMS (binary delivery) or SMS (xHTML). For binary delivery it will always be MMS</p>
-<p>MMSID &#8211; ID of the MMS</p>
-<p>TO &#8211; MMS receiver</p>
-<p>SPID &#8211; carrier ID &#8211; please check API documentation Appendinx E</p>
-<p>TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with API response using this field.</p>
-<p>TIMESTAMP &#8211; timestamp of the MMS was sent (N101) or when MMS was delivered (N102)</p>
-<p>HANDSET &#8211; handset profile returned inside Delivery Receipt. This is present only in N102 notification</p>
-<p>STATUS &#8211; For N101 notification status can be "Message Sent". For N102 notification status can be "Message Sent/Delivered", "Message Sent/Expired" or "Message Sent/Rejected"</p>
-<p>STATUSDETAILS &#8211; For N101 notification when status is "Message Failed" postback will contain this node with error details.
-<p>AGGREGATORID &#8211; Only in N102 notification, contain Aggregator ID of the sending. 
+
+CODE, ORIGIN<BR/>
+SENTAS &#8211; this node indicate if MMS was delivered as MMS (binary delivery) or SMS (xHTML). For binary delivery it will always be MMS<BR/>
+MMSID &#8211; ID of the MMS<BR/>
+TO &#8211; MMS receiver<BR/>
+SPID &#8211; carrier ID &#8211; please check API documentation Appendinx E<BR/>
+TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with API response using this field.<BR/>
+TIMESTAMP &#8211; timestamp of the MMS was sent (N101) or when MMS was delivered (N102)<BR/>
+HANDSET &#8211; handset profile returned inside Delivery Receipt. This is present only in N102 notification<BR/>
+STATUS &#8211; For N101 notification status can be "Message Sent". For N102 notification status can be "Message Sent/Delivered", "Message Sent/Expired" or "Message Sent/Rejected"<BR/>
+STATUSDETAILS &#8211; For N101 notification when status is "Message Failed" postback will contain this node with error details.<BR/>
+AGGREGATORID &#8211; Only in N102 notification, contain Aggregator ID of the sending.<BR/>
+
 <p><strong> N101 Example:</strong></p>
 <p><small><code>&lt;?xml version='1.0'?&gt;<br>
 &lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" <br>
