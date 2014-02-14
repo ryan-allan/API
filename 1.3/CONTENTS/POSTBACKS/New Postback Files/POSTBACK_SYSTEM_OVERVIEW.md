@@ -15,7 +15,11 @@
 
 <strong>Important Notes</strong>
 <ul>
-<li>A separate Postback URL specifically for SMS/MMS MO's(Mobile Originated) maybe be set via the API Settings tab of your account.  If it is not set, all postbacks will be sent to the Postback URL that is set.</li>
 <li>If establishing a connection to the user-specified Postback URL takes longer than 10 seconds, the connection will time out and fail.  After that, we will attempt to resend the postback every 5 minutes up to a total of 5 times.</li>
 <li>If the HTTP response from the user's server is not provided or the HTTP code is not 200, we consider the postback a failed request and we will attempt to resend the postback every 5 minutes up to a total of 5 times.</li>
+<li> The following tags are always a part of our postbacks:
+  <ul>
+  <li>ORIGIN &#8211; identifies origin of the postback</li>
+  <li>CODE &#8211; identifies situation when postback is generated</li>
+  </ul>
 </ul>
