@@ -18,31 +18,15 @@
 <li>A separate Postback URL specifically for SMS/MMS MO's(Mobile Originated) maybe be set via the API Settings tab of your account.  If it is not set, all postbacks will be sent to the Postback URL that is set.</li>
 <li>If establishing a connection to the user-specified Postback URL takes longer than 10 seconds, the connection will time out and fail.  After that, we will attempt to resend the postback every 5 minutes up to a total of 5 times.</li>
 <li>If the HTTP response from the user's server is not provided or the HTTP code is not 200, we consider the postback a failed request and we will attempt to resend the postback every 5 minutes up to a total of 5 times.</li>
+<li> The following tags are always a part of ours postbacks:
+  <ul>
+  <li>ORIGIN &#8211; identifies origin of the postback</li>
+  <li>CODE &#8211; identifies situation when postback is generated</li>
+  </ul>
 </ul>
 
 <p>ORIGIN &#8211; identifies origin of the postback</p>
 <p>CODE &#8211; identifies situation when postback is generated</p>
-
-<p><strong>c) Synopsis: </strong>This Postback provides a notification when SMS MO is received. Postback will contain following nodes:</p>
-<p>CODE, ORIGIN</p>
-<p>FROM &#8211; SMS sender mobile number</p>
-<p>TO &#8211; shortcode the SMS was sent to</p>
-<p>TEXT &#8211; this is actuall text that was sent by the sender</p>
-<p>RECEIVED &#8211; timestamp of the SMS received by our server</p>
-<p><strong>Postback Notification Example:</strong></p>
-<p><small><code>&lt;?xml version='1.0'?&gt;<br>
-&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" <br>
-xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;<br>
-&lt;ORIGIN&gt;SMS_MO&lt;/ORIGIN&gt;<br />
-&lt;CODE&gt;N211&lt;/CODE&gt;<br />
-&lt;FROM&gt;16311112222&lt;/FROM&gt;<br />
-&lt;TO&gt;60856&lt;/TO&gt;<br />
-&lt;TEXT&gt;MYKEYCODE&lt;/TEXT&gt;<br />
-&lt;RECEIVED&gt;2012-04-16T09:05:56-04:00&lt;/RECEIVED&gt;<br />
-&lt;/POSTBACK&gt;<br />
-</code></small></p>
-
-
 
 <p><strong>Group #2-MMS</strong></p>
 <p>For MMS, we have two methods for delivering content binary and xHTML. We send different Postbacks depending on which method is used.</p>
