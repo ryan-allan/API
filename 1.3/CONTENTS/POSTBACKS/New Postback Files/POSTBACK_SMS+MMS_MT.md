@@ -11,7 +11,7 @@ This document will provide a technical description of the MMS/SMS MT postback AP
 [MMS MT (XHTML)](#XHTML)                        
 [MMS MT (Binary degrade to XHTML and sent as SMS link](#Degrade)  
 [MMS MT (Sending Failure)](#SendFail)      
-[MMS MT (Save MMS)](#Save) <BR />
+[MMS MT (Save MMS)](#SaveMMS) <BR />
 [MMS MT (Save MMS Content Failure)](#ContentFail)
 
 <h3>MT Postback Definitions</h3>
@@ -229,7 +229,7 @@ TIMESTAMP &#8211; timestamp of the MMS was sent (N101) or when MMS was delivered
 STATUS &#8211; For E101 notification status can be "Message Failed".<BR/>
 STATUSDETAILS &#8211; For E101 notification when status is "Message Failed" postback will contain this node with error details.<BR/>
 
-<p><strong>The E101 anatomy:</strong>
+<p><strong>The E101 anatomy:</strong></p>
 <pre>
 &lt;?xml version='1.0'?&gt;
 &lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -245,7 +245,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 &lt;/POSTBACK&gt;
 </pre>
 
-<a name="Save"> <strong>MMS MT (Save MMS)</strong>
+<a name="SaveMMS"> <strong>MMS MT (Save MMS)</strong>
 <p><strong>Synopsis:</strong> When MMS is saved (using API or our MMS Composer) we generate postback notification. When saving was successful we generate N003.</p>
 <strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
