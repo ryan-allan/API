@@ -11,7 +11,7 @@ CODE, ORIGIN<BR/>
 STATUS &#8211; Indicate if the SMS was sent out successfully - allowed values are "Message Sent" or "Message Failed"<BR/>
 TO &#8211; SMS receiver<BR/>
 TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with API response using this field<BR/>
-SPID &#8211; Carrier Identification - please reffer to APPENDIX E for more details<BR/>
+SPID &#8211; Carrier Identification - please reffer to <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_E.md">APPENDIX E</a> for more details<BR/>
 TIMESTAMP &#8211; timestamp of the SMS sending<BR/>
 
 <p><strong>This postback has the following anatomy:</strong></p>
