@@ -26,7 +26,7 @@
 
 <strong>Postback Groups</strong>
 <ul>
-<li><a href="/1.3/CONTENTS/POSTBACKS/New%20Postback%20Files/POSTBACKS_GENERAL.md">General System Postbacks</a></li>
+<li><a href="/1.3/CONTENTS/POSTBACKS/New%20Postback%20Files/POSTBACK_GENERAL.md">General System Postbacks</a></li>
 <li><a href="/1.3/CONTENTS/POSTBACKS/New%20Postback%20Files/POSTBACK_SMS+MMS_MO.md">SMS/MMS MO Postbacks</a></li>
 <li><a href="/1.3/CONTENTS/POSTBACKS/New%20Postback%20Files/POSTBACK_SMS+MMS_MT.md">SMS/MMS MT Postbacks</a></li>
 <li><a href="/1.3/CONTENTS/POSTBACKS/New%20Postback%20Files/POSTBACK_PASSES.md">Pass Generation Postbacks</a></li>
