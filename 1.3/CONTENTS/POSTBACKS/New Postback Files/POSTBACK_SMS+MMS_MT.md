@@ -6,13 +6,13 @@ This document will provide a technical description of the MMS/SMS MT postback AP
 <strong>Current list of the SMS/MMS MT Postbacks</strong>
 
 [SMS MT Send](#Send)                            
-[SMS MT Status](#Status)</li>                         
-[MMS MT (Binary)](#Binary)</li>                       
-[MMS MT (XHTML)](#XHTML)</li>                         
-<li>[MMS MT (Binary degrade to XHTML and sent as SMS link](#Degrade)</li>   
-<li>[MMS MT (Sending Failure)](#SendFail)</li>      
-<li>[MMS MT (Save MMS)](#Save)</li> 
-<li>[MMS MT (Save MMS Content Failure)](#ContentFail)</li> 
+[SMS MT Status](#Status)                        
+[MMS MT (Binary)](#Binary)                       
+[MMS MT (XHTML)](#XHTML)                        
+[MMS MT (Binary degrade to XHTML and sent as SMS link](#Degrade)  
+[MMS MT (Sending Failure)](#SendFail)      
+[MMS MT (Save MMS)](#Save)
+[MMS MT (Save MMS Content Failure)](#ContentFail)
 
 <a name="Send"><strong>SMS MT Sent</strong>
 <p><strong>Synopsis:</strong>This postback provides a notification when the SMS is sent out from our server.</p>
