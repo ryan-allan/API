@@ -52,45 +52,23 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;<
 
 <p><a name="the_xml_bundle"></a> <strong>The MMS MO XML Bundle:</strong></p>
 <p>The XML bundle has the following anatomy:</p>
-<p>&lt;POSTBACK&gt;<br />
-&lt;NOTIFICATION id=&#8221;263&#8243; created=&#8221;2011-09-28 16:30:01.835577-04&#8243;&gt;<br />
-&lt;ORIGIN&gt;MMS_MO&lt;/ORIGIN&gt;<br />
-&lt;CODE&gt;N401&lt;/CODE&gt;<br />
-&lt;BODY&gt;<br />
-&lt;FROM&gt;15552312102&lt;/FROM&gt;<br />
-&lt;TO&gt;86717&lt;/TO&gt;<br />
-&lt;KEYWORD&gt;testoffer&lt;/KEYWORD&gt;<br />
-&lt;TRACKINGID&gt;MMS_MO_815&lt;/TRACKINGID&gt;<br />
-&lt;SPID&gt;000165&lt;/SPID&gt;<br />
-&lt;TIMESTAMP&gt;2011-09-28 15:25:30.222581-04&lt;/TIMESTAMP&gt;<br />
-&lt;CONTENT&gt;<br />
-&lt;FILE&gt;&#8230;URL of Content Here&#8230;&lt;/FILE&gt;<br />
-&lt;FILE&gt;&#8230;URL of Content Here&#8230;&lt;/FILE&gt;<br />
-&lt;FILE&gt;&#8230;URL of Content Here&#8230;&lt;/FILE&gt;<br />
-&lt;/CONTENT&gt;<br />
-&lt;/BODY&gt;<br />
-&lt;/NOTIFICATION&gt;<br />
-&lt;NOTIFICATION id=&#8221;264&#8243; created=&#8221;2011-09-28 16:36:02.299301-04&#8243;&gt;<br />
-&lt;ORIGIN&gt;MMS_MO&lt;/ORIGIN&gt;<br />
-&lt;CODE&gt;N401&lt;/CODE&gt;<br />
-&lt;BODY&gt;<br />
-&lt;FROM&gt;15552312102&lt;/FROM&gt;<br />
-&lt;TO&gt;86717&lt;/TO&gt;<br />
-&lt;KEYWORD&gt;testoffer&lt;/KEYWORD&gt;<br />
-&lt;TRACKINGID&gt;MMS_MO_816&lt;/TRACKINGID&gt;<br />
-&lt;SPID&gt;000165&lt;/SPID&gt;<br />
-&lt;TIMESTAMP&gt;2011-09-28 16:34:40.422537-04&lt;/TIMESTAMP&gt;<br />
-&lt;CONTENT&gt;<br />
-&lt;FILE&gt;&#8230;URL of Content Here&#8230;&lt;/FILE&gt;<br />
-&lt;FILE&gt;&#8230;URL of Content Here&#8230;&lt;/FILE&gt;<br />
-&lt;FILE&gt;&#8230;URL of Content Here&#8230;&lt;/FILE&gt;<br />
-&lt;/CONTENT&gt;<br />
-&lt;/BODY&gt;<br />
-&lt;/NOTIFICATION&gt;<br />
-&lt;NOTIFICATION id=&#8221;265&#8243; created=&#8221;2011-09-28 16:38:02.299301-04&#8243;&gt;<br />
-&#8230;<br />
-&lt;/NOTIFICATION&gt;<br />
-&lt;/POSTBACK&gt;</p>
+<pre>
+<POSTBACK>
+<NOTIFICATION>
+<ORIGIN>MMS_MO</ORIGIN>
+<CODE>N401</CODE>
+<FROM>13217949521</FROM>
+<TO>74700</TO>
+<KEYWORD>all</KEYWORD><TRACKINGID>MMS_MO_iLnCRrL6</TRACKINGID><SPID>0001470</SPID>
+<TIMESTAMP>2014-02-03T11:19:49-05:00</TIMESTAMP>
+<CONTENT>
+<FILE>URL of Content Here</FILE>
+<FILE>URL of Content Here</FILE>
+<FILE>URL of Content Here</FILE>
+</CONTENT>
+</NOTIFICATION>
+</POSTBACK>
+</pre>
 
 <p>Each MMS MO message is represented by a &lt;NOTIFICATION&gt; tag and all of the nodes and data contained within. When
 new MMS MO are received by our system, and approved in the moderation panel, they are bundled as shown, and sent to your
