@@ -32,12 +32,12 @@ RECEIVED &#8211; timestamp of the SMS received by our server<BR/>
 <pre>
 &lt;?xml version='1.0'?&gt;
 &lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.skycore.com/schema/postback.xsd"&gt;
-&lt;ORIGIN&gt;SMS_MO&lt;/ORIGIN&gt;
-&lt;CODE&gt;N211&lt;/CODE&gt;
-&lt;FROM&gt;16311112222&lt;/FROM&gt;
-&lt;TO&gt;60856&lt;/TO&gt;
-&lt;TEXT&gt;MYKEYCODE&lt;/TEXT&gt;
-&lt;RECEIVED&gt;2012-04-16T09:05:56-04:00&lt;/RECEIVED&gt;
+  &lt;ORIGIN&gt;SMS_MO&lt;/ORIGIN&gt;
+  &lt;CODE&gt;N211&lt;/CODE&gt;
+  &lt;FROM&gt;16311112222&lt;/FROM&gt;
+  &lt;TO&gt;60856&lt;/TO&gt;
+  &lt;TEXT&gt;MYKEYCODE&lt;/TEXT&gt;
+  &lt;RECEIVED&gt;2012-04-16T09:05:56-04:00&lt;/RECEIVED&gt;
 &lt;/POSTBACK&gt;
 </pre>
 
