@@ -136,7 +136,3 @@ representing a different incoming message.</p>
 The URL points to the location of the content on our servers. For those developing the back-end handling of the postback
 URL, you may choose to download/store these content files for whatever purpose you see fit. You may also choose to store
 the URLs for download at a future time.</p>
-
-<p><a name="setting_your_postback_url"></a> <strong>Setting your Postback URL:</strong></p>
-<p>You can set your postback URL by logging into your account and going to &#8216;Account&#8217; tab and selecting the 
-&#8216;API settings&#8217; button. Enter the URL under the setting &#8216;API Postback URL&#8217; and make sure that the &#8216;enabled&#8217; and &#8216;MMS MO postback&#8217; checkboxes are selected. Hit the save button and any MMS MO campaign you&#8217;ve created with &#8216;Postback Processing&#8217; enabled will start sending messages to your URL in the XML format shown above.</p>
