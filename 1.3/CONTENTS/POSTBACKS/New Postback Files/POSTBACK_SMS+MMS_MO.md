@@ -16,17 +16,17 @@ your account.</p>
 <p>TEXT &#8211; this is actuall text that was sent by the sender</p>
 <p>RECEIVED &#8211; timestamp of the SMS received by our server</p>
 <p><strong>Postback Notification Example:</strong></p>
-<p><small><code>&lt;?xml version='1.0'?&gt;<br>
-&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" <br>
-xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;<br>
-&lt;ORIGIN&gt;SMS_MO&lt;/ORIGIN&gt;<br />
-&lt;CODE&gt;N211&lt;/CODE&gt;<br />
-&lt;FROM&gt;16311112222&lt;/FROM&gt;<br />
-&lt;TO&gt;60856&lt;/TO&gt;<br />
-&lt;TEXT&gt;MYKEYCODE&lt;/TEXT&gt;<br />
-&lt;RECEIVED&gt;2012-04-16T09:05:56-04:00&lt;/RECEIVED&gt;<br />
-&lt;/POSTBACK&gt;<br />
-</code></small></p>
+&lt;?xml version='1.0'?&gt;
+&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
+&lt;ORIGIN&gt;SMS_MO&lt;/ORIGIN&gt;
+&lt;CODE&gt;N211&lt;/CODE&gt;
+&lt;FROM&gt;16311112222&lt;/FROM&gt;
+&lt;TO&gt;60856&lt;/TO&gt;
+&lt;TEXT&gt;MYKEYCODE&lt;/TEXT&gt;
+&lt;RECEIVED&gt;2012-04-16T09:05:56-04:00&lt;/RECEIVED&gt;
+&lt;/POSTBACK&gt;
+
 
 <p><a name="the_xml_bundle1"></a> <strong>The SMS MO XML Bundle:</strong></p>
 
