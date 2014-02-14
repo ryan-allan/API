@@ -11,7 +11,7 @@ your account.
 
 <h4>Types of SMS MO:</h4>
 
-<strong><u>SMS MO Received</u></strong>
+<strong>SMS MO Received</strong>
 <p><strong>Synopsis: </strong>This Postback provides a notification when SMS MO is received. Postback will contain following nodes:</p>
 
 <p>CODE, ORIGIN</p>
