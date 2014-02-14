@@ -31,21 +31,14 @@ RECEIVED &#8211; timestamp of the SMS received by our server<BR/>
 
 <p><strong>This postback has the following anatomy:</strong></p>
 <pre>
-<p>&lt;POSTBACK&gt;
-&lt;ORIGIN&gt;MMS_MO&lt;/ORIGIN&gt;
-&lt;CODE&gt;N401&lt;/CODE&gt;
+&lt;POSTBACK&gt;
+&lt;ORIGIN&gt;SMS_MO&lt;/ORIGIN&gt;
+&lt;CODE&gt;N211&lt;/CODE&gt;
 &lt;FROM&gt;15552312102&lt;/FROM&gt;
 &lt;TO&gt;86717&lt;/TO&gt;
-&lt;KEYWORD&gt;testoffer&lt;/KEYWORD&gt;
-&lt;TRACKINGID&gt;MMS_MO_vp8Vsf2M&lt;/TRACKINGID&gt;
-&lt;SPID&gt;0001650&lt;/SPID&gt;
-&lt;TIMESTAMP&gt;2011-09-28T15:25:30-04:00&lt;/TIMESTAMP&gt;
-&lt;CONTENT&gt;
-&lt;FILE&gt;&#8230;URL of Content Here&#8230;&lt;/FILE&gt;
-&lt;FILE&gt;&#8230;URL of Content Here&#8230;&lt;/FILE&gt;
-&lt;FILE&gt;&#8230;URL of Content Here&#8230;&lt;/FILE&gt;
-&lt;/CONTENT&gt;
-&lt;/POSTBACK&gt;</p>
+&lt;TEXT&gt;STOP&lt;/TEXT&gt;
+&lt;RECEIVED&gt;2011-09-28T17:31:02-04:00&lt;/RECEIVED&gt;
+&lt;/POSTBACK&gt;
 </pre>
 
 
