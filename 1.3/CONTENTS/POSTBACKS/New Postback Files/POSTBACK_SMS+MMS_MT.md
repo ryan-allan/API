@@ -207,45 +207,65 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 </pre>
 
 
-<p><strong>d)MMS sending Fails</strong></p>
-<p>Sometimes system is unable to send MMS out. In this situations we send postback E101. Postback will contain following nodes:</p>
-<p>CODE, ORIGIN</p>
-<p>MMSID &#8211; ID of the MMS</p>
-<p>TO &#8211; MMS receiver</p>
-<p>SPID &#8211; carrier ID &#8211; please check API documentation Appendinx E</p>
-<p>TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with API response using this field.</p>
-<p>TIMESTAMP &#8211; timestamp of the MMS was sent (N101) or when MMS was delivered (N102)</p>
-<p>STATUS &#8211; For E101 notification status can be "Message Failed".</p>
-<p>STATUSDETAILS &#8211; For E101 notification when status is "Message Failed" postback will contain this node with error details.
+<strong>MMS MT (Sending Fails)</strong>
+<p><strong>Synopsis:</strong> Sometimes the system is unable to send an MMS out. In this situations we send a postback E101. 
+<strong><p>This postback will contain the following nodes:</p></strong>
+CODE, ORIGIN<BR/>
+MMSID &#8211; ID of the MMS<BR/>
+TO &#8211; MMS receiver<BR/>
+SPID &#8211; carrier ID &#8211; please check API documentation Appendinx E<BR/>
+TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with API response using this field.<BR/>
+TIMESTAMP &#8211; timestamp of the MMS was sent (N101) or when MMS was delivered (N102)<BR/>
+STATUS &#8211; For E101 notification status can be "Message Failed".<BR/>
+STATUSDETAILS &#8211; For E101 notification when status is "Message Failed" postback will contain this node with error details.<BR/>
 
-<p><strong>E101 Example:</strong><br />
-<small><code>&lt;?xml version='1.0'?&gt;<br>
-&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" <br>
-xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;<br>
-&lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;<br />
-&lt;CODE&gt;E101&lt;/CODE&gt;<br />
-&lt;STATUS&gt;Message Failed&lt;/STATUS&gt;<br />
-&lt;MMSID&gt;39755&lt;/MMSID&gt;<br />
-&lt;TO&gt;16502424956&lt;/TO&gt;<br />
-&lt;TRACKINGID&gt;TU1TXzU5Nzg3Nw==&lt;/TRACKINGID&gt;<br />
-&lt;SPID&gt;0001140&lt;/SPID&gt;<br />
-&lt;STATUSDETAILS&gt;Error fetching object(Database Error: Could not find number/email imported in database)&lt;STATUSDETAILS&gt;<br />
-&lt;/POSTBACK&gt;<br />
-</code></small></p>
+<p><strong>The E101 anatomy:</strong>
+<pre>
+&lt;?xml version='1.0'?&gt;
+&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
+  &lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;
+  &lt;CODE&gt;E101&lt;/CODE&gt;
+  &lt;STATUS&gt;Message Failed&lt;/STATUS&gt;
+  &lt;MMSID&gt;39755&lt;/MMSID&gt;
+  &lt;TO&gt;16502424956&lt;/TO&gt;
+  &lt;TRACKINGID&gt;TU1TXzU5Nzg3Nw==&lt;/TRACKINGID&gt;
+  &lt;SPID&gt;0001140&lt;/SPID&gt;
+  &lt;STATUSDETAILS&gt;Error fetching object(Database Error: Could not find number/email imported in database)
+&lt;/POSTBACK&gt;
+</pre>
 
-<h5><strong>e)  Save MMS</strong></h5>
-<p>When MMS is saved (using API or our MMS Composer) we generate postback notification. When saving was successful we generate N003:</p>
-<p><small><code>&lt;?xml version='1.0'?&gt;<br>
+<strong>MMS MT (Save MMS)</strong>
+<p><strong>Synopsis:</strong> When MMS is saved (using API or our MMS Composer) we generate postback notification. When saving was successful we generate N003.</p>
+<strong><p>This postback will contain the following nodes:</p></strong>
+CODE, ORIGIN<BR/>
+MMSID &#8211; ID of the MMS<BR/>
+
+<p><strong>The N003 anatomy:</strong>
+<pre>
+&lt;?xml version='1.0'?&gt;<br>
 &lt;POSTBACK&gt;<br>
-&lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;<br />
-&lt;CODE&gt;N003&lt;/CODE&gt;<br />
-&lt;MMSID&gt;35674&lt;/MMSID&gt;<br />
+  &lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;<br />
+  &lt;CODE&gt;N003&lt;/CODE&gt;<br />
+  &lt;MMSID&gt;35674&lt;/MMSID&gt;<br />
 &lt;/POSTBACK&gt;</code></small></p>
-<p>If encoding of the Content failed we generate postback E002 containgin MMSID and AUDIONAME/VIDEONAME pointing ti the content that failed to encode proerly. Below is example of E002:</p>
-<p><small><code>&lt;?xml version='1.0'?&gt;<br>
-&lt;POSTBACK&gt;<br>
-&lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;<br />
-&lt;CODE&gt;E002&lt;/CODE&gt;<br />
-&lt;MMSID&gt;35674&lt;/MMSID&gt;<br />
-&lt;AUDIONAME&gt;sample.mp3&lt;/AUDIONAME&gt;<br />
-&lt;/POSTBACK&gt;</code></small></p>
+</pre>
+
+<strong>MMS MT (Save MMS Content Failure)</strong>
+<p><strong>Synopsis:</strong> If encoding of the Content failed we generate postback E002 containgin MMSID and AUDIONAME/VIDEONAME pointing to the content that failed to encode properly.</p>
+<strong><p>This postback will contain the following nodes:</p></strong>
+CODE, ORIGIN<BR/>
+MMSID &#8211; ID of the MMS<BR/>
+AUDIONAME &#8211; points to audio content that failed to encode properly<BR/>
+VIDEONAME &#8211; points to video content that failed to encode properly<BR/>
+
+<p><strong>The E002 anatomy:</strong>
+<pre>
+&lt;?xml version='1.0'?&gt;
+&lt;POSTBACK&gt;
+  &lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;
+  &lt;CODE&gt;E002&lt;/CODE&gt;
+  &lt;MMSID&gt;35674&lt;/MMSID&gt;
+  &lt;AUDIONAME&gt;sample.mp3&lt;/AUDIONAME&gt;
+&lt;/POSTBACK&gt;
+</pre>
