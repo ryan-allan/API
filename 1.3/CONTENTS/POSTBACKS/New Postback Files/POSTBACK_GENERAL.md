@@ -1,4 +1,4 @@
-<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/1.3/CONTENTS/POSTBACKS/New%20Postback%20Files/POSTBACK_SYSTEM_OVERVIEW.md">General System Postbacks</a>
+<a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/1.3/CONTENTS/POSTBACKS/New%20Postback%20Files/POSTBACK_SYSTEM_OVERVIEW.md">Postback System Overview</a>
 
 <p><strong>Group #3- Subscribe/Unsubscribe for Phone/Email</strong></p>
 <p><strong>a) Synopsis:</strong> This Postback notification subscribes a phone number to a specific campaign. Postback contain following nodes:</p>
