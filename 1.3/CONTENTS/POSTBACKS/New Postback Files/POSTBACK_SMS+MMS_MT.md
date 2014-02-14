@@ -4,17 +4,17 @@
 This document will provide a technical description of the MMS/SMS MT postback API.  Briefly, this API allows those with SMS/MMS MT postbacks enabled to generate and forward SMS/MMS MT postbacks to their server.  For MMS, we have two methods for delivering content binary and xHTML. We send different Postbacks depending on which method is used.
 
 <strong>Current list of the SMS/MMS MT Postbacks</strong>
-<ul>
+
 [SMS MT Send](#Send)                            
-<li>[SMS MT Status](#Status)</li>                         
-<li>[MMS MT (Binary)](#Binary)</li>                       
-<li>[MMS MT (XHTML)](#XHTML)</li>                         
+[SMS MT Status](#Status)</li>                         
+[MMS MT (Binary)](#Binary)</li>                       
+[MMS MT (XHTML)](#XHTML)</li>                         
 <li>[MMS MT (Binary degrade to XHTML and sent as SMS link](#Degrade)</li>   
 <li>[MMS MT (Sending Failure)](#SendFail)</li>      
 <li>[MMS MT (Save MMS)](#Save)</li> 
 <li>[MMS MT (Save MMS Content Failure)](#ContentFail)</li> 
-</ul>
-<a name="Send"></a><strong>SMS MT Sent</strong>
+
+<a name="Send"><strong>SMS MT Sent</strong>
 <p><strong>Synopsis:</strong>This postback provides a notification when the SMS is sent out from our server.</p>
 <strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
