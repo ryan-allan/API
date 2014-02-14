@@ -26,8 +26,8 @@
 
 <strong>Postback Groups</strong>
 <ul>
-<li><a href="/1.3/CONTENTS/POSTBACKS/New%20Postback%20Files/POSTBACK_SUB+UNSUB.md">Sub/Unsub Phone&Email</a></li>
-<li><a href="/1.3/CONTENTS/POSTBACKS/New%20Postback%20Files/POSTBACK_SMS+MMS_MO.md">SMS/MMS MO</a></li>
-<li><a href="/1.3/CONTENTS/POSTBACKS/New%20Postback%20Files/POSTBACK_SMS+MMS_MT.md">SMS/MMS MT</a></li>
-<li><a href="/1.3/CONTENTS/POSTBACKS/New%20Postback%20Files/POSTBACK_PASSES.md">Pass Generation</a></li>
+<li><a href="/1.3/CONTENTS/POSTBACKS/POSTBACK_SUB+UNSUB.md">Sub/Unsub Phone&Email</a></li>
+<li><a href="/1.3/CONTENTS/POSTBACKS/POSTBACK_SMS+MMS_MO.md">SMS/MMS MO</a></li>
+<li><a href="/1.3/CONTENTS/POSTBACKS/POSTBACK_SMS+MMS_MT.md">SMS/MMS MT</a></li>
+<li><a href="/1.3/CONTENTS/POSTBACKS/POSTBACK_PASSES.md">Pass Generation</a></li>
 </ul>
