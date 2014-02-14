@@ -2,8 +2,8 @@
 <h2>Overview: Postback Notification System</h2>
 <p>The Postback system notifies remote servers about different events related to the account. 
 For each event, a notification in XML format is inserted into a Postback queue. 
-The  notifications in the Postback queue are processed sent out every second. 
-The notifications are sent in one HTTP request to the Postback URL. 
+The  notifications in the Postback queue are processed and sent out every second. 
+The notifications are sent in one HTTP request to a user-specified Postback URL. 
 The Postback URL is an address on your server where you would like to receive these notifications and is defined in your API Account settings. You can specify an optional separate Postback URL for all SMS/MMS MO postbacks - if there is no MO Postback URL specified all traffc will go to one Postback URL.
 If establishing a connection to the Postback URL takes longer than 10 seconds, the connection will time out and fail.  
 After that, we will attempt to resend the postback notification every 5 minutes up to a total of 5 times. 
