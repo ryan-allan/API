@@ -10,7 +10,7 @@ Once the MMS is saved it can be utilized by other functions through the MMSID re
     &lt;ACTION&gt;saveMMS&lt;/ACTION&gt;
     &lt;API_KEY&gt;API KEY&lt;/API_KEY&gt;
     &lt;SUBJECT&gt;Subject &lt;/SUBJECT&gt;
-    &lt;NAME&gt;Name to save it as&lt;/NAME&gt;
+    &lt;NAME&gt;Name To Save It As&lt;/NAME&gt;
     &lt;SLIDE&gt;
     	&lt;IMAGE&gt;&lt;URL&gt;URL&lt;/URL&gt;&lt;/IMAGE&gt;
     	&lt;AUDIO&gt;&lt;URL&gt;URL&lt;/URL&gt;&lt;/AUDIO&gt;
