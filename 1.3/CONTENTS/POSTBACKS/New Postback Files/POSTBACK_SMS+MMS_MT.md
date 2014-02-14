@@ -59,7 +59,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 </pre>
 
 <strong>MMS MT (Binary)</strong>
-<p><strong>Synopsis:</strong> In binary sending, we deliver a Postback notification called &#8220;N101&#8243; immediately after we begin to process the MMS. Upon receiving Delivery Report (DLR), the system generates Postback notification &#8220;N102&#8243; with the handset name. N101 and N102 notifications are linked by TRACKINGID.<p>
+<p><strong>Synopsis:</strong> In binary sending, we deliver a postback notification called &#8220;N101&#8243; immediately after we begin to process the MMS. Upon receiving Delivery Report (DLR), the system generates Postback notification &#8220;N102&#8243; with the handset name. N101 and N102 notifications are linked by TRACKINGID.<p>
 <strong><p>These postbacks will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
 SENTAS &#8211; indicates if the MMS was delivered as MMS (binary delivery) or SMS (xHTML). Binary delivery will always be MMS<BR/>
@@ -154,56 +154,58 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
   &lt;SPID&gt;0001140&lt;/SPID&gt;
   &lt;TIMESTAMP&gt;2012-06-07T07:28:09-05:00&lt;/TIMESTAMP&gt;
   &lt;AGGREGATORID&gt;11529-64807-97508-73852-97658&lt;/AGGREGATORID&gt;
-&lt;/POSTBACK&gt;<br />
+&lt;/POSTBACK&gt;
 </pre>
 
+<strong>MMS MT (Binary Degraded to XHTML and Delivered as an SMS Link)</strong>
+<p><strong>Synopsis:</strong> In some rare cases we degrade the binary MMS and deliver it as SMS link, it may be due to MMS being too big to deliver as binary.  We send one Postback N101 notifying that we started to process the message - in this case the postback will contain additional STATUSDETAILS node describing why it is being delivered as xHTML (This is the only difference VS xHTML delivery).  When we receive Delivery Report(DLR) for SMS, we generate Postback notification N202. 
+<strong><p>These postbacks will contain the following nodes:</p></strong>
+CODE, ORIGIN<BR/>
+SENTAS &#8211; this node indicate if MMS was delivered as MMS (binary delivery) or SMS (xHTML). For xHTML delivery it will always be SMS<BR/>
+MMSID &#8211; ID of the MMS<BR/>
+TO &#8211; MMS receiver<BR/>
+SPID &#8211; carrier ID &#8211; please check API documentation Appendinx E<BR/>
+TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with API response using this field.<BR/>
+TIMESTAMP &#8211; timestamp of the MMS was sent (N101) or when SMS was delivered (N202)<BR/>
+STATUS &#8211; For N101 notification status can be "Message Sent". For N202 notification status can be "Message Sent/Delivered" or "Message Sent/Failed"<BR/>
+STATUSDETAILS &#8211; For N101 notification this node will contain details why the MMS is being delivered as XHTML.<BR/>
+AGGREGATORID &#8211; Only in N202 notification, contain Aggregator ID of the sending.<BR/>
 
-<p><strong>c) Binary MMS degraded to xHTML and delivered as SMS link.</strong></p>
-<p>In some rare cases we degrade the binary MMS and deliver it as SMS link, it may be due to MMS being too big to deliver as binary.
-We send one Postback N101 notifying that we started to process the message - in this case the postback will contain additional STATUSDETAILS node describing why it is being delivered as xHTML (This is the only difference VS xHTML delivery). 
-When we receive Delivery Report(DLR) for SMS, we generate Postback notification N202. Postbacks will contain following nodes:</p>
-<p>CODE, ORIGIN</p>
-<p>SENTAS &#8211; this node indicate if MMS was delivered as MMS (binary delivery) or SMS (xHTML). For xHTML delivery it will always be SMS</p>
-<p>MMSID &#8211; ID of the MMS</p>
-<p>TO &#8211; MMS receiver</p>
-<p>SPID &#8211; carrier ID &#8211; please check API documentation Appendinx E</p>
-<p>TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with API response using this field.</p>
-<p>TIMESTAMP &#8211; timestamp of the MMS was sent (N101) or when SMS was delivered (N202)</p>
-<p>STATUS &#8211; For N101 notification status can be "Message Sent". For N202 notification status can be "Message Sent/Delivered" or "Message Sent/Failed"</p>
-<p>STATUSDETAILS &#8211; For N101 notification this node will contain details why the MMS is being delivered as xHTML.</p>
-<p>AGGREGATORID &#8211; Only in N202 notification, contain Aggregator ID of the sending. </p>
+<p><strong>The N101 anatomy:</strong></p>
+<pre>
+&lt;?xml version='1.0'?&gt;
+&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
+  &lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;
+  &lt;CODE&gt;N101&lt;/CODE&gt;
+  &lt;SENTAS&gt;SMS&lt;/SENTAS&gt;
+  &lt;STATUS&gt;Message Sent&lt;/STATUS&gt;
+  &lt;MMSID&gt;39755&lt;/MMSID&gt;
+  &lt;TO&gt;16502424956&lt;/TO&gt;
+  &lt;TRACKINGID&gt;TU1TXzU5Nzg3Nw==&lt;/TRACKINGID&gt;
+  &lt;SPID&gt;0001140&lt;/SPID&gt;
+  &lt;TIMESTAMP&gt;2012-06-07T07:27:34-05:00&lt;/TIMESTAMP&gt;
+  &lt;STATUSDETAILS&gt;Handset setting: mms with pass via xhtml;&lt;/STATUSDETAILS&gt;
+&lt;/POSTBACK&gt;
+</pre>
 
-<p><strong>N101 Example:</strong><br />
-<small><code>&lt;?xml version='1.0'?&gt;<br>
-&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" <br>
-xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;<br>
-&lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;<br />
-&lt;CODE&gt;N101&lt;/CODE&gt;<br />
-&lt;SENTAS&gt;SMS&lt;/SENTAS&gt;<br />
-&lt;STATUS&gt;Message Sent&lt;/STATUS&gt;<br />
-&lt;MMSID&gt;39755&lt;/MMSID&gt;<br />
-&lt;TO&gt;16502424956&lt;/TO&gt;<br />
-&lt;TRACKINGID&gt;TU1TXzU5Nzg3Nw==&lt;/TRACKINGID&gt;<br />
-&lt;SPID&gt;0001140&lt;/SPID&gt;<br />
-&lt;TIMESTAMP&gt;2012-06-07T07:27:34-05:00&lt;/TIMESTAMP&gt;<br />
-&lt;STATUSDETAILS&gt;Handset setting: mms with pass via xhtml;&lt;/STATUSDETAILS&gt;<br />
-&lt;/POSTBACK&gt;<br />
-</code></small></p>
-<p><strong><strong>N202 Example:</strong></strong></p>
-<p><small><code>&lt;?xml version='1.0'?&gt;<br>
-&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" <br>
-xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;<br>
-&lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;<br />
-&lt;CODE&gt;N202&lt;/CODE&gt;<br />
-&lt;SENTAS&gt;SMS&lt;/SENTAS&gt;<br />
-&lt;STATUS&gt;Message Sent/Delivered&lt;/STATUS&gt;<br />
-&lt;TO&gt;16502424956&lt;/TO&gt;<br />
-&lt;TRACKINGID&gt;TU1TXzU5Nzg3Nw==&lt;/TRACKINGID&gt;<br />
-&lt;SPID&gt;0001140&lt;/SPID&gt;<br />
-&lt;TIMESTAMP&gt;2012-06-07T07:28:09-05:00&lt;/TIMESTAMP&gt;<br />
-&lt;AGGREGATORID&gt;11529-64807-97508-73852-97658&lt;/AGGREGATORID&gt;<br />
-&lt;/POSTBACK&gt;<br />
-</code></small></p>
+<p><strong><strong>The N202 anatomy:</strong></strong></p>
+<pre>
+&lt;?xml version='1.0'?&gt;
+&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
+  &lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;
+  &lt;CODE&gt;N202&lt;/CODE&gt;
+  &lt;SENTAS&gt;SMS&lt;/SENTAS&gt;
+  &lt;STATUS&gt;Message Sent/Delivered&lt;/STATUS&gt;
+  &lt;TO&gt;16502424956&lt;/TO&gt;
+  &lt;TRACKINGID&gt;TU1TXzU5Nzg3Nw==&lt;/TRACKINGID&gt;
+  &lt;SPID&gt;0001140&lt;/SPID&gt;
+  &lt;TIMESTAMP&gt;2012-06-07T07:28:09-05:00&lt;/TIMESTAMP&gt;
+  &lt;AGGREGATORID&gt;11529-64807-97508-73852-97658&lt;/AGGREGATORID&gt;
+&lt;/POSTBACK&gt;
+</pre>
+
 
 <p><strong>d)MMS sending Fails</strong></p>
 <p>Sometimes system is unable to send MMS out. In this situations we send postback E101. Postback will contain following nodes:</p>
