@@ -45,7 +45,7 @@ the MMS MO moderation panel then the postback notifictions will only be sent upo
 <p><strong>Synopsis: </strong>This Postback provides a bundle of SMS MO Received postbacks. The bundle will contain following nodes:</p>
 
 <p>CODE, ORIGIN</p>
-<p>NOTIFICATION &#8211; Identifies each individual notification</p>
+<p>NOTIFICATION &#8211; Identifies each individual postback</p>
 <p>BODY &#8211; Indicates the start of the body of information</p>
 <p>FROM &#8211; SMS sender mobile number</p>
 <p>TO &#8211; shortcode the SMS was sent to</p>
@@ -65,6 +65,17 @@ the MMS MO moderation panel then the postback notifictions will only be sent upo
 &lt;RECEIVED&gt;2011-09-28 17:31:02.278751-04&lt;/RECEIVED&gt;
 &lt;/BODY&gt;
 &lt;/NOTIFICATION&gt;
+&lt;NOTIFICATION id=&#8221;264&#8243; created=&#8221;2011-09-28 17:31:02.835577-04&#8243;&gt;
+&lt;ORIGIN&gt;SMS_MO&lt;/ORIGIN&gt;
+&lt;CODE&gt;N211&lt;/CODE&gt;
+&lt;BODY&gt;
+&lt;FROM&gt;15552312102&lt;/FROM&gt;
+&lt;TO&gt;86717&lt;/TO&gt;
+&lt;KEYWORD&gt;STOP&lt;/KEYWORD&gt;
+&lt;RECEIVED&gt;2011-09-28 17:31:02.278751-04&lt;/RECEIVED&gt;
+&lt;/BODY&gt;
+&lt;/NOTIFICATION&gt;
+...
 &lt;/POSTBACK&gt;
 </pre>
 
