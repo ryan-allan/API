@@ -2,13 +2,16 @@
 <h2>Overview: Postback Notification System</h2>
 
 <strong>What is a postback?</strong>
+<ul>
 <li>A postback in a notification sent via a single HTTP request in XML format to a user-specified URL containing informationg regarding SMS/MMS MO's (Mobile Originated), SMS/MMS MT's(Mobile Terminated), and Passes relative to the user's account.</li>
+</ul>
 
 <strong>How do postbacks work?</strong>
+<ul>
 <li>Each event triggers a postback and places it in a queue.</li>
 <li>Postbacks in the queue are then processed and sent out every second to the user-specified URL.</li>
 <li>This user-specified URL is an address on your server where you would like to receive the information and is set via the API Settings tab of your account.</li>
-
+</ul>
 The Postback system notifies remote servers about different events related to the account. 
 For each event, a notification in XML format is inserted into a Postback queue. 
 The  notifications in the Postback queue are processed and sent out every second. 
