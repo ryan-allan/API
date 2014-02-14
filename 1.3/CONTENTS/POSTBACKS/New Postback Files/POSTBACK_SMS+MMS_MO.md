@@ -20,7 +20,8 @@ the MMS MO moderation panel then the postback notifictions will only be sent upo
 <h2>Types of SMS MO:</h2>
 
 <strong>SMS MO Received</strong>
-<p><strong>Synopsis: </strong>This Postback provides a notification when SMS MO is received. This postback will contain following nodes:</p>
+<p><strong>Synopsis: </strong>This Postback provides a notification when SMS MO is received.</p>
+<p>This postback will contain following nodes:</p>
 
 CODE, ORIGIN<BR/>
 FROM &#8211; SMS sender mobile number<BR/>
@@ -42,7 +43,8 @@ RECEIVED &#8211; timestamp of the SMS received by our server<BR/>
 </pre>
 
 <strong>SMS MO Received Bundle</strong>
-<p><strong>Synopsis: </strong>This Postback provides a bundle of SMS MO Received postbacks. The bundle will contain following nodes:</p>
+<p><strong>Synopsis: </strong>This Postback provides a bundle of SMS MO Received postbacks.</p>
+<p>This postback bundle will contain following nodes:</p>
 
 CODE, ORIGIN<BR/>
 NOTIFICATION &#8211; Identifies each individual postback<BR/>
@@ -83,7 +85,8 @@ RECEIVED &#8211; timestamp of the SMS received by our server<BR/>
 <h2>Types of MMS MO:</h2>
 
 <p><strong>MMS MO Received</strong></p>
-<p><strong>Synopsis: </strong>This Postback provides a notification when MMS MO is received. This postback will contain following nodes:</p>
+<p><strong>Synopsis: </strong>This Postback provides a notification when MMS MO is received.</p> 
+<p>This postback will contain following nodes:</p>
 
 CODE, ORIGIN<BR/>
 NOTIFICATION &#8211; SMS sender mobile number<BR/>
