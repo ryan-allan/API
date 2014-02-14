@@ -3,7 +3,7 @@
 <div id="page-content"><strong>Brief Overview:</strong>
 This document will provide a technical description of the MMS/SMS MO postback API. In brief, this API allows those with an SMS/MMS MO-enabled shortcode to forward received messages (MMS/SMS MO) to their server.
 
-<strong>SMS/MMS MO Specific URL:</strong>
+<strong>SMS/MMS MO-Specific URL:</strong>
 A separate Postback URL specifically for SMS/MMS MO's(Mobile Originated) maybe be set via the API Settings tab of your account.  If it is not set, all postbacks will be sent to the Postback URL that is set.
 
 <strong>SMS MO General Information:</strong>
