@@ -4,7 +4,7 @@
 <div id="page-content"><strong>Brief Overview:</strong>
 This document will provide a technical description of the Subscribe and Unsubscribe postbacks API for phone and email. Briefly, this API allows those with subscribe and unsubscribe postbacks enabled to generate and forward postbacks to their server when an individual subscribes or unsubscribes from a mobile or email campaign.
 
-<strong>Mobile Subscribe</strong>
+<a name="MobileSub"><strong>Mobile Subscribe</strong>
 <p><strong>Synopsis:</strong> This postback notification subscribes a phone number to a specific campaign.</p>
 <strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
@@ -24,7 +24,7 @@ SUBID &#8211; subscription ID<BR/>
 &lt;/POSTBACK&gt;
 </pre>
 
-<strong>Mobile Unsubscribe</strong>
+<a name="MobileUnsub"><strong>Mobile Unsubscribe</strong>
 <p><strong>Synopsis:</strong> This postback notification unsubscribes a phone number from a specific campaign.</p>
 <strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
