@@ -44,13 +44,13 @@ RECEIVED &#8211; timestamp of the SMS received by our server<BR/>
 <strong>SMS MO Received Bundle</strong>
 <p><strong>Synopsis: </strong>This Postback provides a bundle of SMS MO Received postbacks. The bundle will contain following nodes:</p>
 
-CODE, ORIGIN
-NOTIFICATION &#8211; Identifies each individual postback
-BODY &#8211; Indicates the start of the body of information
-FROM &#8211; SMS sender mobile number</p>
-TO &#8211; shortcode the SMS was sent to</p>
-KEYWORD &#8211; this is actual text that was sent by the sender
-RECEIVED &#8211; timestamp of the SMS received by our server
+CODE, ORIGIN<BR/>
+NOTIFICATION &#8211; Identifies each individual postback<BR/>
+BODY &#8211; Indicates the start of the body of information<BR/>
+FROM &#8211; SMS sender mobile number<BR/>
+TO &#8211; shortcode the SMS was sent to<BR/>
+KEYWORD &#8211; this is actual text that was sent by the sender<BR/>
+RECEIVED &#8211; timestamp of the SMS received by our server<BR/>
 
 <p><strong>This postback bundle has the following anatomy:</strong></p>
 
@@ -85,16 +85,16 @@ RECEIVED &#8211; timestamp of the SMS received by our server
 <p><strong>MMS MO Received</strong></p>
 <p><strong>Synopsis: </strong>This Postback provides a notification when MMS MO is received. This postback will contain following nodes:</p>
 
-CODE, ORIGIN
-NOTIFICATION &#8211; SMS sender mobile number
-FROM &#8211; tags contain the phone number, including the country code, of the sender.
-TO &#8211; tags contain the destination shortcode.
-KEYWORD &#8211; tags contain the keyword recognized that was passed in the MMS.
-TRACKINGID &#8211; tags contain a tracking ID, which contains the ID we've assigned this MMS MO on our system.
-SPID &#8211; tags contain the SPID of the sender's carrier.
-TIMESTAMP &#8211; tags contain the timestamp that our system received the MMS MO.
-CONTENT &#8211; contains the file nodes sent in the MMS MO
-FILE &#8211; contains a single URL to a picture, video, audio or text file sent in the MMS MO.  The URL points to the location of the content on our servers. For those developing the back-end handling of the postback URL, you may choose to download/store these content files for whatever purpose you see fit. You may also choose to store the URLs for download at a future time.
+CODE, ORIGIN<BR/>
+NOTIFICATION &#8211; SMS sender mobile number<BR/>
+FROM &#8211; tags contain the phone number, including the country code, of the sender.<BR/>
+TO &#8211; tags contain the destination shortcode.<BR/>
+KEYWORD &#8211; tags contain the keyword recognized that was passed in the MMS.<BR/>
+TRACKINGID &#8211; tags contain a tracking ID, which contains the ID we've assigned this MMS MO on our system.<BR/>
+SPID &#8211; tags contain the SPID of the sender's carrier.<BR/>
+TIMESTAMP &#8211; tags contain the timestamp that our system received the MMS MO.<BR/>
+CONTENT &#8211; contains the file nodes sent in the MMS MO<BR/>
+FILE &#8211; contains a single URL to a picture, video, audio or text file sent in the MMS MO.  The URL points to the location of the content on our servers. For those developing the back-end handling of the postback URL, you may choose to download/store these content files for whatever purpose you see fit. You may also choose to store the URLs for download at a future time.<BR/>
 <p><strong>This postback has the following anatomy:</strong></p>
 <pre>
 &lt;POSTBACK&gt;
