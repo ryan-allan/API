@@ -1,28 +1,81 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>
 <h2>Overview: Postback Notification System</h2>
+<p>The Postback system notifies remote servers about different events related to the account. 
+For each event, a notification in XML format is inserted into a Postback queue. 
+The  notifications in the Postback queue are processed sent out every second. 
+The notifications are sent in one HTTP request to the Postback URL. 
+The Postback URL is an address on your server where you would like to receive these notifications and is defined in your API Account settings. You can specify an optional separate Postback URL for all SMS/MMS MO postbacks - if there is no MO Postback URL specified all traffc will go to one Postback URL.
+If establishing a connection to the Postback URL takes longer than 10 seconds, the connection will time out and fail.  
+After that, we will attempt to resend the postback notification every 5 minutes up to a total of 5 times. 
+If establishing a connection is successful, we expect the remote server to respond with a properly formed HTTP header containing 200 HTTP code. 
+If no HTTP response is provided or the HTTP code is not 200, we consider the Postback Notification a failed request and will retry five minutes later up to five times.</p>
+<h1>Postback Groups</h1>
+<p>Our servers generate different Postbacks, which we divide into few groups. 
+There are sub-groups within each Postback group. Each postback contain few unified fields:</p>
+<p>ORIGIN &#8211; identifies origin of the postback</p>
+<p>CODE &#8211; identifies situation when postback is generated</p>
+<p><strong>Group #1- SMS</strong></p>
+<p><strong>a) Synopsis: </strong>This Postback provides a notification when the SMS is sent out from our server. Postback will contain following nodes:</p>
+<p>CODE, ORIGIN</p>
+<p>STATUS &#8211; Indicate if the SMS was sent out successfully - allowed values are "Message Sent" or "Message Failed"</p>
+<p>TO &#8211; SMS receiver</p>
+<p>TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with API response using this field.</p>
+<p>SPID &#8211; Carrier Identification - please reffer to APPENDIX E for more details</p>
+<p>TIMESTAMP &#8211; timestamp of the SMS sending</p>
+<p><strong>Postback Notification Example:</strong></p>
+<p><small><code>&lt;?xml version='1.0'?&gt;<br>
+&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" <br>
+xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;<br>
+&lt;ORIGIN&gt;SMS_MT&lt;/ORIGIN&gt;<br>
+&lt;CODE&gt;N201&lt;/CODE&gt;<br>
+&lt;STATUS&gt;Message Sent&lt;/STATUS&gt;<br>
+&lt;TO&gt;16503333058&lt;/TO&gt;<br>
+&lt;TRACKINGID&gt;U01TXzgwNjc4&lt;/TRACKINGID&gt;<br>
+&lt;SPID&gt;0001470&lt;/SPID&gt;<br>
+&lt;TIMESTAMP&gt;2013-11-05T05:41:08-05:00&lt;/TIMESTAMP&gt;<br>
+&lt;/POSTBACK&gt;<br>
+</code></small></p>
+<p><strong>b) Synopsis:</strong> This Postback provides a notification about the status of an SMS. Postback will contain following nodes:</p>
+<p>CODE, ORIGIN</p>
+<p>STATUS &#8211; Indicate if the SMS was sent out successfully - allowed values are "Message Sent/Delivered" or "Message Sent/Failed"</p>
+<p>TO &#8211; SMS receiver</p>
+<p>TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with API response using this field.</p>
+<p>SPID &#8211; Carrier Identification - please reffer to APPENDIX E for more details</p>
+<p>TIMESTAMP &#8211; timestamp of the SMS Delivery Receipt</p>
+<p>AGGREGATOR &#8211; SMS aggregator ID</p>
+<p><strong>Postback Notification Example:</strong></p>
+<p><code><small>&lt;?xml version='1.0'?&gt;<br>
+&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" <br>
+xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;<br>
+&lt;ORIGIN&gt;SMS_MT&lt;/ORIGIN&gt;<br>
+&lt;CODE&gt;N202&lt;/CODE&gt;<br>
+&lt;STATUS&gt;Message Sent/Delivered&lt;/STATUS&gt;<br>
+&lt;TO&gt;16503333058&lt;/TO&gt;<br>
+&lt;TRACKINGID&gt;U01TXzgwNjc4&lt;/TRACKINGID&gt;<br>
+&lt;SPID&gt;0001470&lt;/SPID&gt;<br>
+&lt;TIMESTAMP&gt;2013-11-05T05:41:15-05:00&lt;/TIMESTAMP&gt;<br>
+&lt;AGGREGATORID&gt;11529-64807-97508-73852-97658&lt;/AGGREGATORID&gt;
+&lt;/POSTBACK&gt;<br>
+</small></code></p>
+<p><strong>c) Synopsis: </strong>This Postback provides a notification when SMS MO is received. Postback will contain following nodes:</p>
+<p>CODE, ORIGIN</p>
+<p>FROM &#8211; SMS sender mobile number</p>
+<p>TO &#8211; shortcode the SMS was sent to</p>
+<p>TEXT &#8211; this is actuall text that was sent by the sender</p>
+<p>RECEIVED &#8211; timestamp of the SMS received by our server</p>
+<p><strong>Postback Notification Example:</strong></p>
+<p><small><code>&lt;?xml version='1.0'?&gt;<br>
+&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" <br>
+xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;<br>
+&lt;ORIGIN&gt;SMS_MO&lt;/ORIGIN&gt;<br />
+&lt;CODE&gt;N211&lt;/CODE&gt;<br />
+&lt;FROM&gt;16311112222&lt;/FROM&gt;<br />
+&lt;TO&gt;60856&lt;/TO&gt;<br />
+&lt;TEXT&gt;MYKEYCODE&lt;/TEXT&gt;<br />
+&lt;RECEIVED&gt;2012-04-16T09:05:56-04:00&lt;/RECEIVED&gt;<br />
+&lt;/POSTBACK&gt;<br />
+</code></small></p>
 
-<strong>What is a postback?</strong>
-<ul>
-<li>A postback in a notification sent via a single HTTP request in XML format to a user-specified URL containing information regarding SMS/MMS MO's (Mobile Originated), SMS/MMS MT's(Mobile Terminated), and Passes relative to a user's account.</li>
-</ul>
-
-<strong>How do postbacks work?</strong>
-<ul>
-<li>Each event triggers a postback and places it in a queue.</li>
-<li>Postbacks in the queue are then processed and sent out every second to the user-specified URL.</li>
-<li>Upon a server's reception of the postback, we expect the server to respond with a properly formatted HTTP header containing a 200 HTTP code.</li>
-</ul>
-
-<strong>Important Notes</strong>
-<ul>
-<li>If establishing a connection to the user-specified Postback URL takes longer than 10 seconds, the connection will time out and fail.  After that, we will attempt to resend the postback every 5 minutes up to a total of 5 times.</li>
-<li>If the HTTP response from the user's server is not provided or the HTTP code is not 200, we consider the postback a failed request and we will attempt to resend the postback every 5 minutes up to a total of 5 times.</li>
-<li> The following tags are always a part of our postbacks:
-  <ul>
-  <li>ORIGIN &#8211; identifies origin of the postback</li>
-  <li>CODE &#8211; identifies situation when postback is generated</li>
-  </ul>
-</ul>
 
 
 <p><strong>Group #2-MMS</strong></p>
