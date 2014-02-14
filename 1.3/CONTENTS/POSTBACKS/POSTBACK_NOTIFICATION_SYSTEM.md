@@ -1,6 +1,6 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>
 <h2>Overview: Postback Notification System</h2>
-<p>
+
 <strong>What is a postback?</strong>
 <li>A postback in a notification sent via a single HTTP request in XML format to a user-specified URL containing informationg regarding SMS/MMS MO's (Mobile Originated), SMS/MMS MT's(Mobile Terminated), and Passes relative to the user's account.</li>
 
@@ -18,7 +18,7 @@ If establishing a connection to the Postback URL takes longer than 10 seconds, t
 After that, we will attempt to resend the postback notification every 5 minutes up to a total of 5 times. 
 If establishing a connection is successful, we expect the remote server to respond with a properly formed HTTP header containing 200 HTTP code. 
 If no HTTP response is provided or the HTTP code is not 200, we consider the Postback Notification a failed request and will retry five minutes later up to five times.
-</p>
+
 <h1>Postback Groups</h1>
 <p>Our servers generate different Postbacks, which we divide into few groups. 
 There are sub-groups within each Postback group. Each postback contain few unified fields:</p>
