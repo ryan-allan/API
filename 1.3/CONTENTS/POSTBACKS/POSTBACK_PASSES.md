@@ -7,10 +7,10 @@ Having this API enabled allows you to send pass information back to your server 
 <strong>Pass-Specific URL:</strong>
 You can set your pass postback URL by logging into your account and going to &#8216;Account&#8217; tab and selecting the &#8216;API settings&#8217; button. Enter the URL under the setting &#8216;Pass Postback URL&#8217; and make sure that the URL is &#8216;working&#8217;. Also, make sure &#8216;Pass Generate Postback&#8217; setting is ON. Every pass generation triggered will start sending messages to your URL in the XML format shown above.
 
-<a name="PassGen"><strong>Generate Pass Bundle</strong>
+<a name="PassGen"></a><strong>Generate Pass Bundle</strong>
+
 <strong>Synopsis:</strong> This postback provides a bundle of pass generation postbacks.
 <strong><p>This postback will contain the following nodes:</p></strong>
-
 CODE, ORIGIN<BR/>
 STATUSCODE &#8211; contains the notification code for success/failure. These codes are explained under <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_B.md">APPENDIX B</a><BR />
 REFERENCEDBY &#8211; contains the reference value type that was used to generate this pass i.e., email, phone, etc.<BR />
