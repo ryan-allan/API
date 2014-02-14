@@ -1,14 +1,24 @@
 <a href="/1.3/README.md">Back to the Table of Contents</a>
 <h2>Overview: Postback Notification System</h2>
-<p>The Postback system notifies remote servers about different events related to the account. 
+<p>
+<strong>What is a postback?</strong>
+<li>A postback in a notification sent via a single HTTP request in XML format to a user-specified URL containing informationg regarding SMS/MMS MO's (Mobile Originated), SMS/MMS MT's(Mobile Terminated), and Passes relative to the user's account.</li>
+
+<strong>How do postbacks work?</strong>
+<li>Each event triggers a postback and places it in a queue.</li>
+<li>Postbacks in the queue are then processed and sent out every second to the user-specified URL.</li>
+<li>This user-specified URL is an address on your server where you would like to receive the information and is set via the API Settings tab of your account.</li>
+
+The Postback system notifies remote servers about different events related to the account. 
 For each event, a notification in XML format is inserted into a Postback queue. 
 The  notifications in the Postback queue are processed and sent out every second. 
 The notifications are sent in one HTTP request to a user-specified Postback URL. 
-The Postback URL is an address on your server where you would like to receive these notifications and is defined in your API Account settings. You can specify an optional separate Postback URL for all SMS/MMS MO postbacks - if there is no MO Postback URL specified all traffc will go to one Postback URL.
+The Postback URL is an address on your server where you would like to receive these notifications and is defined in your API Account settings. You can specify an optional separate Postback URL for all SMS/MMS MO postbacks.  If there is no MO Postback URL specified, all postbacks will go to the single, specified Postback URL.
 If establishing a connection to the Postback URL takes longer than 10 seconds, the connection will time out and fail.  
 After that, we will attempt to resend the postback notification every 5 minutes up to a total of 5 times. 
 If establishing a connection is successful, we expect the remote server to respond with a properly formed HTTP header containing 200 HTTP code. 
-If no HTTP response is provided or the HTTP code is not 200, we consider the Postback Notification a failed request and will retry five minutes later up to five times.</p>
+If no HTTP response is provided or the HTTP code is not 200, we consider the Postback Notification a failed request and will retry five minutes later up to five times.
+</p>
 <h1>Postback Groups</h1>
 <p>Our servers generate different Postbacks, which we divide into few groups. 
 There are sub-groups within each Postback group. Each postback contain few unified fields:</p>
