@@ -105,7 +105,7 @@ the MMS MO moderation panel then the postback notifictions will only be sent upo
 <p>SPID &#8211; tags contain the SPID of the sender's carrier.</p>
 <p>TIMESTAMP &#8211; tags contain the timestamp that our system received the MMS MO.</p>
 <p>CONTENT &#8211; contains the file nodes sent in the MMS MO</p>
-<p>FILE &#8211; contains a single URL to a picture, video, audio or text file sent in the MMS MO</p>
+<p>FILE &#8211; contains a single URL to a picture, video, audio or text file sent in the MMS MOThe URL points to the location of the content on our servers. For those developing the back-end handling of the postback URL, you may choose to download/store these content files for whatever purpose you see fit. You may also choose to store the URLs for download at a future time.</p>
 <p><strong>This postback has the following anatomy:</strong></p>
 <pre>
 &lt;POSTBACK&gt;
@@ -126,13 +126,3 @@ the MMS MO moderation panel then the postback notifictions will only be sent upo
 &lt;/NOTIFICATION&gt;
 &lt;/POSTBACK&gt;
 </pre>
-
-<p>Each MMS MO message is represented by a &lt;NOTIFICATION&gt; tag and all of the nodes and data contained within. When
-new MMS MO are received by our system, and approved in the moderation panel, they are bundled as shown, and sent to your
-postback URL using a process that runs every 1 minute. Each bundle can contain up to 300 notification nodes, each 
-representing a different incoming message.</p>
-
-<p>The content node contains all of the pictures, videos, audio, text, and smil that compose the received MMS MO message. 
-The URL points to the location of the content on our servers. For those developing the back-end handling of the postback
-URL, you may choose to download/store these content files for whatever purpose you see fit. You may also choose to store
-the URLs for download at a future time.</p>
