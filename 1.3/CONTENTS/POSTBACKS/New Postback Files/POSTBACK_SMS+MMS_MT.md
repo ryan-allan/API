@@ -15,6 +15,7 @@ SPID &#8211; Carrier Identification - please reffer to APPENDIX E for more detai
 TIMESTAMP &#8211; timestamp of the SMS sending<BR/>
 
 <p><strong>This postback has the following anatomy:</strong></p>
+<pre>
 &lt;?xml version='1.0'?&gt;
 &lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
@@ -26,7 +27,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
   &lt;SPID&gt;0001470&lt;/SPID&gt;
   &lt;TIMESTAMP&gt;2013-11-05T05:41:08-05:00&lt;/TIMESTAMP&gt;
 &lt;/POSTBACK&gt;
-
+</pre>
 
 <p><strong>b) Synopsis:</strong> This Postback provides a notification about the status of an SMS. Postback will contain following nodes:</p>
 <p>CODE, ORIGIN</p>
