@@ -21,7 +21,7 @@ the MMS MO moderation panel then the postback notifictions will only be sent upo
 
 <strong>SMS MO Received</strong>
 <p><strong>Synopsis: </strong>This Postback provides a notification when SMS MO is received.</p>
-<p>This postback will contain following nodes:</p>
+<strong><p>This postback will contain following nodes:</p></strong>
 
 CODE, ORIGIN<BR/>
 FROM &#8211; SMS sender mobile number<BR/>
@@ -44,7 +44,7 @@ RECEIVED &#8211; timestamp of the SMS received by our server<BR/>
 
 <strong>SMS MO Received Bundle</strong>
 <p><strong>Synopsis: </strong>This Postback provides a bundle of SMS MO Received postbacks.</p>
-<p>This postback bundle will contain following nodes:</p>
+<strong><p>This postback bundle will contain following nodes:</p></strong>
 
 CODE, ORIGIN<BR/>
 NOTIFICATION &#8211; Identifies each individual postback<BR/>
@@ -54,7 +54,7 @@ TO &#8211; shortcode the SMS was sent to<BR/>
 KEYWORD &#8211; this is actual text that was sent by the sender<BR/>
 RECEIVED &#8211; timestamp of the SMS received by our server<BR/>
 
-<p><strong>This postback bundle has the following anatomy:</strong></p>
+<strong><p>This postback bundle has the following anatomy:</p></strong>
 
 <pre>
 &lt;POSTBACK&gt;
@@ -86,7 +86,7 @@ RECEIVED &#8211; timestamp of the SMS received by our server<BR/>
 
 <p><strong>MMS MO Received</strong></p>
 <p><strong>Synopsis: </strong>This Postback provides a notification when MMS MO is received.</p> 
-<p>This postback will contain following nodes:</p>
+<strong><p>This postback will contain following nodes:</p></strong>
 
 CODE, ORIGIN<BR/>
 NOTIFICATION &#8211; SMS sender mobile number<BR/>
