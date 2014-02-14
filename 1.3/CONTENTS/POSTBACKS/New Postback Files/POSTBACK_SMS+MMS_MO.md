@@ -22,11 +22,11 @@ the MMS MO moderation panel then the postback notifictions will only be sent upo
 <strong>SMS MO Received</strong>
 <p><strong>Synopsis: </strong>This Postback provides a notification when SMS MO is received. This postback will contain following nodes:</p>
 
-CODE, ORIGIN
-FROM &#8211; SMS sender mobile number
-TO &#8211; shortcode the SMS was sent to
-TEXT &#8211; this is actuall text that was sent by the sender
-RECEIVED &#8211; timestamp of the SMS received by our server
+CODE, ORIGIN<BR/>
+FROM &#8211; SMS sender mobile number<BR/>
+TO &#8211; shortcode the SMS was sent to<BR/>
+TEXT &#8211; this is actuall text that was sent by the sender<BR/>
+RECEIVED &#8211; timestamp of the SMS received by our server<BR/>
 
 <p><strong>This postback has the following anatomy:</strong></p>
 <pre>
