@@ -22,13 +22,13 @@ the MMS MO moderation panel then the postback notifictions will only be sent upo
 <strong>SMS MO Received</strong>
 <p><strong>Synopsis: </strong>This Postback provides a notification when SMS MO is received. This postback will contain following nodes:</p>
 
-<p>CODE, ORIGIN</p>
-<p>FROM &#8211; SMS sender mobile number</p>
-<p>TO &#8211; shortcode the SMS was sent to</p>
-<p>TEXT &#8211; this is actuall text that was sent by the sender</p>
-<p>RECEIVED &#8211; timestamp of the SMS received by our server</p>
-<p><strong>This postback has the following anatomy:</strong></p>
+CODE, ORIGIN
+FROM &#8211; SMS sender mobile number
+TO &#8211; shortcode the SMS was sent to
+TEXT &#8211; this is actuall text that was sent by the sender
+RECEIVED &#8211; timestamp of the SMS received by our server
 
+<p><strong>This postback has the following anatomy:</strong></p>
 <pre>
 &lt;?xml version='1.0'?&gt;
 &lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.skycore.com/schema/postback.xsd"&gt;
@@ -44,13 +44,14 @@ the MMS MO moderation panel then the postback notifictions will only be sent upo
 <strong>SMS MO Received Bundle</strong>
 <p><strong>Synopsis: </strong>This Postback provides a bundle of SMS MO Received postbacks. The bundle will contain following nodes:</p>
 
-<p>CODE, ORIGIN</p>
-<p>NOTIFICATION &#8211; Identifies each individual postback</p>
-<p>BODY &#8211; Indicates the start of the body of information</p>
-<p>FROM &#8211; SMS sender mobile number</p>
-<p>TO &#8211; shortcode the SMS was sent to</p>
-<p>KEYWORD &#8211; this is actual text that was sent by the sender</p>
-<p>RECEIVED &#8211; timestamp of the SMS received by our server</p>
+CODE, ORIGIN
+NOTIFICATION &#8211; Identifies each individual postback
+BODY &#8211; Indicates the start of the body of information
+FROM &#8211; SMS sender mobile number</p>
+TO &#8211; shortcode the SMS was sent to</p>
+KEYWORD &#8211; this is actual text that was sent by the sender
+RECEIVED &#8211; timestamp of the SMS received by our server
+
 <p><strong>This postback bundle has the following anatomy:</strong></p>
 
 <pre>
@@ -84,16 +85,16 @@ the MMS MO moderation panel then the postback notifictions will only be sent upo
 <p><strong>MMS MO Received</strong></p>
 <p><strong>Synopsis: </strong>This Postback provides a notification when MMS MO is received. This postback will contain following nodes:</p>
 
-<p>CODE, ORIGIN</p>
-<p>NOTIFICATION &#8211; SMS sender mobile number</p>
-<p>FROM &#8211; tags contain the phone number, including the country code, of the sender.</p>
-<p>TO &#8211; tags contain the destination shortcode.</p>
-<p>KEYWORD &#8211; tags contain the keyword recognized that was passed in the MMS.</p>
-<p>TRACKINGID &#8211; tags contain a tracking ID, which contains the ID we've assigned this MMS MO on our system.</p>
-<p>SPID &#8211; tags contain the SPID of the sender's carrier.</p>
-<p>TIMESTAMP &#8211; tags contain the timestamp that our system received the MMS MO.</p>
-<p>CONTENT &#8211; contains the file nodes sent in the MMS MO</p>
-<p>FILE &#8211; contains a single URL to a picture, video, audio or text file sent in the MMS MO.  The URL points to the location of the content on our servers. For those developing the back-end handling of the postback URL, you may choose to download/store these content files for whatever purpose you see fit. You may also choose to store the URLs for download at a future time.</p>
+CODE, ORIGIN
+NOTIFICATION &#8211; SMS sender mobile number
+FROM &#8211; tags contain the phone number, including the country code, of the sender.
+TO &#8211; tags contain the destination shortcode.
+KEYWORD &#8211; tags contain the keyword recognized that was passed in the MMS.
+TRACKINGID &#8211; tags contain a tracking ID, which contains the ID we've assigned this MMS MO on our system.
+SPID &#8211; tags contain the SPID of the sender's carrier.
+TIMESTAMP &#8211; tags contain the timestamp that our system received the MMS MO.
+CONTENT &#8211; contains the file nodes sent in the MMS MO
+FILE &#8211; contains a single URL to a picture, video, audio or text file sent in the MMS MO.  The URL points to the location of the content on our servers. For those developing the back-end handling of the postback URL, you may choose to download/store these content files for whatever purpose you see fit. You may also choose to store the URLs for download at a future time.
 <p><strong>This postback has the following anatomy:</strong></p>
 <pre>
 &lt;POSTBACK&gt;
