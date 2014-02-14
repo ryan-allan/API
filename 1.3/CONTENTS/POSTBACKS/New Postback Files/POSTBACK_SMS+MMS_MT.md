@@ -120,7 +120,7 @@ TO &#8211; MMS receiver<BR/>
 SPID &#8211; carrier ID &#8211; please check API documentation Appendinx E<BR/>
 TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with API response using this field.<BR/>
 TIMESTAMP &#8211; timestamp of the MMS was sent (N101) or when SMS was delivered (N202)<BR/>
-STATUS &#8211; For N101 notification status can be "Message Sent". For N202 notification status can be "Message<BR/> Sent/Delivered" or "Message Sent/Failed"
+STATUS &#8211; For N101 notification status can be "Message Sent". For N202 notification status can be "Message<BR/> Sent/Delivered" or "Message Sent/Failed"<BR/>
 AGGREGATORID &#8211; Only in N202 notification, contain Aggregator ID of the sending.<BR/> 
 
 <p><strong>The N101 anatomy:</strong></p>
