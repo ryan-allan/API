@@ -11,7 +11,7 @@ You can set your pass postback URL by logging into your account and going to &#8
 If the generate pass postback API is enabled, then you will receive postbacks for every pass generated in your account.
 
 <p><a name="the_xml_bundle1"></a> <strong>Generate Pass XML Bundle:</strong></p>
-<strong><p>Synopsis: </strong>This postback provides a bundle of pass generation postbacks.</p>
+<strong>Synopsis:</strong>This postback provides a bundle of pass generation postbacks.
 <strong><p>This postback will contain following nodes:</p></strong>
 
 CODE, ORIGIN<BR/>
