@@ -17,7 +17,7 @@ SUBID &#8211; subscription ID<BR/>
 &lt;?xml version='1.0'?&gt;
 &lt;POSTBACK&gt;
   &lt;ORIGIN&gt;SUB&lt;/ORIGIN&gt;
-  &lt;CODE&gt;N301&lt;/CODE&gt;<br />
+  &lt;CODE&gt;N301&lt;/CODE&gt;
   &lt;MOBILE&gt;16501112222&lt;/MOBILE&gt;
   &lt;CAMPAIGNID&gt;1478&lt;/CAMPAIGNID&gt;
   &lt;SUBID&gt;656655&lt;/SUBID&gt;
@@ -65,7 +65,7 @@ SUBID &#8211; subscription ID<BR/>
 </pre>
 
 <strong>Email Unsubscribe</strong>
-<p><strong>d) Synopsis:</strong> This Postback notification unsubscribes an email from a specific campaign.</p>
+<p><strong>Synopsis:</strong> This Postback notification unsubscribes an email from a specific campaign.</p>
 <strong><p>This postback will contain following nodes:</p></strong>
 CODE, ORIGIN<BR/>
 EMAIL &#8211; subscriber&#8217;s email<BR/>
