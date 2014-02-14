@@ -13,6 +13,26 @@ configure it within the particular MMS MO campaign.  Once the MMS MO postback is
 HTTP Posts on URL of your choice for each MMS MO received on the MMS MO Keyword. If you have (optionally) enabled 
 the MMS MO moderation panel then the postback notifictions will only be sent upon manual approval by the moderator.</p>
 <p><a name="the_xml_bundle1"></a> <strong>The SMS MO XML Bundle:</strong></p>
+
+<p><strong>c) Synopsis: </strong>This Postback provides a notification when SMS MO is received. Postback will contain following nodes:</p>
+<p>CODE, ORIGIN</p>
+<p>FROM &#8211; SMS sender mobile number</p>
+<p>TO &#8211; shortcode the SMS was sent to</p>
+<p>TEXT &#8211; this is actuall text that was sent by the sender</p>
+<p>RECEIVED &#8211; timestamp of the SMS received by our server</p>
+<p><strong>Postback Notification Example:</strong></p>
+<p><small><code>&lt;?xml version='1.0'?&gt;<br>
+&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" <br>
+xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;<br>
+&lt;ORIGIN&gt;SMS_MO&lt;/ORIGIN&gt;<br />
+&lt;CODE&gt;N211&lt;/CODE&gt;<br />
+&lt;FROM&gt;16311112222&lt;/FROM&gt;<br />
+&lt;TO&gt;60856&lt;/TO&gt;<br />
+&lt;TEXT&gt;MYKEYCODE&lt;/TEXT&gt;<br />
+&lt;RECEIVED&gt;2012-04-16T09:05:56-04:00&lt;/RECEIVED&gt;<br />
+&lt;/POSTBACK&gt;<br />
+</code></small></p>
+
 <p>The XML bundle has the following anatomy:</p>
 <pre>
 &lt;POSTBACK&gt;
@@ -28,6 +48,7 @@ the MMS MO moderation panel then the postback notifictions will only be sent upo
 &lt;/NOTIFICATION&gt;
 &lt;/POSTBACK&gt;
 </pre>
+
 <p><a name="the_xml_bundle"></a> <strong>The MMS MO XML Bundle:</strong></p>
 <p>The XML bundle has the following anatomy:</p>
 <p>&lt;POSTBACK&gt;<br />
