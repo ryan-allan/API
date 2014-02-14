@@ -32,12 +32,12 @@ RECEIVED &#8211; timestamp of the SMS received by our server<BR/>
 <p><strong>This postback has the following anatomy:</strong></p>
 <pre>
 &lt;POSTBACK&gt;
-&lt;ORIGIN&gt;SMS_MO&lt;/ORIGIN&gt;
-&lt;CODE&gt;N211&lt;/CODE&gt;
-&lt;FROM&gt;15552312102&lt;/FROM&gt;
-&lt;TO&gt;86717&lt;/TO&gt;
-&lt;TEXT&gt;STOP&lt;/TEXT&gt;
-&lt;RECEIVED&gt;2011-09-28T17:31:02-04:00&lt;/RECEIVED&gt;
+  &lt;ORIGIN&gt;SMS_MO&lt;/ORIGIN&gt;
+  &lt;CODE&gt;N211&lt;/CODE&gt;
+  &lt;FROM&gt;15552312102&lt;/FROM&gt;
+  &lt;TO&gt;86717&lt;/TO&gt;
+  &lt;TEXT&gt;STOP&lt;/TEXT&gt;
+  &lt;RECEIVED&gt;2011-09-28T17:31:02-04:00&lt;/RECEIVED&gt;
 &lt;/POSTBACK&gt;
 </pre>
 
