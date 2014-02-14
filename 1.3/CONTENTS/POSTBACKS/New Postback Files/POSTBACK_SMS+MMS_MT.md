@@ -243,12 +243,12 @@ MMSID &#8211; ID of the MMS<BR/>
 
 <p><strong>The N003 anatomy:</strong>
 <pre>
-&lt;?xml version='1.0'?&gt;<br>
-&lt;POSTBACK&gt;<br>
-  &lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;<br />
-  &lt;CODE&gt;N003&lt;/CODE&gt;<br />
-  &lt;MMSID&gt;35674&lt;/MMSID&gt;<br />
-&lt;/POSTBACK&gt;</code></small></p>
+&lt;?xml version='1.0'?&gt;
+&lt;POSTBACK&gt;
+  &lt;ORIGIN&gt;MMS_MT&lt;/ORIGIN&gt;
+  &lt;CODE&gt;N003&lt;/CODE&gt;
+  &lt;MMSID&gt;35674&lt;/MMSID&gt;
+&lt;/POSTBACK&gt;
 </pre>
 
 <strong>MMS MT (Save MMS Content Failure)</strong>
