@@ -20,9 +20,11 @@
 <li>If the HTTP response from the user's server is not provided or the HTTP code is not 200, we consider the postback a failed request and we will attempt to resend the postback every 5 minutes up to a total of 5 times.</li>
 </ul>
 
-<h1>Postback Groups</h1>
-<p>Our servers generate different Postbacks, which we divide into few groups. 
-There are sub-groups within each Postback group. Each postback contain few unified fields:</p>
+<strong>Postback Groups</strong>
+<ul>
+<li>Our servers generate event-based postbacks which we divide into a few groups and subgroups.<li>
+
+
 <p>ORIGIN &#8211; identifies origin of the postback</p>
 <p>CODE &#8211; identifies situation when postback is generated</p>
 <p><strong>Group #1- SMS</strong></p>
