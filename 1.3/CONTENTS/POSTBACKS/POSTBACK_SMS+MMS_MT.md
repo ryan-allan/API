@@ -1,7 +1,7 @@
 <a name="DocTop"><a href="/1.3/README.md">Back to the Table of Contents</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/1.3/CONTENTS/POSTBACKS/POSTBACK_SYSTEM_OVERVIEW.md">Postback System Overview</a>
 <h2>SMS/MMS MT Postbacks</h2>
 <div id="page-content"><strong>Brief Overview:</strong>
-This document will provide a technical description of the MMS/SMS MT postback API.  Briefly, this API allows those with SMS/MMS MT postbacks enabled to generate and forward SMS/MMS MT postbacks to their server.  For MMS, we have two methods for delivering content; Binary and XHTML. We send different Postbacks depending on which method is used.
+This document will provide a technical description of the MMS/SMS MT postback API.  Briefly, this API allows those with SMS/MMS MT postbacks enabled to generate and forward SMS/MMS MT postbacks to their server.  For MMS, we have two methods for delivering content; Binary and XHTML. We send different postbacks depending on which method is used.
 
 <strong>Current list of the SMS/MMS MT Postbacks</strong>
  
