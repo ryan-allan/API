@@ -5,7 +5,7 @@
 This document will provide a technical description of the Subscribe and Unsubscribe postback API for phone and email. Briefly, this API allows those with subscribe and unsubscribe postbacks enabled to generate and forward postbacks to their server when an individual subscribes or unsubscribes from a mobile or email campaign.
 
 <a name="MobileSub"><strong>Mobile Subscribe</strong></a>
-<p><strong>Synopsis:</strong> This postback notification triggers from a mobile phone number subscription to a specific campaign.</p>
+<p><strong>Synopsis:</strong> This postback notification triggers when a mobile phone number subscribes to a specific campaign.</p>
 <strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
 MOBILE &#8211; subscriber&#8217;s mobile<BR/>
@@ -25,7 +25,7 @@ SUBID &#8211; subscription ID<BR/>
 </pre>
 
 <a name="MobileUnsub"><strong>Mobile Unsubscribe</strong></a>
-<p><strong>Synopsis:</strong> This postback notification triggers from a mobile phone number unsubscription to a specific campaign.</p>
+<p><strong>Synopsis:</strong> This postback notification triggers when a mobile phone number unsubscribes to a specific campaign.</p>
 <strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
 MOBILE &#8211; subscriber&#8217;s mobile<BR/>
@@ -45,7 +45,7 @@ SUBID &#8211; subscription ID<BR/>
 </pre>
 
 <a name="EmailSub"><strong>Email Subscribe</strong></a>
-<p><strong>Synopsis:</strong> This postback notification triggers from an email address subscription to a specific campaign.</p>
+<p><strong>Synopsis:</strong> This postback notification triggers when an email address subscribes to a specific campaign.</p>
 <strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
 EMAIL &#8211; subscriber&#8217;s email<BR/>
@@ -65,7 +65,7 @@ SUBID &#8211; subscription ID<BR/>
 </pre>
 
 <a name="EmailUnsub"><strong>Email Unsubscribe</strong></a>
-<p><strong>Synopsis:</strong> This postback notification triggers from an email address unsubscription to a specific campaign.</p>
+<p><strong>Synopsis:</strong> This postback notification triggers when an email address unsubscribes to a specific campaign.</p>
 <strong><p>This postback will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
 EMAIL &#8211; subscriber&#8217;s email<BR/>
