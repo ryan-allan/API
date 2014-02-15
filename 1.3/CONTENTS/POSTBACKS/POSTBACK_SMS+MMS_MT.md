@@ -9,7 +9,7 @@ This document will provide a technical description of the MMS/SMS MT postback AP
 [SMS MT Status](#Status)                        
 [MMS MT (Binary)](#Binary)                       
 [MMS MT (XHTML)](#XHTML)                        
-[MMS MT (Binary degrade to XHTML and sent as SMS link](#Degrade)  
+[MMS MT (Binary degrade to XHTML and sent as SMS link)](#Degrade)  
 [MMS MT (Sending Failure)](#SendFail)      
 [MMS MT (Save MMS)](#SaveMMS) <BR />
 [MMS MT (Save MMS Content Failure)](#ContentFail)
