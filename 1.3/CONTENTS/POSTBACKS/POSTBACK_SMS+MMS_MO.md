@@ -14,8 +14,8 @@ your account.
 <strong>MMS MO General Information</strong>
 To receive MMS MO postback notification you need to have that option enabled in your account and you need to 
 configure it within the particular MMS MO campaign.  Once the MMS MO postback is enabled you will start receiving 
-postbacks to the URL of your choice for each MMS MO received on the MMS MO Keyword. If you have (optionally) enabled 
-the MMS MO moderation panel then the postback notifictions will only be sent upon manual approval by the moderator.
+postbacks to the URL of your choice for each MMS MO received on the MMS MO Keyword. If you have opted to enable
+the MMS MO moderation panel, then the postback notifictions will only be sent upon manual approval of the moderator.
 
 
 
