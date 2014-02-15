@@ -8,7 +8,7 @@ A separate Postback URL specifically for SMS/MMS MO's(Mobile Originated) may be 
 
 <strong>SMS MO General Information:</strong>
 To receive SMS MO postback notifications you need to have that option enabled in your account. Once the SMS MO 
-postback is enabled you will start receiving HTTP Posts on URL of your choice for each SMS MO received related to 
+postback is enabled you will start receiving HTTP Posts on the URL of your choice for each SMS MO received related to 
 your account.
 
 <strong>MMS MO General Information</strong>
