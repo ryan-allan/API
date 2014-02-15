@@ -3,7 +3,7 @@
 <div id="page-content"><strong>Brief Overview:</strong>
 This document will provide a technical description of the MMS/SMS MT postback API.  Briefly, this API allows those with SMS/MMS MT postbacks enabled to generate and forward SMS/MMS MT postbacks to their server.  For MMS, we have two methods for delivering content; Binary and XHTML. We send different postbacks depending on which method is used.
 
-<strong>Current list of the SMS/MMS MT Postbacks</strong>
+<strong>Current list of the SMS/MMS MT Postback Types</strong>
  
 [SMS MT Sent](#Sent)                            
 [SMS MT Status](#Status)                        
