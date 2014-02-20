@@ -171,7 +171,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
 [Back To The Top](#DocTop)<BR />
 <BR />
 <a name="Degrade"><strong>MMS MT (Binary Degraded to xHTML and Delivered as an SMS Link)</strong>
-<p><strong>Synopsis:</strong> In some rare cases we degrade the binary MMS and deliver it as SMS link, it may be due to MMS being too big to deliver as binary.  We send one Postback N101 notifying that we started to process the message - in this case the postback will contain an additional STATUSDETAILS node describing why it is being delivered as xHTML (This is the only difference from xHTML delivery).  When we receive the Delivery Report(DLR) for SMS, we generate a postback notification N202. 
+<p><strong>Synopsis:</strong> In some rare cases we degrade the binary MMS and deliver it as an SMS link, it may be due to MMS being too big to deliver as binary.  We send one Postback N101 notifying that we started to process the message - in this case the postback will contain an additional STATUSDETAILS node describing why it is being delivered as xHTML (This is the only difference from xHTML delivery).  When we receive the Delivery Report(DLR) for SMS, we generate a postback notification N202. 
 <strong><p>These postbacks will contain the following nodes:</p></strong>
 CODE, ORIGIN<BR/>
 SENTAS &#8211; this node indicate if MMS was delivered as MMS (binary delivery) or SMS (xHTML). For xHTML delivery it will always be SMS<BR/>
