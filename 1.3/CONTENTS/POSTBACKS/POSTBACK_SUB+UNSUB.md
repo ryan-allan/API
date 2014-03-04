@@ -15,7 +15,7 @@ SUBID &#8211; subscription ID<BR/>
 <p><strong>This postback has the following anatomy:</strong></p>
 <pre>
 &lt;?xml version='1.0'?&gt;
-&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation ="http://dev.skycore.com/platform/platform/schema/pass-postback.xsd"&gt;
+&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation ="https://www.skycore.com/platform/platform/schema/pass-postback.xsd"&gt;
   &lt;ORIGIN&gt;SUB&lt;/ORIGIN&gt;
   &lt;CODE&gt;N301&lt;/CODE&gt;
   &lt;MOBILE&gt;16501112222&lt;/MOBILE&gt;
@@ -35,7 +35,7 @@ SUBID &#8211; subscription ID<BR/>
 <p><strong>This postback has the following anatomy:</strong></p>
 <pre>
 &lt;?xml version='1.0'?&gt;
-&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation ="http://dev.skycore.com/platform/platform/schema/pass-postback.xsd"&gt;
+&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation ="https://www.skycore.com/platform/platform/schema/pass-postback.xsd"&gt;
   &lt;ORIGIN&gt;SUB&lt;/ORIGIN&gt;
   &lt;CODE&gt;N302&lt;/CODE&gt;
   &lt;MOBILE&gt;16502424956&lt;/MOBILE&gt;
@@ -55,7 +55,7 @@ SUBID &#8211; subscription ID<BR/>
 <p><strong>This postback has the following anatomy:</strong></p>
 <pre>
 &lt;?xml version='1.0'?&gt;
-&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation ="http://dev.skycore.com/platform/platform/schema/pass-postback.xsd"&gt;
+&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation ="https://www.skycore.com/platform/platform/schema/pass-postback.xsd"&gt;
   &lt;ORIGIN&gt;EMAIL_SUB&lt;/ORIGIN&gt;
   &lt;CODE&gt;N303&lt;/CODE&gt;
   &lt;EMAIL&gt;jacek@skycore.com&lt;/EMAIL&gt;
@@ -75,7 +75,7 @@ SUBID &#8211; subscription ID<BR/>
 <p><strong>This postback has the following anatomy:</strong></p>
 <pre>
 &lt;?xml version='1.0'?&gt;
-&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation ="http://dev.skycore.com/platform/platform/schema/pass-postback.xsd"&gt;
+&lt;POSTBACK xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation ="https://www.skycore.com/platform/platform/schema/pass-postback.xsd"&gt;
   &lt;ORIGIN&gt;EMAIL_SUB&lt;/ORIGIN&gt;
   &lt;CODE&gt;N304&lt;/CODE&gt;
   &lt;EMAIL&gt;jacek@skycore.com&lt;/EMAIL&gt;
