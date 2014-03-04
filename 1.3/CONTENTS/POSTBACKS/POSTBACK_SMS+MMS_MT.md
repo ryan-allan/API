@@ -52,6 +52,7 @@ TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with
 SPID &#8211; Carrier Identification - please reffer to <a href="/1.3/CONTENTS/APPENDIX/APPENDIX_E.md">APPENDIX E</a> for more details<BR/>
 TIMESTAMP &#8211; timestamp of the SMS Delivery Receipt<BR/>
 AGGREGATOR &#8211; SMS aggregator ID<BR/>
+STATUSDETAILS &#8211; node with some additional information passed to us from the aggregator/carrier<BR/>
 
 <p><strong>This postback has the following anatomy:</strong></p>
 <pre>
@@ -66,6 +67,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
   &lt;SPID&gt;0001470&lt;/SPID&gt;
   &lt;TIMESTAMP&gt;2013-11-05T05:41:15-05:00&lt;/TIMESTAMP&gt;
   &lt;AGGREGATORID&gt;11529-64807-97508-73852-97658&lt;/AGGREGATORID&gt;
+  &lt;STATUSDETAILS&gt;Error fetching object(Database Error: Could not find number imported in database)&lt;/STATUSDETAILS&gt;
 &lt;/POSTBACK&gt;
 </pre>
 [Back To The Top](#DocTop)<BR />
@@ -133,7 +135,8 @@ SPID &#8211; carrier ID &#8211; please check API documentation <a href="/1.3/CON
 TRACKINGID &#8211; ID returned via API &#8211; this postback can be matched with API response using this field.<BR/>
 TIMESTAMP &#8211; timestamp of the MMS was sent (N101) or when SMS was delivered (N202)<BR/>
 STATUS &#8211; For N101 notification status can be "Message Sent". For N202 notification status can be "Message<BR/> Sent/Delivered" or "Message Sent/Failed"<BR/>
-AGGREGATORID &#8211; Only in N202 notification, contain Aggregator ID of the sending.<BR/> 
+AGGREGATORID &#8211; Only in N202 notification, contain Aggregator ID of the sending.<BR/>
+STATUSDETAILS &#8211; node with some additional information passed to us from the aggregator/carrier<BR/>
 
 <p><strong>The N101 anatomy:</strong></p>
 <pre>
@@ -149,6 +152,7 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
   &lt;TRACKINGID&gt;TU1TXzU5Nzg3Nw==&lt;/TRACKINGID&gt;
   &lt;SPID&gt;0001140&lt;/SPID&gt;
   &lt;TIMESTAMP&gt;2012-06-07T07:27:34-05:00&lt;/TIMESTAMP&gt;
+  &lt;STATUSDETAILS&gt;Error fetching object(Database Error: Could not find number/email imported in database)&lt;/STATUSDETAILS&gt;
 &lt;/POSTBACK&gt;
 </pre>
 
