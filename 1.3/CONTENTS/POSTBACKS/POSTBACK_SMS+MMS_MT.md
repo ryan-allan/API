@@ -67,7 +67,6 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
   &lt;SPID&gt;0001470&lt;/SPID&gt;
   &lt;TIMESTAMP&gt;2013-11-05T05:41:15-05:00&lt;/TIMESTAMP&gt;
   &lt;AGGREGATORID&gt;11529-64807-97508-73852-97658&lt;/AGGREGATORID&gt;
-  &lt;STATUSDETAILS&gt;Error fetching object(Database Error: Could not find number imported in database)&lt;/STATUSDETAILS&gt;
 &lt;/POSTBACK&gt;
 </pre>
 [Back To The Top](#DocTop)<BR />
@@ -152,7 +151,6 @@ xsi:noNamespaceSchemaLocation ="http://www.skycore.com/schema/postback.xsd"&gt;
   &lt;TRACKINGID&gt;TU1TXzU5Nzg3Nw==&lt;/TRACKINGID&gt;
   &lt;SPID&gt;0001140&lt;/SPID&gt;
   &lt;TIMESTAMP&gt;2012-06-07T07:27:34-05:00&lt;/TIMESTAMP&gt;
-  &lt;STATUSDETAILS&gt;Error fetching object(Database Error: Could not find number/email imported in database)&lt;/STATUSDETAILS&gt;
 &lt;/POSTBACK&gt;
 </pre>
 
