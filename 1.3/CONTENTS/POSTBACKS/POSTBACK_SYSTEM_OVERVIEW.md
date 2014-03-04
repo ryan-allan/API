@@ -3,7 +3,14 @@
 
 <strong>What is a postback?</strong>
 <ul>
-<li>A postback is a notification sent via a single HTTP POST request in XML format from Skycore's servers to a user-specified URL containing information regarding Subscribes/Unsubscribes, SMS/MMS MO(Mobile Originated), SMS/MMS MT(Mobile Terminated), or Pass Generation events relative to the user's account.</li>
+<li>A postback is a notification sent via a single HTTP POST request in XML format from Skycore's servers to a user-specified URL containing information relative to the user's account regarding the following events:</li>
+<ul>
+<li>Subscribes/Unsubscribes</li>
+<li>SMS/MMS MO(Mobile Originated)</li>
+<li>SMS/MMS MT(Mobile Terminated)</li>
+<li>Pass Generation</li>
+<li>A saved MMS (via API or MMS composer)</li>
+</ul>
 </ul>
 
 <strong>How do postbacks work?</strong>
